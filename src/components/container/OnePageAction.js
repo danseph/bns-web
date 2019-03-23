@@ -6,8 +6,12 @@ class OnePageAction extends Component {
     state = {
         activeNav: 1,
         lanShow: false,
-        activeTitle: false,
-        activeArticle1: false,
+        activePlatFormTitle: false,
+        activePlatFormContent1: false,
+        activePlatFormContent2: false,
+        activePlatFormContent3: false,
+        activePlatFormContent4: false,
+        activePlatFormContent5: false,
         activeArticle2: false,
         activeArticle3: false,
         activeLanBtn: false,
@@ -83,10 +87,12 @@ class OnePageAction extends Component {
             )
         }, 800);
 
-        window.addEventListener('scroll', this._handleTitleActive);
-        window.addEventListener('scroll', this._handleArticleActive1);
-        window.addEventListener('scroll', this._handleArticleActive2);
-        window.addEventListener('scroll', this._handleArticleActive3);
+        window.addEventListener('scroll', this._handlePlatFormTitleActive);
+        window.addEventListener('scroll', this._handlePlatFormContent1Active);
+        window.addEventListener('scroll', this._handlePlatFormContent2Active);
+        window.addEventListener('scroll', this._handlePlatFormContent3Active);
+        window.addEventListener('scroll', this._handlePlatFormContent4Active);
+        window.addEventListener('scroll', this._handlePlatFormContent5Active);
     }
 
     render() {
@@ -96,9 +102,12 @@ class OnePageAction extends Component {
                 nav={this.nav}
                 lan={this.lan}
                 title={this.title}
-                article1={this.article1}
-                article2={this.article2}
-                article3={this.article3}
+                platFormTitle={this.platFormTitle}
+                platFormContent1={this.platFormContent1}
+                platFormContent2={this.platFormContent2}
+                platFormContent3={this.platFormContent3}
+                platFormContent4={this.platFormContent4}
+                platFormContent5={this.platFormContent5}
                 handleRefresh={this._handleRefresh}
                 handleSectionMove={this._handleSectionMove}
                 handleLanBtn={this._handleLanBtn}
@@ -121,6 +130,12 @@ class OnePageAction extends Component {
                 this.setState({
                     loader: false,
                     activeNav: 1,
+                    activePlatFormTitle: false,
+                    activePlatFormContent1: false,
+                    activePlatFormContent2: false,
+                    activePlatFormContent3: false,
+                    activePlatFormContent4: false,
+                    activePlatFormContent5: false,
                 })
             )
         }, 800);
@@ -165,6 +180,12 @@ class OnePageAction extends Component {
                     loader: false,
                     lanShow: false,
                     activeNav: 1,
+                    activePlatFormTitle: false,
+                    activePlatFormContent1: false,
+                    activePlatFormContent2: false,
+                    activePlatFormContent3: false,
+                    activePlatFormContent4: false,
+                    activePlatFormContent5: false,
                 })
             )
         }, 800);
@@ -192,53 +213,79 @@ class OnePageAction extends Component {
         })
     };
 
-    title = React.createRef();
-    _handleTitleActive = () => {
+    platFormTitle = React.createRef();
+    _handlePlatFormTitleActive = () => {
         if(!this.state.loader) {
-            const rect = this.title.current.getBoundingClientRect();
+            const rect = this.platFormTitle.current.getBoundingClientRect();
             const { top, bottom, height } = rect;
             if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
                 this.setState({
-                    activeTitle: true
+                    activePlatFormTitle: true
                 });
             }
         }
     };
 
-    article1 = React.createRef();
-    _handleArticleActive1 = () => {
+    platFormContent1 = React.createRef();
+    _handlePlatFormContent1Active = () => {
         if(!this.state.loader) {
-            const rect = this.article1.current.getBoundingClientRect();
+            const rect = this.platFormContent1.current.getBoundingClientRect();
             const { top, bottom, height } = rect;
-            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
+            if (top + 100 < window.innerHeight && bottom >= 0 && top > -1 * height) {
                 this.setState({
-                    activeArticle1: true
+                    activePlatFormContent1: true
                 });
             }
         }
     };
 
-    article2 = React.createRef();
-    _handleArticleActive2 = () => {
+    platFormContent2 = React.createRef();
+    _handlePlatFormContent2Active = () => {
         if(!this.state.loader) {
-            const rect = this.article2.current.getBoundingClientRect();
+            const rect = this.platFormContent2.current.getBoundingClientRect();
             const { top, bottom, height } = rect;
-            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
+            if (top + 100 < window.innerHeight && bottom >= 0 && top > -1 * height) {
                 this.setState({
-                    activeArticle2: true
+                    activePlatFormContent2: true
                 });
             }
         }
     };
 
-    article3 = React.createRef();
-    _handleArticleActive3 = () => {
+    platFormContent3 = React.createRef();
+    _handlePlatFormContent3Active = () => {
         if(!this.state.loader) {
-            const rect = this.article3.current.getBoundingClientRect();
+            const rect = this.platFormContent3.current.getBoundingClientRect();
             const { top, bottom, height } = rect;
-            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
+            if (top + 100 < window.innerHeight && bottom >= 0 && top > -1 * height) {
                 this.setState({
-                    activeArticle3: true
+                    activePlatFormContent3: true
+                });
+            }
+        }
+    };
+
+    platFormContent4 = React.createRef();
+    _handlePlatFormContent4Active = () => {
+        if(!this.state.loader) {
+            const rect = this.platFormContent4.current.getBoundingClientRect();
+            const { top, bottom, height } = rect;
+            if (top + 100 < window.innerHeight && bottom >= 0 && top > -1 * height) {
+                this.setState({
+                    activePlatFormContent4: true
+                });
+            }
+        }
+    };
+
+    platFormContent5 = React.createRef();
+    _handlePlatFormContent5Active = () => {
+        if(!this.state.loader) {
+            const rect = this.platFormContent5.current.getBoundingClientRect();
+            const { top, bottom, height } = rect;
+            if (top + 100 < window.innerHeight && bottom >= 0 && top > -1 * height) {
+                this.setState({
+                    activePlatFormContent5: true
                 });
             }
         }

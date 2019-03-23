@@ -315,7 +315,7 @@
       background-color: #000;
       border: 1px solid $white2;
       position: absolute;
-      right: 0;
+      right: 20px;
       top: 70px; // jonny
       // jonny
       height: 0;
@@ -512,7 +512,15 @@
       li {
         width: 100%;
         padding: 55px 125px 0;
-
+        // jonny
+        opacity: 0;
+        @include trsX0Y100;
+        &.active {
+          @include trsX0Y0;
+          @include trsOp6s;
+          opacity: 1;
+        }
+        // jonny end
         @include mq("mobile") {
           padding: 20px;
         }

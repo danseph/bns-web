@@ -24,6 +24,8 @@ const OnePage = (props) => {
         <>
             {!props.loader ?
                 <IntlProvider
+                    locale={props.defaultLang}
+                    messages={locale[props.defaultLang]}
                 >
                     <>
                         {props.loader &&
@@ -109,12 +111,12 @@ const OnePage = (props) => {
 
                             {/* PLATFORM */}
                             <section className="platform" id="section2">
-                                <div className="platform-title">
+                                <div className={`platform-title ${props.activePlatFormTitle ? "active" : ""}`} ref={props.platFormTitle}>
                                     <h2>AI Prediction Platform</h2>
                                 </div>
                                 <div className="platform-content">
                                     <ul>
-                                        <li>
+                                        <li className={`content1 ${props.activePlatFormContent1 ? "active" : ""}`} ref={props.platFormContent1}>
                                             <div className="img-box-wrap">
                                                 <div className="img-box">
                                                     <img src={require("../../images/3piks.png")}/>
@@ -130,7 +132,7 @@ const OnePage = (props) => {
                                                 </p>
                                             </div>
                                         </li>
-                                        <li>
+                                        <li className={`content2 ${props.activePlatFormContent2 ? "active" : ""}`} ref={props.platFormContent2}>
                                             <div className="img-box-wrap">
                                                 <div className="img-box">
                                                     <img src={require("../../images/bitbip.png")}/>
@@ -146,7 +148,7 @@ const OnePage = (props) => {
                                                 </p>
                                             </div>
                                         </li>
-                                        <li>
+                                        <li className={`content3 ${props.activePlatFormContent3 ? "active" : ""}`} ref={props.platFormContent3}>
                                             <div className="img-box-wrap">
                                                 <div className="img-box">
                                                     <img src={require("../../images/trade.png")}/>
@@ -162,7 +164,7 @@ const OnePage = (props) => {
                                                 </p>
                                             </div>
                                         </li>
-                                        <li>
+                                        <li className={`content4 ${props.activePlatFormContent4 ? "active" : ""}`} ref={props.platFormContent4}>
                                             <div className="img-box-wrap">
                                                 <div className="img-box">
                                                     <img src={require("../../images/platform.png")}/>
@@ -178,7 +180,7 @@ const OnePage = (props) => {
                                                 </p>
                                             </div>
                                         </li>
-                                        <li>
+                                        <li className={`content5 ${props.activePlatFormContent5 ? "active" : ""}`} ref={props.platFormContent5}>
                                             <div className="img-box-wrap">
                                                 <div className="img-box">
                                                     <img src={require("../../images/solution.png")}/>
