@@ -1,0 +1,1719 @@
+@import "../../config/init";
+@import "../../config/variables";
+@import "../../config/mixins";
+
+.loader-wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #000;
+  z-index: 99;
+  .loader {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    margin-left: -100px;
+  }
+}
+.lan-list-none-wrap {
+  position: fixed;
+  top: 90px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+.lan-hide-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+//------------------------------------------------------------------------------
+//
+// HEADER
+//
+//------------------------------------------------------------------------------
+.header {
+  &-wrap {
+    position: fixed; // jonny
+    left: 0; // jonny
+    top: 0; // jonny
+    width: 100%;
+    height: 90px;
+    background-color: #000;
+    z-index: 10; // jonny
+    @include mq("mobile") {
+      height: auto;
+    }
+  }
+
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  @include mq("mobile") {
+    display: block;
+    padding: 0;
+  }
+
+  &-logo {
+    width: 118px;
+    z-index: 9;
+
+    img {
+      width: 100%;
+    }
+
+    @include mq("tablet") {
+      width: 88px;
+    }
+    @include mq("mobile") {
+      width: 210px;
+      height: 73px;
+      position: absolute;
+      margin-left: -105px;
+      left: 50%;
+      top: 116px;
+    }
+  }
+
+  &-nav {
+    width: calc(100% - 118px - 220px);
+    text-align: center;
+    z-index: 1; // jonny
+    @include mq("tablet") {
+      width: calc(100% - 70px - 160px);
+    }
+    @include mq("mobile") {
+      position: absolute;
+      width: 100%;
+      background-color: #FFF;
+      left: -100%;
+      top: 0;
+      transition: all .5s;
+
+      &.on {
+        left: 0;
+      }
+    }
+
+    a {
+      position: relative; // jonny
+      padding: 2px 4px;
+      display: inline-block;
+      font-size: 1.6rem;
+      color: $white5;
+      transition: color .5s; // jonny
+      -webkit-transition: color .5s; // jonny
+      // jonny
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: #FFF;
+        opacity: 0;
+        @include trs3s;
+      }
+      &:hover, &.active {
+        color: #FFF;
+        &:after {
+          width: 100%;
+          opacity: 1;
+          @include trs3s;
+        }
+        @include mq("mobile") {
+          color: #000;
+          &:after {
+            width: 100%;
+            opacity: 1;
+            @include trs3s;
+          }
+        }
+      }
+      // jonny end
+      @include mq("tablet") {
+        font-size: 1.2rem;
+      }
+      @include mq("mobile") {
+        padding: 12px 0;
+        display: block;
+        font-size: 1.2rem;
+        color: $black3;
+        border-bottom: 1px solid $black2;
+      }
+
+      // hailey
+      //&.active {
+      //  color: #FFF;
+      //  border-bottom: 1px solid #FFF;
+      //
+      //  @include mq("mobile") {
+      //    color: #000;
+      //    border-bottom: 1px solid $black2;
+      //  }
+      //}
+      // hailey end
+
+      &.menu-btn {
+        display: none;
+
+        @include mq("mobile") {
+          z-index: 10;
+          position: absolute;
+          left: calc(100% + 15px);
+          top: 10px;
+          display: block;
+          width: 18px;
+          height: 18px;
+          padding: 0;
+          border-bottom: none;
+          background: url("../../images/menu_white.png") no-repeat center center / 100%;
+
+          &.on {
+            left: 15px;
+            background-image: url("../../images/menu_black.png");
+          }
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    a + a {
+      margin-right: 3%;
+
+      @include mq("tablet") {
+        margin-right: 1.8%;
+      }
+      @include mq("mobile") {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &-btn {
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1; // jonny
+    @include mq("tablet") {
+      width: 160px;
+    }
+    @include mq("mobile") {
+      background-color: #FFF;
+      width: 100%;
+      flex-wrap: wrap;
+      position: absolute;
+      left: -100%;
+      top: 273px;
+      padding-bottom: 500px;
+      transition: all .5s;
+
+      &.on {
+        left: 0;
+      }
+    }
+
+    > a {
+      position: relative; // jonny
+      padding: 2px 4px;
+      display: inline-block;
+      font-size: 1.6rem;
+      color: $white5; // jonny
+      @include trs3s; // jonny
+      // jonny
+      //&:after {
+      //  content: "";
+      //  position: absolute;
+      //  bottom: -1px;
+      //  left: 0;
+      //  width: 0;
+      //  height: 1px;
+      //  background-color: #FFF;
+      //  opacity: 0;
+      //  @include trs3s;
+      //}
+      &:hover, &.active {
+        color: #FFF;
+        //&:after {
+        //  width: 100%;
+        //  opacity: 1;
+        //  @include trs3s;
+        //}
+      }
+      // jonny end
+      @include mq("tablet") {
+        font-size: 1.2rem;
+      }
+      @include mq("mobile") {
+        display: block;
+        width: 100%;
+        padding: 12px 0;
+        font-size: 1.2rem;
+        color: $black3;
+        border-bottom: 1px solid $black2;
+        text-align: center;
+      }
+
+      &.lang {
+        padding-right: 20px;
+        //background: url("../../images/down_grey.png") no-repeat right center / 12px; // jonny
+        @include trs3s; // jonny
+        &:after {
+          position: absolute;
+          top: 5px;
+          right: 0;
+          content: '';
+          width: 12px;
+          height: 12px;
+          background: url("../../images/down_grey.png") no-repeat right center / contain; // jonny
+          @include trs3s;
+          @include trsOriginCenter;
+        }
+        &:hover, &.active { // jonny
+          &:after {
+            background-image: url("../../images/down_white.png"); // jonny
+          }
+        } // jonny
+        // jonny
+        &.active {
+          &:after {
+            top: 5px;
+            @include arrowRotate;
+          }
+        }
+        // jonny end
+        @include mq("mobile") {
+          padding-right: 0;
+          background: url("../../images/down_black.png") no-repeat right 15px center / 12px;
+          &.active {
+            color: #000;
+          }
+        }
+
+      }
+    }
+
+    &-lang {
+      //display: none; // hailey
+      width: 130px;
+      background-color: #000;
+      border: 1px solid $white2;
+      position: absolute;
+      right: 0;
+      top: 70px; // jonny
+      // jonny
+      height: 0;
+      opacity: 0;
+      @include trs4s;
+      @include trsOriginTop;
+      // jonny end
+
+      @include mq("tablet") {
+        width: 94px;
+      }
+      @include mq("mobile") {
+        width: 100%;
+        left: 0;
+        top: 78px;
+        background-color: #FFF;
+      }
+
+      &.active {
+        // jonny
+        opacity: 1;
+        max-height: 163px;
+        height: 163px;
+        // jonny end
+        //display: block; // hailey
+      }
+
+      a {
+        display: block;
+        width: 100%;
+        padding: 12px 0;
+        color: $white3;
+        font-size: 1.4rem;
+        text-align: center;
+
+        @include mq("mobile") {
+          display: block;
+          width: 100%;
+          padding: 12px 0;
+          font-size: 1.2rem;
+          color: $black3;
+          border-bottom: 1px solid $black2;
+          text-align: center;
+        }
+
+        &.active, &:hover { // jonny
+          color: #FFF;
+          @include trs3s; // jonny
+          @include mq("mobile") {
+            color: #000;
+            border-bottom: 1px solid $black2;
+          }
+        }
+      }
+
+      li + li {
+        border-top: 1px solid $white2;
+      }
+    }
+  }
+}
+
+//------------------------------------------------------------------------------
+//
+// CONTAINER
+//
+//------------------------------------------------------------------------------
+.container {
+  width: 100%;
+}
+
+.main {
+  &-wrap {
+    background-color: #000;
+  }
+
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  padding: 20px 0;
+
+  @include mq("tablet") {
+    width: 100%;
+  }
+  @include mq("mobile") {
+    width: 100%;
+    height: 560px;
+    padding-top: 120px;
+  }
+
+  &-img {
+    width: 100%;
+    text-align: center;
+    background: url("../../images/main02.png") no-repeat center center / 100%;
+    opacity: .5;
+
+    @include mq("tablet") {
+      background-size: 60%;
+    }
+    @include mq("mobile") {
+      background-size: 90%;
+    }
+
+    img {
+      width: 100%;
+      opacity: .25;
+
+      @include mq("tablet") {
+        width: 60%;
+      }
+      @include mq("mobile") {
+        width: 90%;
+      }
+    }
+  }
+
+  &-txt {
+    position: absolute;
+    top: 240px;
+    width: 100%;
+
+    @include mq("tablet") {
+      top: 100px;
+    }
+    @include mq("mobile") {
+      top: 215px;
+    }
+
+    &-title {
+      width: 100%;
+      padding-bottom: 240px;
+      text-align: center;
+
+      @include mq("tablet") {
+        padding-bottom: 80px;
+      }
+      @include mq("mobile") {
+        font-size: 2rem;
+        padding-bottom: 90px;
+      }
+
+      strong {
+        color: #FFF;
+        font-size: 6.4rem;
+
+        @include mq("tablet") {
+          font-size: 5rem;
+        }
+        @include mq("mobile") {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    &-desc {
+      width: 100%;
+
+      p {
+        color: #FFF;
+        font-size: 1.6rem;
+        line-height: 1.8;
+        text-align: center;
+
+        @include mq("tablet") {
+          font-size: 1.2rem;
+          margin-bottom: 60px;
+        }
+        @include mq("mobile") {
+          font-size: 1.2rem;
+          margin-bottom: 60px;
+          padding: 0 6%;
+        }
+      }
+    }
+  }
+}
+
+.platform {
+  @include layout();
+  @include titleStyle();
+  padding-bottom: 300px;
+
+  @include mq("tablet") {
+    padding-bottom: 200px;
+  }
+  @include mq("mobile") {
+    padding-bottom: 100px;
+  }
+
+  &-content {
+    ul {
+      width: 100%;
+
+      li {
+        width: 100%;
+        padding: 55px 125px 0;
+
+        @include mq("mobile") {
+          padding: 20px;
+        }
+
+        .img-box {
+          &-wrap {
+            position: relative;
+            height: 240px;
+
+            @include mq("mobile") {
+              height: 100px;
+            }
+          }
+
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          text-align: center;
+
+          @include mq("tablet") {
+            img {
+              width: 500px;
+            }
+          }
+          @include mq("mobile") {
+            img {
+              width: 100%;
+              max-width: 500px;
+            }
+          }
+        }
+
+        .txt-box {
+          width: 100%;
+
+          h4 {
+            width: 100%;
+            padding: 25px 0;
+            text-align: center;
+            font-size: 2.2rem;
+            font-weight: 700;
+
+            @include mq("mobile") {
+              padding: 20px 0 10px;
+              font-size: 1.6rem;
+            }
+          }
+
+          p {
+            font-size: 1.6rem;
+            line-height: 1.6;
+            text-align: center;
+
+            @include mq("mobile") {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.effect {
+  &-wrap {
+    width: 100%;
+    background-color: #000;
+    position: relative;
+  }
+
+  @include titleStyle();
+  width: 1000px;
+  margin: 0 auto;
+  padding: 200px 0;
+  background: url("../../images/bg_white.png") no-repeat top -1px center;
+
+  @include mq("tablet") {
+    width: 100%;
+    padding: 200px 0;
+  }
+  @include mq("mobile") {
+    width: 100%;
+    padding: 40px 0 30px;
+    background-size: 100px;
+  }
+
+  h2 {
+    position: absolute;
+    left: 0;
+    top: -160px;
+
+    @include mq("tablet") {
+      top: -100px;
+    }
+    @include mq("mobile") {
+      top: -50px;
+    }
+  }
+
+  &-img {
+    &-wrap {
+      width: 100%;
+      position: relative;
+
+      &.mobile {
+        display: none;
+      }
+
+      @include mq("mobile") {
+        width: 320px;
+        margin: 0 auto;
+
+        &.mobile {
+          display: block;
+        }
+        &.web {
+          display: none;
+        }
+      }
+    }
+
+    width: 100%;
+    text-align: center;
+
+    &.bot {
+      position: absolute;
+      left: 0;
+      top: 36%;
+
+      @include mq("mobile") {
+        top: 0;
+      }
+    }
+
+    img {
+      width: 100%;
+
+      @include mq("tablet") {
+        width: 600px;
+      }
+    }
+  }
+}
+
+.tech {
+  &-wrap {
+    width: 100%;
+    background-color: #000;
+  }
+
+  @include layout();
+  @include titleStyle(#FFF);
+
+  &-content {
+    ul {
+      width: 100%;
+      margin-top: 150px;
+
+      @include mq("tablet") {
+        margin-top: 80px;
+        padding: 0 30px;
+      }
+      @include mq("mobile") {
+        margin-top: 30px;
+      }
+
+      li {
+        width: 100%;
+
+        .img-box {
+          width: 100%;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .txt-box {
+          width: 100%;
+          margin: 50px 0;
+          text-align: center;
+
+          @include mq("mobile") {
+            margin: 10px 0 40px;
+          }
+
+          strong {
+            color: #FFF;
+            font-size: 2.2rem;
+
+            @include mq("mobile") {
+              font-size: 1.4rem;
+            }
+          }
+
+          p {
+            margin-top: 20px;
+            color: #FFF;
+            font-size: 1.6rem;
+            line-height: 1.8;
+            text-align: center;
+
+            @include mq("tablet") {
+              font-size: 1.2rem;
+            }
+            @include mq("mobile") {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.aipx {
+  @include layout();
+  @include titleStyle();
+
+  padding-bottom: 220px;
+
+  @include mq("tablet") {
+    margin-bottom: 100px;
+  }
+
+  &-content {
+    margin-top: 100px;
+    width: 100%;
+
+    @include mq("tablet") {
+      margin-top: 80px;
+      padding: 0 30px;
+    }
+    @include mq("mobile") {
+      margin-top: 30px;
+    }
+
+    &-img {
+      width: 100%;
+      height: 600px;
+      background-color: #D8D8D8;
+
+      @include mq("mobile") {
+        height: 225px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &-txt {
+      width: 100%;
+      margin-top: 50px;
+
+      @include mq("mobile") {
+        margin-top: 10px;
+      }
+
+      p {
+        text-align: center;
+        font-size: 1.6rem;
+
+        @include mq("tablet") {
+          font-size: 1.2rem;
+        }
+        @include mq("mobile") {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  &-desc {
+    margin-top: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @include mq("tablet") {
+      margin-top: 80px;
+      padding: 0 30px;
+    }
+    @include mq("mobile") {
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    &-structure {
+      width: 38%;
+
+      @include mq("mobile") {
+        width: 100%;
+      }
+
+      h3 {
+        width: 100%;
+        font-size: 2.2rem;
+        text-align: center;
+        margin-bottom: 30px;
+
+        @include mq("tablet") {
+          font-size: 1.6rem;
+          margin-bottom: 20px;
+        }
+        @include mq("mobile") {
+          font-size: 1.6rem;
+          margin-bottom: 20px;
+        }
+      }
+
+      &-list {
+        width: 100%;
+        li {
+          width: 100%;
+          border-bottom: 1px solid rgba(0, 0, 0 ,.2);
+          display: flex;
+
+          .th {
+            display: block;
+            padding: 10px 0;
+            width: 40%;
+            font-size: 1.6rem;
+
+            @include mq("tablet") {
+              font-size: 1.2rem;
+            }
+            @include mq("mobile") {
+              font-size: 1.2rem;
+            }
+          }
+
+          .td {
+            padding: 10px 0;
+            display: block;
+            width: 60%;
+            font-size: 1.6rem;
+
+            @include mq("tablet") {
+              font-size: 1.2rem;
+            }
+            @include mq("mobile") {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+
+    &-graph {
+      width: 54%;
+
+      @include mq("mobile") {
+        width: 100%;
+      }
+
+      h3 {
+        width: 100%;
+        font-size: 2.2rem;
+        text-align: center;
+        margin-bottom: 30px;
+
+        @include mq("tablet") {
+          font-size: 1.6rem;
+          margin-bottom: 20px;
+        }
+        @include mq("mobile") {
+          font-size: 1.6rem;
+          margin-bottom: 20px;
+          margin-top: 30px;
+        }
+      }
+
+      &-img {
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.paper {
+  &-wrap {
+    width: 100%;
+    position: relative;
+  }
+
+  position: absolute;
+  padding-top: 80px;
+  left: 50%;
+  top: 0;
+  width: 450px;
+  margin-left: -225px;
+  background-color: #FFF;
+
+  @include mq("mobile") {
+    padding-top: 40px;
+    width: 230px;
+    margin-left: -115px;
+  }
+
+  @include titleStyle();
+
+  &-link {
+    margin-top: 130px;
+
+    @include mq("mobile") {
+      margin-top: 60px;
+    }
+
+    a {
+      display: block;
+      width: 100%;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 1.6rem;
+      color: $black3;
+
+      @include mq("mobile") {
+        padding: 10px 0;
+        font-size: 1.4rem;
+      }
+
+      &:hover {
+        color: #000;
+      }
+    }
+
+    a + a {
+      border-top: 1px solid $black2;
+    }
+  }
+
+}
+
+.roadmap {
+  &-wrap {
+    background-color: #000;
+  }
+
+  @include layout();
+  @include titleStyle(#FFF);
+
+  padding-top: 650px;
+
+  @include mq("tablet") {
+    padding-top: 650px;
+  }
+  @include mq("mobile") {
+    padding-top: 350px;
+  }
+
+  &-img {
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+    background: url("../../images/roadmap1.png") no-repeat center center;
+
+    @include mq("tablet") {
+      margin: 50px auto 0;
+      width: 559px;
+      background-size: 559px;
+
+      img {
+        width: 100%;
+      }
+    }
+    @include mq("mobile") {
+      margin-top: 30px;
+      background-size: 290px;
+
+      img {
+        width: 290px;
+      }
+    }
+  }
+}
+
+.team {
+  @include layout();
+  @include titleStyle();
+
+  &-desc {
+    width: 100%;
+    margin-top: 20px;
+
+    @include mq("mobile") {
+      margin-top: 0;
+    }
+
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      @include mq("tablet") {
+        padding: 0 50px;
+      }
+
+      li {
+        margin-top: 80px;
+        width: 21%;
+
+        @include mq("tablet") {
+          width: 30%;
+        }
+        @include mq("mobile") {
+          margin-top: 30px;
+          width: 48%;
+        }
+
+        .img-box {
+          width: 100%;
+          background-color: #CCC;
+
+          img {
+            width: 100%;
+            display: block;
+          }
+        }
+
+        .txt-box {
+          margin-top: 10px;
+          width: 100%;
+          text-align: center;
+
+          strong {
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 1.8;
+            display: block;
+
+            @include mq("mobile") {
+              font-size: 1.4rem;
+            }
+          }
+
+          em {
+            font-size: 1.4rem;
+            line-height: 1.8;
+
+            @include mq("mobile") {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.media {
+  @include layout();
+  @include titleStyle();
+
+  &-list {
+    width: 100%;
+    margin-top: 20px;
+
+    @include mq("mobile") {
+      margin-top: 0;
+    }
+
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      @include mq("tablet") {
+        padding: 0 50px;
+      }
+
+      li {
+        margin-top: 80px;
+        width: 48%;
+
+        @include mq("mobile") {
+          width: 100%;
+        }
+
+        .img-box {
+          width: 100%;
+          background-color: #CCC;
+
+          img {
+            width: 100%;
+            display: block;
+          }
+        }
+
+        .txt-box {
+          margin-top: 10px;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .left {
+            width: 80%;
+
+            strong {
+              font-size: 1.6rem;
+              font-weight: 700;
+              line-height: 1.6;
+
+              @include mq("mobile") {
+                font-size: 1.4rem;
+              }
+            }
+          }
+
+          .right {
+            width: 20%;
+            text-align: right;
+
+            .date,
+            .name {
+              font-size: 1.4rem;
+              line-height: 1.8;
+              display: block;
+
+              @include mq("mobile") {
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.faq {
+  @include layout();
+  @include titleStyle();
+  padding-bottom: 200px;
+
+  @include mq("tablet") {
+    padding-bottom: 100px;
+  }
+  @include mq("mobile") {
+    padding-bottom: 60px;
+  }
+
+  &-list {
+    width: 100%;
+
+    @include mq("mobile") {
+      margin-top: 30px;
+    }
+
+    ul {
+      width: 100%;
+
+      @include mq("tablet") {
+        padding: 0 50px;
+      }
+
+      li {
+        width: 100%;
+        border-bottom: 0.5px solid rgba(0, 0, 0, .2);
+
+        a {
+          display: block;
+          width: 100%;
+          padding: 30px 20px 30px 30px;
+          font-size: 1.6rem;
+          position: relative;
+          background: url("../../images/down_black.png") no-repeat right center / 12px;
+
+          @include mq("mobile") {
+            padding: 20px;
+            font-size: 1.2rem;
+          }
+
+          &::before {
+            content: "Q.";
+            display: block;
+            position: absolute;
+            left: 0;
+          }
+
+          &.active {
+            background-image: url("../../images/up_black.png");
+          }
+        }
+
+        .desc {
+          display: none;
+          width: 100%;
+          padding-bottom: 30px;
+
+          p {
+            font-size: 1.4rem;
+
+            @include mq("mobile") {
+              font-size: 1.2rem;
+            }
+          }
+
+          &.active {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+//------------------------------------------------------------------------------
+//
+// FOOTER
+//
+//------------------------------------------------------------------------------
+.footer {
+  &-wrap {
+    background-color: #000;
+  }
+
+  @include layout();
+  padding-top: 150px;
+  position: relative;
+
+  @include mq("tablet") {
+    padding-top: 50px;
+  }
+  @include mq("mobile") {
+    padding-top: 50px;
+  }
+
+  &-sns {
+    width: 540px;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    margin-left: -270px;
+    display: flex;
+    justify-content: space-between;
+
+    @include mq("tablet") {
+      width: 340px;
+      margin-left: -170px;
+      top: -25px;
+    }
+    @include mq("mobile") {
+      width: 200px;
+      margin-left: -100px;
+      top: -15px;
+    }
+
+    a {
+      display: block;
+      width: 80px;
+      height: 80px;
+      background-color: #000;
+      border: 2px solid #FFF;
+      border-radius: 40px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 60%;
+
+      @include mq("tablet") {
+        width: 50px;
+        height: 50px;
+      }
+      @include mq("mobile") {
+        width: 30px;
+        height: 30px;
+      }
+
+      &.ico-tele {
+        background-image: url("../../images/ico_telegram.png");
+      }
+
+      &.ico-medium {
+        background-image: url("../../images/ico_medium.png");
+      }
+
+      &.ico-twitter {
+        background-image: url("../../images/ico_twitter.png");
+      }
+
+      &.ico-face {
+        background-image: url("../../images/ico_facebook.png");
+      }
+
+      &.ico-kakaco {
+        background-image: url("../../images/ico_kakao.png");
+      }
+    }
+  }
+
+  &-copy {
+    width: 100%;
+    p {
+      color: #FFF;
+      font-size: 1.6rem;
+
+      @include mq("tablet") {
+        font-size: 1.2rem;
+        padding-left: 4%;
+      }
+      @include mq("mobile") {
+        font-size: 1.2rem;
+        padding-left: 4%;
+      }
+    }
+  }
+}
+
+.nav {
+  li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .menu-list {
+    position: relative;
+    cursor: pointer;
+    padding: 20px 15px;
+    transition: color .5s;
+    -webkit-transition: color .5s;
+    font-weight: bold;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 3px;
+      background-color: #00aeff;
+      opacity: 0;
+      @include trs3s;
+    }
+    &:hover {
+      color: #00aeff;
+      &:after {
+        width: 100%;
+        opacity: 1;
+        @include trs3s;
+      }
+    }
+  }
+}
+.lan-wrap {
+  display: inline-block;
+  .lan-btn {
+    position: relative;
+    &:after {
+      position: absolute;
+      top: 3px;
+      right: 8px;
+      content: '';
+      width: 24px;
+      height: 24px;
+      background: url(../../images/bt_drop@2x.png) center center no-repeat;
+      background-size: cover;
+      @include trs4s;
+      @include trsOriginCenter;
+    }
+    &.active {
+      &:after {
+        top: 5px;
+        @include arrowRotate;
+      }
+    }
+  }
+  .lan-list {
+    border: 1px solid #E9E9E9;
+    width: 100px;
+    padding: 12px 12px;
+    height: 0;
+    opacity: 0.4;
+    @include trs4s;
+    @include trsOriginTop;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #2C2C2C;
+    &.active {
+      max-height: 110px;
+      height: 110px;
+      opacity: 1;
+    }
+  }
+}
+@keyframes letter-glow{
+  0% {
+    opacity:0;
+    //text-shadow:0 0 1px rgba(255,255,255,0.1)
+  }
+  66% {
+    opacity:1;
+    //text-shadow:0 0 20px rgba(255,255,255,0.9)
+  }
+  77% {
+    opacity:1
+  }
+  100% {
+    opacity:1;
+    //text-shadow:0 0 20px rgba(255,255,255,0)
+  }
+}
+.section-wrap {
+  & > div {
+    height: 1000px;
+  }
+  .section1 {
+    .title {
+      font-size: 40px;
+      font-weight: bold;
+      span {
+        opacity: 0;
+      }
+      &.active {
+        span {
+          text-shadow: 0 0 1px rgba(255,255,255,0.1);
+          animation: letter-glow .4s 0s ease both;
+          animation-fill-mode: forwards;
+        }
+        span:nth-child(1) {
+          animation-delay: 1.42s;
+        }
+        span:nth-child(2) {
+          animation-delay: 1.42s;
+        }
+        span:nth-child(3) {
+          animation-delay: 1.42s;
+        }
+        span:nth-child(4) {
+          animation-delay: 1.42s;
+        }
+        span:nth-child(5) {
+          animation-delay: 1.42s;
+        }
+        span:nth-child(6) {
+          animation-delay: 1.42s;
+        }
+        span:nth-child(7) {
+          animation-delay: 1.42s;
+        }
+        span:nth-child(8) {
+          animation-delay: 1.42s;
+        }
+        span:nth-child(9) {
+          animation-delay: 1.42s;
+        }
+        span:nth-child(10) {
+          animation-delay: 1.42s;
+        }
+        span:nth-child(11) {
+          animation-delay: 1.42s;
+        }
+        span:nth-child(12) {
+          animation-delay: 1.42s;
+        }
+        span:nth-child(13) {
+          animation-delay: 1.42s;
+        }
+        span:nth-child(14) {
+          animation-delay: 1.42s;
+        }
+        span:nth-child(15) {
+          animation-delay: 1.42s;
+        }
+        span:nth-child(16) {
+          animation-delay: 1.42s;
+        }
+        span:nth-child(17) {
+          animation-delay: 1.42s;
+        }
+        span:nth-child(18) {
+          animation-delay: 1.42s;
+        }
+        span:nth-child(19) {
+          animation-delay: 1.42s;
+        }
+        span:nth-child(20) {
+          animation-delay: 1.42s;
+        }
+        span:nth-child(21) {
+          animation-delay: 1.42s;
+        }
+        span:nth-child(22) {
+          animation-delay: 1.42s;
+        }
+        span:nth-child(23) {
+          animation-delay: 1.42s;
+        }
+        span:nth-child(24) {
+          animation-delay: 1.42s;
+        }
+        span:nth-child(25) {
+          animation-delay: 1.42s;
+        }
+        span:nth-child(26) {
+          animation-delay: 1.42s;
+        }
+      }
+    }
+  }
+  .section2 {
+    .title {
+      margin-bottom: 100px;
+      font-size: 34px;
+      color: #2C2C2C;
+      letter-spacing: -0.4px;
+      line-height: 34px;
+      font-weight: 700;
+      text-align: center;
+      opacity: 0;
+      @include trsX0Y100;
+      &.active {
+        @include trsX0Y0;
+        @include trsOp6s;
+        opacity: 1;
+      }
+    }
+    .wrap {
+      display: flex;
+      align-items: center;
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: #999;
+        opacity: 0;
+        @include trsX-100Y0;
+      }
+      .text {
+        width: calc(100% - 200px - 100px);
+        padding-left: 100px;
+        opacity: 0;
+        @include trsX100Y0;
+      }
+      &.active {
+        .box {
+          @include trsX0Y0;
+          @include trsOp6s;
+          opacity: 1;
+          @include trsDel2s;
+        }
+        .text {
+          @include trsX0Y0;
+          @include trsOp6s;
+          opacity: 1;
+          @include trsDel2s;
+        }
+      }
+    }
+  }
+  .btn {
+    position: relative;
+    display: block;
+    width: 66px;
+    height: 34px;
+    line-height: 34px;
+    background-color: #fff;
+    border: 1px solid #BDBBBB;
+    cursor: pointer;
+    text-align: center;
+    @include trs5s;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0;
+      background-color: #2C2C2C;
+      @include trs3s;
+      color: #ffffff;
+    }
+    &:hover {
+      border: 1px solid #2C2C2C;
+      color: #fff;
+      z-index: 9999;
+      &:before {
+        opacity: 1;
+        width: 100%;
+        color: #ffffff;
+      }
+    }
+    span {
+      z-index: 2;
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .slide-wrap {
+    .slick-slider {
+      position: relative;
+    }
+    & > div {
+      width: 100%;
+      .slick-slide {
+        display: flex;
+        justify-content: center;
+        float: left;
+        &:nth-child(2) {
+          span {
+            background-color: bisque;
+          }
+        }
+        &:nth-child(3) {
+          span {
+            background-color: cadetblue;
+          }
+        }
+      }
+      span {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+        background-color: #999;
+      }
+    }
+    .slick-arrow {
+      border: 0;
+      color: inherit;
+      /* cursor: default; */
+      font: inherit;
+      line-height: normal;
+      overflow: visible;
+      padding: 0;
+      -webkit-appearance: button; /* for input */
+      -webkit-user-select: none; /* for button */
+      -moz-user-select: none;
+      -ms-user-select: none;
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      font-size: 0;
+      background-color: coral;
+      z-index: 9;
+      &.slick-next {
+        right: 10%;
+      }
+      &.slick-prev {
+        left: 10%;
+      }
+    }
+    .slick-dots {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+      padding: 0;
+      li {
+        display: inline-block;
+        list-style: none;
+        width: 8px;
+        height: 8px;
+        margin-right: 10px;
+        border: 1px solid #000;
+        border-radius: 50%;
+        background-color: #fff;
+        &.slick-active {
+          background-color: #999;
+        }
+      }
+      button {
+        display: none;
+      }
+    }
+  }
+  .section5 {
+    .accordion {
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
+    }
+    .panel {
+      padding: 0 18px;
+      background-color: white;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      &.active {
+        max-height: 100px;
+      }
+    }
+  }
+}
