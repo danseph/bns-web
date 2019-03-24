@@ -272,7 +272,7 @@
 
       &.lang {
         padding-right: 20px;
-        //background: url("../../images/down_grey.png") no-repeat right center / 12px; // jonny
+        //background: url("../../images/down_grey.png") no-repeat right center / 12px; // hailey
         @include trs3s; // jonny
         &:after {
           position: absolute;
@@ -305,7 +305,6 @@
             color: #000;
           }
         }
-
       }
     }
 
@@ -313,15 +312,16 @@
       //display: none; // hailey
       width: 130px;
       background-color: #000;
-      border: 1px solid $white2;
+      //border: 1px solid $white2; // hailey
       position: absolute;
-      right: 20px;
+      right: 19px;
       top: 70px; // jonny
       // jonny
       height: 0;
       opacity: 0;
       @include trs4s;
       @include trsOriginTop;
+      overflow: hidden;
       // jonny end
 
       @include mq("tablet") {
@@ -336,9 +336,11 @@
 
       &.active {
         // jonny
+        border: 1px solid $white2; //jonny
         opacity: 1;
         max-height: 163px;
         height: 163px;
+        overflow: visible;
         // jonny end
         //display: block; // hailey
       }
@@ -1010,14 +1012,47 @@
   &-desc {
     width: 100%;
     margin-top: 20px;
-
+    overflow: hidden; // jonny
+    opacity: 0; // jonny
+    @include trsX0Y100; // jonny
+    // jonny
+    .slick-slider{
+      .slick-slide {
+        float: left;
+      }
+      .slick-dots {
+        justify-content: center;
+        li {
+          width: auto;
+          button {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            padding: 0;
+            margin: 0 3px;
+            border: none;
+            background: transparent;
+            font-size: 0;
+            border: 1px solid #000;
+            border-radius: 50%;
+            list-style: none;
+          }
+          &.slick-active {
+            button {
+              background-color: #000;
+            }
+          }
+        }
+      }
+    }
+    // jonny end
     @include mq("mobile") {
       margin-top: 0;
     }
 
     ul {
       width: 100%;
-      display: flex;
+      display: flex !important;
       justify-content: space-between;
       flex-wrap: wrap;
 
@@ -1073,6 +1108,11 @@
           }
         }
       }
+    }
+    &.active {
+      @include trsX0Y0;
+      @include trsOp6s;
+      opacity: 1;
     }
   }
 }
@@ -1196,8 +1236,26 @@
           padding: 30px 20px 30px 30px;
           font-size: 1.6rem;
           position: relative;
-          background: url("../../images/down_black.png") no-repeat right center / 12px;
-
+          //background: url("../../images/down_black.png") no-repeat right center / 12px; // hailey
+          // jonny
+          &:after {
+            position: absolute;
+            top: 33px;
+            right: 0;
+            content: '';
+            width: 12px;
+            height: 12px;
+            background: url("../../images/down_black.png") no-repeat right center / contain; // jonny
+            @include trs3s;
+            @include trsOriginCenter;
+          }
+          &.active { // jonny
+            &:after {
+              top: 33px;
+              @include arrowRotate;
+            }
+          } // jonny
+          // jonny end
           @include mq("mobile") {
             padding: 20px;
             font-size: 1.2rem;
@@ -1210,16 +1268,19 @@
             left: 0;
           }
 
-          &.active {
-            background-image: url("../../images/up_black.png");
-          }
+          // hailey
+          //&.active {
+          //  background-image: url("../../images/up_black.png");
+          //}
+          // hailey end
         }
 
         .desc {
-          display: none;
+          //display: none; // hailey
+          height: 0;
+          opacity: 0;
           width: 100%;
-          padding-bottom: 30px;
-
+          @include trs3s;
           p {
             font-size: 1.4rem;
 
@@ -1229,7 +1290,9 @@
           }
 
           &.active {
-            display: block;
+            height: 62px;
+            opacity: 1;
+            //display: block; // hailey
           }
         }
       }

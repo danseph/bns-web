@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import OnePage from '../presentational/OnePage';
 import $ from 'jquery';
+import { throttle } from 'lodash';
 
 class OnePageAction extends Component {
     state = {
+        loader: true,
         activeNav: 1,
         lanShow: false,
         activePlatFormTitle: false,
@@ -12,11 +14,14 @@ class OnePageAction extends Component {
         activePlatFormContent3: false,
         activePlatFormContent4: false,
         activePlatFormContent5: false,
-        activeArticle2: false,
-        activeArticle3: false,
+        activeTechniqueTitle: false,
+        activeTeamTitle: false,
+        activeTeamList: false,
+        activeMediaTitle: false,
+        activeAipxTitle: false,
+        activePaperTitle: false,
         activeLanBtn: false,
         typeFaq: 0,
-        loader: true,
         defaultLang: window.localStorage['trans'] || "ko",
     };
 
@@ -78,6 +83,67 @@ class OnePageAction extends Component {
         },
     ];
 
+    team1 = [
+        {
+            name: 'name',
+            position: 'position',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'ico_telegram.png',
+            ref: 'ref'
+        },
+        {
+            name: 'name',
+            position: 'position',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'ico_telegram.png'
+        },
+        {
+            name: 'name',
+            position: 'position',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'ico_telegram.png'
+        },
+        {
+            name: 'name',
+            position: 'position',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'ico_telegram.png'
+        },
+        {
+            name: 'name',
+            position: 'position',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'ico_telegram.png',
+            ref: 'ref'
+        },
+        {
+            name: 'name',
+            position: 'position',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'ico_telegram.png'
+        },
+        {
+            name: 'name',
+            position: 'position',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'ico_telegram.png'
+        },
+        {
+            name: 'name',
+            position: 'position',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'ico_telegram.png'
+        },
+    ];
+
     componentDidMount() {
         setTimeout(() => {
             return (
@@ -93,6 +159,12 @@ class OnePageAction extends Component {
         window.addEventListener('scroll', this._handlePlatFormContent3Active);
         window.addEventListener('scroll', this._handlePlatFormContent4Active);
         window.addEventListener('scroll', this._handlePlatFormContent5Active);
+        window.addEventListener('scroll', this._handleTechniqueTitleActive);
+        window.addEventListener('scroll', this._handleTeamTitleActive);
+        window.addEventListener('scroll', this._handleTeamListActive);
+        window.addEventListener('scroll', this._handleMediaTitleActive);
+        window.addEventListener('scroll', this._handleAipxTitleActive);
+        window.addEventListener('scroll', this._handlePaperTitleActive);
     }
 
     render() {
@@ -101,6 +173,7 @@ class OnePageAction extends Component {
                 {...this.state}
                 nav={this.nav}
                 lan={this.lan}
+                team1={this.team1}
                 title={this.title}
                 platFormTitle={this.platFormTitle}
                 platFormContent1={this.platFormContent1}
@@ -108,10 +181,16 @@ class OnePageAction extends Component {
                 platFormContent3={this.platFormContent3}
                 platFormContent4={this.platFormContent4}
                 platFormContent5={this.platFormContent5}
+                techniqueTitle={this.techniqueTitle}
+                aipxTitle={this.aipxTitle}
+                paperTitle={this.paperTitle}
+                teamTitle={this.teamTitle}
+                teamList={this.teamList}
+                mediaTitle={this.mediaTitle}
                 handleRefresh={this._handleRefresh}
                 handleSectionMove={this._handleSectionMove}
                 handleLanBtn={this._handleLanBtn}
-                handleAccordion={this._handleAccordion}
+                handleActiveFaq={this._handleActiveFaq}
                 handleLanShow={this._handleLanShow}
                 handleLanHide={this._handleLanHide}
                 handleLanChoice={this._handleLanChoice}
@@ -130,12 +209,20 @@ class OnePageAction extends Component {
                 this.setState({
                     loader: false,
                     activeNav: 1,
+                    lanShow: false,
                     activePlatFormTitle: false,
                     activePlatFormContent1: false,
                     activePlatFormContent2: false,
                     activePlatFormContent3: false,
                     activePlatFormContent4: false,
                     activePlatFormContent5: false,
+                    activeTechniqueTitle: false,
+                    activeTeamTitle: false,
+                    activeMediaTitle: false,
+                    activeAipxTitle: false,
+                    activePaperTitle: false,
+                    activeLanBtn: false,
+                    typeFaq: 0,
                 })
             )
         }, 800);
@@ -157,7 +244,7 @@ class OnePageAction extends Component {
         this.setState({
             lanShow: false
         })
-    }
+    };
 
     _handleLanChoice = (e) => {
         const language = {
@@ -178,14 +265,21 @@ class OnePageAction extends Component {
             return (
                 this.setState({
                     loader: false,
-                    lanShow: false,
                     activeNav: 1,
+                    lanShow: false,
                     activePlatFormTitle: false,
                     activePlatFormContent1: false,
                     activePlatFormContent2: false,
                     activePlatFormContent3: false,
                     activePlatFormContent4: false,
                     activePlatFormContent5: false,
+                    activeTechniqueTitle: false,
+                    activeTeamTitle: false,
+                    activeMediaTitle: false,
+                    activeAipxTitle: false,
+                    activePaperTitle: false,
+                    activeLanBtn: false,
+                    typeFaq: 0,
                 })
             )
         }, 800);
@@ -214,7 +308,7 @@ class OnePageAction extends Component {
     };
 
     platFormTitle = React.createRef();
-    _handlePlatFormTitleActive = () => {
+    _handlePlatFormTitleActive = throttle(() => {
         if(!this.state.loader) {
             const rect = this.platFormTitle.current.getBoundingClientRect();
             const { top, bottom, height } = rect;
@@ -224,10 +318,10 @@ class OnePageAction extends Component {
                 });
             }
         }
-    };
+    }, 1000);
 
     platFormContent1 = React.createRef();
-    _handlePlatFormContent1Active = () => {
+    _handlePlatFormContent1Active = throttle(() => {
         if(!this.state.loader) {
             const rect = this.platFormContent1.current.getBoundingClientRect();
             const { top, bottom, height } = rect;
@@ -237,10 +331,10 @@ class OnePageAction extends Component {
                 });
             }
         }
-    };
+    }, 1000);
 
     platFormContent2 = React.createRef();
-    _handlePlatFormContent2Active = () => {
+    _handlePlatFormContent2Active = throttle(() => {
         if(!this.state.loader) {
             const rect = this.platFormContent2.current.getBoundingClientRect();
             const { top, bottom, height } = rect;
@@ -250,10 +344,10 @@ class OnePageAction extends Component {
                 });
             }
         }
-    };
+    }, 1000);
 
     platFormContent3 = React.createRef();
-    _handlePlatFormContent3Active = () => {
+    _handlePlatFormContent3Active = throttle(() => {
         if(!this.state.loader) {
             const rect = this.platFormContent3.current.getBoundingClientRect();
             const { top, bottom, height } = rect;
@@ -263,10 +357,10 @@ class OnePageAction extends Component {
                 });
             }
         }
-    };
+    }, 1000);
 
     platFormContent4 = React.createRef();
-    _handlePlatFormContent4Active = () => {
+    _handlePlatFormContent4Active = throttle(() => {
         if(!this.state.loader) {
             const rect = this.platFormContent4.current.getBoundingClientRect();
             const { top, bottom, height } = rect;
@@ -276,10 +370,10 @@ class OnePageAction extends Component {
                 });
             }
         }
-    };
+    }, 1000);
 
     platFormContent5 = React.createRef();
-    _handlePlatFormContent5Active = () => {
+    _handlePlatFormContent5Active = throttle(() => {
         if(!this.state.loader) {
             const rect = this.platFormContent5.current.getBoundingClientRect();
             const { top, bottom, height } = rect;
@@ -288,6 +382,96 @@ class OnePageAction extends Component {
                     activePlatFormContent5: true
                 });
             }
+        }
+    }, 1000);
+
+    aipxTitle = React.createRef();
+    _handleAipxTitleActive = throttle(() => {
+        if(!this.state.loader) {
+            const rect = this.aipxTitle.current.getBoundingClientRect();
+            const { top, bottom, height } = rect;
+            if (top + 100 < window.innerHeight && bottom >= 0 && top > -1 * height) {
+                this.setState({
+                    activeAipxTitle: true
+                });
+            }
+        }
+    }, 1000);
+
+    techniqueTitle = React.createRef();
+    _handleTechniqueTitleActive = throttle(() => {
+        if(!this.state.loader) {
+            const rect = this.techniqueTitle.current.getBoundingClientRect();
+            const { top, bottom, height } = rect;
+            if (top + 100 < window.innerHeight && bottom >= 0 && top > -1 * height) {
+                this.setState({
+                    activeTechniqueTitle: true
+                });
+            }
+        }
+    }, 1000);
+
+    paperTitle = React.createRef();
+    _handlePaperTitleActive = throttle(() => {
+        if(!this.state.loader) {
+            const rect = this.paperTitle.current.getBoundingClientRect();
+            const { top, bottom, height } = rect;
+            if (top + 100 < window.innerHeight && bottom >= 0 && top > -1 * height) {
+                this.setState({
+                    activePaperTitle: true
+                });
+            }
+        }
+    }, 1000);
+
+    teamTitle = React.createRef();
+    _handleTeamTitleActive = throttle(() => {
+        if(!this.state.loader) {
+            const rect = this.teamTitle.current.getBoundingClientRect();
+            const { top, bottom, height } = rect;
+            if (top + 100 < window.innerHeight && bottom >= 0 && top > -1 * height) {
+                this.setState({
+                    activeTeamTitle: true
+                });
+            }
+        }
+    }, 1000);
+
+    teamList = React.createRef();
+    _handleTeamListActive = throttle(() => {
+        if(!this.state.loader) {
+            const rect = this.teamList.current.getBoundingClientRect();
+            const { top, bottom, height } = rect;
+            if (top + 100 < window.innerHeight && bottom >= 0 && top > -1 * height) {
+                this.setState({
+                    activeTeamList: true
+                });
+            }
+        }
+    }, 1000);
+
+    mediaTitle = React.createRef();
+    _handleMediaTitleActive = throttle(() => {
+        if(!this.state.loader) {
+            const rect = this.mediaTitle.current.getBoundingClientRect();
+            const { top, bottom, height } = rect;
+            if (top + 100 < window.innerHeight && bottom >= 0 && top > -1 * height) {
+                this.setState({
+                    activeMediaTitle: true
+                });
+            }
+        }
+    }, 1000);
+
+    _handleActiveFaq= (type) => {
+        if(this.state.typeFaq === type) {
+            this.setState({
+                typeFaq: 0,
+            })
+        } else {
+            this.setState({
+                typeFaq: type,
+            })
         }
     };
 
@@ -301,19 +485,7 @@ class OnePageAction extends Component {
                 activeLanBtn: false
             });
         }
-    }
-
-    _handleAccordion = (type) => {
-        if(this.state.typeFaq === type) {
-            this.setState({
-                typeFaq: 0,
-            })
-        } else {
-            this.setState({
-                typeFaq: type,
-            })
-        }
-    }
+    };
 }
 
 export default OnePageAction;

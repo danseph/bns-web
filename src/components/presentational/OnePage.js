@@ -230,7 +230,7 @@ const OnePage = (props) => {
                             {/* TECHNIQUE, SOLUTION */}
                             <div className="tech-wrap">
                                 <section className="tech">
-                                    <div className="tech-title">
+                                    <div className={`tech-title ${props.activeTechniqueTitle ? "active" : ""}`} ref={props.techniqueTitle}>
                                         <h2>AI Technique</h2>
                                     </div>
                                     <div className="tech-content">
@@ -271,7 +271,7 @@ const OnePage = (props) => {
 
                             {/* AIPX */}
                             <section className="aipx">
-                                <div className="aipx-title">
+                                <div className={`aipx-title ${props.activeAipxTitle ? "active" : ""}`} ref={props.aipxTitle}>
                                     <h2>AIPX</h2>
                                 </div>
                                 <div className="aipx-content">
@@ -339,7 +339,7 @@ const OnePage = (props) => {
                             {/* WHITEPAPER */}
                             <div className="paper-wrap" id="section20">
                                 <section className="paper">
-                                    <div className="paper-title">
+                                    <div className={`paper-title ${props.activePaperTitle ? "active" : ""}`} ref={props.paperTitle}>
                                         <h2>Whitepaper</h2>
                                     </div>
                                     <div className="paper-link">
@@ -367,85 +367,43 @@ const OnePage = (props) => {
 
                             {/* TEAM */}
                             <section className="team" id="section5">
-                                <div className="team-title">
+                                <div className={`team-title ${props.activeTeamTitle ? "active" : ""}`} ref={props.teamTitle}>
                                     <h2>Team</h2>
                                 </div>
-                                <div className="team-desc">
+                                <div className={`team-desc ${props.activeTeamList ? "active" : ""}`} ref={props.teamList}>
                                     <div className="team-desc-list">
-                                        <ul>
-                                            <li>
-                                                <div className="img-box">
-                                                    <img src={require("../../images/ico_telegram.png")}/>
-                                                </div>
-                                                <div className="txt-box">
-                                                    <strong>Richard</strong>
-                                                    <em>CED</em>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div className="img-box">
-                                                    <img src={require("../../images/ico_telegram.png")}/>
-                                                </div>
-                                                <div className="txt-box">
-                                                    <strong>Richard</strong>
-                                                    <em>CED</em>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div className="img-box">
-                                                    <img src={require("../../images/ico_telegram.png")}/>
-                                                </div>
-                                                <div className="txt-box">
-                                                    <strong>Richard</strong>
-                                                    <em>CED</em>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div className="img-box">
-                                                    <img src={require("../../images/ico_telegram.png")}/>
-                                                </div>
-                                                <div className="txt-box">
-                                                    <strong>Richard</strong>
-                                                    <em>CED</em>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div className="img-box">
-                                                    <img src={require("../../images/ico_telegram.png")}/>
-                                                </div>
-                                                <div className="txt-box">
-                                                    <strong>Richard</strong>
-                                                    <em>CED</em>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div className="img-box">
-                                                    <img src={require("../../images/ico_telegram.png")}/>
-                                                </div>
-                                                <div className="txt-box">
-                                                    <strong>Richard</strong>
-                                                    <em>CED</em>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div className="img-box">
-                                                    <img src={require("../../images/ico_telegram.png")}/>
-                                                </div>
-                                                <div className="txt-box">
-                                                    <strong>Richard</strong>
-                                                    <em>CED</em>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div className="img-box">
-                                                    <img src={require("../../images/ico_telegram.png")}/>
-                                                </div>
-                                                <div className="txt-box">
-                                                    <strong>Richard</strong>
-                                                    <em>CED</em>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                        <Slider {...settings} classNames="test">
+                                            <ul>
+                                                {props.team1.map((item, i) => {
+                                                    return (
+                                                        <li key={i}>
+                                                            <div className={item.className}>
+                                                                <img src={require(`../../images/${item.image}`)} />
+                                                            </div>
+                                                            <div className={item.className2}>
+                                                                <strong>{item.name}</strong>
+                                                                <em>{item.position}</em>
+                                                            </div>
+                                                        </li>
+                                                    )
+                                                })}
+                                            </ul>
+                                            <ul>
+                                                {props.team1.map((item, i) => {
+                                                    return (
+                                                        <li key={i}>
+                                                            <div className={item.className}>
+                                                                <img src={require(`../../images/${item.image}`)} />
+                                                            </div>
+                                                            <div className={item.className2}>
+                                                                <strong>{item.name}</strong>
+                                                                <em>{item.position}</em>
+                                                            </div>
+                                                        </li>
+                                                    )
+                                                })}
+                                            </ul>
+                                        </Slider>
                                     </div>
                                     <div className="team-desc-paging">
                                         {/* 페이징은 여기 */}
@@ -456,7 +414,7 @@ const OnePage = (props) => {
 
                             {/* MEDIA */}
                             <section className="media" id="section6">
-                                <div className="media-title">
+                                <div className={`media-title ${props.activeMediaTitle ? "active" : ""}`} ref={props.mediaTitle}>
                                     <h2>Media</h2>
                                 </div>
                                 <div className="media-list">
@@ -542,23 +500,23 @@ const OnePage = (props) => {
                                 </div>
                                 <div className="faq-list">
                                     <ul>
-                                        <li>
-                                            <a href="javascript:void(0)" className="active">AIPE에 대해 더 알 수 있는 방법이 있나요?</a>
-                                            <div className="desc active">
+                                        <li onClick={() => props.handleActiveFaq(1)}>
+                                            <a href="javascript:void(0)" className={props.typeFaq === 1 ? "active" : ""}>AIPE에 대해 더 알 수 있는 방법이 있나요?</a>
+                                            <div className={`desc ${props.typeFaq === 1 ? "active" : ""}`}>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                                     tempor incididunt?Lorem ipsum dolor sit amet, consectetur adipisicing
                                                     elit, sed do eiusmod tempor incididunt?</p>
                                             </div>
                                         </li>
-                                        <li>
-                                            <a href="javascript:void(0)">코인 세일에 어떻게 참여하나요?</a>
-                                            <div className="desc">
+                                        <li onClick={() => props.handleActiveFaq(2)}>
+                                            <a href="javascript:void(0)" className={props.typeFaq === 2 ? "active" : ""}>코인 세일에 어떻게 참여하나요?</a>
+                                            <div className={`desc ${props.typeFaq === 2 ? "active" : ""}`}>
                                                 <p>내용</p>
                                             </div>
                                         </li>
-                                        <li>
-                                            <a href="javascript:void(0)">미국인이나 중국인이 AIPE을 구매할 수 있나요?</a>
-                                            <div className="desc">
+                                        <li onClick={() => props.handleActiveFaq(3)}>
+                                            <a href="javascript:void(0)" className={props.typeFaq === 3 ? "active" : ""}>미국인이나 중국인이 AIPE을 구매할 수 있나요?</a>
+                                            <div className={`desc ${props.typeFaq === 3 ? "active" : ""}`}>
                                                 <p>미국인은 현재 AIPE을 구매할 수 없습니다. 미국 법 적용에 따라 향후 AIPE의 구매가 가능 할 수도 있으며, 중국인도
                                                     마찬가지로 구매가 제한되어 있습니다.</p>
                                             </div>

@@ -16,11 +16,13 @@
     width: 100%;
     opacity: 0; // jonny
     @include trsX0Y100; // jonny
+    // jonny
     &.active {
       @include trsX0Y0;
       @include trsOp6s;
       opacity: 1;
     }
+    // jonny end
     h2 {
       width: 100%;
       font-size: 4rem;
