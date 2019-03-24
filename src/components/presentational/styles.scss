@@ -15,6 +15,7 @@
     top: 50%;
     transform: translateY(-50%);
     left: 50%;
+    width: 100px;
     margin-left: -100px;
   }
 }
@@ -33,6 +34,39 @@
   bottom: 0;
   left: 0;
 }
+
+// jonny
+.slick-slider{
+  overflow: hidden;
+  .slick-slide {
+    float: left;
+  }
+  .slick-dots {
+    justify-content: center;
+    li {
+      width: auto;
+      button {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        padding: 0;
+        margin: 0 3px;
+        border: none;
+        background: transparent;
+        font-size: 0;
+        border: 1px solid #000;
+        border-radius: 50%;
+        list-style: none;
+      }
+      &.slick-active {
+        button {
+          background-color: #000;
+        }
+      }
+    }
+  }
+}
+// jonny end
 
 //------------------------------------------------------------------------------
 //
@@ -1012,40 +1046,8 @@
   &-desc {
     width: 100%;
     margin-top: 20px;
-    overflow: hidden; // jonny
     opacity: 0; // jonny
     @include trsX0Y100; // jonny
-    // jonny
-    .slick-slider{
-      .slick-slide {
-        float: left;
-      }
-      .slick-dots {
-        justify-content: center;
-        li {
-          width: auto;
-          button {
-            display: inline-block;
-            width: 8px;
-            height: 8px;
-            padding: 0;
-            margin: 0 3px;
-            border: none;
-            background: transparent;
-            font-size: 0;
-            border: 1px solid #000;
-            border-radius: 50%;
-            list-style: none;
-          }
-          &.slick-active {
-            button {
-              background-color: #000;
-            }
-          }
-        }
-      }
-    }
-    // jonny end
     @include mq("mobile") {
       margin-top: 0;
     }
@@ -1124,14 +1126,15 @@
   &-list {
     width: 100%;
     margin-top: 20px;
-
+    opacity: 0; // jonny
+    @include trsX0Y100; // jonny
     @include mq("mobile") {
       margin-top: 0;
     }
 
     ul {
       width: 100%;
-      display: flex;
+      display: flex !important; // jonny
       justify-content: space-between;
       flex-wrap: wrap;
 
@@ -1195,6 +1198,11 @@
           }
         }
       }
+    }
+    &.active {
+      @include trsX0Y0;
+      @include trsOp6s;
+      opacity: 1;
     }
   }
 
@@ -1351,7 +1359,7 @@
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 60%;
-
+      @include trs3s; // jonny
       @include mq("tablet") {
         width: 50px;
         height: 50px;
@@ -1363,22 +1371,47 @@
 
       &.ico-tele {
         background-image: url("../../images/ico_telegram.png");
+        // jonny
+        &:hover {
+          background-image: url("../../images/ico_telegram_hover.png");
+        }
+        // jonny end
       }
 
       &.ico-medium {
         background-image: url("../../images/ico_medium.png");
+        // jonny
+        &:hover {
+          background-image: url("../../images/ico_medium_hover.png");
+        }
+        // jonny end
       }
 
       &.ico-twitter {
         background-image: url("../../images/ico_twitter.png");
+        // jonny
+        &:hover {
+          background-image: url("../../images/ico_twitter_hover.png");
+        }
+        // jonny end
       }
 
       &.ico-face {
         background-image: url("../../images/ico_facebook.png");
+        // jonny
+        &:hover {
+          background-image: url("../../images/ico_facebook_hover.png");
+        }
+        // jonny end
       }
 
       &.ico-kakaco {
         background-image: url("../../images/ico_kakao.png");
+        // jonny
+        &:hover {
+          background-image: url("../../images/ico_kakao_hover.png");
+        }
+        // jonny end
       }
     }
   }

@@ -18,6 +18,7 @@ class OnePageAction extends Component {
         activeTeamTitle: false,
         activeTeamList: false,
         activeMediaTitle: false,
+        activeMediaList: false,
         activeAipxTitle: false,
         activePaperTitle: false,
         activeLanBtn: false,
@@ -28,31 +29,31 @@ class OnePageAction extends Component {
     nav = [
         {
             num: 1,
-            text: 'About'
+            text: 'header-nav-about'
         },
         {
             num: 2,
-            text: 'AIPE'
+            text: 'header-nav-prediction'
         },
         {
             num: 3,
-            text: 'AIPX Coin'
+            text: 'header-nav-coin'
         },
         {
             num: 4,
-            text: 'Roadmap'
+            text: 'header-nav-roadmap'
         },
         {
             num: 5,
-            text: 'Team'
+            text: 'header-nav-team'
         },
         {
             num: 6,
-            text: 'Media'
+            text: 'header-nav-media'
         },
         {
             num: 7,
-            text: 'FAQ'
+            text: 'header-nav-faq'
         },
     ];
 
@@ -83,6 +84,136 @@ class OnePageAction extends Component {
         },
     ];
 
+    platformContent = [
+        {
+            className1: 'content1',
+            className2: 'img-box-wrap',
+            className2_1: 'img-box',
+            className3: 'txt-box',
+            image: '3piks.png',
+            image2: '3piks_bw.png',
+            text1: 'ai-prediction-3piks',
+            text2: 'ai-prediction-3piks-text',
+        },
+        {
+            className1: 'content2',
+            className2: 'img-box-wrap',
+            className2_1: 'img-box',
+            className3: 'txt-box',
+            image: 'bitbip.png',
+            image2: 'bitbip_bw.png',
+            text1: 'ai-prediction-aibitbip',
+            text2: 'ai-prediction-aibitbip-text',
+        },
+        {
+            className1: 'content3',
+            className2: 'img-box-wrap',
+            className2_1: 'img-box',
+            className3: 'txt-box',
+            image: 'trade.png',
+            image2: 'trade_bw.png',
+            text1: 'ai-prediction-aitradingbot',
+            text2: 'ai-prediction-aitradingbot-text',
+        },
+        {
+            className1: 'content4',
+            className2: 'img-box-wrap',
+            className2_1: 'img-box',
+            className3: 'txt-box',
+            image: 'platform.png',
+            image2: 'platform_bw.png',
+            text1: 'ai-prediction-aiplatform',
+            text2: 'ai-prediction-aiplatform-text',
+        },
+        {
+            className1: 'content5',
+            className2: 'img-box-wrap',
+            className2_1: 'img-box',
+            className3: 'txt-box',
+            image: 'solution.png',
+            image2: 'solution_bw.png',
+            text1: 'ai-prediction-exchange',
+            text2: 'ai-prediction-exchange-text',
+        },
+    ];
+
+    techContent = [
+        {
+            className1: 'img-box',
+            className2: 'txt-box',
+            image: 'ai01.png',
+            title: 'ai-technique-title',
+            text: 'ai-technique-text',
+        },
+        {
+            className1: 'img-box',
+            className2: 'txt-box',
+            image: 'ai02.png',
+            title: 'ai-technique-title2',
+            text: 'ai-technique-text2',
+        }
+    ];
+
+    coinStructure = [
+        {
+            className1: 'th',
+            className2: 'td',
+            text1: 'coin-structure-text-1',
+            text2: 'coin-structure-text-1-1',
+        },
+        {
+            className1: 'th',
+            className2: 'td',
+            text1: 'coin-structure-text-2',
+            text2: 'coin-structure-text-2-1',
+        },
+        {
+            className1: 'th',
+            className2: 'td',
+            text1: 'coin-structure-text-3',
+            text2: 'coin-structure-text-3-1',
+        },
+        {
+            className1: 'th',
+            className2: 'td',
+            text1: 'coin-structure-text-4',
+            text2: 'coin-structure-text-4-1',
+        },
+        {
+            className1: 'th',
+            className2: 'td',
+            text1: 'coin-structure-text-5',
+            text2: 'coin-structure-text-5-1',
+        },
+        {
+            className1: 'th',
+            className2: 'td',
+            text1: 'coin-structure-text-6',
+            text2: 'coin-structure-text-6-1',
+        },
+        {
+            className1: 'th',
+            className2: 'td',
+            text1: 'coin-structure-text-7',
+            text2: 'coin-structure-text-7-1',
+        },
+    ];
+
+    whitePaper = [
+        {
+            text: 'whitepaper-ko'
+        },
+        {
+            text: 'whitepaper-en'
+        },
+        {
+            text: 'whitepaper-zh'
+        },
+        {
+            text: 'whitepaper-ja'
+        }
+    ];
+
     team1 = [
         {
             name: 'name',
@@ -90,7 +221,6 @@ class OnePageAction extends Component {
             className: 'img-box',
             className2: 'txt-box',
             image: 'ico_telegram.png',
-            ref: 'ref'
         },
         {
             name: 'name',
@@ -119,7 +249,6 @@ class OnePageAction extends Component {
             className: 'img-box',
             className2: 'txt-box',
             image: 'ico_telegram.png',
-            ref: 'ref'
         },
         {
             name: 'name',
@@ -144,6 +273,90 @@ class OnePageAction extends Component {
         },
     ];
 
+    media1 = [
+        {
+            title: 'title',
+            date: '2019.03.22',
+            writer: 'writer',
+            className: 'img-box',
+            className2: 'txt-box',
+            className2_1: 'left',
+            className2_2: 'right',
+            className2_2_1: 'date',
+            className2_2_2: 'name',
+            image: 'ico_kakao.png'
+        },
+        {
+            title: 'title',
+            date: '2019.03.22',
+            writer: 'writer',
+            className: 'img-box',
+            className2: 'txt-box',
+            className2_1: 'left',
+            className2_2: 'right',
+            className2_2_1: 'date',
+            className2_2_2: 'name',
+            image: 'ico_kakao.png'
+        },
+        {
+            title: 'title',
+            date: '2019.03.22',
+            writer: 'writer',
+            className: 'img-box',
+            className2: 'txt-box',
+            className2_1: 'left',
+            className2_2: 'right',
+            className2_2_1: 'date',
+            className2_2_2: 'name',
+            image: 'ico_kakao.png'
+        },
+        {
+            title: 'title',
+            date: '2019.03.22',
+            writer: 'writer',
+            className: 'img-box',
+            className2: 'txt-box',
+            className2_1: 'left',
+            className2_2: 'right',
+            className2_2_1: 'date',
+            className2_2_2: 'name',
+            image: 'ico_kakao.png'
+        },
+    ];
+
+    faq = [
+        {
+            num: 1,
+            className: 'desc',
+            text1: 'faq-question-1',
+            text2: 'faq-answer-1'
+        },
+        {
+            num: 2,
+            className: 'desc',
+            text1: 'faq-question-2',
+            text2: 'faq-answer-2'
+        },
+        {
+            num: 3,
+            className: 'desc',
+            text1: 'faq-question-3',
+            text2: 'faq-answer-3'
+        },
+        {
+            num: 4,
+            className: 'desc',
+            text1: 'faq-question-4',
+            text2: 'faq-answer-4'
+        },
+        {
+            num: 5,
+            className: 'desc',
+            text1: 'faq-question-5',
+            text2: 'faq-answer-5'
+        }
+    ];
+
     componentDidMount() {
         setTimeout(() => {
             return (
@@ -163,6 +376,7 @@ class OnePageAction extends Component {
         window.addEventListener('scroll', this._handleTeamTitleActive);
         window.addEventListener('scroll', this._handleTeamListActive);
         window.addEventListener('scroll', this._handleMediaTitleActive);
+        window.addEventListener('scroll', this._handleMediaListActive);
         window.addEventListener('scroll', this._handleAipxTitleActive);
         window.addEventListener('scroll', this._handlePaperTitleActive);
     }
@@ -173,7 +387,13 @@ class OnePageAction extends Component {
                 {...this.state}
                 nav={this.nav}
                 lan={this.lan}
+                platformContent={this.platformContent}
+                techContent={this.techContent}
+                coinStructure={this.coinStructure}
+                whitePaper={this.whitePaper}
                 team1={this.team1}
+                media1={this.media1}
+                faq={this.faq}
                 title={this.title}
                 platFormTitle={this.platFormTitle}
                 platFormContent1={this.platFormContent1}
@@ -187,6 +407,7 @@ class OnePageAction extends Component {
                 teamTitle={this.teamTitle}
                 teamList={this.teamList}
                 mediaTitle={this.mediaTitle}
+                mediaList={this.mediaList}
                 handleRefresh={this._handleRefresh}
                 handleSectionMove={this._handleSectionMove}
                 handleLanBtn={this._handleLanBtn}
@@ -218,7 +439,9 @@ class OnePageAction extends Component {
                     activePlatFormContent5: false,
                     activeTechniqueTitle: false,
                     activeTeamTitle: false,
+                    activeTeamList: false,
                     activeMediaTitle: false,
+                    activeMediaList: false,
                     activeAipxTitle: false,
                     activePaperTitle: false,
                     activeLanBtn: false,
@@ -275,7 +498,9 @@ class OnePageAction extends Component {
                     activePlatFormContent5: false,
                     activeTechniqueTitle: false,
                     activeTeamTitle: false,
+                    activeTeamList: false,
                     activeMediaTitle: false,
+                    activeMediaList: false,
                     activeAipxTitle: false,
                     activePaperTitle: false,
                     activeLanBtn: false,
@@ -318,152 +543,165 @@ class OnePageAction extends Component {
                 });
             }
         }
-    }, 1000);
+    }, 200);
 
     platFormContent1 = React.createRef();
     _handlePlatFormContent1Active = throttle(() => {
         if(!this.state.loader) {
             const rect = this.platFormContent1.current.getBoundingClientRect();
             const { top, bottom, height } = rect;
-            if (top + 100 < window.innerHeight && bottom >= 0 && top > -1 * height) {
+            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
                 this.setState({
                     activePlatFormContent1: true
                 });
             }
         }
-    }, 1000);
+    }, 200);
 
     platFormContent2 = React.createRef();
     _handlePlatFormContent2Active = throttle(() => {
         if(!this.state.loader) {
             const rect = this.platFormContent2.current.getBoundingClientRect();
             const { top, bottom, height } = rect;
-            if (top + 100 < window.innerHeight && bottom >= 0 && top > -1 * height) {
+            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
                 this.setState({
                     activePlatFormContent2: true
                 });
             }
         }
-    }, 1000);
+    }, 200);
 
     platFormContent3 = React.createRef();
     _handlePlatFormContent3Active = throttle(() => {
         if(!this.state.loader) {
             const rect = this.platFormContent3.current.getBoundingClientRect();
             const { top, bottom, height } = rect;
-            if (top + 100 < window.innerHeight && bottom >= 0 && top > -1 * height) {
+            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
                 this.setState({
                     activePlatFormContent3: true
                 });
             }
         }
-    }, 1000);
+    }, 200);
 
     platFormContent4 = React.createRef();
     _handlePlatFormContent4Active = throttle(() => {
         if(!this.state.loader) {
             const rect = this.platFormContent4.current.getBoundingClientRect();
             const { top, bottom, height } = rect;
-            if (top + 100 < window.innerHeight && bottom >= 0 && top > -1 * height) {
+            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
                 this.setState({
                     activePlatFormContent4: true
                 });
             }
         }
-    }, 1000);
+    }, 200);
 
     platFormContent5 = React.createRef();
     _handlePlatFormContent5Active = throttle(() => {
         if(!this.state.loader) {
             const rect = this.platFormContent5.current.getBoundingClientRect();
             const { top, bottom, height } = rect;
-            if (top + 100 < window.innerHeight && bottom >= 0 && top > -1 * height) {
+            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
                 this.setState({
                     activePlatFormContent5: true
                 });
             }
         }
-    }, 1000);
+    }, 200);
 
     aipxTitle = React.createRef();
     _handleAipxTitleActive = throttle(() => {
         if(!this.state.loader) {
             const rect = this.aipxTitle.current.getBoundingClientRect();
             const { top, bottom, height } = rect;
-            if (top + 100 < window.innerHeight && bottom >= 0 && top > -1 * height) {
+            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
                 this.setState({
                     activeAipxTitle: true
                 });
             }
         }
-    }, 1000);
+    }, 200);
 
     techniqueTitle = React.createRef();
     _handleTechniqueTitleActive = throttle(() => {
         if(!this.state.loader) {
             const rect = this.techniqueTitle.current.getBoundingClientRect();
             const { top, bottom, height } = rect;
-            if (top + 100 < window.innerHeight && bottom >= 0 && top > -1 * height) {
+            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
                 this.setState({
                     activeTechniqueTitle: true
                 });
             }
         }
-    }, 1000);
+    }, 200);
 
     paperTitle = React.createRef();
     _handlePaperTitleActive = throttle(() => {
         if(!this.state.loader) {
             const rect = this.paperTitle.current.getBoundingClientRect();
             const { top, bottom, height } = rect;
-            if (top + 100 < window.innerHeight && bottom >= 0 && top > -1 * height) {
+            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
                 this.setState({
                     activePaperTitle: true
                 });
             }
         }
-    }, 1000);
+    }, 200);
 
     teamTitle = React.createRef();
     _handleTeamTitleActive = throttle(() => {
         if(!this.state.loader) {
             const rect = this.teamTitle.current.getBoundingClientRect();
             const { top, bottom, height } = rect;
-            if (top + 100 < window.innerHeight && bottom >= 0 && top > -1 * height) {
+            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
                 this.setState({
                     activeTeamTitle: true
                 });
             }
         }
-    }, 1000);
+    }, 200);
 
     teamList = React.createRef();
     _handleTeamListActive = throttle(() => {
         if(!this.state.loader) {
             const rect = this.teamList.current.getBoundingClientRect();
             const { top, bottom, height } = rect;
-            if (top + 100 < window.innerHeight && bottom >= 0 && top > -1 * height) {
+            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
                 this.setState({
                     activeTeamList: true
                 });
             }
         }
-    }, 1000);
+    }, 200);
 
     mediaTitle = React.createRef();
     _handleMediaTitleActive = throttle(() => {
         if(!this.state.loader) {
             const rect = this.mediaTitle.current.getBoundingClientRect();
             const { top, bottom, height } = rect;
-            if (top + 100 < window.innerHeight && bottom >= 0 && top > -1 * height) {
+            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
                 this.setState({
                     activeMediaTitle: true
                 });
             }
         }
-    }, 1000);
+    }, 200);
 
-    _handleActiveFaq= (type) => {
+    mediaList = React.createRef();
+    _handleMediaListActive = throttle(() => {
+        if(!this.state.loader) {
+            const rect = this.mediaList.current.getBoundingClientRect();
+            const { top, bottom, height } = rect;
+            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
+                this.setState({
+                    activeMediaList: true
+                });
+            }
+        }
+    }, 200);
+
+    _handleActiveFaq = (type) => {
         if(this.state.typeFaq === type) {
             this.setState({
                 typeFaq: 0,
