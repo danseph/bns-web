@@ -44,8 +44,12 @@ const OnePage = (props) => {
                                     </a>
                                 </h1>
                                 {/*메뉴 클릭하면 ((header-nav, menu-btn, header-btn)) 여기에 on 붙여주세요 */}
-                                <nav className="header-nav" onClick={props.handleLanHide}>
-                                    <a href="javascript:void(0)" className="menu-btn"/>
+                                <nav className={`header-nav ${props.activeMnav ? "on": ""}`} onClick={props.handleLanHide}>
+                                    <a href="javascript:void(0)" className={`menu-btn ${props.activeMnav ? "on": ""}`} onClick={props.handleMnvaBtn}>
+                                        <span className="bar" />
+                                        <span className="bar" />
+                                        <span className="bar" />
+                                    </a>
                                     {props.nav.map((item, i) => {
                                         return (
                                             <a href="javascript:void(0)"
@@ -63,7 +67,7 @@ const OnePage = (props) => {
                                     {/*<a href="javascript:void(0)">Team</a>*/}
                                     {/*<a href="javascript:void(0)">FAQ</a>*/}
                                 </nav>
-                                <div className="header-btn">
+                                <div className={`header-btn ${props.activeMnav ? "on": ""}`}>
                                     <a href="javascript:void(0)" onClick={() => props.handleWhitePaperMove(20)}>
                                         <FormattedMessage id="header-whitepaper" />
                                     </a>
@@ -196,7 +200,15 @@ const OnePage = (props) => {
                                         <ul>
                                             {props.techContent.map((item, i) => {
                                                 return (
-                                                    <li key={i}>
+                                                    <li key={i}
+                                                        className={
+                                                            (item.num === 1 && props.activeTechniqueContent1 ? "active" : "") ||
+                                                            (item.num === 2 && props.activeTechniqueContent2 ? "active" : "")
+                                                        }
+                                                        ref={
+                                                            (item.num === 1 && props.techniqueContent1) ||
+                                                            (item.num === 2 && props.techniqueContent2)
+                                                        }>
                                                         <div className={item.className1}>
                                                             <img src={require(`../../images/${item.image}`)}/>
                                                         </div>

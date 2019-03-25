@@ -15,6 +15,8 @@ class OnePageAction extends Component {
         activePlatFormContent4: false,
         activePlatFormContent5: false,
         activeTechniqueTitle: false,
+        activeTechniqueContent1: false,
+        activeTechniqueContent2: false,
         activeTeamTitle: false,
         activeTeamList: false,
         activeMediaTitle: false,
@@ -22,6 +24,7 @@ class OnePageAction extends Component {
         activeAipxTitle: false,
         activePaperTitle: false,
         activeLanBtn: false,
+        activeMnav: false,
         typeFaq: 0,
         defaultLang: window.localStorage['trans'] || "ko",
     };
@@ -139,6 +142,7 @@ class OnePageAction extends Component {
 
     techContent = [
         {
+            num: 1,
             className1: 'img-box',
             className2: 'txt-box',
             image: 'ai01.png',
@@ -146,6 +150,7 @@ class OnePageAction extends Component {
             text: 'ai-technique-text',
         },
         {
+            num: 2,
             className1: 'img-box',
             className2: 'txt-box',
             image: 'ai02.png',
@@ -373,6 +378,8 @@ class OnePageAction extends Component {
         window.addEventListener('scroll', this._handlePlatFormContent4Active);
         window.addEventListener('scroll', this._handlePlatFormContent5Active);
         window.addEventListener('scroll', this._handleTechniqueTitleActive);
+        window.addEventListener('scroll', this._handleTechniqueContent1Active);
+        window.addEventListener('scroll', this._handleTechniqueContent2Active);
         window.addEventListener('scroll', this._handleTeamTitleActive);
         window.addEventListener('scroll', this._handleTeamListActive);
         window.addEventListener('scroll', this._handleMediaTitleActive);
@@ -402,6 +409,8 @@ class OnePageAction extends Component {
                 platFormContent4={this.platFormContent4}
                 platFormContent5={this.platFormContent5}
                 techniqueTitle={this.techniqueTitle}
+                techniqueContent1={this.techniqueContent1}
+                techniqueContent2={this.techniqueContent2}
                 aipxTitle={this.aipxTitle}
                 paperTitle={this.paperTitle}
                 teamTitle={this.teamTitle}
@@ -416,6 +425,7 @@ class OnePageAction extends Component {
                 handleLanHide={this._handleLanHide}
                 handleLanChoice={this._handleLanChoice}
                 handleWhitePaperMove={this._handleWhitePaperMove}
+                handleMnvaBtn={this._handleMnvaBtn}
             />
         )
     }
@@ -481,7 +491,8 @@ class OnePageAction extends Component {
         });
         window.localStorage['trans'] = language[e.target.innerHTML];
         this.setState({
-            loader: true
+            loader: true,
+            activeMnav: false
         })
         window.scrollTo(0, 0);
         setTimeout(() => {
@@ -512,7 +523,8 @@ class OnePageAction extends Component {
 
     _handleSectionMove = (num) => {
         this.setState({
-            activeNav: num
+            activeNav: num,
+            activeMnav: false
         });
         let offset = $("#section" + num);
         let offsetTop = offset.offset();
@@ -528,7 +540,8 @@ class OnePageAction extends Component {
         let offsetTop = offset.offset();
         $('html, body').scrollTop(offsetTop.top  - 80)
         this.setState({
-            lanShow: false
+            lanShow: false,
+            activeMnav: false
         })
     };
 
@@ -636,6 +649,32 @@ class OnePageAction extends Component {
         }
     }, 200);
 
+    techniqueContent1 = React.createRef();
+    _handleTechniqueContent1Active = throttle(() => {
+        if(!this.state.loader) {
+            const rect = this.techniqueContent1.current.getBoundingClientRect();
+            const { top, bottom, height } = rect;
+            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
+                this.setState({
+                    activeTechniqueContent1: true
+                });
+            }
+        }
+    }, 200);
+
+    techniqueContent2 = React.createRef();
+    _handleTechniqueContent2Active = throttle(() => {
+        if(!this.state.loader) {
+            const rect = this.techniqueContent2.current.getBoundingClientRect();
+            const { top, bottom, height } = rect;
+            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
+                this.setState({
+                    activeTechniqueContent2: true
+                });
+            }
+        }
+    }, 200);
+
     paperTitle = React.createRef();
     _handlePaperTitleActive = throttle(() => {
         if(!this.state.loader) {
@@ -721,6 +760,18 @@ class OnePageAction extends Component {
         } else {
             this.setState({
                 activeLanBtn: false
+            });
+        }
+    };
+
+    _handleMnvaBtn = () => {
+        if(!this.state.activeMnav) {
+            this.setState({
+                activeMnav: true
+            });
+        } else {
+            this.setState({
+                activeMnav: false
             });
         }
     };
