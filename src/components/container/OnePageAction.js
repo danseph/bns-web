@@ -8,21 +8,28 @@ class OnePageAction extends Component {
         loader: true,
         activeNav: 1,
         lanShow: false,
+        activeMainTitle: false,
         activePlatFormTitle: false,
         activePlatFormContent1: false,
         activePlatFormContent2: false,
         activePlatFormContent3: false,
         activePlatFormContent4: false,
         activePlatFormContent5: false,
+        activeEffectTitle: false,
+        activeEffectContent: false,
         activeTechniqueTitle: false,
         activeTechniqueContent1: false,
         activeTechniqueContent2: false,
+        activeRoadmapTitle: false,
+        activeRoadmapContent: false,
         activeTeamTitle: false,
         activeTeamList: false,
         activeMediaTitle: false,
         activeMediaList: false,
         activeAipxTitle: false,
-        activePaperTitle: false,
+        activeAipxContent: false,
+        activeAipxText: false,
+        activeCoinAllocation: false,
         activeLanBtn: false,
         activeMnav: false,
         typeFaq: 0,
@@ -367,16 +374,19 @@ class OnePageAction extends Component {
             return (
                 this.setState({
                     loader: false,
+                    activeMainTitle: true,
+                    activePlatFormTitle: true,
                 })
             )
         }, 800);
 
-        window.addEventListener('scroll', this._handlePlatFormTitleActive);
         window.addEventListener('scroll', this._handlePlatFormContent1Active);
         window.addEventListener('scroll', this._handlePlatFormContent2Active);
         window.addEventListener('scroll', this._handlePlatFormContent3Active);
         window.addEventListener('scroll', this._handlePlatFormContent4Active);
         window.addEventListener('scroll', this._handlePlatFormContent5Active);
+        window.addEventListener('scroll', this._handleEffectTitleActive);
+        window.addEventListener('scroll', this._handleEffectContentActive);
         window.addEventListener('scroll', this._handleTechniqueTitleActive);
         window.addEventListener('scroll', this._handleTechniqueContent1Active);
         window.addEventListener('scroll', this._handleTechniqueContent2Active);
@@ -385,7 +395,11 @@ class OnePageAction extends Component {
         window.addEventListener('scroll', this._handleMediaTitleActive);
         window.addEventListener('scroll', this._handleMediaListActive);
         window.addEventListener('scroll', this._handleAipxTitleActive);
-        window.addEventListener('scroll', this._handlePaperTitleActive);
+        window.addEventListener('scroll', this._handleAipxContentActive);
+        window.addEventListener('scroll', this._handleAipxTextActive);
+        window.addEventListener('scroll', this._handleCoinAllocationActive);
+        window.addEventListener('scroll', this._handleRoadmapTitleActive);
+        window.addEventListener('scroll', this._handleRoadmapContentActive);
     }
 
     render() {
@@ -402,7 +416,8 @@ class OnePageAction extends Component {
                 media1={this.media1}
                 faq={this.faq}
                 title={this.title}
-                platFormTitle={this.platFormTitle}
+                effectTitle={this.effectTitle}
+                effectContent={this.effectContent}
                 platFormContent1={this.platFormContent1}
                 platFormContent2={this.platFormContent2}
                 platFormContent3={this.platFormContent3}
@@ -412,7 +427,12 @@ class OnePageAction extends Component {
                 techniqueContent1={this.techniqueContent1}
                 techniqueContent2={this.techniqueContent2}
                 aipxTitle={this.aipxTitle}
+                aipxContent={this.aipxContent}
+                aipxText={this.aipxText}
+                coinAllocation={this.coinAllocation}
                 paperTitle={this.paperTitle}
+                roadmapTitle={this.roadmapTitle}
+                roadmapContent={this.roadmapContent}
                 teamTitle={this.teamTitle}
                 teamList={this.teamList}
                 mediaTitle={this.mediaTitle}
@@ -441,24 +461,40 @@ class OnePageAction extends Component {
                     loader: false,
                     activeNav: 1,
                     lanShow: false,
-                    activePlatFormTitle: false,
+                    activeMainTitle: true,
+                    activePlatFormTitle: true,
                     activePlatFormContent1: false,
                     activePlatFormContent2: false,
                     activePlatFormContent3: false,
                     activePlatFormContent4: false,
                     activePlatFormContent5: false,
+                    activeEffectTitle: false,
+                    activeEffectContent: false,
                     activeTechniqueTitle: false,
+                    activeTechniqueContent1: false,
+                    activeTechniqueContent2: false,
+                    activeRoadmapTitle: false,
+                    activeRoadmapContent: false,
                     activeTeamTitle: false,
                     activeTeamList: false,
                     activeMediaTitle: false,
                     activeMediaList: false,
                     activeAipxTitle: false,
-                    activePaperTitle: false,
+                    activeAipxContent: false,
+                    activeAipxText: false,
+                    activeCoinAllocation: false,
                     activeLanBtn: false,
+                    activeMnav: false,
                     typeFaq: 0,
                 })
             )
         }, 800);
+        if(this.state.activePlatFormTitle) {
+            this.setState({
+                activeMainTitle: false,
+                activePlatFormTitle: false,
+            })
+        }
     };
 
     _handleLanShow = () => {
@@ -501,24 +537,41 @@ class OnePageAction extends Component {
                     loader: false,
                     activeNav: 1,
                     lanShow: false,
-                    activePlatFormTitle: false,
+                    activeMainTitle: true,
+                    activePlatFormTitle: true,
                     activePlatFormContent1: false,
                     activePlatFormContent2: false,
                     activePlatFormContent3: false,
                     activePlatFormContent4: false,
                     activePlatFormContent5: false,
+                    activeEffectTitle: false,
+                    activeEffectContent: false,
                     activeTechniqueTitle: false,
+                    activeTechniqueContent1: false,
+                    activeTechniqueContent2: false,
+                    activeRoadmapTitle: false,
+                    activeRoadmapContent: false,
                     activeTeamTitle: false,
                     activeTeamList: false,
                     activeMediaTitle: false,
                     activeMediaList: false,
                     activeAipxTitle: false,
-                    activePaperTitle: false,
+                    activeAipxContent: false,
+                    activeAipxText: false,
+                    activeCoinAllocation: false,
                     activeLanBtn: false,
+                    activeMnav: false,
                     typeFaq: 0,
                 })
             )
         }, 800);
+
+        if(this.state.activePlatFormTitle) {
+            this.setState({
+                activeMainTitle: false,
+                activePlatFormTitle: false,
+            })
+        }
     }
 
     _handleSectionMove = (num) => {
@@ -529,7 +582,7 @@ class OnePageAction extends Component {
         let offset = $("#section" + num);
         let offsetTop = offset.offset();
         if(offset[0].id === "section4") {
-            $('html, body').scrollTop(offsetTop.top - 160)
+            $('html, body').scrollTop(offsetTop.top - 240)
         } else {
             $('html, body').scrollTop(offsetTop.top - 80)
         }
@@ -544,19 +597,6 @@ class OnePageAction extends Component {
             activeMnav: false
         })
     };
-
-    platFormTitle = React.createRef();
-    _handlePlatFormTitleActive = throttle(() => {
-        if(!this.state.loader) {
-            const rect = this.platFormTitle.current.getBoundingClientRect();
-            const { top, bottom, height } = rect;
-            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
-                this.setState({
-                    activePlatFormTitle: true
-                });
-            }
-        }
-    }, 200);
 
     platFormContent1 = React.createRef();
     _handlePlatFormContent1Active = throttle(() => {
@@ -623,14 +663,105 @@ class OnePageAction extends Component {
         }
     }, 200);
 
+    effectTitle = React.createRef();
+    _handleEffectTitleActive = throttle(() => {
+        if(!this.state.loader) {
+            const rect = this.effectTitle.current.getBoundingClientRect();
+            const { top, bottom, height } = rect;
+            if (top - 150 < window.innerHeight && bottom >= 0 && top > -1 * height) {
+                this.setState({
+                    activeEffectTitle: true
+                });
+            }
+        }
+    }, 200);
+
+    roadmapTitle = React.createRef();
+    _handleRoadmapTitleActive = throttle(() => {
+        if(!this.state.loader) {
+            const rect = this.roadmapTitle.current.getBoundingClientRect();
+            const { top, bottom, height } = rect;
+            if (top - 150 < window.innerHeight && bottom >= 0 && top > -1 * height) {
+                this.setState({
+                    activeRoadmapTitle: true
+                });
+            }
+        }
+    }, 200);
+
+    roadmapContent = React.createRef();
+    _handleRoadmapContentActive = throttle(() => {
+        if(!this.state.loader) {
+            const rect = this.roadmapContent.current.getBoundingClientRect();
+            const { top, bottom, height } = rect;
+            if (top - 150 < window.innerHeight && bottom >= 0 && top > -1 * height) {
+                this.setState({
+                    activeRoadmapContent: true
+                });
+            }
+        }
+    }, 200);
+
+    effectContent = React.createRef();
+    _handleEffectContentActive = throttle(() => {
+        if(!this.state.loader) {
+            const rect = this.effectContent.current.getBoundingClientRect();
+            const { top, bottom, height } = rect;
+            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
+                this.setState({
+                    activeEffectContent: true
+                });
+            }
+        }
+    }, 200);
+
     aipxTitle = React.createRef();
     _handleAipxTitleActive = throttle(() => {
         if(!this.state.loader) {
             const rect = this.aipxTitle.current.getBoundingClientRect();
             const { top, bottom, height } = rect;
-            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
+            if (top + 100 < window.innerHeight && bottom >= 0 && top > -1 * height) {
                 this.setState({
                     activeAipxTitle: true
+                });
+            }
+        }
+    }, 200);
+
+    aipxContent = React.createRef();
+    _handleAipxContentActive = throttle(() => {
+        if(!this.state.loader) {
+            const rect = this.aipxContent.current.getBoundingClientRect();
+            const { top, bottom, height } = rect;
+            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
+                this.setState({
+                    activeAipxContent: true
+                });
+            }
+        }
+    }, 200);
+
+    aipxText = React.createRef();
+    _handleAipxTextActive = throttle(() => {
+        if(!this.state.loader) {
+            const rect = this.aipxText.current.getBoundingClientRect();
+            const { top, bottom, height } = rect;
+            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
+                this.setState({
+                    activeAipxText: true
+                });
+            }
+        }
+    }, 200);
+
+    coinAllocation = React.createRef();
+    _handleCoinAllocationActive = throttle(() => {
+        if(!this.state.loader) {
+            const rect = this.coinAllocation.current.getBoundingClientRect();
+            const { top, bottom, height } = rect;
+            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
+                this.setState({
+                    activeCoinAllocation: true
                 });
             }
         }
@@ -670,19 +801,6 @@ class OnePageAction extends Component {
             if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
                 this.setState({
                     activeTechniqueContent2: true
-                });
-            }
-        }
-    }, 200);
-
-    paperTitle = React.createRef();
-    _handlePaperTitleActive = throttle(() => {
-        if(!this.state.loader) {
-            const rect = this.paperTitle.current.getBoundingClientRect();
-            const { top, bottom, height } = rect;
-            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
-                this.setState({
-                    activePaperTitle: true
                 });
             }
         }

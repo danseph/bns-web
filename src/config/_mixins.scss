@@ -40,7 +40,7 @@
 }
 
 @mixin layout {
-  width: 1000px;
+  width: 750px;
   margin: 0 auto;
   padding: 100px 0;
 
@@ -54,6 +54,40 @@
   }
 }
 
+@mixin paging {
+  &-paging {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .count {
+      width: calc(100% - 48px);
+    }
+
+    a {
+      display: block;
+      width: 24px;
+      height: 24px;
+
+      &.btn-left {
+        background: url("../images/left50.png") no-repeat center center / 8px;
+
+        &:hover {
+          background-image: url("../images/left.png");
+        }
+      }
+
+      &.btn-right {
+        background: url("../images/right50.png") no-repeat center center / 8px;
+        &:hover {
+          background-image: url("../images/right.png");
+        }
+      }
+    }
+  }
+}
 
 
 @mixin arrowRotate {

@@ -60,12 +60,6 @@ const OnePage = (props) => {
                                             </a>
                                         )
                                     })}
-                                    {/*<a href="javascript:void(0)">AI Prediction</a>*/}
-                                    {/*<a href="javascript:void(0)">AIPX Coin</a>*/}
-                                    {/*<a href="javascript:void(0)">Roadmap</a>*/}
-                                    {/*<a href="javascript:void(0)">Media</a>*/}
-                                    {/*<a href="javascript:void(0)">Team</a>*/}
-                                    {/*<a href="javascript:void(0)">FAQ</a>*/}
                                 </nav>
                                 <div className={`header-btn ${props.activeMnav ? "on": ""}`}>
                                     <a href="javascript:void(0)" onClick={() => props.handleWhitePaperMove(20)}>
@@ -96,12 +90,57 @@ const OnePage = (props) => {
                             <div className="main-wrap" id="section1">
                                 <section className="main">
                                     <div className="main-img">
-                                        <img src={require("../../images/main01.png")}/>
+                                        {/*<img src={require("../../images/main01.png")}/>*/}
+                                        <img src={require("../../images/bg_b.gif")}/>
                                     </div>
                                     <div className="main-txt">
-                                        <div className="main-txt-title">
+                                        <div className={`main-txt-title ${props.activeMainTitle ? "active" : ""}`}>
                                             <strong>
-                                                <FormattedMessage id="about-title" values={{kbr: <br />}} />
+                                                <span className="char">T</span>
+                                                <span className="char">h</span>
+                                                <span className="char">e</span>
+                                                <span className="char"> </span>
+                                                <span className="char">F</span>
+                                                <span className="char">u</span>
+                                                <span className="char">t</span>
+                                                <span className="char">u</span>
+                                                <span className="char">r</span>
+                                                <span className="char">e</span>
+                                                <span className="char"> </span>
+                                                <span className="char">L</span>
+                                                <span className="char">e</span>
+                                                <span className="char">a</span>
+                                                <span className="char">d</span>
+                                                <span className="char">e</span>
+                                                <span className="char">r</span>
+                                                <span className="char"> </span>
+                                                <span className="char">o</span>
+                                                <span className="char">f</span>
+                                                <br/>
+                                                <span className="char"> </span>
+                                                <span className="char">A</span>
+                                                <span className="char">I</span>
+                                                <span className="char"> </span>
+                                                <span className="char">P</span>
+                                                <span className="char">r</span>
+                                                <span className="char">e</span>
+                                                <span className="char">d</span>
+                                                <span className="char">i</span>
+                                                <span className="char">c</span>
+                                                <span className="char">t</span>
+                                                <span className="char">i</span>
+                                                <span className="char">o</span>
+                                                <span className="char">n</span>
+                                                <span className="char"> </span>
+                                                <span className="char">P</span>
+                                                <span className="char">l</span>
+                                                <span className="char">a</span>
+                                                <span className="char">t</span>
+                                                <span className="char">f</span>
+                                                <span className="char">o</span>
+                                                <span className="char">r</span>
+                                                <span className="char">m</span>
+                                                {/*<FormattedMessage id="about-title" values={{kbr: <br />}} />*/}
                                             </strong>
                                         </div>
                                         <div className="main-txt-desc">
@@ -167,10 +206,10 @@ const OnePage = (props) => {
                             {/* PLATFORM, SOLUTION */}
                             <div className="effect-wrap" id="section3">
                                 <div className="effect">
-                                    <div className="effect-title">
+                                    <div className={`effect-title ${props.activeEffectTitle ? "active" : ""}`} ref={props.effectTitle}>
                                         <h2>AIPE Ecosystem</h2>
                                     </div>
-                                    <div className="effect-img-wrap web">
+                                    <div className={`effect-img-wrap web ${props.activeEffectContent ? "active" : ""}`} ref={props.effectContent}>
                                         <div className="effect-img">
                                             <img src={require("../../images/web_bg_contents.png")}/>
                                         </div>
@@ -234,19 +273,38 @@ const OnePage = (props) => {
                                 <div className={`aipx-title ${props.activeAipxTitle ? "active" : ""}`} ref={props.aipxTitle}>
                                     <h2>AIPX</h2>
                                 </div>
-                                <div className="aipx-content">
+                                <div className="aipx-content" ref={props.aipxContent}>
                                     <div className="aipx-content-img">
-                                        이미지?????????????????????????
+                                        <div className={`center ${props.activeAipxContent ? "active" : ""}`}>
+                                            <img src={require("../../images/aipe.png")} />
+                                        </div>
+                                        <ul className={`side ${props.activeAipxContent ? "active" : ""}`}>
+                                            <li className="one">
+                                                <p>Marketing<br/>Support</p>
+                                            </li>
+                                            <li className="two">
+                                                <p>Legar Advice<br/>and Support</p>
+                                            </li>
+                                            <li className="three">
+                                                <p>Blockchain<br/>Development</p>
+                                            </li>
+                                            <li className="four">
+                                                <p>Product<br/>Development</p>
+                                            </li>
+                                            <li className="five">
+                                                <p>AI Technique<br/>Development</p>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <div className="aipx-content-txt">
+                                    <div className={`aipx-content-txt ${props.activeAipxText ? "active" : ""}`} ref={props.aipxText}>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                            nostrud exercitation.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation.
                                         </p>
                                     </div>
                                 </div>
-                                <div className="aipx-desc">
+                                <div className={`aipx-desc ${props.activeCoinAllocation ? "active" : ""}`} ref={props.coinAllocation}>
                                     <div className="aipx-desc-structure">
                                         <h3>
                                             <FormattedMessage id='coin-structure' />
@@ -273,7 +331,7 @@ const OnePage = (props) => {
                                             <FormattedMessage id='coin-allocation' />
                                         </h3>
                                         <div className="aipx-desc-graph-img">
-                                            <img src={require("../../images/allocation.png")}/>
+                                            <img src={require("../../images/allocation.png")} />
                                         </div>
                                     </div>
                                 </div>
@@ -283,7 +341,7 @@ const OnePage = (props) => {
                             {/* WHITEPAPER */}
                             <div className="paper-wrap" id="section20">
                                 <section className="paper">
-                                    <div className={`paper-title ${props.activePaperTitle ? "active" : ""}`} ref={props.paperTitle}>
+                                    <div className="paper-title">
                                         <h2><FormattedMessage id="whitepaper" /></h2>
                                     </div>
                                     <div className="paper-link">
@@ -302,10 +360,10 @@ const OnePage = (props) => {
                             {/* ROADMAP */}
                             <div className="roadmap-wrap">
                                 <section className="roadmap">
-                                    <div className="roadmap-title" id="section4">
+                                    <div className={`roadmap-title ${props.activeRoadmapTitle ? "active" : ""}`} id="section4" ref={props.roadmapTitle}>
                                         <h2>Roadmap</h2>
                                     </div>
-                                    <div className="roadmap-img">
+                                    <div className={`roadmap-img ${props.activeRoadmapContent ? "active" : ""}`} ref={props.roadmapContent}>
                                         <img src={require("../../images/roadmap2.png")}/>
                                     </div>
                                 </section>
@@ -460,7 +518,7 @@ const OnePage = (props) => {
                                 </div>
                                 <div className="footer-copy">
                                     <p>
-                                        Copyright &copy;2019 AIPX. All rights reserved.
+                                        Copyright &copy;2019 AIPE. All rights reserved.
                                     </p>
                                 </div>
                             </footer>
