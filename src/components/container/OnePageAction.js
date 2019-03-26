@@ -166,6 +166,29 @@ class OnePageAction extends Component {
         }
     ];
 
+    aipx = [
+        {
+            className: 'one',
+            text: 'aipx-text1',
+        },
+        {
+            className: 'two',
+            text: 'aipx-text2',
+        },
+        {
+            className: 'three',
+            text: 'aipx-text3',
+        },
+        {
+            className: 'four',
+            text: 'aipx-text4',
+        },
+        {
+            className: 'five',
+            text: 'aipx-text5',
+        },
+    ];
+
     coinStructure = [
         {
             className1: 'th',
@@ -232,56 +255,56 @@ class OnePageAction extends Component {
             position: 'position',
             className: 'img-box',
             className2: 'txt-box',
-            image: 'ico_telegram.png',
+            image: 'team_sample_image.png',
         },
         {
             name: 'name',
             position: 'position',
             className: 'img-box',
             className2: 'txt-box',
-            image: 'ico_telegram.png'
+            image: 'team_sample_image.png'
         },
         {
             name: 'name',
             position: 'position',
             className: 'img-box',
             className2: 'txt-box',
-            image: 'ico_telegram.png'
+            image: 'team_sample_image.png'
         },
         {
             name: 'name',
             position: 'position',
             className: 'img-box',
             className2: 'txt-box',
-            image: 'ico_telegram.png'
+            image: 'team_sample_image.png'
         },
         {
             name: 'name',
             position: 'position',
             className: 'img-box',
             className2: 'txt-box',
-            image: 'ico_telegram.png',
+            image: 'team_sample_image.png',
         },
         {
             name: 'name',
             position: 'position',
             className: 'img-box',
             className2: 'txt-box',
-            image: 'ico_telegram.png'
+            image: 'team_sample_image.png'
         },
         {
             name: 'name',
             position: 'position',
             className: 'img-box',
             className2: 'txt-box',
-            image: 'ico_telegram.png'
+            image: 'team_sample_image.png'
         },
         {
             name: 'name',
             position: 'position',
             className: 'img-box',
             className2: 'txt-box',
-            image: 'ico_telegram.png'
+            image: 'team_sample_image.png'
         },
     ];
 
@@ -296,7 +319,7 @@ class OnePageAction extends Component {
             className2_2: 'right',
             className2_2_1: 'date',
             className2_2_2: 'name',
-            image: 'ico_kakao.png'
+            image: 'team_sample_image.png'
         },
         {
             title: 'title',
@@ -308,7 +331,7 @@ class OnePageAction extends Component {
             className2_2: 'right',
             className2_2_1: 'date',
             className2_2_2: 'name',
-            image: 'ico_kakao.png'
+            image: 'team_sample_image.png'
         },
         {
             title: 'title',
@@ -320,7 +343,7 @@ class OnePageAction extends Component {
             className2_2: 'right',
             className2_2_1: 'date',
             className2_2_2: 'name',
-            image: 'ico_kakao.png'
+            image: 'team_sample_image.png'
         },
         {
             title: 'title',
@@ -332,7 +355,7 @@ class OnePageAction extends Component {
             className2_2: 'right',
             className2_2_1: 'date',
             className2_2_2: 'name',
-            image: 'ico_kakao.png'
+            image: 'team_sample_image.png'
         },
     ];
 
@@ -410,6 +433,7 @@ class OnePageAction extends Component {
                 lan={this.lan}
                 platformContent={this.platformContent}
                 techContent={this.techContent}
+                aipx={this.aipx}
                 coinStructure={this.coinStructure}
                 whitePaper={this.whitePaper}
                 team1={this.team1}
@@ -489,9 +513,13 @@ class OnePageAction extends Component {
                 })
             )
         }, 800);
-        if(this.state.activePlatFormTitle) {
+        if(this.state.activeMainTitle) {
             this.setState({
                 activeMainTitle: false,
+            })
+        }
+        if(this.state.activePlatFormTitle) {
+            this.setState({
                 activePlatFormTitle: false,
             })
         }
@@ -566,9 +594,13 @@ class OnePageAction extends Component {
             )
         }, 800);
 
-        if(this.state.activePlatFormTitle) {
+        if(this.state.activeMainTitle) {
             this.setState({
                 activeMainTitle: false,
+            })
+        }
+        if(this.state.activePlatFormTitle) {
+            this.setState({
                 activePlatFormTitle: false,
             })
         }

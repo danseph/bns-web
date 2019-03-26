@@ -1,4 +1,5 @@
 import React from 'react';
+import CharTransition from './CharTransition';
 import Slider from 'react-slick';
 import './styles.scss';
 import { IntlProvider, addLocaleData } from 'react-intl';
@@ -85,69 +86,25 @@ const OnePage = (props) => {
 
                         {/* CONTAINER */}
                         <div className="container">
-
                             {/* MAIN */}
                             <div className="main-wrap" id="section1">
                                 <section className="main">
                                     <div className="main-img">
-                                        {/*<img src={require("../../images/main01.png")}/>*/}
-                                        <img src={require("../../images/bg_b.gif")}/>
+                                        <img src={require("../../images/main01.png")}/>
+                                        {/*<img src={require("../../images/bg_bl_600x600.gif")}/>*/}
                                     </div>
                                     <div className="main-txt">
-                                        <div className={`main-txt-title ${props.activeMainTitle ? "active" : ""}`}>
-                                            <strong>
-                                                <span className="char">T</span>
-                                                <span className="char">h</span>
-                                                <span className="char">e</span>
-                                                <span className="char"> </span>
-                                                <span className="char">F</span>
-                                                <span className="char">u</span>
-                                                <span className="char">t</span>
-                                                <span className="char">u</span>
-                                                <span className="char">r</span>
-                                                <span className="char">e</span>
-                                                <span className="char"> </span>
-                                                <span className="char">L</span>
-                                                <span className="char">e</span>
-                                                <span className="char">a</span>
-                                                <span className="char">d</span>
-                                                <span className="char">e</span>
-                                                <span className="char">r</span>
-                                                <span className="char"> </span>
-                                                <span className="char">o</span>
-                                                <span className="char">f</span>
-                                                <br/>
-                                                <span className="char"> </span>
-                                                <span className="char">A</span>
-                                                <span className="char">I</span>
-                                                <span className="char"> </span>
-                                                <span className="char">P</span>
-                                                <span className="char">r</span>
-                                                <span className="char">e</span>
-                                                <span className="char">d</span>
-                                                <span className="char">i</span>
-                                                <span className="char">c</span>
-                                                <span className="char">t</span>
-                                                <span className="char">i</span>
-                                                <span className="char">o</span>
-                                                <span className="char">n</span>
-                                                <span className="char"> </span>
-                                                <span className="char">P</span>
-                                                <span className="char">l</span>
-                                                <span className="char">a</span>
-                                                <span className="char">t</span>
-                                                <span className="char">f</span>
-                                                <span className="char">o</span>
-                                                <span className="char">r</span>
-                                                <span className="char">m</span>
-                                                {/*<FormattedMessage id="about-title" values={{kbr: <br />}} />*/}
-                                            </strong>
-                                        </div>
-                                        <div className="main-txt-desc">
-                                            <p>
-                                                <FormattedMessage id="about-text" values={{kbr: <br />}} />
-                                            </p>
-                                        </div>
+                                        <CharTransition defaultLang={props.defaultLang} activeMainTitle={props.activeMainTitle} />
+                                        {/*<div className={`main-txt-title ${props.activeMainTitle ? "active" : ""}`}>*/}
+                                            {/*<strong>*/}
+                                                {/*/!*<FormattedMessage id="about-title" values={{kbr: <br />}} />*!/*/}
+                                            {/*</strong>*/}
+                                        {/*</div>*/}
+                                        {/*<div className="main-txt-desc">*/}
+                                            {/*<p>*/}
+                                                {/*<FormattedMessage id="about-text" values={{kbr: <br />}} />*/}
+                                            {/*</p>*/}
+                                        {/*</div>*/}
                                     </div>
                                 </section>
                             </div>
@@ -191,9 +148,7 @@ const OnePage = (props) => {
                                                     </div>
                                                     <div className={item.className3}>
                                                         <h4><FormattedMessage id={item.text1} /></h4>
-                                                        <p>
-                                                            <FormattedMessage id={item.text2} />
-                                                        </p>
+                                                        <p><FormattedMessage id={item.text2} /></p>
                                                     </div>
                                                 </li>
                                             )
@@ -207,7 +162,7 @@ const OnePage = (props) => {
                             <div className="effect-wrap" id="section3">
                                 <div className="effect">
                                     <div className={`effect-title ${props.activeEffectTitle ? "active" : ""}`} ref={props.effectTitle}>
-                                        <h2>AIPE Ecosystem</h2>
+                                        <h2><FormattedMessage id="aipe-ecosystem" /></h2>
                                     </div>
                                     <div className={`effect-img-wrap web ${props.activeEffectContent ? "active" : ""}`} ref={props.effectContent}>
                                         <div className="effect-img">
@@ -271,7 +226,7 @@ const OnePage = (props) => {
                             {/* AIPX */}
                             <section className="aipx">
                                 <div className={`aipx-title ${props.activeAipxTitle ? "active" : ""}`} ref={props.aipxTitle}>
-                                    <h2>AIPX</h2>
+                                    <h2><FormattedMessage id="aipx-title" /></h2>
                                 </div>
                                 <div className="aipx-content" ref={props.aipxContent}>
                                     <div className="aipx-content-img">
@@ -279,28 +234,22 @@ const OnePage = (props) => {
                                             <img src={require("../../images/aipe.png")} />
                                         </div>
                                         <ul className={`side ${props.activeAipxContent ? "active" : ""}`}>
-                                            <li className="one">
-                                                <p>Marketing<br/>Support</p>
-                                            </li>
-                                            <li className="two">
-                                                <p>Legar Advice<br/>and Support</p>
-                                            </li>
-                                            <li className="three">
-                                                <p>Blockchain<br/>Development</p>
-                                            </li>
-                                            <li className="four">
-                                                <p>Product<br/>Development</p>
-                                            </li>
-                                            <li className="five">
-                                                <p>AI Technique<br/>Development</p>
-                                            </li>
+                                            {
+                                                props.aipx.map((item, i) => {
+                                                    return (
+                                                        <li key={i} className={item.className}>
+                                                            <p>
+                                                                <FormattedMessage id={item.text} values={{kbr: <br />}} />
+                                                            </p>
+                                                        </li>
+                                                    )
+                                                })
+                                            }
                                         </ul>
                                     </div>
                                     <div className={`aipx-content-txt ${props.activeAipxText ? "active" : ""}`} ref={props.aipxText}>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation.
+                                            <FormattedMessage id="aipx-text6" />
                                         </p>
                                     </div>
                                 </div>
@@ -361,7 +310,7 @@ const OnePage = (props) => {
                             <div className="roadmap-wrap">
                                 <section className="roadmap">
                                     <div className={`roadmap-title ${props.activeRoadmapTitle ? "active" : ""}`} id="section4" ref={props.roadmapTitle}>
-                                        <h2>Roadmap</h2>
+                                        <h2><FormattedMessage id="roadmap" /></h2>
                                     </div>
                                     <div className={`roadmap-img ${props.activeRoadmapContent ? "active" : ""}`} ref={props.roadmapContent}>
                                         <img src={require("../../images/roadmap2.png")}/>
@@ -373,7 +322,7 @@ const OnePage = (props) => {
                             {/* TEAM */}
                             <section className="team" id="section5">
                                 <div className={`team-title ${props.activeTeamTitle ? "active" : ""}`} ref={props.teamTitle}>
-                                    <h2>Team</h2>
+                                    <h2><FormattedMessage id="team" /></h2>
                                 </div>
                                 <div className={`team-desc ${props.activeTeamList ? "active" : ""}`} ref={props.teamList}>
                                     <div className="team-desc-list">
@@ -420,7 +369,7 @@ const OnePage = (props) => {
                             {/* MEDIA */}
                             <section className="media" id="section6">
                                 <div className={`media-title ${props.activeMediaTitle ? "active" : ""}`} ref={props.mediaTitle}>
-                                    <h2>Media</h2>
+                                    <h2><FormattedMessage id="media" /></h2>
                                 </div>
                                 <div className={`media-list ${props.activeMediaList ? "active" : ""}`} ref={props.mediaList}>
                                     <div className="contents">
@@ -510,15 +459,15 @@ const OnePage = (props) => {
                         <div className="footer-wrap">
                             <footer className="footer">
                                 <div className="footer-sns">
-                                    <a href="javascript:void(0)" className="ico-tele"></a>
-                                    <a href="javascript:void(0)" className="ico-medium"></a>
-                                    <a href="javascript:void(0)" className="ico-twitter"></a>
-                                    <a href="javascript:void(0)" className="ico-face"></a>
-                                    <a href="javascript:void(0)" className="ico-kakaco"></a>
+                                    <a href="javascript:void(0)" className="ico-tele" />
+                                    <a href="https://medium.com/cosmicbc" target="_blank" className="ico-medium" />
+                                    <a href="https://twitter.com/cosmicbc_" target="_blank" className="ico-twitter" />
+                                    <a href="javascript:void(0)" className="ico-face" />
+                                    <a href="javascript:void(0)" className="ico-kakaco" />
                                 </div>
                                 <div className="footer-copy">
                                     <p>
-                                        Copyright &copy;2019 AIPE. All rights reserved.
+                                        <FormattedMessage id="footer-copy" />
                                     </p>
                                 </div>
                             </footer>
