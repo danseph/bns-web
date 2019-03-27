@@ -740,6 +740,7 @@ class OnePageAction extends Component {
             const rect = this.effectContent.current.getBoundingClientRect();
             const { top, bottom, height } = rect;
             if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
+                console.log(1)
                 this.setState({
                     activeEffectContent: true
                 });

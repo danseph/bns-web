@@ -108,6 +108,7 @@
     background-color: #000;
     z-index: 10; // jonny
     @include mq("mobile") {
+      //position: static;
       height: auto;
     }
   }
@@ -139,12 +140,21 @@
       width: 88px;
     }
     @include mq("mobile") {
+      display: none;
       width: 210px;
       height: 73px;
       position: absolute;
       margin-left: -105px;
       left: 50%;
       top: 116px;
+    }
+    &.m {
+      display: none;
+      animation: slideUpAnimation 1s 0s forwards cubic-bezier(.165, .84, .44, 1);
+      animation-duration: 0.8s;
+      @include mq("mobile") {
+        display: block;
+      }
     }
   }
 
@@ -254,10 +264,12 @@
           width: auto;
           height: auto;
           padding: 12px;
+          background-color: #000;
           // jonny end
           &.on {
             //left: 15px; // hailey
             //background-image: url("../../images/menu_black.png"); // hailey
+            background-color: transparent; // jonny
           }
         }
         // jonny
@@ -326,7 +338,8 @@
       flex-wrap: wrap;
       position: absolute;
       left: -100%;
-      top: 259px;
+      //top: 259px;
+      top: 245px;
       padding-bottom: 500px;
       transition: all .5s;
 
@@ -454,7 +467,7 @@
       @include mq("mobile") {
         width: 100%;
         left: 0;
-        top: 78px;
+        top: 74px;
         background-color: #FFF;
       }
 
@@ -735,6 +748,13 @@
       -ms-transform: translateX(0) translateY(-160px) !important;
       -o-transform: translateX(0) translateY(-160px) !important;
       transform: translateX(0) translateY(-160px) !important;
+      @include mq("mobile") {
+        -webkit-transform: translateX(0) translateY(-60px) !important;
+        -moz-transform: translateX(0) translateY(-60px) !important;
+        -ms-transform: translateX(0) translateY(-60px) !important;
+        -o-transform: translateX(0) translateY(-60px) !important;
+        transform: translateX(0) translateY(-60px) !important;
+      }
     }
   }
   // jonny end
