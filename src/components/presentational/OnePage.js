@@ -20,6 +20,7 @@ const OnePage = (props) => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: false,
+
     };
     return (
         <>
@@ -96,20 +97,9 @@ const OnePage = (props) => {
                                 <section className="main">
                                     <div className="main-img">
                                         <img src={require("../../images/main01.png")}/>
-                                        {/*<img src={require("../../images/bg_bl_600x600.gif")}/>*/}
                                     </div>
                                     <div className="main-txt">
                                         <CharTransition defaultLang={props.defaultLang} activeMainTitle={props.activeMainTitle} />
-                                        {/*<div className={`main-txt-title ${props.activeMainTitle ? "active" : ""}`}>*/}
-                                            {/*<strong>*/}
-                                                {/*/!*<FormattedMessage id="about-title" values={{kbr: <br />}} />*!/*/}
-                                            {/*</strong>*/}
-                                        {/*</div>*/}
-                                        {/*<div className="main-txt-desc">*/}
-                                            {/*<p>*/}
-                                                {/*<FormattedMessage id="about-text" values={{kbr: <br />}} />*/}
-                                            {/*</p>*/}
-                                        {/*</div>*/}
                                     </div>
                                 </section>
                             </div>
@@ -171,7 +161,12 @@ const OnePage = (props) => {
                                     </div>
                                     <div className={`effect-img-wrap web ${props.activeEffectContent ? "active" : ""}`} ref={props.effectContent}>
                                         <div className="effect-img">
-                                            <img src={require("../../images/web_bg_contents.png")}/>
+                                            {
+                                                props.defaultLang === "zh" ?
+                                                    <img src={require("../../images/web_bg_contents_cn.png")} />
+                                                    :
+                                                    <img src={require("../../images/web_bg_contents.png")} />
+                                            }
                                         </div>
                                         <div className="effect-img bot">
                                             <img src={require("../../images/web_bg_effect.png")}/>
@@ -179,7 +174,12 @@ const OnePage = (props) => {
                                     </div>
                                     <div className={`effect-img-wrap mobile ${props.activeEffectContentM ? "active" : ""}`} ref={props.effectContentM}>
                                         <div className="effect-img">
-                                            <img src={require("../../images/mobile_bg_contents.png")}/>
+                                            {
+                                                props.defaultLang === "zh" ?
+                                                    <img src={require("../../images/mobile_bg_contents_cn.png")} />
+                                                    :
+                                                    <img src={require("../../images/mobile_bg_contents.png")} />
+                                            }
                                         </div>
                                         <div className="effect-img bot">
                                             <img src={require("../../images/mobile_bg_effect.png")}/>
