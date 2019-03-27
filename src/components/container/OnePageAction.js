@@ -17,6 +17,7 @@ class OnePageAction extends Component {
         activePlatFormContent5: false,
         activeEffectTitle: false,
         activeEffectContent: false,
+        activeEffectContentM: false,
         activeTechniqueTitle: false,
         activeTechniqueContent1: false,
         activeTechniqueContent2: false,
@@ -410,6 +411,7 @@ class OnePageAction extends Component {
         window.addEventListener('scroll', this._handlePlatFormContent5Active);
         window.addEventListener('scroll', this._handleEffectTitleActive);
         window.addEventListener('scroll', this._handleEffectContentActive);
+        window.addEventListener('scroll', this._handleEffectContentMActive);
         window.addEventListener('scroll', this._handleTechniqueTitleActive);
         window.addEventListener('scroll', this._handleTechniqueContent1Active);
         window.addEventListener('scroll', this._handleTechniqueContent2Active);
@@ -442,6 +444,7 @@ class OnePageAction extends Component {
                 title={this.title}
                 effectTitle={this.effectTitle}
                 effectContent={this.effectContent}
+                effectContentM={this.effectContentM}
                 platFormContent1={this.platFormContent1}
                 platFormContent2={this.platFormContent2}
                 platFormContent3={this.platFormContent3}
@@ -740,9 +743,21 @@ class OnePageAction extends Component {
             const rect = this.effectContent.current.getBoundingClientRect();
             const { top, bottom, height } = rect;
             if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
-                console.log(1)
                 this.setState({
                     activeEffectContent: true
+                });
+            }
+        }
+    }, 200);
+
+    effectContentM = React.createRef();
+    _handleEffectContentMActive = throttle(() => {
+        if(!this.state.loader) {
+            const rect = this.effectContentM.current.getBoundingClientRect();
+            const { top, bottom, height } = rect;
+            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
+                this.setState({
+                    activeEffectContentM: true
                 });
             }
         }

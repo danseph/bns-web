@@ -177,7 +177,7 @@ const OnePage = (props) => {
                                             <img src={require("../../images/web_bg_effect.png")}/>
                                         </div>
                                     </div>
-                                    <div className={`effect-img-wrap mobile ${props.activeEffectContent ? "active" : ""}`} ref={props.effectContent}>
+                                    <div className={`effect-img-wrap mobile ${props.activeEffectContentM ? "active" : ""}`} ref={props.effectContentM}>
                                         <div className="effect-img">
                                             <img src={require("../../images/mobile_bg_contents.png")}/>
                                         </div>
