@@ -25,6 +25,10 @@ class OnePageAction extends Component {
         activeRoadmapContent: false,
         activeTeamTitle: false,
         activeTeamList: false,
+        activePartnerTitle1: false,
+        activePartnerContent1: false,
+        activePartnerTitle2: false,
+        activePartnerContent2: false,
         activeMediaTitle: false,
         activeMediaList: false,
         activeAipxTitle: false,
@@ -279,85 +283,53 @@ class OnePageAction extends Component {
             className2: 'txt-box',
             image: 'team_sample_image.png'
         },
+    ];
+
+    partners = [
         {
-            name: 'name',
-            position: 'position',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: 'team_sample_image.png',
+            image: 'kobea.png',
         },
         {
-            name: 'name',
-            position: 'position',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: 'team_sample_image.png'
+            image: 'cardano.png',
         },
         {
-            name: 'name',
-            position: 'position',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: 'team_sample_image.png'
+            image: 'emurgo.png',
         },
         {
-            name: 'name',
-            position: 'position',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: 'team_sample_image.png'
+            image: 'infinito.png',
+        },
+        {
+            image: 'alphapoint.png',
         },
     ];
 
     media1 = [
         {
-            title: 'title',
-            date: '2019.03.22',
-            writer: 'writer',
+            title: '코스믹BC 비트코인 가격 예측 서비스 선봬…예측 맞추면 코인 보상',
+            date: '2019.01.24',
+            writer: '글로벌이코노믹',
+            url: 'http://www.g-enews.com/view.php?ud=20190124153943598efadd7fc46_1',
+            classNameWrap: 'img-box-wrap',
             className: 'img-box',
             className2: 'txt-box',
             className2_1: 'left',
             className2_2: 'right',
             className2_2_1: 'date',
             className2_2_2: 'name',
-            image: 'team_sample_image.png'
         },
         {
-            title: 'title',
-            date: '2019.03.22',
-            writer: 'writer',
+            title: '비트코인 가격 예측하는 AI로봇? 코스믹, 국제공모전 개최',
+            date: '2018.11.29',
+            writer: 'Decenter',
+            url: 'https://decenter.sedaily.com/NewsView/1S7DM5N53E',
+            classNameWrap: 'img-box-wrap',
             className: 'img-box',
             className2: 'txt-box',
             className2_1: 'left',
             className2_2: 'right',
             className2_2_1: 'date',
             className2_2_2: 'name',
-            image: 'team_sample_image.png'
-        },
-        {
-            title: 'title',
-            date: '2019.03.22',
-            writer: 'writer',
-            className: 'img-box',
-            className2: 'txt-box',
-            className2_1: 'left',
-            className2_2: 'right',
-            className2_2_1: 'date',
-            className2_2_2: 'name',
-            image: 'team_sample_image.png'
-        },
-        {
-            title: 'title',
-            date: '2019.03.22',
-            writer: 'writer',
-            className: 'img-box',
-            className2: 'txt-box',
-            className2_1: 'left',
-            className2_2: 'right',
-            className2_2_1: 'date',
-            className2_2_2: 'name',
-            image: 'team_sample_image.png'
-        },
+        }
     ];
 
     faq = [
@@ -417,6 +389,10 @@ class OnePageAction extends Component {
         window.addEventListener('scroll', this._handleTechniqueContent2Active);
         window.addEventListener('scroll', this._handleTeamTitleActive);
         window.addEventListener('scroll', this._handleTeamListActive);
+        window.addEventListener('scroll', this._handlePartnerTitle1Active);
+        window.addEventListener('scroll', this._handlePartnerContent1Active);
+        window.addEventListener('scroll', this._handlePartnerTitle2Active);
+        window.addEventListener('scroll', this._handlePartnerContent2Active);
         window.addEventListener('scroll', this._handleMediaTitleActive);
         window.addEventListener('scroll', this._handleMediaListActive);
         window.addEventListener('scroll', this._handleAipxTitleActive);
@@ -426,10 +402,11 @@ class OnePageAction extends Component {
         window.addEventListener('scroll', this._handleRoadmapTitleActive);
         window.addEventListener('scroll', this._handleRoadmapContentActive);
 
-        window.addEventListener('touchstart', this.touchStart);
-        window.addEventListener('touchmove', this.preventTouch, {passive: false});
+        window.addEventListener('touchstart', this.touchStart); // mobile touch 가로 움직임 방지
+        window.addEventListener('touchmove', this.preventTouch, {passive: false}); // mobile touch 가로 움직임 방지 end
     }
 
+    // mobile touch 가로 움직임 방지
     componentWillUnmount(){
         window.removeEventListener('touchstart', this.touchStart);
         window.removeEventListener('touchmove', this.preventTouch, {passive: false});
@@ -441,18 +418,18 @@ class OnePageAction extends Component {
     }
 
     preventTouch(e){
-        const minValue = 5; // threshold
+        const minValue = 5;
 
         this.clientX = e.touches[0].clientX - this.firstClientX;
         this.clientY = e.touches[0].clientY - this.firstClientY;
 
-        // Vertical scrolling does not work when you start swiping horizontally.
         if(Math.abs(this.clientX) > minValue){
             e.preventDefault();
             e.returnValue = false;
             return false;
         }
     }
+    // mobile touch 가로 움직임 방지 end
 
     render() {
         return (
@@ -466,6 +443,7 @@ class OnePageAction extends Component {
                 coinStructure={this.coinStructure}
                 whitePaper={this.whitePaper}
                 team1={this.team1}
+                partners={this.partners}
                 media1={this.media1}
                 faq={this.faq}
                 title={this.title}
@@ -489,6 +467,10 @@ class OnePageAction extends Component {
                 roadmapContent={this.roadmapContent}
                 teamTitle={this.teamTitle}
                 teamList={this.teamList}
+                partnerTitle1={this.partnerTitle1}
+                partnerContent1={this.partnerContent1}
+                partnerTitle2={this.partnerTitle2}
+                partnerContent2={this.partnerContent2}
                 mediaTitle={this.mediaTitle}
                 mediaList={this.mediaList}
                 handleRefresh={this._handleRefresh}
@@ -515,8 +497,8 @@ class OnePageAction extends Component {
                     loader: false,
                     activeNav: 1,
                     lanShow: false,
-                    activeMainTitle: true,
-                    activePlatFormTitle: true,
+                    activeMainTitle: false,
+                    activePlatFormTitle: false,
                     activePlatFormContent1: false,
                     activePlatFormContent2: false,
                     activePlatFormContent3: false,
@@ -524,6 +506,7 @@ class OnePageAction extends Component {
                     activePlatFormContent5: false,
                     activeEffectTitle: false,
                     activeEffectContent: false,
+                    activeEffectContentM: false,
                     activeTechniqueTitle: false,
                     activeTechniqueContent1: false,
                     activeTechniqueContent2: false,
@@ -531,6 +514,10 @@ class OnePageAction extends Component {
                     activeRoadmapContent: false,
                     activeTeamTitle: false,
                     activeTeamList: false,
+                    activePartnerTitle1: false,
+                    activePartnerContent1: false,
+                    activePartnerTitle2: false,
+                    activePartnerContent2: false,
                     activeMediaTitle: false,
                     activeMediaList: false,
                     activeAipxTitle: false,
@@ -595,8 +582,8 @@ class OnePageAction extends Component {
                     loader: false,
                     activeNav: 1,
                     lanShow: false,
-                    activeMainTitle: true,
-                    activePlatFormTitle: true,
+                    activeMainTitle: false,
+                    activePlatFormTitle: false,
                     activePlatFormContent1: false,
                     activePlatFormContent2: false,
                     activePlatFormContent3: false,
@@ -604,6 +591,7 @@ class OnePageAction extends Component {
                     activePlatFormContent5: false,
                     activeEffectTitle: false,
                     activeEffectContent: false,
+                    activeEffectContentM: false,
                     activeTechniqueTitle: false,
                     activeTechniqueContent1: false,
                     activeTechniqueContent2: false,
@@ -611,6 +599,10 @@ class OnePageAction extends Component {
                     activeRoadmapContent: false,
                     activeTeamTitle: false,
                     activeTeamList: false,
+                    activePartnerTitle1: false,
+                    activePartnerContent1: false,
+                    activePartnerTitle2: false,
+                    activePartnerContent2: false,
                     activeMediaTitle: false,
                     activeMediaList: false,
                     activeAipxTitle: false,
@@ -902,6 +894,58 @@ class OnePageAction extends Component {
             if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
                 this.setState({
                     activeTeamList: true
+                });
+            }
+        }
+    }, 200);
+
+    partnerTitle1 = React.createRef();
+    _handlePartnerTitle1Active = throttle(() => {
+        if(!this.state.loader) {
+            const rect = this.partnerTitle1.current.getBoundingClientRect();
+            const { top, bottom, height } = rect;
+            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
+                this.setState({
+                    activePartnerTitle1: true
+                });
+            }
+        }
+    }, 200);
+
+    partnerContent1 = React.createRef();
+    _handlePartnerContent1Active = throttle(() => {
+        if(!this.state.loader) {
+            const rect = this.partnerContent1.current.getBoundingClientRect();
+            const { top, bottom, height } = rect;
+            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
+                this.setState({
+                    activePartnerContent1: true
+                });
+            }
+        }
+    }, 200);
+
+    partnerTitle2 = React.createRef();
+    _handlePartnerTitle2Active = throttle(() => {
+        if(!this.state.loader) {
+            const rect = this.partnerTitle2.current.getBoundingClientRect();
+            const { top, bottom, height } = rect;
+            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
+                this.setState({
+                    activePartnerTitle2: true
+                });
+            }
+        }
+    }, 200);
+
+    partnerContent2 = React.createRef();
+    _handlePartnerContent2Active = throttle(() => {
+        if(!this.state.loader) {
+            const rect = this.partnerContent2.current.getBoundingClientRect();
+            const { top, bottom, height } = rect;
+            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
+                this.setState({
+                    activePartnerContent2: true
                 });
             }
         }

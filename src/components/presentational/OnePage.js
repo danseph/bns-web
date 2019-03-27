@@ -16,11 +16,10 @@ const OnePage = (props) => {
     let settings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 700,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: false,
-
     };
     return (
         <>
@@ -40,14 +39,14 @@ const OnePage = (props) => {
                         }
                         <h1 className={`header-logo m ${props.activeMainTitle ? "active" : ""}`}>
                             <a href="javascript:void(0)">
-                                <img src={require("../../images/logo.png")} alt="로고"/>
+                                <img src={require("../../images/logo_v2.png")} alt="로고"/>
                             </a>
                         </h1>
                         <div className="header-wrap">
                             <header className="header">
                                 <h1 className="header-logo" onClick={props.handleRefresh}>
                                     <a href="javascript:void(0)">
-                                        <img src={require("../../images/logo.png")} alt="로고"/>
+                                        <img src={require("../../images/logo_v2.png")} alt="로고"/>
                                     </a>
                                 </h1>
                                 {/*메뉴 클릭하면 ((header-nav, menu-btn, header-btn)) 여기에 on 붙여주세요 */}
@@ -371,6 +370,37 @@ const OnePage = (props) => {
                             </section>
                             {/* TEAM */}
 
+                            {/* PARTNERS */}
+                            <div className="partners-wrap">
+                                <section className="partners">
+                                    <div className={`partners-title ${props.activePartnerTitle1 ? "active" : ""}`} ref={props.partnerTitle1}>
+                                        <h2>AIPE Partners</h2>
+                                    </div>
+                                    <div className={`partners-logo ${props.activePartnerContent1 ? "active" : ""}`} ref={props.partnerContent1}>
+                                        <div className="nbp">
+                                            <img src={require("../../images/nbp.jpg")} />
+                                        </div>
+                                    </div>
+                                    <div className={`partners-title ${props.activePartnerTitle2 ? "active" : ""}`} ref={props.partnerTitle2}>
+                                        <h2>UZBIT Partners</h2>
+                                    </div>
+                                    <div className={`partners-logo ${props.activePartnerContent2 ? "active" : ""}`} ref={props.partnerContent2}>
+                                        <ul>
+                                            {
+                                                props.partners.map((item, i) => {
+                                                    return (
+                                                        <li key={i}>
+                                                            <img src={require(`../../images/${item.image}`)} />
+                                                        </li>
+                                                    )
+                                                })
+                                            }
+                                        </ul>
+                                    </div>
+                                </section>
+                            </div>
+                            {/* PARTNERS */}
+
                             {/* MEDIA */}
                             <section className="media" id="section6">
                                 <div className={`media-title ${props.activeMediaTitle ? "active" : ""}`} ref={props.mediaTitle}>
@@ -378,48 +408,27 @@ const OnePage = (props) => {
                                 </div>
                                 <div className={`media-list ${props.activeMediaList ? "active" : ""}`} ref={props.mediaList}>
                                     <div className="contents">
-                                        {/*<Slider {...settings} classNames="test">*/}
-                                            {/*<ul>*/}
-                                                {/*{props.media1.map((item, i) => {*/}
-                                                    {/*return (*/}
-                                                        {/*<li key={i}>*/}
-                                                            {/*<div className={item.className}>*/}
-                                                                {/*<img src={require(`../../images/${item.image}`)} />*/}
-                                                            {/*</div>*/}
-                                                            {/*<div className={item.className2}>*/}
-                                                                {/*<div className={item.className2_1}>*/}
-                                                                    {/*<strong>*/}
-                                                                        {/*{item.title}*/}
-                                                                    {/*</strong>*/}
-                                                                {/*</div>*/}
-                                                                {/*<div className={item.className2_2}>*/}
-                                                                    {/*<span className={item.className2_2_1}>{item.date}</span>*/}
-                                                                    {/*<span className={item.className2_2_2}>{item.writer}</span>*/}
-                                                                {/*</div>*/}
-                                                            {/*</div>*/}
-                                                        {/*</li>*/}
-                                                    {/*)*/}
-                                                {/*})}*/}
-                                            {/*</ul>*/}
-                                        {/*</Slider>*/}
                                         <ul>
                                             {props.media1.map((item, i) => {
                                                 return (
-                                                    <li key={i}>
-                                                        <div className={item.className}>
-                                                            <img src={require(`../../images/${item.image}`)} />
-                                                        </div>
-                                                        <div className={item.className2}>
-                                                            <div className={item.className2_1}>
-                                                                <strong>
-                                                                    {item.title}
-                                                                </strong>
+                                                <li key={i}>
+                                                        <a href={item.url} target="_blank">
+                                                            <div className={item.classNameWrap}>
+                                                                <div className={item.className}>
+                                                                </div>
                                                             </div>
-                                                            <div className={item.className2_2}>
-                                                                <span className={item.className2_2_1}>{item.date}</span>
-                                                                <span className={item.className2_2_2}>{item.writer}</span>
+                                                            <div className={item.className2}>
+                                                                <div className={item.className2_1}>
+                                                                    <strong>
+                                                                        {item.title}
+                                                                    </strong>
+                                                                </div>
+                                                                <div className={item.className2_2}>
+                                                                    <span className={item.className2_2_1}>{item.date}</span>
+                                                                    <span className={item.className2_2_2}>{item.writer}</span>
+                                                                </div>
                                                             </div>
-                                                        </div>
+                                                        </a>
                                                     </li>
                                                 )
                                             })}
@@ -467,7 +476,7 @@ const OnePage = (props) => {
                                     <a href="javascript:void(0)" className="ico-tele" />
                                     <a href="https://medium.com/cosmicbc" target="_blank" className="ico-medium" />
                                     <a href="https://twitter.com/cosmicbc_" target="_blank" className="ico-twitter" />
-                                    <a href="javascript:void(0)" className="ico-face" />
+                                    <a href="https://www.youtube.com/channel/UC6w2g-waOQ0UzSvL4WEVFQw" target="_blank" className="ico-youtube" />
                                     <a href="javascript:void(0)" className="ico-kakaco" />
                                 </div>
                                 <div className="footer-copy">
