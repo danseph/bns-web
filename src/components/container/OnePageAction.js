@@ -281,7 +281,7 @@ class OnePageAction extends Component {
             image: '03_Charlyne_HR_&_Admin.jpg'
         },
         {
-            name: 'Prisceilia',
+            name: 'Priscelia',
             position: 'Designer',
             className: 'img-box',
             className2: 'txt-box',
@@ -324,7 +324,7 @@ class OnePageAction extends Component {
         },
         {
             name: 'Yo',
-            position: 'Management Director',
+            position: 'Managing Director',
             className: 'img-box',
             className2: 'txt-box',
             image: '10_Yo_Management_Director.jpg'
@@ -351,7 +351,7 @@ class OnePageAction extends Component {
             image: '13_Dylan_Strategy_Manager.jpg'
         },
         {
-            name: 'Jenney',
+            name: 'Jenny',
             position: 'HR Manager',
             className: 'img-box',
             className2: 'txt-box',
@@ -470,13 +470,6 @@ class OnePageAction extends Component {
             image: '30_Tim_Developer.jpg'
         },
         {
-            name: 'Liam',
-            position: 'Developer',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '27_Liam_Developer.jpg'
-        },
-        {
             name: 'Met',
             position: 'Developer',
             className: 'img-box',
@@ -576,7 +569,7 @@ class OnePageAction extends Component {
         },
         {
             name: 'Soo',
-            position: 'Publisher',
+            position: 'Illustrator',
             className: 'img-box',
             className2: 'txt-box',
             image: '47_Soo_Graphic_Designer.jpg'
@@ -590,7 +583,7 @@ class OnePageAction extends Component {
         },
         {
             name: 'Lilly',
-            position: 'Web Designer',
+            position: 'UI UX Designer',
             className: 'img-box',
             className2: 'txt-box',
             image: '48_Lilly_Web_Designer.jpg'
@@ -611,7 +604,7 @@ class OnePageAction extends Component {
         },
         {
             name: 'Bill',
-            position: 'UI UX Designer',
+            position: '3D Designer',
             className: 'img-box',
             className2: 'txt-box',
             image: '51_Bill_3D_Designer.jpg'
@@ -694,7 +687,7 @@ class OnePageAction extends Component {
         {
             title: 'Launch of the Final Round | Prediction Herobots',
             date: '2019.01.24',
-            writer: '글로벌이코노믹',
+            writer: 'CosmicBC',
             url: 'https://www.facebook.com/watch/?v=345753002702811',
             classNameWrap: 'img-box-wrap',
             className: 'img-box',

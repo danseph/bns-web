@@ -145,7 +145,7 @@ const OnePage = (props) => {
                                                         </div>
                                                         <div className={item.className3}>
                                                             <h4><FormattedMessage id={item.text1} /></h4>
-                                                            <p><FormattedMessage id={item.text2} /></p>
+                                                            <p><FormattedMessage id={item.text2} values={{br: <br />}} /></p>
                                                         </div>
                                                     </li>
                                                 )
