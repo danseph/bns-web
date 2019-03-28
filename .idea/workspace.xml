@@ -2,67 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1434be6b-e8f8-4500-b582-00f2ef85137e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/images/media3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/01_Dan_CEO.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/02_Leo_China_HQ_Business_Director.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/03_Charlyne_HR_&amp;_Admin.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/04_Prisceilia_Designer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/05_Daniel_Sales_&amp;_Marketing.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/06_Ronald_Sales_&amp;_Marketing.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/07_Davin_Sales_&amp;_Marketing.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/08_Calvin_Developer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/09_Shirley_Operation.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/10_Yo_Management_Director.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/11_Maria_General_Manager.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/12_Leo_Planning_Manager.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/13_Dylan_Strategy_Manager.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/14_Jenney_HR_Manager.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/15_Daniel_Project_Manager.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/16_Sam_Advisor.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/17_Moon_Project_Manager.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/18_Jay_Project_Leader.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/19_Joe_Project_Leader.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/20_Kate_Finance.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/21_Nick_AI_Researcher.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/22_Elaine_AI_Researcher.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/23_Luna_AI_Researcher.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/24_Hue_AI_Researcher.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/25_Ryan_AI_Researcher.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/26_Scott_AI_Researcher.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/27_Liam_Developer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/28_Jack_Developer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/29_Shawn_Developer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/30_Tim_Developer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/31_Met_Developer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/32_Smith_Developer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/33_Louis_Developer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/34_YJ_Developer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/35_Aiden_Developer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/36_Bread_Developer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/37_Add_Developer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/38_Jerry_Developer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/39_James_Developer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/40_Niki_Developer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/41_Arsen_IT_Security.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/42_Sunny_Publisher.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/43_Hailey_Publisher.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/44_Suzi_Lead_Designer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/45_Bonniel_Sound_Designer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/46_Emma_Graphic_Designer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/47_Soo_Graphic_Designer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/48_Lilly_Web_Designer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/49_Liseo_UI_UX_Designer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/50_Luke_3D_Designer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/51_Bill_3D_Designer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/52_Mimi_Marketing.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/53_Gordon_Marketing.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/54_Jane_Interpreter.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teams/56_Joey_HR.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/AIPE_Whitepaper_Cn.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/AIPE_Whitepaper_En.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/AIPE_Whitepaper_Jp.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/AIPE_Whitepaper_kr.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/media4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/media5.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/container/OnePageAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/container/OnePageAction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/presentational/CharTransition.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/presentational/CharTransition.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/presentational/OnePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/presentational/OnePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/presentational/char.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/presentational/char.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/presentational/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/presentational/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/presentational/styles2.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/_init.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/_init.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/teams/41_Arsen_IT_Security.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/locale.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/locale.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -87,25 +42,25 @@
           <entry key="css" value="3" />
           <entry key="gif" value="4" />
           <entry key="gitignore" value="1" />
-          <entry key="html" value="13" />
+          <entry key="html" value="14" />
           <entry key="jpeg" value="2" />
           <entry key="jpg" value="2" />
-          <entry key="js" value="43" />
+          <entry key="js" value="53" />
           <entry key="json" value="3" />
           <entry key="png" value="26" />
-          <entry key="scss" value="57" />
+          <entry key="scss" value="66" />
           <entry key="svg" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="3" />
-          <entry key="HTML" value="13" />
+          <entry key="HTML" value="14" />
           <entry key="Image" value="34" />
           <entry key="JSON" value="3" />
-          <entry key="JavaScript" value="43" />
+          <entry key="JavaScript" value="53" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="SCSS" value="57" />
+          <entry key="SCSS" value="66" />
           <entry key="SVG" value="2" />
         </counts>
       </usages-collector>
@@ -118,33 +73,33 @@
         <counts>
           <entry key="css" value="138" />
           <entry key="gitignore" value="9" />
-          <entry key="html" value="18" />
-          <entry key="js" value="9890" />
+          <entry key="html" value="32" />
+          <entry key="js" value="10756" />
           <entry key="json" value="1" />
-          <entry key="scss" value="6411" />
+          <entry key="scss" value="7395" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="138" />
-          <entry key="HTML" value="18" />
+          <entry key="HTML" value="32" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="9890" />
+          <entry key="JavaScript" value="10756" />
           <entry key="PLAIN_TEXT" value="9" />
-          <entry key="SCSS" value="6411" />
+          <entry key="SCSS" value="7395" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.3001269">
+    <splitter split-orientation="horizontal" split-proportion="0.43133333">
       <split-first>
         <leaf>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/container/OnePageAction.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="291">
-                  <caret line="684" column="33" lean-forward="true" selection-start-line="684" selection-start-column="33" selection-end-line="684" selection-end-column="33" />
+                <state relative-caret-position="441">
+                  <caret line="720" column="38" lean-forward="true" selection-start-line="720" selection-start-column="38" selection-end-line="720" selection-end-column="38" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
                   </folding>
@@ -153,104 +108,19 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/_index (5).scss">
+            <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/_index (6).scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="672">
-                  <caret line="1144" column="21" selection-start-line="1144" selection-start-column="21" selection-end-line="1144" selection-end-column="21" />
+                <state relative-caret-position="176">
+                  <caret line="1095" column="12" lean-forward="true" selection-start-line="1095" selection-start-column="12" selection-end-line="1095" selection-end-column="12" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/package.json">
+            <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/index (2).html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
-                  <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/.gitignore">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="190">
-                  <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/_index (4).scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="387">
-                  <caret line="83" column="32" selection-start-line="83" selection-start-column="32" selection-end-line="83" selection-end-column="32" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/public/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="209">
-                  <caret line="11" column="75" lean-forward="true" selection-start-line="11" selection-start-column="75" selection-end-line="11" selection-end-column="75" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="57">
-                  <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/locale.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="38">
-                  <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/config/_mixins.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="216">
-                  <caret line="40" selection-start-line="40" selection-end-line="40" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/config/_variables.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="57">
-                  <caret line="3" column="7" selection-start-line="3" selection-end-line="3" selection-end-column="7" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/components/presentational/styles.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="62">
-                  <caret line="489" column="20" lean-forward="true" selection-start-line="489" selection-start-column="20" selection-end-line="489" selection-end-column="20" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/presentational/char.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="127">
-                  <caret line="427" column="33" selection-start-line="427" selection-start-column="33" selection-end-line="427" selection-end-column="33" />
+                <state relative-caret-position="-6346">
+                  <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
                 </state>
               </provider>
             </entry>
@@ -258,8 +128,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/presentational/CharTransition.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret line="147" column="24" lean-forward="true" selection-start-line="147" selection-start-column="24" selection-end-line="147" selection-end-column="24" />
+                <state relative-caret-position="766">
+                  <caret line="581" column="59" lean-forward="true" selection-start-line="581" selection-start-column="59" selection-end-line="581" selection-end-column="59" />
                   <folding>
                     <element signature="e#0#40#0" expanded="true" />
                   </folding>
@@ -268,10 +138,26 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/config/_animation.scss">
+            <entry file="file://$PROJECT_DIR$/src/locale.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="437">
-                  <caret line="38" column="35" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="35" />
+                <state relative-caret-position="627">
+                  <caret line="33" column="53" lean-forward="true" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/presentational/char.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="291">
+                  <caret line="1525" column="33" lean-forward="true" selection-start-line="1525" selection-start-column="33" selection-end-line="1525" selection-end-column="33" />
+                  <folding>
+                    <marker date="1553759165038" expanded="true" signature="26703:26712" ph="..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -279,11 +165,20 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/presentational/OnePage.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="380">
-                  <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+                <state relative-caret-position="809">
+                  <caret line="466" column="38" lean-forward="true" selection-start-line="466" selection-start-column="38" selection-end-line="466" selection-end-column="38" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/presentational/styles.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="152">
+                  <caret line="1596" column="19" selection-start-line="1596" selection-start-column="19" selection-end-line="1596" selection-end-column="19" />
                 </state>
               </provider>
             </entry>
@@ -294,11 +189,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>font-weight: 700;</find>
-      <find>.name</find>
-      <find>background</find>
-      <find>class</find>
-      <find>PART</find>
       <find>_handlePartnerTitle1Active</find>
       <find>_handlePartnerTitle1Activ</find>
       <find>_handlePartnerTitleActive</find>
@@ -313,7 +203,6 @@
       <find>Legar Advice</find>
       <find>Legar</find>
       <find>PARTNERS</find>
-      <find>media</find>
       <find>header-lan-btn</find>
       <find>opacity: 0.1;</find>
       <find>border: 1px solid #000;</find>
@@ -324,6 +213,12 @@
       <find>top: 84px;</find>
       <find>40</find>
       <find>line-height: 40px;</find>
+      <find>main-txt-desc</find>
+      <find>charTextKo</find>
+      <find>.team</find>
+      <find>team</find>
+      <find>arsen</find>
+      <find>media</find>
     </findStrings>
     <replaceStrings>
       <replace>className</replace>
@@ -359,21 +254,22 @@
         <option value="$PROJECT_DIR$/src/config/_variables.scss" />
         <option value="$PROJECT_DIR$/src/components/presentational/OnePageAction.js" />
         <option value="$PROJECT_DIR$/src/components/container/OnePage.js" />
-        <option value="$PROJECT_DIR$/src/config/_init.scss" />
         <option value="$USER_HOME$/Downloads/Telegram Desktop/190325_AIPX/index.html" />
         <option value="$USER_HOME$/Downloads/Telegram Desktop/_index (2).scss" />
         <option value="$PROJECT_DIR$/src/config/_mixins.scss" />
-        <option value="$PROJECT_DIR$/src/components/presentational/CharTransition.js" />
-        <option value="$PROJECT_DIR$/src/components/presentational/char.scss" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/config/_animation.scss" />
         <option value="$USER_HOME$/Downloads/Telegram Desktop/_mixins.scss" />
         <option value="$USER_HOME$/Downloads/Telegram Desktop/_index (4).scss" />
-        <option value="$PROJECT_DIR$/src/locale.js" />
-        <option value="$PROJECT_DIR$/src/components/container/OnePageAction.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/src/config/_init.scss" />
+        <option value="$USER_HOME$/Downloads/Telegram Desktop/index.html" />
+        <option value="$PROJECT_DIR$/src/components/presentational/CharTransition.js" />
+        <option value="$PROJECT_DIR$/src/components/presentational/char.scss" />
+        <option value="$PROJECT_DIR$/src/locale.js" />
         <option value="$PROJECT_DIR$/src/components/presentational/OnePage.js" />
+        <option value="$PROJECT_DIR$/src/components/container/OnePageAction.js" />
         <option value="$PROJECT_DIR$/src/components/presentational/styles.scss" />
       </list>
     </option>
@@ -421,7 +317,44 @@
             <path>
               <item name="aipx" type="b2602c69:ProjectViewProjectNode" />
               <item name="aipx" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aipx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aipx" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aipx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aipx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aipx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aipx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="container" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aipx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aipx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="presentational" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aipx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aipx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aipx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aipx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -443,9 +376,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\user\Documents\aipx\src\images\teams" />
       <recent name="C:\Users\user\Documents\aipx\src\images" />
       <recent name="C:\Users\user\Documents\aipx\public" />
+      <recent name="C:\Users\user\Documents\aipx\src\images\teams" />
       <recent name="C:\Users\user\Documents\aipx\src\components\presentational" />
       <recent name="C:\Users\user\Documents\aipx\src\components\images" />
     </key>
@@ -479,12 +412,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553057947240</updated>
-      <workItem from="1553057948354" duration="197214000" />
+      <workItem from="1553057948354" duration="209877000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="197214000" />
+    <option name="totallyTimeSpent" value="209877000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -501,7 +434,7 @@
     <layout>
       <window_info id="npm" side_tool="true" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.102212854" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17334037" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
@@ -546,15 +479,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/images/bt_drop@2x.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/ico_telegram.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/loader.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/images/loader.gif">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -582,13 +506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="16" selection-end-line="29" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/_init.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -681,13 +598,6 @@
     <entry file="file://$PROJECT_DIR$/src/images/media1.jpeg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/presentational/styles2.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5358">
-          <caret line="282" column="16" selection-start-line="282" selection-start-column="16" selection-end-line="282" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -727,35 +637,11 @@
     <entry file="file://$PROJECT_DIR$/src/images/down_grey.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/locale.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/images/teams/33_Louis_Developer.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/images/teams/38_Jerry_Developer.jpg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/container/OnePageAction.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="684" column="33" lean-forward="true" selection-start-line="684" selection-start-column="33" selection-end-line="684" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/config/_mixins.scss">
       <provider selected="true" editor-type-id="text-editor">
@@ -771,20 +657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/presentational/char.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="427" column="33" selection-start-line="427" selection-start-column="33" selection-end-line="427" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/config/_animation.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -794,35 +666,115 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="75" lean-forward="true" selection-start-line="11" selection-start-column="75" selection-end-line="11" selection-end-column="75" />
+        <state relative-caret-position="190">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/presentational/styles2.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="676">
+          <caret line="282" column="16" selection-start-line="282" selection-start-column="16" selection-end-line="282" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/_init.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="54" column="18" lean-forward="true" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/index (2).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6346">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/_index (6).scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="1095" column="12" lean-forward="true" selection-start-line="1095" selection-start-column="12" selection-end-line="1095" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/presentational/CharTransition.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="147" column="24" lean-forward="true" selection-start-line="147" selection-start-column="24" selection-end-line="147" selection-end-column="24" />
+        <state relative-caret-position="766">
+          <caret line="581" column="59" lean-forward="true" selection-start-line="581" selection-start-column="59" selection-end-line="581" selection-end-column="59" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/locale.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="33" column="53" lean-forward="true" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/presentational/OnePage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        <state relative-caret-position="809">
+          <caret line="466" column="38" lean-forward="true" selection-start-line="466" selection-start-column="38" selection-end-line="466" selection-end-column="38" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/container/OnePageAction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="720" column="38" lean-forward="true" selection-start-line="720" selection-start-column="38" selection-end-line="720" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/presentational/char.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="1525" column="33" lean-forward="true" selection-start-line="1525" selection-start-column="33" selection-end-line="1525" selection-end-column="33" />
+          <folding>
+            <marker date="1553759165038" expanded="true" signature="26703:26712" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/presentational/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="489" column="20" lean-forward="true" selection-start-line="489" selection-start-column="20" selection-end-line="489" selection-end-column="20" />
+        <state relative-caret-position="152">
+          <caret line="1596" column="19" selection-start-line="1596" selection-start-column="19" selection-end-line="1596" selection-end-column="19" />
         </state>
       </provider>
     </entry>

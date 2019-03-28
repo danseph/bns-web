@@ -70,7 +70,7 @@ export default {
         'faq-answer-4': '- 자사의 서비스를 통한 보상과 그 서비스를 이용하는 거래소를 통해 코인을 받을 수 있습니다.  이벤트는 추후 공지될 예정입니다.',
         'faq-question-5': 'ICO는 어떻게 진행이 되나요?',
         'faq-answer-5': '- 추후 공지를 통해 안내해드리도록 하겠습니다.',
-        'footer-copy': 'Copyright &copy;2019 AIPE. All rights reserved.'
+        'footer-copy': 'Vision Exchange, 2 Venture Drive #24-01 Singapore 608526 {br} ©2018 CosmicBC Pte., Ltd. All rights reserved.'
     },
     en: {
         'header-nav-about': 'About',
@@ -143,7 +143,7 @@ export default {
         'faq-answer-4': '- AIPE coin will be used as the major means  for in the blockchain ecosystem operated by the AIPE Foundation',
         'faq-question-5': 'How does ICO work?',
         'faq-answer-5': '- It will be announced later.',
-        'footer-copy': 'Copyright &copy;2019 AIPE. All rights reserved.'
+        'footer-copy': 'Vision Exchange, 2 Venture Drive #24-01 Singapore 608526 {br} ©2018 CosmicBC Pte., Ltd. All rights reserved.'
     },
     zh: {
         'header-nav-about': 'About',
@@ -216,7 +216,7 @@ export default {
         'faq-answer-4': '- 用户可通过我公司所提供的奖励与相关交易所获得相应的加密货币。有关对活动的具体内容，我们将在近期公布。',
         'faq-question-5': '如何进行ICO？',
         'faq-answer-5': '- 我们将近期公布相关消息及参与方法。',
-        'footer-copy': 'Copyright &copy;2019 AIPE. All rights reserved.'
+        'footer-copy': 'Vision Exchange, 2 Venture Drive #24-01 Singapore 608526 {br} ©2018 CosmicBC Pte., Ltd. All rights reserved.'
     },
     ja: {
         'header-nav-about': 'About',
@@ -289,7 +289,7 @@ export default {
         'faq-answer-4': '- 当社のサービスを通した報酬やそのサービスを利用する取引所にてコインをもらえます。イベントについては、今後、お知らせ致します。',
         'faq-question-5': 'ICOは、どのように行われますか？',
         'faq-answer-5': '- 今後、通知を通じてご案内致します。',
-        'footer-copy': 'Copyright &copy;2019 AIPE. All rights reserved.'
+        'footer-copy': 'Vision Exchange, 2 Venture Drive #24-01 Singapore 608526 {br} ©2018 CosmicBC Pte., Ltd. All rights reserved.'
     },
 }
 

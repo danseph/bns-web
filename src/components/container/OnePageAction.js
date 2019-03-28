@@ -241,15 +241,19 @@ class OnePageAction extends Component {
 
     whitePaper = [
         {
+            link: "AIPE_Whitepaper_kr.pdf",
             text: 'whitepaper-ko'
         },
         {
+            link: "AIPE_Whitepaper_En.pdf",
             text: 'whitepaper-en'
         },
         {
+            link: "AIPE_Whitepaper_Cn.pdf",
             text: 'whitepaper-zh'
         },
         {
+            link: "AIPE_Whitepaper_Jp.pdf",
             text: 'whitepaper-ja'
         }
     ];
@@ -283,9 +287,6 @@ class OnePageAction extends Component {
             className2: 'txt-box',
             image: '04_Prisceilia_Designer.jpg',
         },
-    ];
-
-    team2 = [
         {
             name: 'Daniel',
             position: 'Sales & Marketing',
@@ -314,9 +315,6 @@ class OnePageAction extends Component {
             className2: 'txt-box',
             image: '08_Calvin_Developer.jpg'
         },
-    ];
-
-    team3 = [
         {
             name: 'Shirley',
             position: 'Operation',
@@ -345,9 +343,6 @@ class OnePageAction extends Component {
             className2: 'txt-box',
             image: '12_Leo_Planning_Manager.jpg'
         },
-    ];
-
-    team4 = [
         {
             name: 'Dylan',
             position: 'Strategy Manager',
@@ -376,9 +371,6 @@ class OnePageAction extends Component {
             className2: 'txt-box',
             image: '16_Sam_Advisor.jpg'
         },
-    ];
-
-    team5 = [
         {
             name: 'Moon',
             position: 'Project Manager',
@@ -407,9 +399,6 @@ class OnePageAction extends Component {
             className2: 'txt-box',
             image: '20_Kate_Finance.jpg'
         },
-    ];
-
-    team6 = [
         {
             name: 'Nick',
             position: 'AI Researcher',
@@ -438,9 +427,6 @@ class OnePageAction extends Component {
             className2: 'txt-box',
             image: '24_Hue_AI_Researcher.jpg'
         },
-    ];
-
-    team6 = [
         {
             name: 'Ryan',
             position: 'AI Researcher',
@@ -469,9 +455,6 @@ class OnePageAction extends Component {
             className2: 'txt-box',
             image: '28_Jack_Developer.jpg'
         },
-    ];
-
-    team7 =[
         {
             name: 'Shawn',
             position: 'Developer',
@@ -500,9 +483,6 @@ class OnePageAction extends Component {
             className2: 'txt-box',
             image: '31_Met_Developer.jpg'
         },
-    ];
-
-    team8 = [
         {
             name: 'Smith',
             position: 'Developer',
@@ -531,9 +511,6 @@ class OnePageAction extends Component {
             className2: 'txt-box',
             image: '35_Aiden_Developer.jpg'
         },
-    ];
-
-    team9 = [
         {
             name: 'Bread',
             position: 'Developer',
@@ -562,16 +539,6 @@ class OnePageAction extends Component {
             className2: 'txt-box',
             image: '40_Niki_Developer.jpg'
         },
-    ];
-
-    team10 = [
-        {
-            name: 'Arsen',
-            position: 'IT Security',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '41_Arsen_IT_Security.jpg'
-        },
         {
             name: 'Sunny',
             position: 'Publisher',
@@ -593,9 +560,6 @@ class OnePageAction extends Component {
             className2: 'txt-box',
             image: '44_Suzi_Lead_Designer.jpg'
         },
-    ];
-
-    team11 = [
         {
             name: 'Bonniel',
             position: 'Sound Designer',
@@ -624,9 +588,6 @@ class OnePageAction extends Component {
             className2: 'txt-box',
             image: '38_Jerry_Developer.jpg'
         },
-    ];
-
-    team12 = [
         {
             name: 'Lilly',
             position: 'Web Designer',
@@ -655,9 +616,6 @@ class OnePageAction extends Component {
             className2: 'txt-box',
             image: '51_Bill_3D_Designer.jpg'
         },
-    ];
-
-    team13 = [
         {
             name: 'Mimi',
             position: 'Marketing',
@@ -738,6 +696,32 @@ class OnePageAction extends Component {
             date: '2019.01.24',
             writer: '글로벌이코노믹',
             url: 'https://www.facebook.com/watch/?v=345753002702811',
+            classNameWrap: 'img-box-wrap',
+            className: 'img-box',
+            className2: 'txt-box',
+            className2_1: 'left',
+            className2_2: 'right',
+            className2_2_1: 'date',
+            className2_2_2: 'name',
+        },
+        {
+            title: '3PIKS Service Introduction video',
+            date: '2019.03.25',
+            writer: 'CosmicBC',
+            url: 'https://youtu.be/DfeAUlF7UIg',
+            classNameWrap: 'img-box-wrap',
+            className: 'img-box',
+            className2: 'txt-box',
+            className2_1: 'left',
+            className2_2: 'right',
+            className2_2_1: 'date',
+            className2_2_2: 'name',
+        },
+        {
+            title: 'How to use UZMEX',
+            date: '2019.03.27',
+            writer: 'CosmicBC',
+            url: 'https://youtu.be/Y0NS99Dzczc',
             classNameWrap: 'img-box-wrap',
             className: 'img-box',
             className2: 'txt-box',

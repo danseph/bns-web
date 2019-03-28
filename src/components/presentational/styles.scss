@@ -545,7 +545,6 @@ body {
 .main {
   &-wrap {
     margin-top: 70px; // jonny
-    background-color: #000;
     @include mq("mobile") {
       margin: 0;
     }
@@ -645,6 +644,9 @@ body {
 }
 
 .platform {
+  &-wrap {
+    background-color: #FFF;
+  }
   @include layout();
   @include titleStyle();
   padding-bottom: 300px;
@@ -743,7 +745,6 @@ body {
 .effect {
   &-wrap {
     width: 100%;
-    background-color: #000;
     position: relative;
   }
   // jonny
@@ -861,7 +862,6 @@ body {
 .tech {
   &-wrap {
     width: 100%;
-    background-color: #000;
   }
 
   @include layout();
@@ -943,6 +943,9 @@ body {
 }
 
 .aipx {
+  &-wrap {
+    background-color: #FFF;
+  }
   @include layout();
   @include titleStyle();
 
@@ -1322,10 +1325,6 @@ body {
 }
 
 .roadmap {
-  &-wrap {
-    background-color: #000;
-  }
-
   @include layout();
   @include titleStyle(#FFF);
 
@@ -1372,42 +1371,66 @@ body {
 }
 
 .team {
-  @include layout();
+  &-wrap {
+    background-color: #FFF;
+  }
+
   @include titleStyle();
+
+  width: 94%;
+  margin: 0 auto;
+  padding: 100px 0;
+
+  @include mq("tablet") {
+    width: 100%;
+    padding: 60px 0;
+  }
+  @include mq("mobile") {
+    width: 100%;
+    padding: 50px 6%;
+  }
+
   &-desc {
     width: 100%;
     margin-top: 20px;
-    opacity: 0; // jonny
-    @include trsX0Y100; // jonny
+
     @include mq("mobile") {
       margin-top: 0;
     }
 
     ul {
+      margin-top: 50px;
       width: 100%;
-      display: flex !important;
+      display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      outline: none;
+
+      @include mq("tablet") {
+        margin-top: 20px;
+      }
+      @include mq("mobile") {
+        margin-top: 10px;
+      }
+
       @include mq("tablet") {
         padding: 0 50px;
       }
 
       li {
-        margin-top: 80px;
-        width: 21%;
+        margin-top: 10px;
+        width: 9.5%;
 
         @include mq("tablet") {
-          width: 30%;
+          width: 19%;
         }
         @include mq("mobile") {
-          margin-top: 30px;
-          width: 48%;
+          width: 24%;
         }
 
         .img-box {
           width: 100%;
-          background-color: #CCC;
+          border-radius: 50%;
+          overflow: hidden;
 
           img {
             width: 100%;
@@ -1423,7 +1446,7 @@ body {
           strong {
             font-size: 1.6rem;
             font-weight: 700;
-            line-height: 1.8;
+            line-height: 1.6;
             display: block;
 
             @include mq("mobile") {
@@ -1433,7 +1456,6 @@ body {
 
           em {
             font-size: 1.4rem;
-            line-height: 1.8;
 
             @include mq("mobile") {
               font-size: 1.2rem;
@@ -1442,50 +1464,14 @@ body {
         }
       }
     }
-    // jonny
-    &.active {
-      @include trsX0Y0;
-      @include trsOp6s;
-      opacity: 1;
-    }
-    // jonny end
-    &-paging {
-      margin-top: 50px;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      .count {
-        width: calc(100% - 48px);
-      }
-
-      a {
-        display: block;
-        width: 24px;
-        height: 24px;
-
-        &.btn-left {
-          background: url("../../images/left50.png") no-repeat center center / 8px;
-
-          &:hover {
-            background-image: url("../../images/left.png");
-          }
-        }
-
-        &.btn-right {
-          background: url("../../images/right50.png") no-repeat center center / 8px;
-          &:hover {
-            background-image: url("../../images/right.png");
-          }
-        }
-      }
-    }
-    //@include paging();
   }
 }
 
 .partners {
+  &-wrap {
+    background-color: #FFF;
+  }
+
   @include layout();
   @include titleStyle();
   padding-bottom: 0;
@@ -1561,8 +1547,6 @@ body {
           }
         }
 
-
-
         img {
           width: 75%;
         }
@@ -1572,6 +1556,10 @@ body {
 }
 
 .media {
+  &-wrap {
+    background-color: #FFF;
+  }
+
   @include layout();
   @include titleStyle();
 
@@ -1606,6 +1594,7 @@ body {
         .img-box-wrap {
           overflow: hidden;
           cursor: pointer;
+          border: 1px solid #cccccc;
           .img-box {
             width: 100%;
             min-height: 237px;
@@ -1681,6 +1670,20 @@ body {
             }
           }
         }
+        &:nth-child(4) {
+          .img-box-wrap {
+            .img-box {
+              background-image: url(../../images/media4.png);
+            }
+          }
+        }
+        &:nth-child(5) {
+          .img-box-wrap {
+            .img-box {
+              background-image: url(../../images/media5.png);
+            }
+          }
+        }
       }
     }
 
@@ -1728,6 +1731,10 @@ body {
 }
 
 .faq {
+  &-wrap {
+    background-color: #FFF;
+  }
+
   @include layout();
   @include titleStyle();
   // jonny
@@ -1847,10 +1854,6 @@ body {
 //
 //------------------------------------------------------------------------------
 .footer {
-  &-wrap {
-    background-color: #000;
-  }
-
   @include layout();
   padding-top: 150px;
   position: relative;

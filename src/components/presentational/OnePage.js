@@ -107,51 +107,53 @@ const OnePage = (props) => {
                             {/* MAIN */}
 
                             {/* PLATFORM */}
-                            <section className="platform" id="section2">
-                                <div className={`platform-title ${props.activePlatFormTitle ? "active" : ""}`} ref={props.platFormTitle}>
-                                    <h2><FormattedMessage id="ai-prediction-title" /></h2>
-                                </div>
-                                <div className="platform-content">
-                                    <ul>
-                                        {props.platformContent.map((item, i) => {
-                                            return (
-                                                <li
-                                                    key={i}
-                                                    className={`
-                                                        ${item.className1}
-                                                        ${
-                                                            (item.className1 === "content1" && props.activePlatFormContent1 ? "active" : "") ||
-                                                            (item.className1 === "content2" && props.activePlatFormContent2 ? "active" : "") ||
-                                                            (item.className1 === "content3" && props.activePlatFormContent3 ? "active" : "") ||
-                                                            (item.className1 === "content4" && props.activePlatFormContent4 ? "active" : "") ||
-                                                            (item.className1 === "content5" && props.activePlatFormContent5 ? "active" : "")
-                                                        }
-                                                    `}
-                                                    ref={
-                                                        (item.className1 === "content1" && props.platFormContent1) ||
-                                                        (item.className1 === "content2" && props.platFormContent2) ||
-                                                        (item.className1 === "content3" && props.platFormContent3) ||
-                                                        (item.className1 === "content4" && props.platFormContent4) ||
-                                                        (item.className1 === "content5" && props.platFormContent5)
-                                                    }>
-                                                    <div className={item.className2}>
-                                                        <div className={item.className2_1}>
-                                                            <img src={require(`../../images/${item.image}`)}/>
+                            <div className="platform-wrap">
+                                <section className="platform" id="section2">
+                                    <div className={`platform-title ${props.activePlatFormTitle ? "active" : ""}`} ref={props.platFormTitle}>
+                                        <h2><FormattedMessage id="ai-prediction-title" /></h2>
+                                    </div>
+                                    <div className="platform-content">
+                                        <ul>
+                                            {props.platformContent.map((item, i) => {
+                                                return (
+                                                    <li
+                                                        key={i}
+                                                        className={`
+                                                            ${item.className1}
+                                                            ${
+                                                                (item.className1 === "content1" && props.activePlatFormContent1 ? "active" : "") ||
+                                                                (item.className1 === "content2" && props.activePlatFormContent2 ? "active" : "") ||
+                                                                (item.className1 === "content3" && props.activePlatFormContent3 ? "active" : "") ||
+                                                                (item.className1 === "content4" && props.activePlatFormContent4 ? "active" : "") ||
+                                                                (item.className1 === "content5" && props.activePlatFormContent5 ? "active" : "")
+                                                            }
+                                                        `}
+                                                        ref={
+                                                            (item.className1 === "content1" && props.platFormContent1) ||
+                                                            (item.className1 === "content2" && props.platFormContent2) ||
+                                                            (item.className1 === "content3" && props.platFormContent3) ||
+                                                            (item.className1 === "content4" && props.platFormContent4) ||
+                                                            (item.className1 === "content5" && props.platFormContent5)
+                                                        }>
+                                                        <div className={item.className2}>
+                                                            <div className={item.className2_1}>
+                                                                <img src={require(`../../images/${item.image}`)}/>
+                                                            </div>
+                                                            <div className={item.className2_1}>
+                                                                <img src={require(`../../images/${item.image2}`)}/>
+                                                            </div>
                                                         </div>
-                                                        <div className={item.className2_1}>
-                                                            <img src={require(`../../images/${item.image2}`)}/>
+                                                        <div className={item.className3}>
+                                                            <h4><FormattedMessage id={item.text1} /></h4>
+                                                            <p><FormattedMessage id={item.text2} /></p>
                                                         </div>
-                                                    </div>
-                                                    <div className={item.className3}>
-                                                        <h4><FormattedMessage id={item.text1} /></h4>
-                                                        <p><FormattedMessage id={item.text2} /></p>
-                                                    </div>
-                                                </li>
-                                            )
-                                        })}
-                                    </ul>
-                                </div>
-                            </section>
+                                                    </li>
+                                                )
+                                            })}
+                                        </ul>
+                                    </div>
+                                </section>
+                            </div>
                             {/* PLATFORM */}
 
                             {/* PLATFORM, SOLUTION */}
@@ -230,67 +232,69 @@ const OnePage = (props) => {
                             {/* TECHNIQUE */}
 
                             {/* AIPX */}
-                            <section className="aipx">
-                                <div className={`aipx-title ${props.activeAipxTitle ? "active" : ""}`} ref={props.aipxTitle}>
-                                    <h2><FormattedMessage id="aipx-title" /></h2>
-                                </div>
-                                <div className="aipx-content" ref={props.aipxContent}>
-                                    <div className="aipx-content-img">
-                                        <div className={`center ${props.activeAipxContent ? "active" : ""}`}>
-                                            <img src={require("../../images/aipe.png")} />
-                                        </div>
-                                        <ul className={`side ${props.activeAipxContent ? "active" : ""}`}>
-                                            {
-                                                props.aipx.map((item, i) => {
-                                                    return (
-                                                        <li key={i} className={item.className}>
-                                                            <p>
-                                                                <FormattedMessage id={item.text} values={{kbr: <br />}} />
-                                                            </p>
-                                                        </li>
-                                                    )
-                                                })
-                                            }
-                                        </ul>
+                            <div className="aipx-wrap">
+                                <section className="aipx">
+                                    <div className={`aipx-title ${props.activeAipxTitle ? "active" : ""}`} ref={props.aipxTitle}>
+                                        <h2><FormattedMessage id="aipx-title" /></h2>
                                     </div>
-                                    <div className={`aipx-content-txt ${props.activeAipxText ? "active" : ""}`} ref={props.aipxText}>
-                                        <p>
-                                            <FormattedMessage id="aipx-text6" />
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className={`aipx-desc ${props.activeCoinAllocation ? "active" : ""}`} ref={props.coinAllocation}>
-                                    <div className="aipx-desc-structure">
-                                        <h3>
-                                            <FormattedMessage id='coin-structure' />
-                                        </h3>
-                                        <div className="aipx-desc-structure-list">
-                                            <ul>
-                                                {props.coinStructure.map((item, i) => {
-                                                    return (
-                                                        <li key={i}>
-                                                            <strong className={item.className1}>
-                                                                <FormattedMessage id={item.text1} />
-                                                            </strong>
-                                                            <span className={item.className2}>
-                                                                <FormattedMessage id={item.text2} />
-                                                            </span>
-                                                        </li>
-                                                    )
-                                                })}
+                                    <div className="aipx-content" ref={props.aipxContent}>
+                                        <div className="aipx-content-img">
+                                            <div className={`center ${props.activeAipxContent ? "active" : ""}`}>
+                                                <img src={require("../../images/aipe.png")} />
+                                            </div>
+                                            <ul className={`side ${props.activeAipxContent ? "active" : ""}`}>
+                                                {
+                                                    props.aipx.map((item, i) => {
+                                                        return (
+                                                            <li key={i} className={item.className}>
+                                                                <p>
+                                                                    <FormattedMessage id={item.text} values={{kbr: <br />}} />
+                                                                </p>
+                                                            </li>
+                                                        )
+                                                    })
+                                                }
                                             </ul>
                                         </div>
-                                    </div>
-                                    <div className="aipx-desc-graph">
-                                        <h3>
-                                            <FormattedMessage id='coin-allocation' />
-                                        </h3>
-                                        <div className="aipx-desc-graph-img">
-                                            <img src={require("../../images/allocation.png")} />
+                                        <div className={`aipx-content-txt ${props.activeAipxText ? "active" : ""}`} ref={props.aipxText}>
+                                            <p>
+                                                <FormattedMessage id="aipx-text6" />
+                                            </p>
                                         </div>
                                     </div>
-                                </div>
-                            </section>
+                                    <div className={`aipx-desc ${props.activeCoinAllocation ? "active" : ""}`} ref={props.coinAllocation}>
+                                        <div className="aipx-desc-structure">
+                                            <h3>
+                                                <FormattedMessage id='coin-structure' />
+                                            </h3>
+                                            <div className="aipx-desc-structure-list">
+                                                <ul>
+                                                    {props.coinStructure.map((item, i) => {
+                                                        return (
+                                                            <li key={i}>
+                                                                <strong className={item.className1}>
+                                                                    <FormattedMessage id={item.text1} />
+                                                                </strong>
+                                                                <span className={item.className2}>
+                                                                    <FormattedMessage id={item.text2} />
+                                                                </span>
+                                                            </li>
+                                                        )
+                                                    })}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div className="aipx-desc-graph">
+                                            <h3>
+                                                <FormattedMessage id='coin-allocation' />
+                                            </h3>
+                                            <div className="aipx-desc-graph-img">
+                                                <img src={require("../../images/allocation.png")} />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
                             {/* AIPX */}
 
                             {/* WHITEPAPER */}
@@ -302,7 +306,7 @@ const OnePage = (props) => {
                                     <div className="paper-link">
                                         {props.whitePaper.map((item, i) => {
                                             return (
-                                                <a href="javascript:void(0)" key={i}>
+                                                <a href={item.link} key={i} download>
                                                     <FormattedMessage id={item.text} />
                                                 </a>
                                             )
@@ -326,13 +330,13 @@ const OnePage = (props) => {
                             {/* ROADMAP */}
 
                             {/* TEAM */}
-                            <section className="team" id="section5">
-                                <div className={`team-title ${props.activeTeamTitle ? "active" : ""}`} ref={props.teamTitle}>
-                                    <h2><FormattedMessage id="team" /></h2>
-                                </div>
-                                <div className={`team-desc ${props.activeTeamList ? "active" : ""}`} ref={props.teamList}>
-                                    <div className="team-desc-list">
-                                        <Slider {...settings} classNames="test">
+                            <div className="team-wrap">
+                                <section className="team" id="section5">
+                                    <div className={`team-title ${props.activeTeamTitle ? "active" : ""}`} ref={props.teamTitle}>
+                                        <h2><FormattedMessage id="team" /></h2>
+                                    </div>
+                                    <div className={`team-desc ${props.activeTeamList ? "active" : ""}`} ref={props.teamList}>
+                                        <div className="team-desc-list">
                                             <ul>
                                                 {props.team1.map((item, i) => {
                                                     return (
@@ -348,193 +352,13 @@ const OnePage = (props) => {
                                                     )
                                                 })}
                                             </ul>
-                                            <ul>
-                                                {props.team2.map((item, i) => {
-                                                    return (
-                                                        <li key={i}>
-                                                            <div className={item.className}>
-                                                                <img src={require(`../../images/teams/${item.image}`)} />
-                                                            </div>
-                                                            <div className={item.className2}>
-                                                                <strong>{item.name}</strong>
-                                                                <em>{item.position}</em>
-                                                            </div>
-                                                        </li>
-                                                    )
-                                                })}
-                                            </ul>
-                                            <ul>
-                                                {props.team3.map((item, i) => {
-                                                    return (
-                                                        <li key={i}>
-                                                            <div className={item.className}>
-                                                                <img src={require(`../../images/teams/${item.image}`)} />
-                                                            </div>
-                                                            <div className={item.className2}>
-                                                                <strong>{item.name}</strong>
-                                                                <em>{item.position}</em>
-                                                            </div>
-                                                        </li>
-                                                    )
-                                                })}
-                                            </ul>
-                                            <ul>
-                                                {props.team4.map((item, i) => {
-                                                    return (
-                                                        <li key={i}>
-                                                            <div className={item.className}>
-                                                                <img src={require(`../../images/teams/${item.image}`)} />
-                                                            </div>
-                                                            <div className={item.className2}>
-                                                                <strong>{item.name}</strong>
-                                                                <em>{item.position}</em>
-                                                            </div>
-                                                        </li>
-                                                    )
-                                                })}
-                                            </ul>
-                                            <ul>
-                                                {props.team5.map((item, i) => {
-                                                    return (
-                                                        <li key={i}>
-                                                            <div className={item.className}>
-                                                                <img src={require(`../../images/teams/${item.image}`)} />
-                                                            </div>
-                                                            <div className={item.className2}>
-                                                                <strong>{item.name}</strong>
-                                                                <em>{item.position}</em>
-                                                            </div>
-                                                        </li>
-                                                    )
-                                                })}
-                                            </ul>
-                                            <ul>
-                                                {props.team6.map((item, i) => {
-                                                    return (
-                                                        <li key={i}>
-                                                            <div className={item.className}>
-                                                                <img src={require(`../../images/teams/${item.image}`)} />
-                                                            </div>
-                                                            <div className={item.className2}>
-                                                                <strong>{item.name}</strong>
-                                                                <em>{item.position}</em>
-                                                            </div>
-                                                        </li>
-                                                    )
-                                                })}
-                                            </ul>
-                                            <ul>
-                                                {props.team7.map((item, i) => {
-                                                    return (
-                                                        <li key={i}>
-                                                            <div className={item.className}>
-                                                                <img src={require(`../../images/teams/${item.image}`)} />
-                                                            </div>
-                                                            <div className={item.className2}>
-                                                                <strong>{item.name}</strong>
-                                                                <em>{item.position}</em>
-                                                            </div>
-                                                        </li>
-                                                    )
-                                                })}
-                                            </ul>
-                                            <ul>
-                                                {props.team8.map((item, i) => {
-                                                    return (
-                                                        <li key={i}>
-                                                            <div className={item.className}>
-                                                                <img src={require(`../../images/teams/${item.image}`)} />
-                                                            </div>
-                                                            <div className={item.className2}>
-                                                                <strong>{item.name}</strong>
-                                                                <em>{item.position}</em>
-                                                            </div>
-                                                        </li>
-                                                    )
-                                                })}
-                                            </ul>
-                                            <ul>
-                                                {props.team9.map((item, i) => {
-                                                    return (
-                                                        <li key={i}>
-                                                            <div className={item.className}>
-                                                                <img src={require(`../../images/teams/${item.image}`)} />
-                                                            </div>
-                                                            <div className={item.className2}>
-                                                                <strong>{item.name}</strong>
-                                                                <em>{item.position}</em>
-                                                            </div>
-                                                        </li>
-                                                    )
-                                                })}
-                                            </ul>
-                                            <ul>
-                                                {props.team10.map((item, i) => {
-                                                    return (
-                                                        <li key={i}>
-                                                            <div className={item.className}>
-                                                                <img src={require(`../../images/teams/${item.image}`)} />
-                                                            </div>
-                                                            <div className={item.className2}>
-                                                                <strong>{item.name}</strong>
-                                                                <em>{item.position}</em>
-                                                            </div>
-                                                        </li>
-                                                    )
-                                                })}
-                                            </ul>
-                                            <ul>
-                                                {props.team11.map((item, i) => {
-                                                    return (
-                                                        <li key={i}>
-                                                            <div className={item.className}>
-                                                                <img src={require(`../../images/teams/${item.image}`)} />
-                                                            </div>
-                                                            <div className={item.className2}>
-                                                                <strong>{item.name}</strong>
-                                                                <em>{item.position}</em>
-                                                            </div>
-                                                        </li>
-                                                    )
-                                                })}
-                                            </ul>
-                                            <ul>
-                                                {props.team12.map((item, i) => {
-                                                    return (
-                                                        <li key={i}>
-                                                            <div className={item.className}>
-                                                                <img src={require(`../../images/teams/${item.image}`)} />
-                                                            </div>
-                                                            <div className={item.className2}>
-                                                                <strong>{item.name}</strong>
-                                                                <em>{item.position}</em>
-                                                            </div>
-                                                        </li>
-                                                    )
-                                                })}
-                                            </ul>
-                                            <ul>
-                                                {props.team13.map((item, i) => {
-                                                    return (
-                                                        <li key={i}>
-                                                            <div className={item.className}>
-                                                                <img src={require(`../../images/teams/${item.image}`)} />
-                                                            </div>
-                                                            <div className={item.className2}>
-                                                                <strong>{item.name}</strong>
-                                                                <em>{item.position}</em>
-                                                            </div>
-                                                        </li>
-                                                    )
-                                                })}
-                                            </ul>
-                                        </Slider>
+                                        </div>
+                                        <div className="team-desc-paging">
+                                            {/* 페이징은 여기 */}
+                                        </div>
                                     </div>
-                                    <div className="team-desc-paging">
-                                        {/* 페이징은 여기 */}
-                                    </div>
-                                </div>
-                            </section>
+                                </section>
+                            </div>
                             {/* TEAM */}
 
                             {/* PARTNERS */}
@@ -569,69 +393,73 @@ const OnePage = (props) => {
                             {/* PARTNERS */}
 
                             {/* MEDIA */}
-                            <section className="media" id="section6">
-                                <div className={`media-title ${props.activeMediaTitle ? "active" : ""}`} ref={props.mediaTitle}>
-                                    <h2><FormattedMessage id="media" /></h2>
-                                </div>
-                                <div className={`media-list ${props.activeMediaList ? "active" : ""}`} ref={props.mediaList}>
-                                    <div className="contents">
+                            <div className="media-wrap">
+                                <section className="media" id="section6">
+                                    <div className={`media-title ${props.activeMediaTitle ? "active" : ""}`} ref={props.mediaTitle}>
+                                        <h2><FormattedMessage id="media" /></h2>
+                                    </div>
+                                    <div className={`media-list ${props.activeMediaList ? "active" : ""}`} ref={props.mediaList}>
+                                        <div className="contents">
+                                            <ul>
+                                                {props.media1.map((item, i) => {
+                                                    return (
+                                                    <li key={i}>
+                                                            <a href={item.url} target="_blank">
+                                                                <div className={item.classNameWrap}>
+                                                                    <div className={item.className}>
+                                                                    </div>
+                                                                </div>
+                                                                <div className={item.className2}>
+                                                                    <div className={item.className2_1}>
+                                                                        <strong>
+                                                                            {item.title}
+                                                                        </strong>
+                                                                    </div>
+                                                                    <div className={item.className2_2}>
+                                                                        <span className={item.className2_2_1}>{item.date}</span>
+                                                                        <span className={item.className2_2_2}>{item.writer}</span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    )
+                                                })}
+                                            </ul>
+                                        </div>
+                                        <div className="media-list-paging">
+                                            {/* 페이징은 여기 */}
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            {/* MEDIA */}
+
+                            {/* FAQ */}
+                            <div className="faq-wrap">
+                                <section className="faq" id="section7">
+                                    <div className="faq-title">
+                                        <h2><FormattedMessage id="faq" /></h2>
+                                    </div>
+                                    <div className="faq-list">
                                         <ul>
-                                            {props.media1.map((item, i) => {
+                                            {props.faq.map((item, i) => {
                                                 return (
-                                                <li key={i}>
-                                                        <a href={item.url} target="_blank">
-                                                            <div className={item.classNameWrap}>
-                                                                <div className={item.className}>
-                                                                </div>
-                                                            </div>
-                                                            <div className={item.className2}>
-                                                                <div className={item.className2_1}>
-                                                                    <strong>
-                                                                        {item.title}
-                                                                    </strong>
-                                                                </div>
-                                                                <div className={item.className2_2}>
-                                                                    <span className={item.className2_2_1}>{item.date}</span>
-                                                                    <span className={item.className2_2_2}>{item.writer}</span>
-                                                                </div>
-                                                            </div>
+                                                    <li onClick={() => props.handleActiveFaq(item.num)} key={i}>
+                                                        <a href="javascript:void(0)" className={props.typeFaq === item.num ? "active" : ""}>
+                                                            <FormattedMessage id={item.text1} />
                                                         </a>
+                                                        <div className={`desc ${props.typeFaq === item.num ? "active" : ""}`}>
+                                                            <p>
+                                                                <FormattedMessage id={item.text2} />
+                                                            </p>
+                                                        </div>
                                                     </li>
                                                 )
                                             })}
                                         </ul>
                                     </div>
-                                    <div className="media-list-paging">
-                                        {/* 페이징은 여기 */}
-                                    </div>
-                                </div>
-                            </section>
-                            {/* MEDIA */}
-
-                            {/* FAQ */}
-                            <section className="faq" id="section7">
-                                <div className="faq-title">
-                                    <h2><FormattedMessage id="faq" /></h2>
-                                </div>
-                                <div className="faq-list">
-                                    <ul>
-                                        {props.faq.map((item, i) => {
-                                            return (
-                                                <li onClick={() => props.handleActiveFaq(item.num)} key={i}>
-                                                    <a href="javascript:void(0)" className={props.typeFaq === item.num ? "active" : ""}>
-                                                        <FormattedMessage id={item.text1} />
-                                                    </a>
-                                                    <div className={`desc ${props.typeFaq === item.num ? "active" : ""}`}>
-                                                        <p>
-                                                            <FormattedMessage id={item.text2} />
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                            )
-                                        })}
-                                    </ul>
-                                </div>
-                            </section>
+                                </section>
+                            </div>
                             {/* FAQ */}
                         </div>
                         {/* CONTAINER */}
@@ -648,7 +476,7 @@ const OnePage = (props) => {
                                 </div>
                                 <div className="footer-copy">
                                     <p>
-                                        <FormattedMessage id="footer-copy" />
+                                        <FormattedMessage id="footer-copy" values={{br: <br />}} />
                                     </p>
                                 </div>
                             </footer>
