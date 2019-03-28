@@ -256,32 +256,435 @@ class OnePageAction extends Component {
 
     team1 = [
         {
-            name: 'name',
-            position: 'position',
+            name: 'Dan',
+            position: 'CEO',
             className: 'img-box',
             className2: 'txt-box',
-            image: 'team_sample_image.png',
+            image: '01_Dan_CEO.jpg',
         },
         {
-            name: 'name',
-            position: 'position',
+            name: 'Leo',
+            position: 'China HQ Business Director',
             className: 'img-box',
             className2: 'txt-box',
-            image: 'team_sample_image.png'
+            image: '02_Leo_China_HQ_Business_Director.jpg'
         },
         {
-            name: 'name',
-            position: 'position',
+            name: 'Charlyne',
+            position: 'HR & Admin',
             className: 'img-box',
             className2: 'txt-box',
-            image: 'team_sample_image.png'
+            image: '03_Charlyne_HR_&_Admin.jpg'
         },
         {
-            name: 'name',
-            position: 'position',
+            name: 'Prisceilia',
+            position: 'Designer',
             className: 'img-box',
             className2: 'txt-box',
-            image: 'team_sample_image.png'
+            image: '04_Prisceilia_Designer.jpg',
+        },
+    ];
+
+    team2 = [
+        {
+            name: 'Daniel',
+            position: 'Sales & Marketing',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '05_Daniel_Sales_&_Marketing.jpg'
+        },
+        {
+            name: 'Ronald',
+            position: 'Sales & Marketing',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '06_Ronald_Sales_&_Marketing.jpg'
+        },
+        {
+            name: 'Davin',
+            position: 'Sales & Marketing',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '07_Davin_Sales_&_Marketing.jpg',
+        },
+        {
+            name: 'Calvin',
+            position: 'Developer',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '08_Calvin_Developer.jpg'
+        },
+    ];
+
+    team3 = [
+        {
+            name: 'Shirley',
+            position: 'Operation',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '09_Shirley_Operation.jpg'
+        },
+        {
+            name: 'Yo',
+            position: 'Management Director',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '10_Yo_Management_Director.jpg'
+        },
+        {
+            name: 'Maria',
+            position: 'General Manager',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '11_Maria_General_Manager.jpg'
+        },
+        {
+            name: 'Leo',
+            position: 'Planning Manager',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '12_Leo_Planning_Manager.jpg'
+        },
+    ];
+
+    team4 = [
+        {
+            name: 'Dylan',
+            position: 'Strategy Manager',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '13_Dylan_Strategy_Manager.jpg'
+        },
+        {
+            name: 'Jenney',
+            position: 'HR Manager',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '14_Jenney_HR_Manager.jpg'
+        },
+        {
+            name: 'Daniel',
+            position: 'Project Manager',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '15_Daniel_Project_Manager.jpg'
+        },
+        {
+            name: 'Sam',
+            position: 'Advisor',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '16_Sam_Advisor.jpg'
+        },
+    ];
+
+    team5 = [
+        {
+            name: 'Moon',
+            position: 'Project Manager',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '17_Moon_Project_Manager.jpg'
+        },
+        {
+            name: 'Jay',
+            position: 'Project Leader',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '18_Jay_Project_Leader.jpg'
+        },
+        {
+            name: 'Joe',
+            position: 'Project Leader',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '19_Joe_Project_Leader.jpg'
+        },
+        {
+            name: 'Kate',
+            position: 'Finance',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '20_Kate_Finance.jpg'
+        },
+    ];
+
+    team6 = [
+        {
+            name: 'Nick',
+            position: 'AI Researcher',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '21_Nick_AI_Researcher.jpg'
+        },
+        {
+            name: 'Elaine',
+            position: 'AI Researcher',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '22_Elaine_AI_Researcher.jpg'
+        },
+        {
+            name: 'Luna',
+            position: 'AI Researcher',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '23_Luna_AI_Researcher.jpg'
+        },
+        {
+            name: 'Hue',
+            position: 'AI Researcher',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '24_Hue_AI_Researcher.jpg'
+        },
+    ];
+
+    team6 = [
+        {
+            name: 'Ryan',
+            position: 'AI Researcher',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '25_Ryan_AI_Researcher.jpg'
+        },
+        {
+            name: 'Scott',
+            position: 'AI Researcher',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '26_Scott_AI_Researcher.jpg'
+        },
+        {
+            name: 'Liam',
+            position: 'Developer',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '27_Liam_Developer.jpg'
+        },
+        {
+            name: 'Jack',
+            position: 'Developer',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '28_Jack_Developer.jpg'
+        },
+    ];
+
+    team7 =[
+        {
+            name: 'Shawn',
+            position: 'Developer',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '29_Shawn_Developer.jpg'
+        },
+        {
+            name: 'Tim',
+            position: 'Developer',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '30_Tim_Developer.jpg'
+        },
+        {
+            name: 'Liam',
+            position: 'Developer',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '27_Liam_Developer.jpg'
+        },
+        {
+            name: 'Met',
+            position: 'Developer',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '31_Met_Developer.jpg'
+        },
+    ];
+
+    team8 = [
+        {
+            name: 'Smith',
+            position: 'Developer',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '32_Smith_Developer.jpg'
+        },
+        {
+            name: 'Louis',
+            position: 'Developer',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '33_Louis_Developer.jpg'
+        },
+        {
+            name: 'YJ',
+            position: 'Developer',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '34_YJ_Developer.jpg'
+        },
+        {
+            name: 'Aiden',
+            position: 'Developer',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '35_Aiden_Developer.jpg'
+        },
+    ];
+
+    team9 = [
+        {
+            name: 'Bread',
+            position: 'Developer',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '36_Bread_Developer.jpg'
+        },
+        {
+            name: 'Add',
+            position: 'Developer',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '37_Add_Developer.jpg'
+        },
+        {
+            name: 'James',
+            position: 'Developer',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '39_James_Developer.jpg'
+        },
+        {
+            name: 'Niki',
+            position: 'Developer',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '40_Niki_Developer.jpg'
+        },
+    ];
+
+    team10 = [
+        {
+            name: 'Arsen',
+            position: 'IT Security',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '41_Arsen_IT_Security.jpg'
+        },
+        {
+            name: 'Sunny',
+            position: 'Publisher',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '42_Sunny_Publisher.jpg'
+        },
+        {
+            name: 'Hailey',
+            position: 'Publisher',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '43_Hailey_Publisher.jpg'
+        },
+        {
+            name: 'Suzi',
+            position: 'Lead Designer',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '44_Suzi_Lead_Designer.jpg'
+        },
+    ];
+
+    team11 = [
+        {
+            name: 'Bonniel',
+            position: 'Sound Designer',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '45_Bonniel_Sound_Designer.jpg'
+        },
+        {
+            name: 'Emma',
+            position: 'Graphic Designer',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '46_Emma_Graphic_Designer.jpg'
+        },
+        {
+            name: 'Soo',
+            position: 'Publisher',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '47_Soo_Graphic_Designer.jpg'
+        },
+        {
+            name: 'Jerry',
+            position: 'UI Designer',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '38_Jerry_Developer.jpg'
+        },
+    ];
+
+    team12 = [
+        {
+            name: 'Lilly',
+            position: 'Web Designer',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '48_Lilly_Web_Designer.jpg'
+        },
+        {
+            name: 'Liseo',
+            position: 'UI UX Designer',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '49_Liseo_UI_UX_Designer.jpg'
+        },
+        {
+            name: 'Luke',
+            position: '3D Designer',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '50_Luke_3D_Designer.jpg'
+        },
+        {
+            name: 'Bill',
+            position: 'UI UX Designer',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '51_Bill_3D_Designer.jpg'
+        },
+    ];
+
+    team13 = [
+        {
+            name: 'Mimi',
+            position: 'Marketing',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '52_Mimi_Marketing.jpg'
+        },
+        {
+            name: 'Gordon',
+            position: 'Marketing',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '53_Gordon_Marketing.jpg'
+        },
+        {
+            name: 'Jane',
+            position: 'Interpreter',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '54_Jane_Interpreter.jpg'
+        },
+        {
+            name: 'Joey',
+            position: 'HR',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: '56_Joey_HR.jpg'
         },
     ];
 
@@ -322,6 +725,19 @@ class OnePageAction extends Component {
             date: '2018.11.29',
             writer: 'Decenter',
             url: 'https://decenter.sedaily.com/NewsView/1S7DM5N53E',
+            classNameWrap: 'img-box-wrap',
+            className: 'img-box',
+            className2: 'txt-box',
+            className2_1: 'left',
+            className2_2: 'right',
+            className2_2_1: 'date',
+            className2_2_2: 'name',
+        },
+        {
+            title: 'Launch of the Final Round | Prediction Herobots',
+            date: '2019.01.24',
+            writer: '글로벌이코노믹',
+            url: 'https://www.facebook.com/watch/?v=345753002702811',
             classNameWrap: 'img-box-wrap',
             className: 'img-box',
             className2: 'txt-box',
@@ -443,6 +859,18 @@ class OnePageAction extends Component {
                 coinStructure={this.coinStructure}
                 whitePaper={this.whitePaper}
                 team1={this.team1}
+                team2={this.team2}
+                team3={this.team3}
+                team4={this.team4}
+                team5={this.team5}
+                team6={this.team6}
+                team7={this.team7}
+                team8={this.team8}
+                team9={this.team9}
+                team10={this.team10}
+                team11={this.team11}
+                team12={this.team12}
+                team13={this.team13}
                 partners={this.partners}
                 media1={this.media1}
                 faq={this.faq}

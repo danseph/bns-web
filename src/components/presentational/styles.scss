@@ -42,9 +42,10 @@ body {
 .slick-slider{
   position: relative;
   overflow: hidden;
+  padding-bottom: 5px;
   .slick-arrow {
     position: absolute;
-    bottom: -5px;
+    bottom: -3px;
     width: 24px;
     height: 24px;
     border: 0;
@@ -83,7 +84,7 @@ body {
         border: none;
         background: transparent;
         font-size: 0;
-        border: 1px solid #000;
+        background: $black2;
         border-radius: 50%;
         list-style: none;
       }
@@ -257,20 +258,19 @@ body {
           //left: calc(100% + 15px);
           //top: 10px;
           // hailey end
-          display: block;
-          width: 18px;
-          height: 18px;
-          padding: 0;
           border-bottom: none;
           //background: url("../../images/menu_white.png") no-repeat center center / 100%; // hailey
           // jonny
           position: fixed;
           top: 0;
           left: 0;
-          width: auto;
-          height: auto;
+          width: 42px;
+          height: 42px;
           padding: 12px;
           background-color: #000;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           // jonny end
           &.on {
             //left: 15px; // hailey
@@ -279,15 +279,17 @@ body {
           }
         }
         // jonny
-        .bar {
-          display: block;
-          width: 18px;
-          height: 2px;
-          margin-bottom: 3px;
-          padding: 0;
-          background-color: #fff;
-          -webkit-transition: all 0.2s;
-          transition: all 0.2s;
+        .bar-wrap {
+          .bar {
+            display: block;
+            width: 18px;
+            height: 2px;
+            margin-bottom: 3px;
+            padding: 0;
+            background-color: #fff;
+            -webkit-transition: all 0.2s;
+            transition: all 0.2s;
+          }
         }
         &.on {
           .bar {
@@ -505,7 +507,9 @@ body {
         @include mq("mobile") {
           display: block;
           width: 100%;
-          padding: 12px 0;
+          height: 41px;
+          line-height: 40px;
+          padding: 0 !important;
           font-size: 1.2rem;
           color: $black3;
           border-bottom: 1px solid $black2;
@@ -1403,13 +1407,11 @@ body {
 
         .img-box {
           width: 100%;
-          padding: 30px;
           background-color: #CCC;
 
           img {
             width: 100%;
             display: block;
-            opacity: 0.1;
           }
         }
 
@@ -1669,6 +1671,13 @@ body {
           .img-box-wrap {
             .img-box {
               background-image: url(../../images/media2.jpg);
+            }
+          }
+        }
+        &:nth-child(3) {
+          .img-box-wrap {
+            .img-box {
+              background-image: url(../../images/media3.png);
             }
           }
         }

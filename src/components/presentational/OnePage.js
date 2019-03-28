@@ -52,9 +52,11 @@ const OnePage = (props) => {
                                 {/*메뉴 클릭하면 ((header-nav, menu-btn, header-btn)) 여기에 on 붙여주세요 */}
                                 <nav className={`header-nav ${props.activeMnav ? "on": ""}`} onClick={props.handleLanHide}>
                                     <a href="javascript:void(0)" className={`menu-btn ${props.activeMnav ? "on": ""}`} onClick={props.handleMnvaBtn}>
-                                        <span className="bar" />
-                                        <span className="bar" />
-                                        <span className="bar" />
+                                        <span className="bar-wrap">
+                                            <span className="bar" />
+                                            <span className="bar" />
+                                            <span className="bar" />
+                                        </span>
                                     </a>
                                     {props.nav.map((item, i) => {
                                         return (
@@ -336,7 +338,7 @@ const OnePage = (props) => {
                                                     return (
                                                         <li key={i}>
                                                             <div className={item.className}>
-                                                                <img src={require(`../../images/${item.image}`)} />
+                                                                <img src={require(`../../images/teams/${item.image}`)} />
                                                             </div>
                                                             <div className={item.className2}>
                                                                 <strong>{item.name}</strong>
@@ -347,11 +349,176 @@ const OnePage = (props) => {
                                                 })}
                                             </ul>
                                             <ul>
-                                                {props.team1.map((item, i) => {
+                                                {props.team2.map((item, i) => {
                                                     return (
                                                         <li key={i}>
                                                             <div className={item.className}>
-                                                                <img src={require(`../../images/${item.image}`)} />
+                                                                <img src={require(`../../images/teams/${item.image}`)} />
+                                                            </div>
+                                                            <div className={item.className2}>
+                                                                <strong>{item.name}</strong>
+                                                                <em>{item.position}</em>
+                                                            </div>
+                                                        </li>
+                                                    )
+                                                })}
+                                            </ul>
+                                            <ul>
+                                                {props.team3.map((item, i) => {
+                                                    return (
+                                                        <li key={i}>
+                                                            <div className={item.className}>
+                                                                <img src={require(`../../images/teams/${item.image}`)} />
+                                                            </div>
+                                                            <div className={item.className2}>
+                                                                <strong>{item.name}</strong>
+                                                                <em>{item.position}</em>
+                                                            </div>
+                                                        </li>
+                                                    )
+                                                })}
+                                            </ul>
+                                            <ul>
+                                                {props.team4.map((item, i) => {
+                                                    return (
+                                                        <li key={i}>
+                                                            <div className={item.className}>
+                                                                <img src={require(`../../images/teams/${item.image}`)} />
+                                                            </div>
+                                                            <div className={item.className2}>
+                                                                <strong>{item.name}</strong>
+                                                                <em>{item.position}</em>
+                                                            </div>
+                                                        </li>
+                                                    )
+                                                })}
+                                            </ul>
+                                            <ul>
+                                                {props.team5.map((item, i) => {
+                                                    return (
+                                                        <li key={i}>
+                                                            <div className={item.className}>
+                                                                <img src={require(`../../images/teams/${item.image}`)} />
+                                                            </div>
+                                                            <div className={item.className2}>
+                                                                <strong>{item.name}</strong>
+                                                                <em>{item.position}</em>
+                                                            </div>
+                                                        </li>
+                                                    )
+                                                })}
+                                            </ul>
+                                            <ul>
+                                                {props.team6.map((item, i) => {
+                                                    return (
+                                                        <li key={i}>
+                                                            <div className={item.className}>
+                                                                <img src={require(`../../images/teams/${item.image}`)} />
+                                                            </div>
+                                                            <div className={item.className2}>
+                                                                <strong>{item.name}</strong>
+                                                                <em>{item.position}</em>
+                                                            </div>
+                                                        </li>
+                                                    )
+                                                })}
+                                            </ul>
+                                            <ul>
+                                                {props.team7.map((item, i) => {
+                                                    return (
+                                                        <li key={i}>
+                                                            <div className={item.className}>
+                                                                <img src={require(`../../images/teams/${item.image}`)} />
+                                                            </div>
+                                                            <div className={item.className2}>
+                                                                <strong>{item.name}</strong>
+                                                                <em>{item.position}</em>
+                                                            </div>
+                                                        </li>
+                                                    )
+                                                })}
+                                            </ul>
+                                            <ul>
+                                                {props.team8.map((item, i) => {
+                                                    return (
+                                                        <li key={i}>
+                                                            <div className={item.className}>
+                                                                <img src={require(`../../images/teams/${item.image}`)} />
+                                                            </div>
+                                                            <div className={item.className2}>
+                                                                <strong>{item.name}</strong>
+                                                                <em>{item.position}</em>
+                                                            </div>
+                                                        </li>
+                                                    )
+                                                })}
+                                            </ul>
+                                            <ul>
+                                                {props.team9.map((item, i) => {
+                                                    return (
+                                                        <li key={i}>
+                                                            <div className={item.className}>
+                                                                <img src={require(`../../images/teams/${item.image}`)} />
+                                                            </div>
+                                                            <div className={item.className2}>
+                                                                <strong>{item.name}</strong>
+                                                                <em>{item.position}</em>
+                                                            </div>
+                                                        </li>
+                                                    )
+                                                })}
+                                            </ul>
+                                            <ul>
+                                                {props.team10.map((item, i) => {
+                                                    return (
+                                                        <li key={i}>
+                                                            <div className={item.className}>
+                                                                <img src={require(`../../images/teams/${item.image}`)} />
+                                                            </div>
+                                                            <div className={item.className2}>
+                                                                <strong>{item.name}</strong>
+                                                                <em>{item.position}</em>
+                                                            </div>
+                                                        </li>
+                                                    )
+                                                })}
+                                            </ul>
+                                            <ul>
+                                                {props.team11.map((item, i) => {
+                                                    return (
+                                                        <li key={i}>
+                                                            <div className={item.className}>
+                                                                <img src={require(`../../images/teams/${item.image}`)} />
+                                                            </div>
+                                                            <div className={item.className2}>
+                                                                <strong>{item.name}</strong>
+                                                                <em>{item.position}</em>
+                                                            </div>
+                                                        </li>
+                                                    )
+                                                })}
+                                            </ul>
+                                            <ul>
+                                                {props.team12.map((item, i) => {
+                                                    return (
+                                                        <li key={i}>
+                                                            <div className={item.className}>
+                                                                <img src={require(`../../images/teams/${item.image}`)} />
+                                                            </div>
+                                                            <div className={item.className2}>
+                                                                <strong>{item.name}</strong>
+                                                                <em>{item.position}</em>
+                                                            </div>
+                                                        </li>
+                                                    )
+                                                })}
+                                            </ul>
+                                            <ul>
+                                                {props.team13.map((item, i) => {
+                                                    return (
+                                                        <li key={i}>
+                                                            <div className={item.className}>
+                                                                <img src={require(`../../images/teams/${item.image}`)} />
                                                             </div>
                                                             <div className={item.className2}>
                                                                 <strong>{item.name}</strong>
