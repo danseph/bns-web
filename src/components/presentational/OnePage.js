@@ -299,7 +299,7 @@ const OnePage = (props) => {
 
                             {/* WHITEPAPER */}
                             <div className="paper-wrap" id="section20">
-                                <section className="paper">
+                                <section className="paper" >
                                     <div className="paper-title">
                                         <h2><FormattedMessage id="whitepaper" /></h2>
                                     </div>
@@ -367,10 +367,19 @@ const OnePage = (props) => {
                                     <div className={`partners-title ${props.activePartnerTitle1 ? "active" : ""}`} ref={props.partnerTitle1}>
                                         <h2>AIPE Partners</h2>
                                     </div>
-                                    <div className={`partners-logo ${props.activePartnerContent1 ? "active" : ""}`} ref={props.partnerContent1}>
-                                        <div className="nbp">
-                                            <img src={require("../../images/nbp.jpg")} />
-                                        </div>
+                                    <div className={`partners-logo mb50 ${props.activePartnerContent1 ? "active" : ""}`} ref={props.partnerContent1}>
+                                        <ul>
+                                            <li className="nbp">
+                                                <a href="javascript:void(0)">
+                                                    <img src={require(`../../images/nbp.jpg`)}/>
+                                                </a>
+                                            </li>
+                                            <li className="uzbit">
+                                                <a href="javascript:void(0)">
+                                                    <img src={require(`../../images/uzbit.png`)}/>
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </div>
                                     <div className={`partners-title ${props.activePartnerTitle2 ? "active" : ""}`} ref={props.partnerTitle2}>
                                         <h2>UZBIT Partners</h2>
@@ -381,7 +390,9 @@ const OnePage = (props) => {
                                                 props.partners.map((item, i) => {
                                                     return (
                                                         <li key={i}>
-                                                            <img src={require(`../../images/${item.image}`)} />
+                                                            <a href="javascript:void(0)">
+                                                                <img src={require(`../../images/${item.image}`)} />
+                                                            </a>
                                                         </li>
                                                     )
                                                 })

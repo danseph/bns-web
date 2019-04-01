@@ -1401,7 +1401,6 @@ body {
       margin-top: 50px;
       width: 100%;
       display: flex;
-      justify-content: space-between;
       flex-wrap: wrap;
 
       @include mq("tablet") {
@@ -1417,13 +1416,16 @@ body {
 
       li {
         margin-top: 10px;
+        margin-left: .5%;
         width: 9.5%;
 
         @include mq("tablet") {
           width: 19%;
+          margin-left: 1%;
         }
         @include mq("mobile") {
           width: 24%;
+          margin-left: 1%;
         }
 
         .img-box {
@@ -1485,30 +1487,12 @@ body {
 
   &-logo {
     width: 100%;
-    // jonny
-    opacity: 0;
-    @include trsX0Y100;
-    &.active {
-      @include trsX0Y0;
-      @include trsOp6s;
-      opacity: 1;
-    }
-    // jonny end
-    .nbp {
-      width: 270px;
-      margin: 50px auto 150px;
 
-      @include mq("tablet") {
-        margin: 30px auto 80px;
-        width: 195px;
-      }
+    &.mb50 {
+      margin-bottom: 80px;
+
       @include mq("mobile") {
-        margin: 30px auto;
-        width: 175px;
-      }
-
-      img {
-        width: 100%;
+        margin-bottom: 50px;
       }
     }
 
@@ -1529,9 +1513,31 @@ body {
       }
 
       li {
-        width: 30%;
+        width: 26%;
         text-align: center;
         margin-bottom: 50px;
+
+        &.nbp {
+          width: 280px;
+
+          @include mq("tablet") {
+            width: 200px;
+          }
+          @include mq("mobile") {
+            width: 125px;
+          }
+        }
+
+        &.uzbit {
+          width: 250px;
+
+          @include mq("tablet") {
+            width: 180px;
+          }
+          @include mq("mobile") {
+            width: 125px;
+          }
+        }
 
         @include mq("mobile") {
           width: 100%;
@@ -1680,6 +1686,13 @@ body {
           .img-box-wrap {
             .img-box {
               background-image: url(../../images/media5.png);
+            }
+          }
+        }
+        &:nth-child(6) {
+          .img-box-wrap {
+            .img-box {
+              background-image: url(../../images/media6.jpg);
             }
           }
         }

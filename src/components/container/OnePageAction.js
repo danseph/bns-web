@@ -324,7 +324,7 @@ class OnePageAction extends Component {
         },
         {
             name: 'Yo',
-            position: 'Managing Director',
+            position: 'Management Director',
             className: 'img-box',
             className2: 'txt-box',
             image: '10_Yo_Management_Director.jpg'
@@ -569,7 +569,7 @@ class OnePageAction extends Component {
         },
         {
             name: 'Soo',
-            position: 'Illustrator',
+            position: 'Graphic Designer',
             className: 'img-box',
             className2: 'txt-box',
             image: '47_Soo_Graphic_Designer.jpg'
@@ -579,7 +579,7 @@ class OnePageAction extends Component {
             position: 'UI Designer',
             className: 'img-box',
             className2: 'txt-box',
-            image: '38_Jerry_Developer.jpg'
+            image: '47_Jerry_UI_Designer.jpg'
         },
         {
             name: 'Lilly',
@@ -722,6 +722,19 @@ class OnePageAction extends Component {
             className2_2: 'right',
             className2_2_1: 'date',
             className2_2_2: 'name',
+        },
+        {
+            title: '손위준 코스믹BC 대표 "AI 암호화폐 예측, 트레이딩 생태계 구축한다" ',
+            date: '2019.03.29',
+            writer: 'CosmicBC',
+            url: 'http://naver.me/xNOM5NNN',
+            classNameWrap: 'img-box-wrap',
+            className: 'img-box',
+            className2: 'txt-box',
+            className2_1: 'left',
+            className2_2: 'right',
+            className2_2_1: 'date',
+            className2_2_2: 'name',
         }
     ];
 
@@ -757,6 +770,24 @@ class OnePageAction extends Component {
             text2: 'faq-answer-5'
         }
     ];
+
+    refs = [
+        {
+            item: 'platFormContent1'
+        },
+        {
+            item: 'platFormContent2'
+        },
+        {
+            item: 'platFormContent3'
+        },
+        {
+            item: 'platFormContent4'
+        },
+        {
+            item: 'platFormContent5'
+        }
+    ]
 
     componentDidMount() {
         setTimeout(() => {
@@ -1041,7 +1072,19 @@ class OnePageAction extends Component {
         let offset = $("#section" + num);
         let offsetTop = offset.offset();
         if(offset[0].id === "section4") {
-            $('html, body').scrollTop(offsetTop.top - 240)
+            if(window.innerWidth <= 1200) {
+                $('html, body').scrollTop(offsetTop.top - 130)
+            } else {
+                $('html, body').scrollTop(offsetTop.top - 240)
+            }
+        } else if(offset[0].id === "section2" || offset[0].id === "section5" || offset[0].id === "section6" || offset[0].id === "section7" && window.innerWidth <= 1200) {
+            $('html, body').scrollTop(offsetTop.top)
+        } else if(offset[0].id === "section3") {
+            if(window.innerWidth <= 1200) {
+                $('html, body').scrollTop(offsetTop.top - 100)
+            } else {
+                $('html, body').scrollTop(offsetTop.top - 240)
+            }
         } else {
             $('html, body').scrollTop(offsetTop.top - 80)
         }
@@ -1050,7 +1093,7 @@ class OnePageAction extends Component {
     _handleWhitePaperMove = (num) => {
         let offset = $("#section" + num);
         let offsetTop = offset.offset();
-        $('html, body').scrollTop(offsetTop.top  - 80)
+        $('html, body').scrollTop(offsetTop.top)
         this.setState({
             lanShow: false,
             activeMnav: false
