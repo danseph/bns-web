@@ -8,7 +8,7 @@ class OnePageAction extends Component {
         loader: true,
         activeNav: 1,
         lanShow: false,
-        activeMainTitle: true,
+        activeMainTitle: false,
         activePlatFormTitle: true,
         activePlatFormContent1: false,
         activePlatFormContent2: false,
@@ -659,49 +659,10 @@ class OnePageAction extends Component {
 
     media1 = [
         {
-            title: '코스믹BC 비트코인 가격 예측 서비스 선봬…예측 맞추면 코인 보상',
-            date: '2019.01.24',
-            writer: '글로벌이코노믹',
-            url: 'http://www.g-enews.com/view.php?ud=20190124153943598efadd7fc46_1',
-            classNameWrap: 'img-box-wrap',
-            className: 'img-box',
-            className2: 'txt-box',
-            className2_1: 'left',
-            className2_2: 'right',
-            className2_2_1: 'date',
-            className2_2_2: 'name',
-        },
-        {
-            title: '비트코인 가격 예측하는 AI로봇? 코스믹, 국제공모전 개최',
-            date: '2018.11.29',
-            writer: 'Decenter',
-            url: 'https://decenter.sedaily.com/NewsView/1S7DM5N53E',
-            classNameWrap: 'img-box-wrap',
-            className: 'img-box',
-            className2: 'txt-box',
-            className2_1: 'left',
-            className2_2: 'right',
-            className2_2_1: 'date',
-            className2_2_2: 'name',
-        },
-        {
-            title: 'Launch of the Final Round | Prediction Herobots',
-            date: '2019.01.24',
+            title: '손위준 코스믹BC 대표 "AI 암호화폐 예측, 트레이딩 생태계 구축한다" ',
+            date: '2019.03.29',
             writer: 'CosmicBC',
-            url: 'https://www.facebook.com/watch/?v=345753002702811',
-            classNameWrap: 'img-box-wrap',
-            className: 'img-box',
-            className2: 'txt-box',
-            className2_1: 'left',
-            className2_2: 'right',
-            className2_2_1: 'date',
-            className2_2_2: 'name',
-        },
-        {
-            title: '3PIKS Service Introduction video',
-            date: '2019.03.25',
-            writer: 'CosmicBC',
-            url: 'https://youtu.be/DfeAUlF7UIg',
+            url: 'http://naver.me/xNOM5NNN',
             classNameWrap: 'img-box-wrap',
             className: 'img-box',
             className2: 'txt-box',
@@ -724,10 +685,10 @@ class OnePageAction extends Component {
             className2_2_2: 'name',
         },
         {
-            title: '손위준 코스믹BC 대표 "AI 암호화폐 예측, 트레이딩 생태계 구축한다" ',
-            date: '2019.03.29',
+            title: '3PIKS Service Introduction video',
+            date: '2019.03.25',
             writer: 'CosmicBC',
-            url: 'http://naver.me/xNOM5NNN',
+            url: 'https://youtu.be/DfeAUlF7UIg',
             classNameWrap: 'img-box-wrap',
             className: 'img-box',
             className2: 'txt-box',
@@ -735,7 +696,46 @@ class OnePageAction extends Component {
             className2_2: 'right',
             className2_2_1: 'date',
             className2_2_2: 'name',
-        }
+        },
+        {
+            title: '코스믹BC 비트코인 가격 예측 서비스 선봬…예측 맞추면 코인 보상',
+            date: '2019.01.24',
+            writer: '글로벌이코노믹',
+            url: 'http://www.g-enews.com/view.php?ud=20190124153943598efadd7fc46_1',
+            classNameWrap: 'img-box-wrap',
+            className: 'img-box',
+            className2: 'txt-box',
+            className2_1: 'left',
+            className2_2: 'right',
+            className2_2_1: 'date',
+            className2_2_2: 'name',
+        },
+        {
+            title: 'Launch of the Final Round | Prediction Herobots',
+            date: '2019.01.24',
+            writer: 'CosmicBC',
+            url: 'https://www.facebook.com/watch/?v=345753002702811',
+            classNameWrap: 'img-box-wrap',
+            className: 'img-box',
+            className2: 'txt-box',
+            className2_1: 'left',
+            className2_2: 'right',
+            className2_2_1: 'date',
+            className2_2_2: 'name',
+        },
+        {
+            title: '비트코인 가격 예측하는 AI로봇? 코스믹, 국제공모전 개최',
+            date: '2018.11.29',
+            writer: 'Decenter',
+            url: 'https://decenter.sedaily.com/NewsView/1S7DM5N53E',
+            classNameWrap: 'img-box-wrap',
+            className: 'img-box',
+            className2: 'txt-box',
+            className2_1: 'left',
+            className2_2: 'right',
+            className2_2_1: 'date',
+            className2_2_2: 'name',
+        },
     ];
 
     faq = [
@@ -771,34 +771,23 @@ class OnePageAction extends Component {
         }
     ];
 
-    refs = [
-        {
-            item: 'platFormContent1'
-        },
-        {
-            item: 'platFormContent2'
-        },
-        {
-            item: 'platFormContent3'
-        },
-        {
-            item: 'platFormContent4'
-        },
-        {
-            item: 'platFormContent5'
-        }
-    ]
-
     componentDidMount() {
         setTimeout(() => {
             return (
                 this.setState({
                     loader: false,
-                    activeMainTitle: true,
                     activePlatFormTitle: true,
                 })
             )
         }, 800);
+
+        setTimeout(() => {
+            return (
+                this.setState({
+                    activeMainTitle: true,
+                })
+            )
+        }, 1500);
 
         window.addEventListener('scroll', this._handlePlatFormContent1Active);
         window.addEventListener('scroll', this._handlePlatFormContent2Active);
