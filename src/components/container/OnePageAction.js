@@ -8,7 +8,7 @@ class OnePageAction extends Component {
         loader: true,
         activeNav: 1,
         lanShow: false,
-        activeMainTitle: false,
+        activeMainTitle: true,
         activePlatFormTitle: true,
         activePlatFormContent1: false,
         activePlatFormContent2: false,
@@ -523,28 +523,28 @@ class OnePageAction extends Component {
             position: 'Developer',
             className: 'img-box',
             className2: 'txt-box',
-            image: '39_James_Developer.jpg'
+            image: '38_James_Developer.jpg'
         },
         {
             name: 'Niki',
             position: 'Developer',
             className: 'img-box',
             className2: 'txt-box',
-            image: '40_Niki_Developer.jpg'
+            image: '39_Niki_Developer.jpg'
         },
         {
             name: 'Sunny',
             position: 'Publisher',
             className: 'img-box',
             className2: 'txt-box',
-            image: '42_Sunny_Publisher.jpg'
+            image: '41_Sunny_Publisher.jpg'
         },
         {
             name: 'Hailey',
             position: 'Publisher',
             className: 'img-box',
             className2: 'txt-box',
-            image: '43_Hailey_Publisher.jpg'
+            image: '42_Hailey_Publisher.jpg'
         },
         {
             name: 'Suzi',
@@ -635,7 +635,7 @@ class OnePageAction extends Component {
             position: 'HR',
             className: 'img-box',
             className2: 'txt-box',
-            image: '56_Joey_HR.jpg'
+            image: '55_Joey_HR.jpg'
         },
     ];
 
@@ -770,24 +770,16 @@ class OnePageAction extends Component {
             text2: 'faq-answer-5'
         }
     ];
-
     componentDidMount() {
         setTimeout(() => {
             return (
                 this.setState({
                     loader: false,
+                    activeMainTitle: true,
                     activePlatFormTitle: true,
                 })
             )
         }, 800);
-
-        setTimeout(() => {
-            return (
-                this.setState({
-                    activeMainTitle: true,
-                })
-            )
-        }, 1500);
 
         window.addEventListener('scroll', this._handlePlatFormContent1Active);
         window.addEventListener('scroll', this._handlePlatFormContent2Active);
@@ -815,34 +807,34 @@ class OnePageAction extends Component {
         window.addEventListener('scroll', this._handleRoadmapTitleActive);
         window.addEventListener('scroll', this._handleRoadmapContentActive);
 
-        window.addEventListener('touchstart', this.touchStart); // mobile touch 가로 움직임 방지
-        window.addEventListener('touchmove', this.preventTouch, {passive: false}); // mobile touch 가로 움직임 방지 end
+        // window.addEventListener('touchstart', this.touchStart); // mobile touch 가로 움직임 방지
+        // window.addEventListener('touchmove', this.preventTouch, {passive: false}); // mobile touch 가로 움직임 방지 end
     }
 
-    // mobile touch 가로 움직임 방지
-    componentWillUnmount(){
-        window.removeEventListener('touchstart', this.touchStart);
-        window.removeEventListener('touchmove', this.preventTouch, {passive: false});
-    }
-
-    touchStart(e){
-        this.firstClientX = e.touches[0].clientX;
-        this.firstClientY = e.touches[0].clientY;
-    }
-
-    preventTouch(e){
-        const minValue = 5;
-
-        this.clientX = e.touches[0].clientX - this.firstClientX;
-        this.clientY = e.touches[0].clientY - this.firstClientY;
-
-        if(Math.abs(this.clientX) > minValue){
-            e.preventDefault();
-            e.returnValue = false;
-            return false;
-        }
-    }
-    // mobile touch 가로 움직임 방지 end
+    // // mobile touch 가로 움직임 방지
+    // componentWillUnmount(){
+    //     window.removeEventListener('touchstart', this.touchStart);
+    //     window.removeEventListener('touchmove', this.preventTouch, {passive: false});
+    // }
+    //
+    // touchStart(e){
+    //     this.firstClientX = e.touches[0].clientX;
+    //     this.firstClientY = e.touches[0].clientY;
+    // }
+    //
+    // preventTouch(e){
+    //     const minValue = 5;
+    //
+    //     this.clientX = e.touches[0].clientX - this.firstClientX;
+    //     this.clientY = e.touches[0].clientY - this.firstClientY;
+    //
+    //     if(Math.abs(this.clientX) > minValue){
+    //         e.preventDefault();
+    //         e.returnValue = false;
+    //         return false;
+    //     }
+    // }
+    // // mobile touch 가로 움직임 방지 end
 
     render() {
         return (

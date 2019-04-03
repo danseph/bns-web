@@ -4,8 +4,16 @@
     <list default="true" id="1434be6b-e8f8-4500-b582-00f2ef85137e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/container/OnePageAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/container/OnePageAction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/presentational/CharTransition.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/presentational/CharTransition.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/presentational/char.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/presentational/char.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/presentational/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/presentational/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/teams/01_Dan_CEO.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/teams/01_Dan_CEO.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/teams/39_James_Developer.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/teams/40_Niki_Developer.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/teams/42_Sunny_Publisher.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/teams/43_Hailey_Publisher.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/teams/49_Liseo_UI_UX_Designer.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/teams/49_Liseo_UI_UX_Designer.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/teams/56_Joey_HR.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,7 +39,7 @@
           <entry key="gitignore" value="1" />
           <entry key="html" value="15" />
           <entry key="jpeg" value="2" />
-          <entry key="jpg" value="7" />
+          <entry key="jpg" value="25" />
           <entry key="js" value="60" />
           <entry key="json" value="3" />
           <entry key="png" value="26" />
@@ -43,7 +51,7 @@
         <counts>
           <entry key="CSS" value="3" />
           <entry key="HTML" value="15" />
-          <entry key="Image" value="39" />
+          <entry key="Image" value="57" />
           <entry key="JSON" value="3" />
           <entry key="JavaScript" value="60" />
           <entry key="PLAIN_TEXT" value="1" />
@@ -61,9 +69,9 @@
           <entry key="css" value="138" />
           <entry key="gitignore" value="9" />
           <entry key="html" value="32" />
-          <entry key="js" value="11426" />
+          <entry key="js" value="11570" />
           <entry key="json" value="1" />
-          <entry key="scss" value="7478" />
+          <entry key="scss" value="7626" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -71,22 +79,22 @@
           <entry key="CSS" value="138" />
           <entry key="HTML" value="32" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="11426" />
+          <entry key="JavaScript" value="11570" />
           <entry key="PLAIN_TEXT" value="9" />
-          <entry key="SCSS" value="7478" />
+          <entry key="SCSS" value="7626" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.32876712">
+    <splitter split-orientation="horizontal" split-proportion="0.50238377">
       <split-first>
         <leaf>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/container/OnePageAction.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="231">
-                  <caret line="692" column="33" lean-forward="true" selection-start-line="692" selection-start-column="33" selection-end-line="692" selection-end-column="33" />
+                <state relative-caret-position="251">
+                  <caret line="625" column="9" lean-forward="true" selection-start-line="625" selection-start-column="9" selection-end-line="625" selection-end-column="9" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
                   </folding>
@@ -95,29 +103,58 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/index (3).html">
+            <entry file="file://$PROJECT_DIR$/src/images/teams/41_Sunny_Publisher.jpg">
+              <provider selected="true" editor-type-id="images" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/images/teams/42_Hailey_Publisher.jpg">
+              <provider selected="true" editor-type-id="images" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/images/teams/01_Dan_CEO.jpg">
+              <provider selected="true" editor-type-id="images" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/images/teams/02_Leo_China_HQ_Business_Director.jpg">
+              <provider selected="true" editor-type-id="images" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/images/teams/55_Joey_HR.jpg">
+              <provider selected="true" editor-type-id="images" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/images/teams/38_James_Developer.jpg">
+              <provider selected="true" editor-type-id="images" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/images/teams/39_Niki_Developer.jpg">
+              <provider selected="true" editor-type-id="images" />
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/presentational/styles.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1368">
-                  <caret line="780" column="14" lean-forward="true" selection-start-line="728" selection-start-column="8" selection-end-line="780" selection-end-column="14" />
+                <state relative-caret-position="219">
+                  <caret line="1484" column="24" lean-forward="true" selection-start-line="1484" selection-start-column="24" selection-end-line="1484" selection-end-column="24" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/loader.svg">
-              <provider selected="true" editor-type-id="images" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/images/teams/03_Charlyne_HR_&amp;_Admin.jpg">
-              <provider selected="true" editor-type-id="images" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/index.js">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/presentational/OnePage.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="57">
-                  <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+                <state relative-caret-position="346">
+                  <caret line="351" column="53" lean-forward="true" selection-start-line="351" selection-start-column="53" selection-end-line="351" selection-end-column="53" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -126,111 +163,23 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/locale.js">
+            <entry file="file://$PROJECT_DIR$/src/components/presentational/CharTransition.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="193">
-                  <caret line="274" column="35" lean-forward="true" selection-start-line="274" selection-start-column="35" selection-end-line="274" selection-end-column="35" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/presentational/OnePage.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="245">
-                  <caret line="372" column="77" lean-forward="true" selection-start-line="372" selection-start-column="77" selection-end-line="372" selection-end-column="77" />
+                <state relative-caret-position="10621">
+                  <caret line="559" column="23" lean-forward="true" selection-start-line="559" selection-start-column="23" selection-end-line="559" selection-end-column="23" />
                   <folding>
-                    <element signature="e#0#26#0" expanded="true" />
+                    <element signature="e#0#40#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
         </leaf>
-      </split-first>
-      <split-second>
-        <splitter split-orientation="horizontal" split-proportion="0.64835167">
-          <split-first>
-            <leaf>
-              <file pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/src/components/presentational/styles.scss">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="447">
-                      <caret line="1692" column="25" lean-forward="true" selection-start-line="1692" selection-start-column="25" selection-end-line="1692" selection-end-column="25" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/components/presentational/OnePage.js">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="124">
-                      <caret line="93" column="41" lean-forward="true" selection-start-line="93" selection-start-column="41" selection-end-line="93" selection-end-column="41" />
-                      <folding>
-                        <element signature="e#0#26#0" expanded="true" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/components/container/OnePageAction.js">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="79">
-                      <caret line="1079" column="6" lean-forward="true" selection-start-line="1079" selection-start-column="6" selection-end-line="1079" selection-end-column="6" />
-                      <folding>
-                        <element signature="e#0#41#0" expanded="true" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/components/presentational/CharTransition.js">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="466">
-                      <caret line="551" column="52" selection-start-line="551" selection-start-column="37" selection-end-line="551" selection-end-column="52" />
-                      <folding>
-                        <element signature="e#0#40#0" expanded="true" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-first>
-          <split-second>
-            <leaf>
-              <file pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/src/components/presentational/char.scss">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="133">
-                      <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
-                      <folding>
-                        <marker date="1554101003490" expanded="true" signature="26967:26976" ph="..." />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-second>
-        </splitter>
       </split-second>
     </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ai-prediction-3piks-text</find>
-      <find>platformContent</find>
-      <find>txt-box</find>
-      <find>className2</find>
-      <find>platform-content</find>
-      <find>Jenney</find>
-      <find>liam</find>
-      <find>lil</find>
-      <find>Management Director</find>
-      <find>padding: 0 !important;</find>
       <find>flex-wrap: wrap; */</find>
       <find>-list</find>
       <find>&lt;span class=&quot;name&quot;&gt;CosmicBC&lt;/span&gt;</find>
@@ -247,10 +196,20 @@
       <find>header-nav</find>
       <find>section20</find>
       <find>platFormContent1</find>
-      <find>active</find>
       <find>main-txt-title</find>
       <find>activeMainTitle</find>
       <find>media</find>
+      <find>partners-wrap</find>
+      <find>partners</find>
+      <find>active</find>
+      <find>teamList</find>
+      <find>-desc</find>
+      <find>trs</find>
+      <find>partners-logo</find>
+      <find>activePartnerContent1</find>
+      <find>-logo</find>
+      <find>java</find>
+      <find>jame</find>
     </findStrings>
     <replaceStrings>
       <replace>className</replace>
@@ -297,12 +256,12 @@
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/config/_init.scss" />
         <option value="$USER_HOME$/Downloads/Telegram Desktop/index.html" />
-        <option value="$PROJECT_DIR$/src/components/presentational/CharTransition.js" />
         <option value="$PROJECT_DIR$/src/locale.js" />
-        <option value="$PROJECT_DIR$/src/components/presentational/OnePage.js" />
+        <option value="$PROJECT_DIR$/src/components/presentational/CharTransition.js" />
         <option value="$PROJECT_DIR$/src/components/presentational/char.scss" />
-        <option value="$PROJECT_DIR$/src/components/container/OnePageAction.js" />
         <option value="$PROJECT_DIR$/src/components/presentational/styles.scss" />
+        <option value="$PROJECT_DIR$/src/components/presentational/OnePage.js" />
+        <option value="$PROJECT_DIR$/src/components/container/OnePageAction.js" />
       </list>
     </option>
   </component>
@@ -349,38 +308,7 @@
             <path>
               <item name="aipx" type="b2602c69:ProjectViewProjectNode" />
               <item name="aipx" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aipx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aipx" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aipx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aipx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aipx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aipx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="container" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aipx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aipx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="presentational" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aipx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aipx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -402,8 +330,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\user\Documents\aipx\src\images" />
       <recent name="C:\Users\user\Documents\aipx\src\images\teams" />
+      <recent name="C:\Users\user\Documents\aipx\src\images" />
       <recent name="C:\Users\user\Documents\aipx\public" />
       <recent name="C:\Users\user\Documents\aipx\src\components\presentational" />
       <recent name="C:\Users\user\Documents\aipx\src\components\images" />
@@ -438,12 +366,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553057947240</updated>
-      <workItem from="1553057948354" duration="227509000" />
+      <workItem from="1553057948354" duration="237788000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="227509000" />
+    <option name="totallyTimeSpent" value="237788000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -460,11 +388,11 @@
     <layout>
       <window_info id="npm" side_tool="true" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.1264489" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17175975" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.24919441" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.24812031" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32975295" />
@@ -505,76 +433,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/_index (2).scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="1280" column="26" lean-forward="true" selection-start-line="1280" selection-start-column="26" selection-end-line="1280" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/190325_AIPX/scss/common.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/190325_AIPX/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1254">
-          <caret line="259" column="51" selection-start-line="259" selection-start-column="51" selection-end-line="259" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/190325_AIPX/scss/abstracts/_mixins.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/bg_black_small.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/aipe.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/_index (3).scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="607" column="7" selection-start-line="608" selection-start-column="13" selection-end-line="608" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/190325_AIPX/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="253" column="29" selection-start-line="253" selection-start-column="29" selection-end-line="253" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/bg_b.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/logo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/favicon.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/web_bg_contents_cn.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/_mixins (2).scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-25">
-          <caret line="50" column="8" lean-forward="true" selection-start-line="50" selection-start-column="8" selection-end-line="54" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/_mixins.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/images/media1.jpeg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -697,46 +555,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/teams/03_Charlyne_HR_&amp;_Admin.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/images/teams/04_Prisceilia_Designer.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/loader.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/images/nbp.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/locale.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="274" column="35" lean-forward="true" selection-start-line="274" selection-start-column="35" selection-end-line="274" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/index (3).html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1368">
-          <caret line="780" column="14" lean-forward="true" selection-start-line="728" selection-start-column="8" selection-end-line="780" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/_index (6).scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="1095" column="12" selection-start-line="1095" selection-start-column="12" selection-end-line="1095" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -750,50 +578,119 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/presentational/OnePage.js">
+    <entry file="file://$PROJECT_DIR$/src/components/presentational/char.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="93" column="41" lean-forward="true" selection-start-line="93" selection-start-column="41" selection-end-line="93" selection-end-column="41" />
+        <state relative-caret-position="127">
+          <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/index (3).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1368">
+          <caret line="780" column="14" lean-forward="true" selection-start-line="728" selection-start-column="8" selection-end-line="780" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/loader.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/teams/03_Charlyne_HR_&amp;_Admin.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/presentational/char.scss">
+    <entry file="file://$PROJECT_DIR$/src/locale.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
-          <folding>
-            <marker date="1554101003490" expanded="true" signature="26967:26976" ph="..." />
-          </folding>
+        <state relative-caret-position="298">
+          <caret line="274" column="35" lean-forward="true" selection-start-line="274" selection-start-column="35" selection-end-line="274" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/presentational/CharTransition.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="551" column="52" selection-start-line="551" selection-start-column="37" selection-end-line="551" selection-end-column="52" />
+        <state relative-caret-position="10621">
+          <caret line="559" column="23" lean-forward="true" selection-start-line="559" selection-start-column="23" selection-end-line="559" selection-end-column="23" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/container/OnePageAction.js">
+    <entry file="file://$PROJECT_DIR$/src/components/presentational/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="1079" column="6" lean-forward="true" selection-start-line="1079" selection-start-column="6" selection-end-line="1079" selection-end-column="6" />
+        <state relative-caret-position="219">
+          <caret line="1484" column="24" lean-forward="true" selection-start-line="1484" selection-start-column="24" selection-end-line="1484" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/presentational/OnePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="351" column="53" lean-forward="true" selection-start-line="351" selection-start-column="53" selection-end-line="351" selection-end-column="53" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/presentational/styles.scss">
+    <entry file="file://$PROJECT_DIR$/src/images/teams/39_Niki_Developer.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/teams/40_Niki_Developer.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/teams/38_James_Developer.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/teams/39_James_Developer.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/teams/42_Sunny_Publisher.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/teams/41_Sunny_Publisher.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/teams/43_Hailey_Publisher.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/teams/55_Joey_HR.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/teams/56_Joey_HR.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/teams/42_Hailey_Publisher.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/teams/02_Leo_China_HQ_Business_Director.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/teams/01_Dan_CEO.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/teams/48_Lilly_Web_Designer.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/teams/49_Liseo_UI_UX_Designer.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/container/OnePageAction.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="1692" column="25" lean-forward="true" selection-start-line="1692" selection-start-column="25" selection-end-line="1692" selection-end-column="25" />
+        <state relative-caret-position="251">
+          <caret line="625" column="9" lean-forward="true" selection-start-line="625" selection-start-column="9" selection-end-line="625" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

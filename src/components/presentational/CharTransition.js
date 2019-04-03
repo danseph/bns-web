@@ -572,6 +572,7 @@ class CharTransition extends Component {
                                 )
                             })
                         }
+
                         {this.props.defaultLang === "ja" &&
                             this.charTextJp.map((item, i) => {
                                 return (
