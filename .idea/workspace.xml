@@ -4,16 +4,6 @@
     <list default="true" id="1434be6b-e8f8-4500-b582-00f2ef85137e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/container/OnePageAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/container/OnePageAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/presentational/CharTransition.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/presentational/CharTransition.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/presentational/char.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/presentational/char.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/presentational/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/presentational/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/teams/01_Dan_CEO.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/teams/01_Dan_CEO.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/teams/39_James_Developer.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/teams/40_Niki_Developer.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/teams/42_Sunny_Publisher.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/teams/43_Hailey_Publisher.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/teams/49_Liseo_UI_UX_Designer.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/teams/49_Liseo_UI_UX_Designer.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/teams/56_Joey_HR.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,8 +18,11 @@
     <session id="1614923076">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -61,7 +54,7 @@
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="ESLintLanguageService" value="1" />
+          <entry key="ESLintLanguageService" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -69,7 +62,7 @@
           <entry key="css" value="138" />
           <entry key="gitignore" value="9" />
           <entry key="html" value="32" />
-          <entry key="js" value="11570" />
+          <entry key="js" value="11576" />
           <entry key="json" value="1" />
           <entry key="scss" value="7626" />
         </counts>
@@ -79,7 +72,7 @@
           <entry key="CSS" value="138" />
           <entry key="HTML" value="32" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="11570" />
+          <entry key="JavaScript" value="11576" />
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="SCSS" value="7626" />
         </counts>
@@ -87,14 +80,14 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.50238377">
+    <splitter split-orientation="horizontal" split-proportion="0.4457247">
       <split-first>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/container/OnePageAction.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="251">
-                  <caret line="625" column="9" lean-forward="true" selection-start-line="625" selection-start-column="9" selection-end-line="625" selection-end-column="9" />
+                <state relative-caret-position="472">
+                  <caret line="779" column="9" selection-start-line="779" selection-start-column="9" selection-end-line="779" selection-end-column="9" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
                   </folding>
@@ -140,12 +133,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/presentational/styles.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="219">
-                  <caret line="1484" column="24" lean-forward="true" selection-start-line="1484" selection-start-column="24" selection-end-line="1484" selection-end-column="24" />
+                <state relative-caret-position="28196">
+                  <caret line="1484" column="24" selection-start-line="1484" selection-start-column="24" selection-end-line="1484" selection-end-column="24" />
                 </state>
               </provider>
             </entry>
@@ -153,8 +146,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/presentational/OnePage.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="346">
-                  <caret line="351" column="53" lean-forward="true" selection-start-line="351" selection-start-column="53" selection-end-line="351" selection-end-column="53" />
+                <state relative-caret-position="181">
+                  <caret line="455" column="73" lean-forward="true" selection-start-line="455" selection-start-column="73" selection-end-line="455" selection-end-column="73" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -165,8 +158,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/presentational/CharTransition.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="10621">
-                  <caret line="559" column="23" lean-forward="true" selection-start-line="559" selection-start-column="23" selection-end-line="559" selection-end-column="23" />
+                <state relative-caret-position="10602">
+                  <caret line="559" column="23" selection-start-line="559" selection-start-column="23" selection-end-line="559" selection-end-column="23" />
                   <folding>
                     <element signature="e#0#40#0" expanded="true" />
                   </folding>
@@ -180,8 +173,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>flex-wrap: wrap; */</find>
-      <find>-list</find>
       <find>&lt;span class=&quot;name&quot;&gt;CosmicBC&lt;/span&gt;</find>
       <find>글로벌이코노믹</find>
       <find>margin-top: 50px;</find>
@@ -210,6 +201,8 @@
       <find>-logo</find>
       <find>java</find>
       <find>jame</find>
+      <find>faqAnswerShow</find>
+      <find>typeFaq</find>
     </findStrings>
     <replaceStrings>
       <replace>className</replace>
@@ -310,6 +303,19 @@
               <item name="aipx" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="aipx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aipx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aipx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aipx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="container" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -320,7 +326,7 @@
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cosmic3pik_main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="C:\Users\user\Documents\aipx\node_modules\eslint" />
@@ -366,12 +372,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553057947240</updated>
-      <workItem from="1553057948354" duration="237788000" />
+      <workItem from="1553057948354" duration="239054000" />
+      <workItem from="1554271583125" duration="10000" />
+      <workItem from="1554274680428" duration="119000" />
+      <workItem from="1554338033891" duration="90000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="237788000" />
+    <option name="totallyTimeSpent" value="239273000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -386,14 +395,10 @@
     <frame x="1912" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="npm" side_tool="true" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17175975" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13119073" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.24812031" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32975295" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -401,6 +406,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32975295" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.24812031" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -513,20 +522,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/presentational/styles2.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="282" column="16" selection-start-line="282" selection-start-column="16" selection-end-line="282" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/presentational/styles2.scss" />
     <entry file="file://$PROJECT_DIR$/src/config/_init.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -602,9 +601,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -615,79 +611,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/presentational/CharTransition.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10621">
-          <caret line="559" column="23" lean-forward="true" selection-start-line="559" selection-start-column="23" selection-end-line="559" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/presentational/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="1484" column="24" lean-forward="true" selection-start-line="1484" selection-start-column="24" selection-end-line="1484" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/presentational/OnePage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="351" column="53" lean-forward="true" selection-start-line="351" selection-start-column="53" selection-end-line="351" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/teams/39_Niki_Developer.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/teams/40_Niki_Developer.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/teams/38_James_Developer.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/teams/39_James_Developer.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/teams/42_Sunny_Publisher.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/teams/41_Sunny_Publisher.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/teams/43_Hailey_Publisher.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/teams/55_Joey_HR.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/teams/56_Joey_HR.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/teams/42_Hailey_Publisher.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/teams/02_Leo_China_HQ_Business_Director.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/teams/01_Dan_CEO.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/teams/40_Niki_Developer.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/images/teams/39_James_Developer.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/images/teams/42_Sunny_Publisher.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/images/teams/43_Hailey_Publisher.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/images/teams/56_Joey_HR.jpg" />
     <entry file="file://$PROJECT_DIR$/src/images/teams/48_Lilly_Web_Designer.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/images/teams/49_Liseo_UI_UX_Designer.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/teams/41_Sunny_Publisher.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/teams/42_Hailey_Publisher.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/teams/01_Dan_CEO.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/teams/02_Leo_China_HQ_Business_Director.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/teams/55_Joey_HR.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/teams/38_James_Developer.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/teams/39_Niki_Developer.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/presentational/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28196">
+          <caret line="1484" column="24" selection-start-line="1484" selection-start-column="24" selection-end-line="1484" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/presentational/CharTransition.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10602">
+          <caret line="559" column="23" selection-start-line="559" selection-start-column="23" selection-end-line="559" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/presentational/OnePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="455" column="73" lean-forward="true" selection-start-line="455" selection-start-column="73" selection-end-line="455" selection-end-column="73" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/container/OnePageAction.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="625" column="9" lean-forward="true" selection-start-line="625" selection-start-column="9" selection-end-line="625" selection-end-column="9" />
+        <state relative-caret-position="472">
+          <caret line="779" column="9" selection-start-line="779" selection-start-column="9" selection-end-line="779" selection-end-column="9" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
