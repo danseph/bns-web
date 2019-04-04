@@ -3,6 +3,7 @@ import OnePage from '../presentational/OnePage';
 import $ from 'jquery';
 import { throttle } from 'lodash';
 
+
 class OnePageAction extends Component {
     state = {
         loader: true,
@@ -526,13 +527,6 @@ class OnePageAction extends Component {
             image: '38_James_Developer.jpg'
         },
         {
-            name: 'Niki',
-            position: 'Developer',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '39_Niki_Developer.jpg'
-        },
-        {
             name: 'Sunny',
             position: 'Publisher',
             className: 'img-box',
@@ -771,7 +765,6 @@ class OnePageAction extends Component {
         }
     ];
     componentDidMount() {
-
         setTimeout(() => {
             return (
                 this.setState({
