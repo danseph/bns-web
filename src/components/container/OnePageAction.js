@@ -771,13 +771,7 @@ class OnePageAction extends Component {
         }
     ];
     componentDidMount() {
-        // 마우스 우클릭 방지
-        document.oncontextmenu = function (e) {
-            if(window.innerWidth > 1200) {
-                alert("보안상 마우스 오른쪽 버튼을 사용할 수 없습니다.");
-                return false;
-            }
-        }
+
         setTimeout(() => {
             return (
                 this.setState({
