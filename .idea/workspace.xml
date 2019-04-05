@@ -2,6 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1434be6b-e8f8-4500-b582-00f2ef85137e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/UZBIT_CN.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/UZBIT_EN.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/UZBIT_JP.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/UZBIT_KR.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/AIPE_Whitepaper_Cn.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/AIPE_Whitepaper_En.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/AIPE_Whitepaper_Jp.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/AIPE_Whitepaper_kr.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/container/OnePageAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/container/OnePageAction.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -61,7 +70,7 @@
           <entry key="css" value="138" />
           <entry key="gitignore" value="9" />
           <entry key="html" value="33" />
-          <entry key="js" value="11771" />
+          <entry key="js" value="11777" />
           <entry key="json" value="1" />
           <entry key="scss" value="7626" />
         </counts>
@@ -71,7 +80,7 @@
           <entry key="CSS" value="138" />
           <entry key="HTML" value="33" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="11771" />
+          <entry key="JavaScript" value="11777" />
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="SCSS" value="7626" />
         </counts>
@@ -79,14 +88,14 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.40994543">
+    <splitter split-orientation="horizontal" split-proportion="0.52577317">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/container/OnePageAction.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="138">
-                  <caret line="527" column="10" selection-start-line="527" selection-start-column="10" selection-end-line="527" selection-end-column="10" />
+                <state relative-caret-position="258">
+                  <caret line="244" column="33" lean-forward="true" selection-start-line="244" selection-start-column="33" selection-end-line="244" selection-end-column="33" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
                   </folding>
@@ -98,7 +107,7 @@
             <entry file="file://$PROJECT_DIR$/public/index.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="380">
-                  <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+                  <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
                 </state>
               </provider>
             </entry>
@@ -116,11 +125,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/presentational/OnePage.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="8455">
-                  <caret line="455" column="73" lean-forward="true" selection-start-line="455" selection-start-column="73" selection-end-line="455" selection-end-column="73" />
+                <state relative-caret-position="314">
+                  <caret line="480" column="60" lean-forward="true" selection-start-line="480" selection-start-column="60" selection-end-line="480" selection-end-column="60" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -132,7 +141,7 @@
             <entry file="file://$PROJECT_DIR$/src/index.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="95">
-                  <caret line="5" column="58" lean-forward="true" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
+                  <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
                   <folding>
                     <element signature="e#0#33#0" expanded="true" />
                   </folding>
@@ -143,7 +152,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/presentational/CharTransition.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="10602">
+                <state relative-caret-position="45">
                   <caret line="559" column="23" selection-start-line="559" selection-start-column="23" selection-end-line="559" selection-end-column="23" />
                   <folding>
                     <element signature="e#0#40#0" expanded="true" />
@@ -152,11 +161,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/container/OnePageAction.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="1078" column="4" selection-start-line="1078" selection-start-column="4" selection-end-line="1078" selection-end-column="4" />
+                <state relative-caret-position="158">
+                  <caret line="1072" column="23" selection-start-line="1072" selection-start-column="23" selection-end-line="1072" selection-end-column="23" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
                   </folding>
@@ -170,9 +179,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&lt;span class=&quot;name&quot;&gt;CosmicBC&lt;/span&gt;</find>
-      <find>글로벌이코노믹</find>
-      <find>margin-top: 50px;</find>
       <find>Prisceilia</find>
       <find>jerry</find>
       <find>AI Prediction Platform</find>
@@ -200,6 +206,9 @@
       <find>jame</find>
       <find>faqAnswerShow</find>
       <find>typeFaq</find>
+      <find>niki</find>
+      <find>whit</find>
+      <find>paper</find>
     </findStrings>
     <replaceStrings>
       <replace>className</replace>
@@ -319,6 +328,13 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="container" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="aipx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aipx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="presentational" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -328,7 +344,7 @@
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cosmic3pik_main" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="C:\Users\user\Documents\aipx\node_modules\eslint" />
@@ -337,19 +353,19 @@
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\user\Documents\aipx\src\images\teams" />
-      <recent name="C:\Users\user\Documents\aipx\src\images" />
-      <recent name="C:\Users\user\Documents\aipx\public" />
-      <recent name="C:\Users\user\Documents\aipx\src\components\presentational" />
-      <recent name="C:\Users\user\Documents\aipx\src\components\images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\Documents\aipx" />
       <recent name="C:\Users\user\Documents\aipx\src" />
       <recent name="C:\Users\user\Documents\aipx\public" />
       <recent name="C:\Users\user\Documents\aipx\src\images" />
       <recent name="C:\Users\user\Documents\aipx\src\components" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Documents\aipx\public" />
+      <recent name="C:\Users\user\Documents\aipx\src\images\teams" />
+      <recent name="C:\Users\user\Documents\aipx\src\images" />
+      <recent name="C:\Users\user\Documents\aipx\src\components\presentational" />
+      <recent name="C:\Users\user\Documents\aipx\src\components\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -379,12 +395,12 @@
       <workItem from="1554274680428" duration="119000" />
       <workItem from="1554338033891" duration="185000" />
       <workItem from="1554344869978" duration="198000" />
-      <workItem from="1554363230568" duration="2794000" />
+      <workItem from="1554363230568" duration="4112000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="242360000" />
+    <option name="totallyTimeSpent" value="243678000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -413,7 +429,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3426423" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3426423" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -625,30 +641,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/presentational/OnePage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8455">
-          <caret line="455" column="73" lean-forward="true" selection-start-line="455" selection-start-column="73" selection-end-line="455" selection-end-column="73" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/presentational/CharTransition.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10602">
-          <caret line="559" column="23" selection-start-line="559" selection-start-column="23" selection-end-line="559" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
-          <caret line="5" column="58" lean-forward="true" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
+          <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
@@ -673,14 +669,34 @@
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
-          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/presentational/CharTransition.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="559" column="23" selection-start-line="559" selection-start-column="23" selection-end-line="559" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/presentational/OnePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="480" column="60" lean-forward="true" selection-start-line="480" selection-start-column="60" selection-end-line="480" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/container/OnePageAction.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="527" column="10" selection-start-line="527" selection-start-column="10" selection-end-line="527" selection-end-column="10" />
+        <state relative-caret-position="258">
+          <caret line="244" column="33" lean-forward="true" selection-start-line="244" selection-start-column="33" selection-end-line="244" selection-end-column="33" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
