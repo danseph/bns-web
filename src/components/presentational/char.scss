@@ -36,7 +36,7 @@
     }
     &.active.en {
       .char {
-        @for $i from 1 to 41 {
+        @for $i from 1 to 40 {
           &:nth-child(#{$i}) { animation-delay: 2.2s + ($i * 0.03s) }
         }
         @for $i from 41 to 119 {
