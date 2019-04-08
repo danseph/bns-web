@@ -90,7 +90,7 @@ export default {
         'ai-prediction-aibitbip': 'AIBitBip',
         'ai-prediction-aibitbip-text': '"AI-Based Cryptocurrency Change Prediction Signal Service" {br} We developed as an application service that the AI Model provides push notifications to users by capturing UP & DOWN signs. Users can use this signal for their cryptocurrency trading. This application is convenient and easy to use and access.',
         'ai-prediction-aitradingbot': 'AI Auto-Trading Bot',
-        'ai-prediction-aitradingbot-text': '"Auto-Trading Bot based on AI Prediction Signal" {br} Users can get AibitBip\'s Prediction Signal and use it to trade at the right timing and make profits. This service is provided to exchanges to from markets by securing transaction volume and liquidity of cryptocurrency.',
+        'ai-prediction-aitradingbot-text': '“AI Prediction Signal based on Auto-Trading Bot”{br} Users can get prediction signals from AIBitBip and trade cryptocurrency at the right time and make profits. {br} This service provided to exchanges forms a market by securing trading volume and liquidity of cryptocurrency.',
         'ai-prediction-aiplatform': 'AI Prediction Platform',
         'ai-prediction-aiplatform-text': '"AI Research - AI Prediction Platform to Improve the Development Environment and to Secure Proven Data" {br} It is a service platform that enables AI researchers to easily access and use the Open Source Library environment and provide them with traffic and model data. This platform is provided to companies.',
         'ai-prediction-exchange': 'Exchange Solution',

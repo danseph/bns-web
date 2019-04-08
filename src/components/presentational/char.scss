@@ -39,7 +39,7 @@
         @for $i from 1 to 41 {
           &:nth-child(#{$i}) { animation-delay: 2.2s + ($i * 0.03s) }
         }
-        @for $i from 42 to 119 {
+        @for $i from 41 to 119 {
           &:nth-child(#{$i}) { animation-delay: 1.66s + ($i * 0.03s) }
         }
         @for $i from 119 to 199 {
