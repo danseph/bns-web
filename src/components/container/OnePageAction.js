@@ -3,7 +3,6 @@ import OnePage from '../presentational/OnePage';
 import $ from 'jquery';
 import { throttle } from 'lodash';
 
-
 class OnePageAction extends Component {
     state = {
         loader: true,
@@ -242,19 +241,19 @@ class OnePageAction extends Component {
 
     whitePaper = [
         {
-            link: "UZBIT_KR.pdf",
-            text: 'whitepaper-ko'
+            link: 'UZBIT_KR.pdf',
+            text: 'whitepaper-ko',
         },
         {
-            link: "UZBIT_EN.pdf",
+            link: 'UZBIT_EN.pdf',
             text: 'whitepaper-en'
         },
         {
-            link: "UZBIT_CN.pdf",
+            link: 'UZBIT_CN.pdf',
             text: 'whitepaper-zh'
         },
         {
-            link: "UZBIT_JP.pdf",
+            link: 'UZBIT_JP.pdf',
             text: 'whitepaper-ja'
         }
     ];

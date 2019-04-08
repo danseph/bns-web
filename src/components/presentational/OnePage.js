@@ -306,7 +306,7 @@ const OnePage = (props) => {
                                     <div className="paper-link">
                                         {props.whitePaper.map((item, i) => {
                                             return (
-                                                <a href={item.link} key={i} download>
+                                                <a href={item.link} key={i} download title="test">
                                                     <FormattedMessage id={item.text} />
                                                 </a>
                                             )
