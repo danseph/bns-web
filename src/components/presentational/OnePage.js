@@ -219,7 +219,7 @@ const OnePage = (props) => {
                                                                 <FormattedMessage id={item.title} />
                                                             </strong>
                                                             <p>
-                                                                <FormattedMessage id={item.text} values={{kbr: <br />}}/>
+                                                                <FormattedMessage id={item.text} values={{kbr: <br />, br: <br />}}/>
                                                             </p>
                                                         </div>
                                                     </li>
