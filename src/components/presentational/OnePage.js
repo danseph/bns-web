@@ -37,7 +37,7 @@ const OnePage = (props) => {
                         {props.lanShow &&
                         <div className="lan-list-none-wrap" onClick={props.handleLanShow}/>
                         }
-                        <h1 className={`header-logo m ${props.activeMainTitle ? "active" : ""}`}>
+                        <h1 className={`header-logo m`}>
                             <a href="javascript:void(0)">
                                 <img src={require("../../images/logo_v2.png")} alt="로고"/>
                             </a>
@@ -109,7 +109,7 @@ const OnePage = (props) => {
                             {/* PLATFORM */}
                             <div className="platform-wrap">
                                 <section className="platform" id="section2">
-                                    <div className={`platform-title ${props.activePlatFormTitle ? "active" : ""}`} ref={props.platFormTitle}>
+                                    <div className={`platform-title ${props.activePlatFormTitle && "active"}`} ref={props.platFormTitle}>
                                         <h2><FormattedMessage id="ai-prediction-title" /></h2>
                                     </div>
                                     <div className="platform-content">
@@ -118,16 +118,7 @@ const OnePage = (props) => {
                                                 return (
                                                     <li
                                                         key={i}
-                                                        className={`
-                                                            ${item.className1}
-                                                            ${
-                                                                (item.className1 === "content1" && props.activePlatFormContent1 ? "active" : "") ||
-                                                                (item.className1 === "content2" && props.activePlatFormContent2 ? "active" : "") ||
-                                                                (item.className1 === "content3" && props.activePlatFormContent3 ? "active" : "") ||
-                                                                (item.className1 === "content4" && props.activePlatFormContent4 ? "active" : "") ||
-                                                                (item.className1 === "content5" && props.activePlatFormContent5 ? "active" : "")
-                                                            }
-                                                        `}
+                                                        className={`${item.className1}`}
                                                         ref={
                                                             (item.className1 === "content1" && props.platFormContent1) ||
                                                             (item.className1 === "content2" && props.platFormContent2) ||
@@ -159,10 +150,10 @@ const OnePage = (props) => {
                             {/* PLATFORM, SOLUTION */}
                             <div className="effect-wrap" id="section3">
                                 <div className="effect">
-                                    <div className={`effect-title ${props.activeEffectTitle ? "active" : ""}`} ref={props.effectTitle}>
+                                    <div className={`effect-title`} ref={props.effectTitle}>
                                         <h2><FormattedMessage id="aipe-ecosystem" /></h2>
                                     </div>
-                                    <div className={`effect-img-wrap web ${props.activeEffectContent ? "active" : ""}`} ref={props.effectContent}>
+                                    <div className={`effect-img-wrap web`} ref={props.effectContent}>
                                         <div className="effect-img">
                                             {
                                                 props.defaultLang === "zh" ?
@@ -175,7 +166,7 @@ const OnePage = (props) => {
                                             <img src={require("../../images/web_bg_effect.png")}/>
                                         </div>
                                     </div>
-                                    <div className={`effect-img-wrap mobile ${props.activeEffectContentM ? "active" : ""}`} ref={props.effectContentM}>
+                                    <div className={`effect-img-wrap mobile`} ref={props.effectContentM}>
                                         <div className="effect-img">
                                             {
                                                 props.defaultLang === "zh" ?
@@ -195,7 +186,7 @@ const OnePage = (props) => {
                             {/* TECHNIQUE, SOLUTION */}
                             <div className="tech-wrap">
                                 <section className="tech">
-                                    <div className={`tech-title ${props.activeTechniqueTitle ? "active" : ""}`} ref={props.techniqueTitle}>
+                                    <div className={`tech-title`} ref={props.techniqueTitle}>
                                         <h2><FormattedMessage id="ai-technique" /></h2>
                                     </div>
                                     <div className="tech-content">
@@ -203,10 +194,6 @@ const OnePage = (props) => {
                                             {props.techContent.map((item, i) => {
                                                 return (
                                                     <li key={i}
-                                                        className={
-                                                            (item.num === 1 && props.activeTechniqueContent1 ? "active" : "") ||
-                                                            (item.num === 2 && props.activeTechniqueContent2 ? "active" : "")
-                                                        }
                                                         ref={
                                                             (item.num === 1 && props.techniqueContent1) ||
                                                             (item.num === 2 && props.techniqueContent2)
@@ -234,15 +221,15 @@ const OnePage = (props) => {
                             {/* AIPX */}
                             <div className="aipx-wrap">
                                 <section className="aipx">
-                                    <div className={`aipx-title ${props.activeAipxTitle ? "active" : ""}`} ref={props.aipxTitle}>
+                                    <div className={`aipx-title`} ref={props.aipxTitle}>
                                         <h2><FormattedMessage id="aipx-title" /></h2>
                                     </div>
                                     <div className="aipx-content" ref={props.aipxContent}>
                                         <div className="aipx-content-img">
-                                            <div className={`center ${props.activeAipxContent ? "active" : ""}`}>
+                                            <div className={`center`}>
                                                 <img src={require("../../images/aipe.png")} />
                                             </div>
-                                            <ul className={`side ${props.activeAipxContent ? "active" : ""}`}>
+                                            <ul className={`side`}>
                                                 {
                                                     props.aipx.map((item, i) => {
                                                         return (
@@ -256,13 +243,13 @@ const OnePage = (props) => {
                                                 }
                                             </ul>
                                         </div>
-                                        <div className={`aipx-content-txt ${props.activeAipxText ? "active" : ""}`} ref={props.aipxText}>
+                                        <div className={`aipx-content-txt`} ref={props.aipxText}>
                                             <p>
                                                 <FormattedMessage id="aipx-text6" />
                                             </p>
                                         </div>
                                     </div>
-                                    <div className={`aipx-desc ${props.activeCoinAllocation ? "active" : ""}`} ref={props.coinAllocation}>
+                                    <div className={`aipx-desc`} ref={props.coinAllocation}>
                                         <div className="aipx-desc-structure">
                                             <h3>
                                                 <FormattedMessage id='coin-structure' />
@@ -319,10 +306,10 @@ const OnePage = (props) => {
                             {/* ROADMAP */}
                             <div className="roadmap-wrap">
                                 <section className="roadmap">
-                                    <div className={`roadmap-title ${props.activeRoadmapTitle ? "active" : ""}`} id="section4" ref={props.roadmapTitle}>
+                                    <div className={`roadmap-title`} id="section4" ref={props.roadmapTitle}>
                                         <h2><FormattedMessage id="roadmap" /></h2>
                                     </div>
-                                    <div className={`roadmap-img ${props.activeRoadmapContent ? "active" : ""}`} ref={props.roadmapContent}>
+                                    <div className={`roadmap-img`} ref={props.roadmapContent}>
                                         <img src={require("../../images/roadmap2.png")}/>
                                     </div>
                                 </section>
@@ -332,10 +319,10 @@ const OnePage = (props) => {
                             {/* TEAM */}
                             <div className="team-wrap">
                                 <section className="team" id="section5">
-                                    <div className={`team-title ${props.activeTeamTitle ? "active" : ""}`} ref={props.teamTitle}>
+                                    <div className={`team-title`} ref={props.teamTitle}>
                                         <h2><FormattedMessage id="team" /></h2>
                                     </div>
-                                    <div className={`team-desc ${props.activeTeamList ? "active" : ""}`} ref={props.teamList}>
+                                    <div className={`team-desc`} ref={props.teamList}>
                                         <div className="team-desc-list">
                                             <ul>
                                                 {props.team1.map((item, i) => {
@@ -364,10 +351,10 @@ const OnePage = (props) => {
                             {/* PARTNERS */}
                             <div className="partners-wrap">
                                 <section className="partners">
-                                    <div className={`partners-title ${props.activePartnerTitle1 ? "active" : ""}`} ref={props.partnerTitle1}>
+                                    <div className={`partners-title`} ref={props.partnerTitle1}>
                                         <h2>AIPE Partners</h2>
                                     </div>
-                                    <div className={`partners-logo mb50 ${props.activePartnerContent1 ? "active" : ""}`} ref={props.partnerContent1}>
+                                    <div className={`partners-logo mb50`} ref={props.partnerContent1}>
                                         <ul>
                                             <li className="nbp">
                                                 <a href="javascript:void(0)">
@@ -381,10 +368,10 @@ const OnePage = (props) => {
                                             </li>
                                         </ul>
                                     </div>
-                                    <div className={`partners-title ${props.activePartnerTitle2 ? "active" : ""}`} ref={props.partnerTitle2}>
+                                    <div className={`partners-title`} ref={props.partnerTitle2}>
                                         <h2>UZBIT Partners</h2>
                                     </div>
-                                    <div className={`partners-logo ${props.activePartnerContent2 ? "active" : ""}`} ref={props.partnerContent2}>
+                                    <div className={`partners-logo`} ref={props.partnerContent2}>
                                         <ul>
                                             {
                                                 props.partners.map((item, i) => {
@@ -406,10 +393,10 @@ const OnePage = (props) => {
                             {/* MEDIA */}
                             <div className="media-wrap">
                                 <section className="media" id="section6">
-                                    <div className={`media-title ${props.activeMediaTitle ? "active" : ""}`} ref={props.mediaTitle}>
+                                    <div className={`media-title`} ref={props.mediaTitle}>
                                         <h2><FormattedMessage id="media" /></h2>
                                     </div>
-                                    <div className={`media-list ${props.activeMediaList ? "active" : ""}`} ref={props.mediaList}>
+                                    <div className={`media-list`} ref={props.mediaList}>
                                         <div className="contents">
                                             <ul>
                                                 {props.media1.map((item, i) => {
@@ -479,11 +466,11 @@ const OnePage = (props) => {
                         <div className="footer-wrap">
                             <footer className="footer">
                                 <div className="footer-sns">
-                                    <a href="javascript:void(0)" className="ico-tele" />
+                                    <a href="https://bit.ly/2CTzfYb" target="_blank" className="ico-tele" />
                                     <a href="https://medium.com/cosmicbc" target="_blank" className="ico-medium" />
-                                    <a href="https://twitter.com/cosmicbc_" target="_blank" className="ico-twitter" />
+                                    <a href="https://twitter.com/AIPE_official" target="_blank" className="ico-twitter" />
                                     <a href="https://www.youtube.com/channel/UC6w2g-waOQ0UzSvL4WEVFQw" target="_blank" className="ico-youtube" />
-                                    <a href="javascript:void(0)" className="ico-kakaco" />
+                                    <a href="https://open.kakao.com/o/gxoWNPkb" target="_blank" className="ico-kakaco" />
                                 </div>
                                 <div className="footer-copy">
                                     <p>

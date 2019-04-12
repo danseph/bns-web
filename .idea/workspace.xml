@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1434be6b-e8f8-4500-b582-00f2ef85137e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/presentational/CharTransition.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/presentational/CharTransition.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/container/OnePageAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/container/OnePageAction.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/presentational/OnePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/presentational/OnePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/presentational/char.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/presentational/char.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locale.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/locale.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/presentational/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/presentational/styles.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,7 +24,8 @@
           <entry key="project.open.time.0" value="7" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.13" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -36,10 +36,10 @@
           <entry key="html" value="16" />
           <entry key="jpeg" value="2" />
           <entry key="jpg" value="25" />
-          <entry key="js" value="70" />
+          <entry key="js" value="79" />
           <entry key="json" value="3" />
           <entry key="png" value="28" />
-          <entry key="scss" value="69" />
+          <entry key="scss" value="71" />
           <entry key="svg" value="3" />
         </counts>
       </usages-collector>
@@ -49,15 +49,15 @@
           <entry key="HTML" value="16" />
           <entry key="Image" value="59" />
           <entry key="JSON" value="3" />
-          <entry key="JavaScript" value="70" />
+          <entry key="JavaScript" value="79" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="SCSS" value="69" />
+          <entry key="SCSS" value="71" />
           <entry key="SVG" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="ESLintLanguageService" value="9" />
+          <entry key="ESLintLanguageService" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -65,9 +65,9 @@
           <entry key="css" value="138" />
           <entry key="gitignore" value="9" />
           <entry key="html" value="33" />
-          <entry key="js" value="12252" />
+          <entry key="js" value="13785" />
           <entry key="json" value="1" />
-          <entry key="scss" value="7633" />
+          <entry key="scss" value="7672" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -75,93 +75,69 @@
           <entry key="CSS" value="138" />
           <entry key="HTML" value="33" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="12252" />
+          <entry key="JavaScript" value="13785" />
           <entry key="PLAIN_TEXT" value="9" />
-          <entry key="SCSS" value="7633" />
+          <entry key="SCSS" value="7672" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/container/OnePageAction.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="156" column="19" lean-forward="true" selection-start-line="156" selection-start-column="19" selection-end-line="156" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/locale.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/presentational/OnePage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="215" column="62" lean-forward="true" selection-start-line="215" selection-start-column="62" selection-end-line="215" selection-end-column="62" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/presentational/char.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/presentational/CharTransition.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="325" column="24" lean-forward="true" selection-start-line="325" selection-start-column="24" selection-end-line="325" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.3871345">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/container/OnePageAction.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="247">
+                  <caret line="871" column="44" lean-forward="true" selection-start-line="871" selection-start-column="44" selection-end-line="871" selection-end-column="44" />
+                  <folding>
+                    <element signature="e#0#41#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/presentational/CharTransition.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-845">
+                  <caret line="508" column="24" lean-forward="true" selection-start-line="508" selection-start-column="24" selection-end-line="508" selection-end-column="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/presentational/styles.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="483">
+                  <caret line="1117" column="15" lean-forward="true" selection-start-line="1117" selection-start-column="15" selection-end-line="1117" selection-end-column="15" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/presentational/OnePage.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="290">
+                  <caret line="103" column="42" lean-forward="true" selection-start-line="103" selection-start-column="42" selection-end-line="103" selection-end-column="42" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>active</find>
-      <find>teamList</find>
-      <find>-desc</find>
-      <find>trs</find>
-      <find>partners-logo</find>
-      <find>activePartnerContent1</find>
-      <find>-logo</find>
-      <find>java</find>
-      <find>jame</find>
-      <find>faqAnswerShow</find>
-      <find>typeFaq</find>
-      <find>niki</find>
-      <find>whit</find>
-      <find>paper</find>
-      <find>platFormContent2</find>
-      <find>ref={platFormContent2}</find>
-      <find>platformContent2</find>
-      <find>platFormContent1</find>
-      <find>FormattedMessage</find>
-      <find>ai-prediction-title</find>
-      <find>ref</find>
-      <find>whitePapte</find>
-      <find>white</find>
       <find>whitePaper</find>
       <find>ㄷ</find>
       <find>AI Prediction Signal based on Auto-Trading Bot</find>
@@ -169,6 +145,29 @@
       <find>'</find>
       <find>ai-technique-text</find>
       <find>techContent</find>
+      <find>roadmap</find>
+      <find>section4</find>
+      <find>platFormContent2</find>
+      <find>seq</find>
+      <find>_handlePlatFormContent1Active</find>
+      <find>-title</find>
+      <find>header-logo</find>
+      <find>platformContent</find>
+      <find>effectTitle</find>
+      <find>roadmapTitle</find>
+      <find>effectContent</find>
+      <find>_handleAipxContentActive</find>
+      <find>_handlePlatFormContentsActive</find>
+      <find>_handleAipxTitleActive</find>
+      <find>aipxContent</find>
+      <find>aipxTitle</find>
+      <find>side</find>
+      <find>-content</find>
+      <find>center</find>
+      <find>active</find>
+      <find>//</find>
+      <find>// jonny</find>
+      <find>activeMainTitle</find>
     </findStrings>
     <replaceStrings>
       <replace>className</replace>
@@ -213,14 +212,14 @@
         <option value="$USER_HOME$/Downloads/Telegram Desktop/_index (4).scss" />
         <option value="$PROJECT_DIR$/src/config/_init.scss" />
         <option value="$USER_HOME$/Downloads/Telegram Desktop/index.html" />
-        <option value="$PROJECT_DIR$/src/components/presentational/styles.scss" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/components/container/OnePageAction.js" />
         <option value="$PROJECT_DIR$/src/components/presentational/CharTransition.js" />
         <option value="$PROJECT_DIR$/src/locale.js" />
-        <option value="$PROJECT_DIR$/src/components/presentational/OnePage.js" />
         <option value="$PROJECT_DIR$/src/components/presentational/char.scss" />
+        <option value="$PROJECT_DIR$/src/components/presentational/styles.scss" />
+        <option value="$PROJECT_DIR$/src/components/presentational/OnePage.js" />
+        <option value="$PROJECT_DIR$/src/components/container/OnePageAction.js" />
       </list>
     </option>
   </component>
@@ -247,8 +246,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1527" />
-    <option name="y" value="130" />
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1066" />
   </component>
@@ -257,17 +256,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="aipx" type="b2602c69:ProjectViewProjectNode" />
               <item name="aipx" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aipx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aipx" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aipx" type="b2602c69:ProjectViewProjectNode" />
@@ -298,13 +293,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../uzbit-web" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="C:\Users\user\Documents\aipx\node_modules\eslint" />
@@ -313,19 +307,19 @@
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\user\Documents\aipx\public" />
-      <recent name="C:\Users\user\Documents\aipx\src\images" />
-      <recent name="C:\Users\user\Documents\aipx\src\images\teams" />
-      <recent name="C:\Users\user\Documents\aipx\src\components\presentational" />
-      <recent name="C:\Users\user\Documents\aipx\src\components\images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\Documents\aipx" />
       <recent name="C:\Users\user\Documents\aipx\src" />
       <recent name="C:\Users\user\Documents\aipx\public" />
       <recent name="C:\Users\user\Documents\aipx\src\images" />
       <recent name="C:\Users\user\Documents\aipx\src\components" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Documents\aipx\public" />
+      <recent name="C:\Users\user\Documents\aipx\src\images" />
+      <recent name="C:\Users\user\Documents\aipx\src\images\teams" />
+      <recent name="C:\Users\user\Documents\aipx\src\components\presentational" />
+      <recent name="C:\Users\user\Documents\aipx\src\components\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -359,12 +353,13 @@
       <workItem from="1554690866675" duration="4297000" />
       <workItem from="1554705206854" duration="616000" />
       <workItem from="1554711141867" duration="1359000" />
-      <workItem from="1554879250108" duration="1114000" />
+      <workItem from="1554879250108" duration="2508000" />
+      <workItem from="1554944031123" duration="21934000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="262603000" />
+    <option name="totallyTimeSpent" value="285931000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -379,7 +374,7 @@
     <frame x="1912" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12223393" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09905163" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -393,7 +388,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.25134265" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.44038668" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -574,13 +569,6 @@
     <entry file="file://$PROJECT_DIR$/src/images/teams/01_Dan_CEO.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/presentational/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28196">
-          <caret line="1484" column="24" selection-start-line="1484" selection-start-column="24" selection-end-line="1484" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -612,33 +600,6 @@
     <entry file="file://$PROJECT_DIR$/src/images/emurgo.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/presentational/CharTransition.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="325" column="24" lean-forward="true" selection-start-line="325" selection-start-column="24" selection-end-line="325" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/container/OnePageAction.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="156" column="19" lean-forward="true" selection-start-line="156" selection-start-column="19" selection-end-line="156" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/presentational/OnePage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="215" column="62" lean-forward="true" selection-start-line="215" selection-start-column="62" selection-end-line="215" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/locale.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -648,8 +609,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/presentational/char.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="438">
           <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/presentational/CharTransition.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-845">
+          <caret line="508" column="24" lean-forward="true" selection-start-line="508" selection-start-column="24" selection-end-line="508" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/presentational/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="1117" column="15" lean-forward="true" selection-start-line="1117" selection-start-column="15" selection-end-line="1117" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/presentational/OnePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="103" column="42" lean-forward="true" selection-start-line="103" selection-start-column="42" selection-end-line="103" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/container/OnePageAction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="871" column="44" lean-forward="true" selection-start-line="871" selection-start-column="44" selection-end-line="871" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

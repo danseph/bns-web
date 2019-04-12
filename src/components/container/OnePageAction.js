@@ -7,36 +7,9 @@ class OnePageAction extends Component {
     state = {
         loader: true,
         activeNav: 1,
+        activeMainTitle: false,
+        activePlatFormTitle: false,
         lanShow: false,
-        activeMainTitle: true,
-        activePlatFormTitle: true,
-        activePlatFormContent1: false,
-        activePlatFormContent2: false,
-        activePlatFormContent3: false,
-        activePlatFormContent4: false,
-        activePlatFormContent5: false,
-        activeEffectTitle: false,
-        activeEffectContent: false,
-        activeEffectContentM: false,
-        activeTechniqueTitle: false,
-        activeTechniqueContent1: false,
-        activeTechniqueContent2: false,
-        activeRoadmapTitle: false,
-        activeRoadmapContent: false,
-        activeTeamTitle: false,
-        activeTeamList: false,
-        activePartnerTitle1: false,
-        activePartnerContent1: false,
-        activePartnerTitle2: false,
-        activePartnerContent2: false,
-        activeMediaTitle: false,
-        activeMediaList: false,
-        activeAipxTitle: false,
-        activeAipxContent: false,
-        activeAipxText: false,
-        activeCoinAllocation: false,
-        activeLanBtn: false,
-        activeMnav: false,
         typeFaq: 0,
         defaultLang: window.localStorage['trans'] || "ko",
     };
@@ -774,31 +747,9 @@ class OnePageAction extends Component {
             )
         }, 800);
 
-        window.addEventListener('scroll', this._handlePlatFormContent1Active);
-        window.addEventListener('scroll', this._handlePlatFormContent2Active);
-        window.addEventListener('scroll', this._handlePlatFormContent3Active);
-        window.addEventListener('scroll', this._handlePlatFormContent4Active);
-        window.addEventListener('scroll', this._handlePlatFormContent5Active);
+        window.addEventListener('scroll', this._handlePlatFormContentsActive);
         window.addEventListener('scroll', this._handleEffectTitleActive);
-        window.addEventListener('scroll', this._handleEffectContentActive);
-        window.addEventListener('scroll', this._handleEffectContentMActive);
-        window.addEventListener('scroll', this._handleTechniqueTitleActive);
-        window.addEventListener('scroll', this._handleTechniqueContent1Active);
-        window.addEventListener('scroll', this._handleTechniqueContent2Active);
-        window.addEventListener('scroll', this._handleTeamTitleActive);
-        window.addEventListener('scroll', this._handleTeamListActive);
-        window.addEventListener('scroll', this._handlePartnerTitle1Active);
-        window.addEventListener('scroll', this._handlePartnerContent1Active);
-        window.addEventListener('scroll', this._handlePartnerTitle2Active);
-        window.addEventListener('scroll', this._handlePartnerContent2Active);
-        window.addEventListener('scroll', this._handleMediaTitleActive);
-        window.addEventListener('scroll', this._handleMediaListActive);
-        window.addEventListener('scroll', this._handleAipxTitleActive);
-        window.addEventListener('scroll', this._handleAipxContentActive);
-        window.addEventListener('scroll', this._handleAipxTextActive);
-        window.addEventListener('scroll', this._handleCoinAllocationActive);
-        window.addEventListener('scroll', this._handleRoadmapTitleActive);
-        window.addEventListener('scroll', this._handleRoadmapContentActive);
+        window.addEventListener('scroll', this._handleEffectContentsActive);
 
         // window.addEventListener('touchstart', this.touchStart); // mobile touch 가로 움직임 방지
         // window.addEventListener('touchmove', this.preventTouch, {passive: false}); // mobile touch 가로 움직임 방지 end
@@ -830,7 +781,6 @@ class OnePageAction extends Component {
     // // mobile touch 가로 움직임 방지 end
 
     render() {
-
         return (
             <OnePage
                 {...this.state}
@@ -900,43 +850,16 @@ class OnePageAction extends Component {
     _handleRefresh = () => {
         this.setState({
             loader: true,
-        })
+        });
         window.scrollTo(0, 0);
         setTimeout(() => {
             return (
                 this.setState({
                     loader: false,
                     activeNav: 1,
-                    lanShow: false,
                     activeMainTitle: true,
                     activePlatFormTitle: true,
-                    activePlatFormContent1: false,
-                    activePlatFormContent2: false,
-                    activePlatFormContent3: false,
-                    activePlatFormContent4: false,
-                    activePlatFormContent5: false,
-                    activeEffectTitle: false,
-                    activeEffectContent: false,
-                    activeEffectContentM: false,
-                    activeTechniqueTitle: false,
-                    activeTechniqueContent1: false,
-                    activeTechniqueContent2: false,
-                    activeRoadmapTitle: false,
-                    activeRoadmapContent: false,
-                    activeTeamTitle: false,
-                    activeTeamList: false,
-                    activePartnerTitle1: false,
-                    activePartnerContent1: false,
-                    activePartnerTitle2: false,
-                    activePartnerContent2: false,
-                    activeMediaTitle: false,
-                    activeMediaList: false,
-                    activeAipxTitle: false,
-                    activeAipxContent: false,
-                    activeAipxText: false,
-                    activeCoinAllocation: false,
-                    activeLanBtn: false,
-                    activeMnav: false,
+                    lanShow: false,
                     typeFaq: 0,
                 })
             )
@@ -984,44 +907,17 @@ class OnePageAction extends Component {
         window.localStorage['trans'] = language[e.target.innerHTML];
         this.setState({
             loader: true,
-            activeMnav: false
-        })
+            activeMnav: false,
+        });
         window.scrollTo(0, 0);
         setTimeout(() => {
             return (
                 this.setState({
                     loader: false,
                     activeNav: 1,
-                    lanShow: false,
                     activeMainTitle: true,
                     activePlatFormTitle: true,
-                    activePlatFormContent1: false,
-                    activePlatFormContent2: false,
-                    activePlatFormContent3: false,
-                    activePlatFormContent4: false,
-                    activePlatFormContent5: false,
-                    activeEffectTitle: false,
-                    activeEffectContent: false,
-                    activeEffectContentM: false,
-                    activeTechniqueTitle: false,
-                    activeTechniqueContent1: false,
-                    activeTechniqueContent2: false,
-                    activeRoadmapTitle: false,
-                    activeRoadmapContent: false,
-                    activeTeamTitle: false,
-                    activeTeamList: false,
-                    activePartnerTitle1: false,
-                    activePartnerContent1: false,
-                    activePartnerTitle2: false,
-                    activePartnerContent2: false,
-                    activeMediaTitle: false,
-                    activeMediaList: false,
-                    activeAipxTitle: false,
-                    activeAipxContent: false,
-                    activeAipxText: false,
-                    activeCoinAllocation: false,
-                    activeLanBtn: false,
-                    activeMnav: false,
+                    lanShow: false,
                     typeFaq: 0,
                 })
             )
@@ -1037,7 +933,7 @@ class OnePageAction extends Component {
                 activePlatFormTitle: false,
             })
         }
-    }
+    };
 
     _handleSectionMove = (num) => {
         this.setState({
@@ -1068,7 +964,7 @@ class OnePageAction extends Component {
     _handleWhitePaperMove = (num) => {
         let offset = $("#section" + num);
         let offsetTop = offset.offset();
-        $('html, body').scrollTop(offsetTop.top)
+        $('html, body').scrollTop(offsetTop.top);
         this.setState({
             lanShow: false,
             activeMnav: false
@@ -1076,326 +972,95 @@ class OnePageAction extends Component {
     };
 
     platFormContent1 = React.createRef();
-    _handlePlatFormContent1Active = throttle(() => {
-        if(!this.state.loader) {
-            const rect = this.platFormContent1.current.getBoundingClientRect();
-            const { top, bottom, height } = rect;
-            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
-                this.setState({
-                    activePlatFormContent1: true
-                });
-            }
-        }
-    }, 200);
-
     platFormContent2 = React.createRef();
-    _handlePlatFormContent2Active = throttle(() => {
-        if(!this.state.loader) {
-            const rect = this.platFormContent2.current.getBoundingClientRect();
-            const { top, bottom, height } = rect;
-            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
-                this.setState({
-                    activePlatFormContent2: true
-                });
-            }
-        }
-    }, 200);
-
     platFormContent3 = React.createRef();
-    _handlePlatFormContent3Active = throttle(() => {
-        if(!this.state.loader) {
-            const rect = this.platFormContent3.current.getBoundingClientRect();
-            const { top, bottom, height } = rect;
-            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
-                this.setState({
-                    activePlatFormContent3: true
-                });
-            }
-        }
-    }, 200);
-
     platFormContent4 = React.createRef();
-    _handlePlatFormContent4Active = throttle(() => {
-        if(!this.state.loader) {
-            const rect = this.platFormContent4.current.getBoundingClientRect();
-            const { top, bottom, height } = rect;
-            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
-                this.setState({
-                    activePlatFormContent4: true
-                });
-            }
-        }
-    }, 200);
-
     platFormContent5 = React.createRef();
-    _handlePlatFormContent5Active = throttle(() => {
-        if(!this.state.loader) {
-            const rect = this.platFormContent5.current.getBoundingClientRect();
-            const { top, bottom, height } = rect;
-            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
-                this.setState({
-                    activePlatFormContent5: true
-                });
+    _handlePlatFormContentsActive = throttle(() => {
+        const elements = [
+            this.platFormContent1.current,
+            this.platFormContent2.current,
+            this.platFormContent3.current,
+            this.platFormContent4.current,
+            this.platFormContent5.current
+        ];
+        for(var i=0; i<elements.length; i++)  {
+            if(!this.state.loader) {
+                const rect = elements[i].getBoundingClientRect();
+                const { top, bottom, height } = rect;
+                if (top + 200 < window.innerHeight && bottom >= 0 && top > -1 * height) {
+                    elements[i].classList = `${elements[i].classList} active`;
+                }
             }
         }
     }, 200);
 
     effectTitle = React.createRef();
-    _handleEffectTitleActive = throttle(() => {
-        if(!this.state.loader) {
-            const rect = this.effectTitle.current.getBoundingClientRect();
-            const { top, bottom, height } = rect;
-            if (top - 150 < window.innerHeight && bottom >= 0 && top > -1 * height) {
-                this.setState({
-                    activeEffectTitle: true
-                });
-            }
-        }
-    }, 200);
-
     roadmapTitle = React.createRef();
-    _handleRoadmapTitleActive = throttle(() => {
-        if(!this.state.loader) {
-            const rect = this.roadmapTitle.current.getBoundingClientRect();
-            const { top, bottom, height } = rect;
-            if (top - 150 < window.innerHeight && bottom >= 0 && top > -1 * height) {
-                this.setState({
-                    activeRoadmapTitle: true
-                });
-            }
-        }
-    }, 200);
-
     roadmapContent = React.createRef();
-    _handleRoadmapContentActive = throttle(() => {
-        if(!this.state.loader) {
-            const rect = this.roadmapContent.current.getBoundingClientRect();
-            const { top, bottom, height } = rect;
-            if (top - 150 < window.innerHeight && bottom >= 0 && top > -1 * height) {
-                this.setState({
-                    activeRoadmapContent: true
-                });
+    _handleEffectTitleActive = throttle(() => {
+        const elements = [
+            this.effectTitle.current,
+            this.roadmapTitle.current,
+            this.roadmapContent.current,
+        ];
+        for(var i=0; i<elements.length; i++)  {
+            if(!this.state.loader) {
+                const rect = elements[i].getBoundingClientRect();
+                const { top, bottom, height } = rect;
+                if (top - 150 < window.innerHeight && bottom >= 0 && top > -1 * height && !elements[i].classList.contains('active')) {
+                    elements[i].classList = `${elements[i].classList} active`;
+                }
             }
         }
     }, 200);
 
     effectContent = React.createRef();
-    _handleEffectContentActive = throttle(() => {
-        if(!this.state.loader) {
-            const rect = this.effectContent.current.getBoundingClientRect();
-            const { top, bottom, height } = rect;
-            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
-                this.setState({
-                    activeEffectContent: true
-                });
-            }
-        }
-    }, 200);
-
     effectContentM = React.createRef();
-    _handleEffectContentMActive = throttle(() => {
-        if(!this.state.loader) {
-            const rect = this.effectContentM.current.getBoundingClientRect();
-            const { top, bottom, height } = rect;
-            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
-                this.setState({
-                    activeEffectContentM: true
-                });
-            }
-        }
-    }, 200);
-
     aipxTitle = React.createRef();
-    _handleAipxTitleActive = throttle(() => {
-        if(!this.state.loader) {
-            const rect = this.aipxTitle.current.getBoundingClientRect();
-            const { top, bottom, height } = rect;
-            if (top + 100 < window.innerHeight && bottom >= 0 && top > -1 * height) {
-                this.setState({
-                    activeAipxTitle: true
-                });
-            }
-        }
-    }, 200);
-
     aipxContent = React.createRef();
-    _handleAipxContentActive = throttle(() => {
-        if(!this.state.loader) {
-            const rect = this.aipxContent.current.getBoundingClientRect();
-            const { top, bottom, height } = rect;
-            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
-                this.setState({
-                    activeAipxContent: true
-                });
-            }
-        }
-    }, 200);
-
     aipxText = React.createRef();
-    _handleAipxTextActive = throttle(() => {
-        if(!this.state.loader) {
-            const rect = this.aipxText.current.getBoundingClientRect();
-            const { top, bottom, height } = rect;
-            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
-                this.setState({
-                    activeAipxText: true
-                });
-            }
-        }
-    }, 200);
-
     coinAllocation = React.createRef();
-    _handleCoinAllocationActive = throttle(() => {
-        if(!this.state.loader) {
-            const rect = this.coinAllocation.current.getBoundingClientRect();
-            const { top, bottom, height } = rect;
-            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
-                this.setState({
-                    activeCoinAllocation: true
-                });
-            }
-        }
-    }, 200);
-
     techniqueTitle = React.createRef();
-    _handleTechniqueTitleActive = throttle(() => {
-        if(!this.state.loader) {
-            const rect = this.techniqueTitle.current.getBoundingClientRect();
-            const { top, bottom, height } = rect;
-            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
-                this.setState({
-                    activeTechniqueTitle: true
-                });
-            }
-        }
-    }, 200);
-
     techniqueContent1 = React.createRef();
-    _handleTechniqueContent1Active = throttle(() => {
-        if(!this.state.loader) {
-            const rect = this.techniqueContent1.current.getBoundingClientRect();
-            const { top, bottom, height } = rect;
-            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
-                this.setState({
-                    activeTechniqueContent1: true
-                });
-            }
-        }
-    }, 200);
-
     techniqueContent2 = React.createRef();
-    _handleTechniqueContent2Active = throttle(() => {
-        if(!this.state.loader) {
-            const rect = this.techniqueContent2.current.getBoundingClientRect();
-            const { top, bottom, height } = rect;
-            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
-                this.setState({
-                    activeTechniqueContent2: true
-                });
-            }
-        }
-    }, 200);
-
     teamTitle = React.createRef();
-    _handleTeamTitleActive = throttle(() => {
-        if(!this.state.loader) {
-            const rect = this.teamTitle.current.getBoundingClientRect();
-            const { top, bottom, height } = rect;
-            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
-                this.setState({
-                    activeTeamTitle: true
-                });
-            }
-        }
-    }, 200);
-
     teamList = React.createRef();
-    _handleTeamListActive = throttle(() => {
-        if(!this.state.loader) {
-            const rect = this.teamList.current.getBoundingClientRect();
-            const { top, bottom, height } = rect;
-            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
-                this.setState({
-                    activeTeamList: true
-                });
-            }
-        }
-    }, 200);
-
     partnerTitle1 = React.createRef();
-    _handlePartnerTitle1Active = throttle(() => {
-        if(!this.state.loader) {
-            const rect = this.partnerTitle1.current.getBoundingClientRect();
-            const { top, bottom, height } = rect;
-            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
-                this.setState({
-                    activePartnerTitle1: true
-                });
-            }
-        }
-    }, 200);
-
     partnerContent1 = React.createRef();
-    _handlePartnerContent1Active = throttle(() => {
-        if(!this.state.loader) {
-            const rect = this.partnerContent1.current.getBoundingClientRect();
-            const { top, bottom, height } = rect;
-            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
-                this.setState({
-                    activePartnerContent1: true
-                });
-            }
-        }
-    }, 200);
-
     partnerTitle2 = React.createRef();
-    _handlePartnerTitle2Active = throttle(() => {
-        if(!this.state.loader) {
-            const rect = this.partnerTitle2.current.getBoundingClientRect();
-            const { top, bottom, height } = rect;
-            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
-                this.setState({
-                    activePartnerTitle2: true
-                });
-            }
-        }
-    }, 200);
-
     partnerContent2 = React.createRef();
-    _handlePartnerContent2Active = throttle(() => {
-        if(!this.state.loader) {
-            const rect = this.partnerContent2.current.getBoundingClientRect();
-            const { top, bottom, height } = rect;
-            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
-                this.setState({
-                    activePartnerContent2: true
-                });
-            }
-        }
-    }, 200);
-
     mediaTitle = React.createRef();
-    _handleMediaTitleActive = throttle(() => {
-        if(!this.state.loader) {
-            const rect = this.mediaTitle.current.getBoundingClientRect();
-            const { top, bottom, height } = rect;
-            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
-                this.setState({
-                    activeMediaTitle: true
-                });
-            }
-        }
-    }, 200);
-
     mediaList = React.createRef();
-    _handleMediaListActive = throttle(() => {
-        if(!this.state.loader) {
-            const rect = this.mediaList.current.getBoundingClientRect();
-            const { top, bottom, height } = rect;
-            if (top < window.innerHeight && bottom >= 0 && top > -1 * height) {
-                this.setState({
-                    activeMediaList: true
-                });
+
+    _handleEffectContentsActive = throttle(() => {
+        const elements = [
+            this.effectContent.current,
+            this.effectContentM.current,
+            this.aipxTitle.current,
+            this.aipxContent.current,
+            this.aipxText.current,
+            this.coinAllocation.current,
+            this.techniqueTitle.current,
+            this.techniqueContent1.current,
+            this.techniqueContent2.current,
+            this.teamTitle.current,
+            this.teamList.current,
+            this.partnerTitle1.current,
+            this.partnerContent1.current,
+            this.partnerTitle2.current,
+            this.partnerContent2.current,
+            this.mediaTitle.current,
+            this.mediaList.current,
+        ];
+        for(var i=0; i<elements.length; i++)  {
+            if(!this.state.loader) {
+                const rect = elements[i].getBoundingClientRect();
+                const { top, bottom, height } = rect;
+                if (top < window.innerHeight && bottom >= 0 && top > -1 * height && !elements[i].classList.contains('active')) {
+                    elements[i].classList = `${elements[i].classList} active`;
+
+                }
             }
         }
     }, 200);
