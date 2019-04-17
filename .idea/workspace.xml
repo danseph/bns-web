@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1434be6b-e8f8-4500-b582-00f2ef85137e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/images/pop_txt_web_v3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/pop_txt_web_v2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/container/OnePageAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/container/OnePageAction.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/presentational/Popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/presentational/Popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/pop_txt_web_v3.png" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -66,7 +68,7 @@
           <entry key="css" value="138" />
           <entry key="gitignore" value="9" />
           <entry key="html" value="466" />
-          <entry key="js" value="14857" />
+          <entry key="js" value="14858" />
           <entry key="json" value="1" />
           <entry key="scss" value="7812" />
         </counts>
@@ -76,7 +78,7 @@
           <entry key="CSS" value="138" />
           <entry key="HTML" value="466" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="14857" />
+          <entry key="JavaScript" value="14858" />
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="SCSS" value="7812" />
         </counts>
@@ -84,14 +86,14 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.30904523">
+    <splitter split-orientation="horizontal" split-proportion="0.44221106">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/container/OnePageAction.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="344">
-                  <caret line="802" column="14" lean-forward="true" selection-start-line="802" selection-start-column="14" selection-end-line="802" selection-end-column="14" />
+                <state relative-caret-position="356">
+                  <caret line="445" column="10" selection-start-line="445" selection-start-column="10" selection-end-line="445" selection-end-column="10" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
                   </folding>
@@ -190,23 +192,13 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/presentational/Popup.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="133">
-                  <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+                <state relative-caret-position="114">
+                  <caret line="6" column="40" lean-forward="true" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/images/pop_txt_web_v2.png">
-              <provider selected="true" editor-type-id="images" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/images/pop_txt_web_v3.png">
-              <provider selected="true" editor-type-id="images" />
             </entry>
           </file>
         </leaf>
@@ -298,8 +290,8 @@
         <option value="$PROJECT_DIR$/src/components/presentational/popup.scss" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/components/presentational/OnePage.js" />
-        <option value="$PROJECT_DIR$/src/components/container/OnePageAction.js" />
         <option value="$PROJECT_DIR$/src/components/presentational/Popup.js" />
+        <option value="$PROJECT_DIR$/src/components/container/OnePageAction.js" />
       </list>
     </option>
   </component>
@@ -446,12 +438,12 @@
       <workItem from="1554711141867" duration="1359000" />
       <workItem from="1554879250108" duration="2508000" />
       <workItem from="1554944031123" duration="23485000" />
-      <workItem from="1555464014609" duration="19394000" />
+      <workItem from="1555464014609" duration="20288000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="306876000" />
+    <option name="totallyTimeSpent" value="307770000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -735,22 +727,22 @@
     <entry file="file://$PROJECT_DIR$/src/images/pop_txt_web_v2.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/container/OnePageAction.js">
+    <entry file="file://$PROJECT_DIR$/src/components/presentational/Popup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="802" column="14" lean-forward="true" selection-start-line="802" selection-start-column="14" selection-end-line="802" selection-end-column="14" />
+        <state relative-caret-position="114">
+          <caret line="6" column="40" lean-forward="true" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/presentational/Popup.js">
+    <entry file="file://$PROJECT_DIR$/src/components/container/OnePageAction.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        <state relative-caret-position="356">
+          <caret line="445" column="10" selection-start-line="445" selection-start-column="10" selection-end-line="445" selection-end-column="10" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
