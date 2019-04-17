@@ -12,6 +12,8 @@ class OnePageAction extends Component {
         lanShow: false,
         typeFaq: 0,
         defaultLang: window.localStorage['trans'] || "ko",
+        popupClose: false,
+        isChecked: true,
     };
 
     nav = [
@@ -464,20 +466,6 @@ class OnePageAction extends Component {
             image: '33_Louis_Developer.jpg'
         },
         {
-            name: 'YJ',
-            position: 'Developer',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '34_YJ_Developer.jpg'
-        },
-        {
-            name: 'Aiden',
-            position: 'Developer',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '35_Aiden_Developer.jpg'
-        },
-        {
             name: 'Bread',
             position: 'Developer',
             className: 'img-box',
@@ -492,25 +480,11 @@ class OnePageAction extends Component {
             image: '37_Add_Developer.jpg'
         },
         {
-            name: 'James',
-            position: 'Developer',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '38_James_Developer.jpg'
-        },
-        {
             name: 'Sunny',
             position: 'Publisher',
             className: 'img-box',
             className2: 'txt-box',
             image: '41_Sunny_Publisher.jpg'
-        },
-        {
-            name: 'Hailey',
-            position: 'Publisher',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '42_Hailey_Publisher.jpg'
         },
         {
             name: 'Suzi',
@@ -562,32 +536,11 @@ class OnePageAction extends Component {
             image: '49_Liseo_UI_UX_Designer.jpg'
         },
         {
-            name: 'Luke',
-            position: '3D Designer',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '50_Luke_3D_Designer.jpg'
-        },
-        {
-            name: 'Bill',
-            position: '3D Designer',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '51_Bill_3D_Designer.jpg'
-        },
-        {
             name: 'Mimi',
             position: 'Marketing',
             className: 'img-box',
             className2: 'txt-box',
             image: '52_Mimi_Marketing.jpg'
-        },
-        {
-            name: 'Gordon',
-            position: 'Marketing',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '53_Gordon_Marketing.jpg'
         },
         {
             name: 'Jane',
@@ -737,6 +690,8 @@ class OnePageAction extends Component {
         }
     ];
     componentDidMount() {
+        this._getCookieMobile();
+
         setTimeout(() => {
             return (
                 this.setState({
@@ -843,9 +798,46 @@ class OnePageAction extends Component {
                 handleLanChoice={this._handleLanChoice}
                 handleWhitePaperMove={this._handleWhitePaperMove}
                 handleMnvaBtn={this._handleMnvaBtn}
+                handlePopupClose={this._handlePopupClose}
+                toggleChange={this._toggleChange}
             />
         )
     }
+
+    _toggleChange = () => {
+        this.setState({
+            isChecked: !this.state.isChecked,
+        });
+    };
+
+    _setCookieMobile = ( name, value, expiredays ) => {
+        var todayDate = new Date();
+        todayDate.setDate( todayDate.getDate() + expiredays );
+        document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+    };
+
+    _getCookieMobile = () => {
+        var cookiedata = document.cookie;
+        if ( cookiedata.indexOf("todayCookie=done") > 0 ){
+            this.setState({
+                popupClose: true
+            })
+        }
+        else {
+            this.setState({
+                popupClose: false
+            })
+        }
+    };
+
+    _handlePopupClose = () => {
+        this.setState({
+            popupClose: true
+        })
+        if(!this.state.isChecked) {
+            this._setCookieMobile( "todayCookie", "done" , 1);
+        }
+    };
 
     _handleRefresh = () => {
         this.setState({

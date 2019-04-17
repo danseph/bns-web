@@ -2,10 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1434be6b-e8f8-4500-b582-00f2ef85137e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/presentational/Popup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/presentational/popup.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/pop_off.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/pop_off_m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/pop_on.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/pop_on_m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/pop_txt_mobile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/pop_txt_web.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/pop_x.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/container/OnePageAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/container/OnePageAction.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/presentational/OnePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/presentational/OnePage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/presentational/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/presentational/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/teams/34_YJ_Developer.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/teams/35_Aiden_Developer.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/teams/38_James_Developer.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/teams/42_Hailey_Publisher.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/teams/50_Luke_3D_Designer.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/teams/51_Bill_3D_Designer.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/teams/53_Gordon_Marketing.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,12 +36,12 @@
     <session id="1614923076">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.0" value="7" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -33,64 +49,66 @@
           <entry key="css" value="3" />
           <entry key="gif" value="4" />
           <entry key="gitignore" value="1" />
-          <entry key="html" value="16" />
+          <entry key="html" value="18" />
           <entry key="jpeg" value="2" />
           <entry key="jpg" value="25" />
-          <entry key="js" value="79" />
+          <entry key="js" value="87" />
           <entry key="json" value="3" />
           <entry key="png" value="28" />
-          <entry key="scss" value="71" />
+          <entry key="rnc" value="1" />
+          <entry key="scss" value="75" />
           <entry key="svg" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="3" />
-          <entry key="HTML" value="16" />
+          <entry key="HTML" value="18" />
           <entry key="Image" value="59" />
           <entry key="JSON" value="3" />
-          <entry key="JavaScript" value="79" />
+          <entry key="JavaScript" value="87" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="SCSS" value="71" />
+          <entry key="RNG Compact" value="1" />
+          <entry key="SCSS" value="75" />
           <entry key="SVG" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="ESLintLanguageService" value="10" />
+          <entry key="ESLintLanguageService" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="138" />
           <entry key="gitignore" value="9" />
-          <entry key="html" value="33" />
-          <entry key="js" value="13785" />
+          <entry key="html" value="466" />
+          <entry key="js" value="14832" />
           <entry key="json" value="1" />
-          <entry key="scss" value="7672" />
+          <entry key="scss" value="7812" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="138" />
-          <entry key="HTML" value="33" />
+          <entry key="HTML" value="466" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="13785" />
+          <entry key="JavaScript" value="14832" />
           <entry key="PLAIN_TEXT" value="9" />
-          <entry key="SCSS" value="7672" />
+          <entry key="SCSS" value="7812" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.3871345">
+    <splitter split-orientation="horizontal" split-proportion="0.7022613">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/container/OnePageAction.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="247">
-                  <caret line="871" column="44" lean-forward="true" selection-start-line="871" selection-start-column="44" selection-end-line="871" selection-end-column="44" />
+                <state relative-caret-position="382">
+                  <caret line="804" column="5" lean-forward="true" selection-start-line="804" selection-start-column="5" selection-end-line="804" selection-end-column="5" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
                   </folding>
@@ -99,10 +117,31 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/presentational/CharTransition.js">
+            <entry file="file://$PROJECT_DIR$/public/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-845">
-                  <caret line="508" column="24" lean-forward="true" selection-start-line="508" selection-start-column="24" selection-end-line="508" selection-end-column="24" />
+                <state relative-caret-position="399">
+                  <caret line="21" selection-start-line="21" selection-end-line="21" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/App.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="19">
+                  <caret line="1" column="52" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="52" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/presentational/OnePage.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-2505">
+                  <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -110,21 +149,66 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/presentational/styles.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="483">
-                  <caret line="1117" column="15" lean-forward="true" selection-start-line="1117" selection-start-column="15" selection-end-line="1117" selection-end-column="15" />
+                <state relative-caret-position="201">
+                  <caret line="1433" column="31" lean-forward="true" selection-start-line="1433" selection-start-column="31" selection-end-line="1433" selection-end-column="31" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/presentational/CharTransition.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="9633">
+                  <caret line="508" column="24" selection-start-line="508" selection-start-column="24" selection-end-line="508" selection-end-column="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/config/_animation.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="342">
+                  <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/config/_mixins.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="760">
+                  <caret line="40" selection-start-line="40" selection-end-line="40" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="38">
+                  <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/presentational/popup.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="198">
+                  <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/components/presentational/OnePage.js">
+            <entry file="file://$PROJECT_DIR$/src/components/presentational/Popup.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="290">
-                  <caret line="103" column="42" lean-forward="true" selection-start-line="103" selection-start-column="42" selection-end-line="103" selection-end-column="42" />
+                <state relative-caret-position="266">
+                  <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -138,15 +222,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>whitePaper</find>
-      <find>ㄷ</find>
-      <find>AI Prediction Signal based on Auto-Trading Bot</find>
-      <find>&quot;Auto-Trading Bot based on AI Prediction Signal&quot;</find>
-      <find>'</find>
-      <find>ai-technique-text</find>
-      <find>techContent</find>
-      <find>roadmap</find>
-      <find>section4</find>
       <find>platFormContent2</find>
       <find>seq</find>
       <find>_handlePlatFormContent1Active</find>
@@ -168,6 +243,15 @@
       <find>//</find>
       <find>// jonny</find>
       <find>activeMainTitle</find>
+      <find>twitter</find>
+      <find>hailey</find>
+      <find>james</find>
+      <find>aiden</find>
+      <find>.popup</find>
+      <find>img-box</find>
+      <find>background</find>
+      <find>.img-box</find>
+      <find>width: 100%;</find>
     </findStrings>
     <replaceStrings>
       <replace>className</replace>
@@ -212,13 +296,16 @@
         <option value="$USER_HOME$/Downloads/Telegram Desktop/_index (4).scss" />
         <option value="$PROJECT_DIR$/src/config/_init.scss" />
         <option value="$USER_HOME$/Downloads/Telegram Desktop/index.html" />
-        <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/components/presentational/CharTransition.js" />
         <option value="$PROJECT_DIR$/src/locale.js" />
         <option value="$PROJECT_DIR$/src/components/presentational/char.scss" />
+        <option value="$USER_HOME$/Downloads/Telegram Desktop/190416_popup/_popup.scss" />
+        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/components/presentational/styles.scss" />
+        <option value="$PROJECT_DIR$/src/components/presentational/popup.scss" />
+        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/components/presentational/OnePage.js" />
+        <option value="$PROJECT_DIR$/src/components/presentational/Popup.js" />
         <option value="$PROJECT_DIR$/src/components/container/OnePageAction.js" />
       </list>
     </option>
@@ -267,6 +354,11 @@
             <path>
               <item name="aipx" type="b2602c69:ProjectViewProjectNode" />
               <item name="aipx" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aipx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aipx" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -289,6 +381,12 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="presentational" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="aipx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aipx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -298,7 +396,7 @@
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../uzbit-web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cosmic3pik_main" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="C:\Users\user\Documents\aipx\node_modules\eslint" />
@@ -307,19 +405,19 @@
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\user\Documents\aipx" />
-      <recent name="C:\Users\user\Documents\aipx\src" />
-      <recent name="C:\Users\user\Documents\aipx\public" />
-      <recent name="C:\Users\user\Documents\aipx\src\images" />
-      <recent name="C:\Users\user\Documents\aipx\src\components" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\user\Documents\aipx\public" />
       <recent name="C:\Users\user\Documents\aipx\src\images" />
       <recent name="C:\Users\user\Documents\aipx\src\images\teams" />
       <recent name="C:\Users\user\Documents\aipx\src\components\presentational" />
       <recent name="C:\Users\user\Documents\aipx\src\components\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Documents\aipx" />
+      <recent name="C:\Users\user\Documents\aipx\src" />
+      <recent name="C:\Users\user\Documents\aipx\public" />
+      <recent name="C:\Users\user\Documents\aipx\src\images" />
+      <recent name="C:\Users\user\Documents\aipx\src\components" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -354,12 +452,13 @@
       <workItem from="1554705206854" duration="616000" />
       <workItem from="1554711141867" duration="1359000" />
       <workItem from="1554879250108" duration="2508000" />
-      <workItem from="1554944031123" duration="21934000" />
+      <workItem from="1554944031123" duration="23485000" />
+      <workItem from="1555464014609" duration="15957000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="285931000" />
+    <option name="totallyTimeSpent" value="303439000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -374,7 +473,7 @@
     <frame x="1912" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09905163" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16122234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -388,7 +487,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.44038668" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.29752955" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -421,35 +520,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/_index (5).scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="1144" column="21" selection-start-line="1144" selection-start-column="21" selection-end-line="1144" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/_index (4).scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="83" column="32" selection-start-line="83" selection-start-column="32" selection-end-line="83" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/ico_youtube_hover.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/ico_kakao.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/ico_facebook_hover.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/ico_facebook.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/ico_youtube.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/images/down_grey.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -459,24 +529,10 @@
     <entry file="file://$PROJECT_DIR$/src/images/teams/47_Jerry_UI_Designer.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/_mixins.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/config/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="7" selection-start-line="3" selection-end-line="3" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/_animation.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="38" column="35" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -569,13 +625,6 @@
     <entry file="file://$PROJECT_DIR$/src/images/teams/01_Dan_CEO.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/images/teams/02_Leo_China_HQ_Business_Director.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -588,13 +637,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/images/teams/41_Sunny_Publisher.jpg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/images/economy-dounut.png" />
     <entry file="file://$PROJECT_DIR$/src/images/emurgo.png">
@@ -614,24 +656,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/presentational/CharTransition.js">
+    <entry file="file://$PROJECT_DIR$/src/config/_animation.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-845">
-          <caret line="508" column="24" lean-forward="true" selection-start-line="508" selection-start-column="24" selection-end-line="508" selection-end-column="24" />
+        <state relative-caret-position="342">
+          <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/_mixins.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/190416_popup/_popup.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/embed.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/190416_popup/popup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/presentational/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="1117" column="15" lean-forward="true" selection-start-line="1117" selection-start-column="15" selection-end-line="1117" selection-end-column="15" />
+        <state relative-caret-position="201">
+          <caret line="1433" column="31" lean-forward="true" selection-start-line="1433" selection-start-column="31" selection-end-line="1433" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/presentational/CharTransition.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9633">
+          <caret line="508" column="24" selection-start-line="508" selection-start-column="24" selection-end-line="508" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/jquery-1.11.3.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/presentational/popup.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="52" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/presentational/OnePage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="103" column="42" lean-forward="true" selection-start-line="103" selection-start-column="42" selection-end-line="103" selection-end-column="42" />
+        <state relative-caret-position="-2505">
+          <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/presentational/Popup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -640,8 +758,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/container/OnePageAction.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="871" column="44" lean-forward="true" selection-start-line="871" selection-start-column="44" selection-end-line="871" selection-end-column="44" />
+        <state relative-caret-position="382">
+          <caret line="804" column="5" lean-forward="true" selection-start-line="804" selection-start-column="5" selection-end-line="804" selection-end-column="5" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>

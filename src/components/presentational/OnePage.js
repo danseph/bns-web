@@ -1,4 +1,5 @@
 import React from 'react';
+import Popup from '../presentational/Popup';
 import CharTransition from './CharTransition';
 import Slider from 'react-slick';
 import './styles.scss';
@@ -9,7 +10,6 @@ import ja from 'react-intl/locale-data/ja';
 import zh from 'react-intl/locale-data/zh';
 import locale from '../../locale';
 import { FormattedMessage } from 'react-intl';
-
 addLocaleData([...en, ...ko, ...ja, ...zh]);
 
 const OnePage = (props) => {
@@ -29,6 +29,9 @@ const OnePage = (props) => {
                     messages={locale[props.defaultLang]}
                 >
                     <>
+                        {!props.popupClose &&
+                            <Popup handlePopupClose={props.handlePopupClose} toggleChange={props.toggleChange}/>
+                        }
                         {props.loader &&
                         <div className="loader-wrap">
                             <img src={require("../../images/loader.gif")} className="loader"/>
