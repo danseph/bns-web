@@ -818,6 +818,7 @@ class OnePageAction extends Component {
 
     _getCookieMobile = () => {
         var cookiedata = document.cookie;
+        console.log(cookiedata)
         if ( cookiedata.indexOf("todayCookie=done") > 0 ){
             this.setState({
                 popupClose: true
