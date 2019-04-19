@@ -515,13 +515,6 @@ class OnePageAction extends Component {
             image: '47_Jerry_UI_Designer.jpg'
         },
         {
-            name: 'Lilly',
-            position: 'UI UX Designer',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '48_Lilly_Web_Designer.jpg'
-        },
-        {
             name: 'Liseo',
             position: 'UI UX Designer',
             className: 'img-box',
