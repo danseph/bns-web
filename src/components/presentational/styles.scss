@@ -1556,6 +1556,28 @@ body {
           }
         }
 
+        &.coinbene {
+          width: 248px;
+
+          @include mq("tablet") {
+            width: 180px;
+          }
+          @include mq("mobile") {
+            width: 125px;
+          }
+        }
+
+        &.blockinside {
+          width: 248px;
+
+          @include mq("tablet") {
+            width: 180px;
+          }
+          @include mq("mobile") {
+            width: 125px;
+          }
+        }
+
         @include mq("mobile") {
           width: 100%;
           margin-bottom: 20px;

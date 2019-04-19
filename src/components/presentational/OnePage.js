@@ -369,6 +369,16 @@ const OnePage = (props) => {
                                                     <img src={require(`../../images/uzbit.png`)}/>
                                                 </a>
                                             </li>
+                                            <li className="coinbene">
+                                                <a href="javascript:void(0)">
+                                                    <img src={require(`../../images/coinbene.png`)}/>
+                                                </a>
+                                            </li>
+                                            <li className="blockinside">
+                                                <a href="javascript:void(0)">
+                                                    <img src={require(`../../images/blockinside.png`)}/>
+                                                </a>
+                                            </li>
                                         </ul>
                                     </div>
                                     <div className={`partners-title`} ref={props.partnerTitle2}>
