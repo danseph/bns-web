@@ -305,13 +305,6 @@ class OnePageAction extends Component {
             image: '10_Yo_Management_Director.jpg'
         },
         {
-            name: 'Maria',
-            position: 'General Manager',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '11_Maria_General_Manager.jpg'
-        },
-        {
             name: 'Leo',
             position: 'Planning Manager',
             className: 'img-box',
@@ -471,13 +464,6 @@ class OnePageAction extends Component {
             className: 'img-box',
             className2: 'txt-box',
             image: '37_Add_Developer.jpg'
-        },
-        {
-            name: 'Sunny',
-            position: 'Publisher',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '41_Sunny_Publisher.jpg'
         },
         {
             name: 'Suzi',
