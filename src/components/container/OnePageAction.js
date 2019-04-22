@@ -952,7 +952,7 @@ class OnePageAction extends Component {
             if(!this.state.loader) {
                 const rect = elements[i].getBoundingClientRect();
                 const { top, bottom, height } = rect;
-                if (top + 200 < window.innerHeight && bottom >= 0 && top > -1 * height) {
+                if (top + 200 < window.innerHeight && bottom >= 0 && top > -1 * height && !elements[i].classList.contains('active')) {
                     elements[i].classList = `${elements[i].classList} active`;
                 }
             }
