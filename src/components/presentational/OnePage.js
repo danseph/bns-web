@@ -1,5 +1,4 @@
 import React from 'react';
-// import Popup from '../presentational/Popup';
 import CharTransition from './CharTransition';
 import Slider from 'react-slick';
 import './styles.scss';
