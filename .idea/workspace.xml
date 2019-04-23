@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1434be6b-e8f8-4500-b582-00f2ef85137e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/AIPE_Whitepaper_Cn_v2.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/AIPE_Whitepaper_En_v2.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/AIPE_Whitepaper_Jp_v2.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/AIPE_Whitepaper_kr_v2.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/allocation_v2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/AIPE_Whitepaper_Cn.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/AIPE_Whitepaper_En.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/AIPE_Whitepaper_Jp.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/AIPE_Whitepaper_Kr.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/container/OnePageAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/container/OnePageAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/presentational/OnePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/presentational/OnePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/allocation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/presentational/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/presentational/styles.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -79,7 +67,7 @@
           <entry key="html" value="466" />
           <entry key="js" value="14863" />
           <entry key="json" value="1" />
-          <entry key="scss" value="7812" />
+          <entry key="scss" value="7895" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -89,20 +77,20 @@
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="14863" />
           <entry key="PLAIN_TEXT" value="9" />
-          <entry key="SCSS" value="7812" />
+          <entry key="SCSS" value="7895" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6991206">
+    <splitter split-orientation="horizontal" split-proportion="0.35741207">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/container/OnePageAction.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="254">
-                  <caret line="204" column="29" lean-forward="true" selection-start-line="204" selection-start-column="29" selection-end-line="204" selection-end-column="29" />
+                <state relative-caret-position="201">
+                  <caret line="225" column="9" lean-forward="true" selection-start-line="225" selection-start-column="9" selection-end-line="225" selection-end-column="9" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
                   </folding>
@@ -147,8 +135,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/presentational/styles.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="800" column="9" selection-start-line="800" selection-start-column="9" selection-end-line="800" selection-end-column="9" />
+                <state relative-caret-position="76">
+                  <caret line="52" column="18" lean-forward="true" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
@@ -213,7 +201,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>effectContent</find>
       <find>_handleAipxContentActive</find>
       <find>_handleAipxTitleActive</find>
       <find>aipxContent</find>
@@ -222,7 +209,6 @@
       <find>-content</find>
       <find>center</find>
       <find>//</find>
-      <find>// jonny</find>
       <find>activeMainTitle</find>
       <find>twitter</find>
       <find>hailey</find>
@@ -243,6 +229,8 @@
       <find>react-intl</find>
       <find>allocation.png</find>
       <find>AIPE_Whitepaper_Cn</find>
+      <find>//jonny</find>
+      <find>// jonny</find>
     </findStrings>
     <replaceStrings>
       <replace>className</replace>
@@ -292,12 +280,12 @@
         <option value="$PROJECT_DIR$/src/components/presentational/char.scss" />
         <option value="$USER_HOME$/Downloads/Telegram Desktop/190416_popup/_popup.scss" />
         <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/components/presentational/styles.scss" />
         <option value="$PROJECT_DIR$/src/components/presentational/popup.scss" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/components/presentational/Popup.js" />
         <option value="$PROJECT_DIR$/src/components/presentational/OnePage.js" />
         <option value="$PROJECT_DIR$/src/components/container/OnePageAction.js" />
+        <option value="$PROJECT_DIR$/src/components/presentational/styles.scss" />
       </list>
     </option>
   </component>
@@ -455,12 +443,12 @@
       <workItem from="1555914001716" duration="5566000" />
       <workItem from="1555984130131" duration="39000" />
       <workItem from="1555985398256" duration="678000" />
-      <workItem from="1555988775248" duration="1341000" />
+      <workItem from="1555988775248" duration="1994000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="317646000" />
+    <option name="totallyTimeSpent" value="318299000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -475,7 +463,7 @@
     <frame x="1912" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16122234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16122234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -489,7 +477,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.29752955" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.29752955" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -671,13 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/presentational/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="800" column="9" selection-start-line="800" selection-start-column="9" selection-end-line="800" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/presentational/CharTransition.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9633">
@@ -735,11 +716,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/container/OnePageAction.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="204" column="29" lean-forward="true" selection-start-line="204" selection-start-column="29" selection-end-line="204" selection-end-column="29" />
+        <state relative-caret-position="201">
+          <caret line="225" column="9" lean-forward="true" selection-start-line="225" selection-start-column="9" selection-end-line="225" selection-end-column="9" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/presentational/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="52" column="18" lean-forward="true" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
         </state>
       </provider>
     </entry>
