@@ -278,7 +278,7 @@ const OnePage = (props) => {
                                                 <FormattedMessage id='coin-allocation' />
                                             </h3>
                                             <div className="aipx-desc-graph-img">
-                                                <img src={require("../../images/allocation.png")} />
+                                                <img src={require("../../images/allocation_v2.png")} />
                                             </div>
                                         </div>
                                     </div>
