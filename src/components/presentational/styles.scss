@@ -1468,7 +1468,7 @@ body {
         }
 
         &.coinbene {
-          width: 248px;
+          width: 280px;
 
           @include mq("tablet") {
             width: 180px;
@@ -1479,7 +1479,7 @@ body {
         }
 
         &.blockinside {
-          width: 248px;
+          width: 250px;
 
           @include mq("tablet") {
             width: 180px;
@@ -1495,7 +1495,6 @@ body {
         }
 
         &:last-child {
-          margin-left: -25%;
 
           @include mq("mobile") {
             margin-left: 0;

@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1434be6b-e8f8-4500-b582-00f2ef85137e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/AIPE_Whitepaper_kr_v2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/public/AIPE_Whitepaper_Kr_v2.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/presentational/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/presentational/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/blockinside.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/blockinside.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/coinbene.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/coinbene.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,12 +35,12 @@
           <entry key="gitignore" value="1" />
           <entry key="html" value="18" />
           <entry key="jpeg" value="2" />
-          <entry key="jpg" value="25" />
-          <entry key="js" value="88" />
+          <entry key="jpg" value="27" />
+          <entry key="js" value="96" />
           <entry key="json" value="3" />
-          <entry key="png" value="35" />
+          <entry key="png" value="47" />
           <entry key="rnc" value="1" />
-          <entry key="scss" value="75" />
+          <entry key="scss" value="76" />
           <entry key="svg" value="3" />
         </counts>
       </usages-collector>
@@ -47,12 +48,12 @@
         <counts>
           <entry key="CSS" value="3" />
           <entry key="HTML" value="18" />
-          <entry key="Image" value="66" />
+          <entry key="Image" value="80" />
           <entry key="JSON" value="3" />
-          <entry key="JavaScript" value="88" />
+          <entry key="JavaScript" value="96" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="RNG Compact" value="1" />
-          <entry key="SCSS" value="75" />
+          <entry key="SCSS" value="76" />
           <entry key="SVG" value="3" />
         </counts>
       </usages-collector>
@@ -68,7 +69,7 @@
           <entry key="html" value="466" />
           <entry key="js" value="14863" />
           <entry key="json" value="1" />
-          <entry key="scss" value="7895" />
+          <entry key="scss" value="7904" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -78,7 +79,7 @@
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="14863" />
           <entry key="PLAIN_TEXT" value="9" />
-          <entry key="SCSS" value="7895" />
+          <entry key="SCSS" value="7904" />
         </counts>
       </usages-collector>
     </session>
@@ -86,12 +87,66 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/presentational/styles.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="1481" column="23" lean-forward="true" selection-start-line="1481" selection-start-column="23" selection-end-line="1481" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/container/OnePageAction.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="215" lean-forward="true" selection-start-line="215" selection-end-line="215" />
+            <state relative-caret-position="-12174">
+              <caret line="207" column="10" lean-forward="true" selection-start-line="207" selection-start-column="10" selection-end-line="207" selection-end-column="10" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/presentational/CharTransition.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="40" lean-forward="true" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/presentational/OnePage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="366" column="77" lean-forward="true" selection-start-line="366" selection-start-column="77" selection-end-line="366" selection-end-column="77" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/presentational/Popup.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="3" column="31" lean-forward="true" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="8" selection-start-line="5" selection-end-line="5" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#33#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,7 +156,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>_handleAipxContentActive</find>
       <find>_handleAipxTitleActive</find>
       <find>aipxContent</find>
       <find>aipxTitle</find>
@@ -131,6 +185,7 @@
       <find>AIPE_Whitepaper_Cn</find>
       <find>//jonny</find>
       <find>// jonny</find>
+      <find>.coinbene</find>
     </findStrings>
     <replaceStrings>
       <replace>className</replace>
@@ -184,8 +239,8 @@
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/components/presentational/Popup.js" />
         <option value="$PROJECT_DIR$/src/components/presentational/OnePage.js" />
-        <option value="$PROJECT_DIR$/src/components/presentational/styles.scss" />
         <option value="$PROJECT_DIR$/src/components/container/OnePageAction.js" />
+        <option value="$PROJECT_DIR$/src/components/presentational/styles.scss" />
       </list>
     </option>
   </component>
@@ -211,9 +266,8 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1903" />
-    <option name="y" value="31" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1913" />
     <option name="width" value="1936" />
     <option name="height" value="1066" />
   </component>
@@ -233,11 +287,6 @@
             <path>
               <item name="aipx" type="b2602c69:ProjectViewProjectNode" />
               <item name="aipx" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aipx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aipx" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -252,6 +301,25 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="container" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aipx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aipx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="presentational" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aipx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aipx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aipx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aipx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -279,8 +347,8 @@
       <recent name="C:\Users\user\Documents\aipx\src\components" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\user\Documents\aipx\public" />
       <recent name="C:\Users\user\Documents\aipx\src\images" />
+      <recent name="C:\Users\user\Documents\aipx\public" />
       <recent name="C:\Users\user\Documents\aipx\src\images\teams" />
       <recent name="C:\Users\user\Documents\aipx\src\components\presentational" />
       <recent name="C:\Users\user\Documents\aipx\src\components\images" />
@@ -324,12 +392,12 @@
       <workItem from="1555914001716" duration="5566000" />
       <workItem from="1555984130131" duration="39000" />
       <workItem from="1555985398256" duration="678000" />
-      <workItem from="1555988775248" duration="2738000" />
+      <workItem from="1555988775248" duration="5578000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="319043000" />
+    <option name="totallyTimeSpent" value="321883000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -341,9 +409,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="1913" y="0" width="1936" height="1066" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16122234" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32975295" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32975295" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.29752955" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16122234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
@@ -362,26 +450,6 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="npm" order="0" side_tool="true" />
-      <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.12223393" />
-      <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.25886145" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" weight="0.32975295" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -391,28 +459,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/presentational/styles2.scss" />
-    <entry file="file://$PROJECT_DIR$/src/config/_init.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="54" column="18" lean-forward="true" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/index (2).html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6346">
@@ -421,9 +467,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/images/teams/04_Prisceilia_Designer.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/nbp.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/_index (6).scss">
@@ -482,13 +525,6 @@
     <entry file="file://$PROJECT_DIR$/src/images/emurgo.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/locale.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/presentational/char.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="438">
@@ -533,13 +569,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="52" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/config/_animation.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="627">
@@ -554,13 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/presentational/popup.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -568,20 +590,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/presentational/Popup.js">
+    <entry file="file://$PROJECT_DIR$/src/images/allocation_v2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        <state relative-caret-position="57">
+          <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/allocation_v2.png">
+    <entry file="file://$PROJECT_DIR$/src/locale.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3135">
+          <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="8" selection-start-line="5" selection-end-line="5" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/presentational/CharTransition.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="40" lean-forward="true" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/container/OnePageAction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12174">
+          <caret line="207" column="10" lean-forward="true" selection-start-line="207" selection-start-column="10" selection-end-line="207" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/presentational/Popup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="3" column="31" lean-forward="true" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/nbp.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/uzbit.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/coinbene.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/blockinside.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/blockinside.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/presentational/OnePage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="283" column="42" lean-forward="true" selection-start-line="283" selection-start-column="42" selection-end-line="283" selection-end-column="42" />
+        <state relative-caret-position="186">
+          <caret line="366" column="77" lean-forward="true" selection-start-line="366" selection-start-column="77" selection-end-line="366" selection-end-column="77" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -590,25 +674,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/presentational/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34736">
-          <caret line="52" column="18" lean-forward="true" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/presentational/CharTransition.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="508" column="24" selection-start-line="508" selection-start-column="24" selection-end-line="508" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/container/OnePageAction.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="215" lean-forward="true" selection-start-line="215" selection-end-line="215" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="418">
+          <caret line="1481" column="23" lean-forward="true" selection-start-line="1481" selection-start-column="23" selection-end-line="1481" selection-end-column="23" />
         </state>
       </provider>
     </entry>
