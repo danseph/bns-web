@@ -216,19 +216,19 @@ class OnePageAction extends Component {
 
     whitePaper = [
         {
-            link: 'AIPE_Whitepaper_Kr_v2.pdf',
+            link: 'AIPE_Whitepaper_Kr.pdf',
             text: 'whitepaper-ko',
         },
         {
-            link: 'AIPE_Whitepaper_En_v2.pdf',
+            link: 'AIPE_Whitepaper_En.pdf',
             text: 'whitepaper-en'
         },
         {
-            link: 'AIPE_Whitepaper_Cn_v2.pdf',
+            link: 'AIPE_Whitepaper_Cn.pdf',
             text: 'whitepaper-zh'
         },
         {
-            link: 'AIPE_Whitepaper_Jp_v2.pdf',
+            link: 'AIPE_Whitepaper_Jp.pdf',
             text: 'whitepaper-ja'
         }
     ];
