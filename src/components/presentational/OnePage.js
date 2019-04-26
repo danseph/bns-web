@@ -1,4 +1,5 @@
 import React from 'react';
+import Popup from '../presentational/Popup';
 import CharTransition from './CharTransition';
 import Slider from 'react-slick';
 import './styles.scss';
@@ -28,9 +29,9 @@ const OnePage = (props) => {
                     messages={locale[props.defaultLang]}
                 >
                     <>
-                        {/* {!props.popupClose &&
+                        {!props.popupClose &&
                             <Popup handlePopupClose={props.handlePopupClose} toggleChange={props.toggleChange}/>
-                        } */}
+                        }
                         {props.loader &&
                         <div className="loader-wrap">
                             <img src={require("../../images/loader.gif")} className="loader"/>
