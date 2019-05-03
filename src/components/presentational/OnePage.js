@@ -357,16 +357,11 @@ const OnePage = (props) => {
                                     <div className={`partners-title`} ref={props.partnerTitle1}>
                                         <h2>AIPE Partners</h2>
                                     </div>
-                                    <div className={`partners-logo mb50`} ref={props.partnerContent1}>
+                                    <div className={`partners-logo`} ref={props.partnerContent1}>
                                         <ul>
                                             <li className="nbp">
                                                 <a href="javascript:void(0)">
                                                     <img src={require(`../../images/nbp.jpg`)}/>
-                                                </a>
-                                            </li>
-                                            <li className="uzbit">
-                                                <a href="javascript:void(0)">
-                                                    <img src={require(`../../images/uzbit.png`)}/>
                                                 </a>
                                             </li>
                                             <li className="coinbene">
@@ -379,24 +374,6 @@ const OnePage = (props) => {
                                                     <img src={require(`../../images/blockinside.png`)}/>
                                                 </a>
                                             </li>
-                                        </ul>
-                                    </div>
-                                    <div className={`partners-title`} ref={props.partnerTitle2}>
-                                        <h2>UZBIT Partners</h2>
-                                    </div>
-                                    <div className={`partners-logo`} ref={props.partnerContent2}>
-                                        <ul>
-                                            {
-                                                props.partners.map((item, i) => {
-                                                    return (
-                                                        <li key={i}>
-                                                            <a href="javascript:void(0)">
-                                                                <img src={require(`../../images/${item.image}`)} />
-                                                            </a>
-                                                        </li>
-                                                    )
-                                                })
-                                            }
                                         </ul>
                                     </div>
                                 </section>

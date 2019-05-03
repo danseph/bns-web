@@ -520,14 +520,7 @@ class OnePageAction extends Component {
             className: 'img-box',
             className2: 'txt-box',
             image: '54_Jane_Interpreter.jpg'
-        },
-        {
-            name: 'Joey',
-            position: 'HR',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '55_Joey_HR.jpg'
-        },
+        }
     ];
 
     partners = [
@@ -757,8 +750,8 @@ class OnePageAction extends Component {
                 teamList={this.teamList}
                 partnerTitle1={this.partnerTitle1}
                 partnerContent1={this.partnerContent1}
-                partnerTitle2={this.partnerTitle2}
-                partnerContent2={this.partnerContent2}
+                // partnerTitle2={this.partnerContent2}
+                //partnerContent2={this.partnerContent2}
                 mediaTitle={this.mediaTitle}
                 mediaList={this.mediaList}
                 handleRefresh={this._handleRefresh}
@@ -992,8 +985,8 @@ class OnePageAction extends Component {
     teamList = React.createRef();
     partnerTitle1 = React.createRef();
     partnerContent1 = React.createRef();
-    partnerTitle2 = React.createRef();
-    partnerContent2 = React.createRef();
+    // partnerTitle2 = React.createRef();
+    //partnerContent2 = React.createRef();
     mediaTitle = React.createRef();
     mediaList = React.createRef();
 
@@ -1012,18 +1005,18 @@ class OnePageAction extends Component {
             this.teamList.current,
             this.partnerTitle1.current,
             this.partnerContent1.current,
-            this.partnerTitle2.current,
-            this.partnerContent2.current,
+            // this.partnerTitle2.current,
+            //this.partnerContent2.current,
             this.mediaTitle.current,
             this.mediaList.current,
         ];
         for(var i=0; i<elements.length; i++)  {
+            console.log(elements)
             if(!this.state.loader) {
                 const rect = elements[i].getBoundingClientRect();
                 const { top, bottom, height } = rect;
                 if (top < window.innerHeight && bottom >= 0 && top > -1 * height && !elements[i].classList.contains('active')) {
                     elements[i].classList = `${elements[i].classList} active`;
-
                 }
             }
         }
