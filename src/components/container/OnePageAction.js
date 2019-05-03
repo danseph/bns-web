@@ -1011,7 +1011,6 @@ class OnePageAction extends Component {
             this.mediaList.current,
         ];
         for(var i=0; i<elements.length; i++)  {
-            console.log(elements)
             if(!this.state.loader) {
                 const rect = elements[i].getBoundingClientRect();
                 const { top, bottom, height } = rect;
