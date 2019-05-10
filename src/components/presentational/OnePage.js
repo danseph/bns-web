@@ -21,6 +21,20 @@ const OnePage = (props) => {
         slidesToScroll: 1,
         autoplay: false,
     };
+
+    let lanTelgramLink = () => {
+        let link;
+        if (props.defaultLang === 'ko') {
+            return link = "https://bit.ly/2CTzfYb";
+        } else if (props.defaultLang === 'en') {
+            return link = "https://bit.ly/2WLNyFV";
+        } else if (props.defaultLang === 'zh') {
+            return link = "https://t.me/AIPE_official_CHN";
+        } else {
+            return link = "https://bit.ly/2WLNyFV";
+        }
+    }
+
     return (
         <>
             {!props.loader ?
@@ -456,7 +470,7 @@ const OnePage = (props) => {
                         <div className="footer-wrap">
                             <footer className="footer">
                                 <div className="footer-sns">
-                                    <a href="https://bit.ly/2CTzfYb" target="_blank" className="ico-tele" />
+                                    <a href={lanTelgramLink()} target="_blank" className="ico-tele" />
                                     <a href="https://medium.com/cosmicbc" target="_blank" className="ico-medium" />
                                     <a href="https://twitter.com/AIPE_official" target="_blank" className="ico-twitter" />
                                     <a href="https://www.youtube.com/channel/UC6w2g-waOQ0UzSvL4WEVFQw" target="_blank" className="ico-youtube" />
