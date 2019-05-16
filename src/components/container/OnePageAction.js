@@ -536,6 +536,32 @@ class OnePageAction extends Component {
 
     media1 = [
         {
+            title: 'AIPE, 크립토 포탈 클렛(CLET)에서 세일 진행',
+            date: '2019.04.23',
+            writer: 'CosmicBC',
+            url: 'http://www.newstap.co.kr/news/articleView.html?idxno=87621',
+            classNameWrap: 'img-box-wrap',
+            className: 'img-box',
+            className2: 'txt-box',
+            className2_1: 'left',
+            className2_2: 'right',
+            className2_2_1: 'date',
+            className2_2_2: 'name',
+        },
+        {
+            title: 'AIPE, 아시아 최초로 코인베네 문베이스에서 IEO 진행',
+            date: '2019.04.24',
+            writer: 'CosmicBC',
+            url: 'http://www.dtoday.co.kr/news/articleView.html?idxno=306705',
+            classNameWrap: 'img-box-wrap',
+            className: 'img-box',
+            className2: 'txt-box',
+            className2_1: 'left',
+            className2_2: 'right',
+            className2_2_1: 'date',
+            className2_2_2: 'name',
+        },
+        {
             title: '손위준 코스믹BC 대표 "AI 암호화폐 예측, 트레이딩 생태계 구축한다" ',
             date: '2019.03.29',
             writer: 'CosmicBC',
