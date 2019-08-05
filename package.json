@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "highcharts": "^7.1.2",
     "jquery": "^3.3.1",
     "lodash.throttle": "^4.1.1",
     "node-sass": "^4.11.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "react-highcharts": "^16.0.2",
     "react-intl": "^2.8.0",
     "react-scripts": "2.1.8",
     "react-slick": "^0.23.2"
