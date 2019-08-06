@@ -10,8 +10,8 @@ import ja from 'react-intl/locale-data/ja';
 import zh from 'react-intl/locale-data/zh';
 import locale from '../../locale';
 import { FormattedMessage } from 'react-intl';
-import ReactHighcharts from 'react-highcharts';
 import Highcharts from 'highcharts';
+import HighchartsReactOfficial from 'highcharts-react-official'
 addLocaleData([...en, ...ko, ...ja, ...zh]);
 
 const OnePage = (props) => {
@@ -36,70 +36,74 @@ const OnePage = (props) => {
             return link = "https://bit.ly/2WLNyFV";
         }
     }
-
-    const highcharts = () => {
         
-        const config = {   
-            credits: {
-                enabled: false
-            },
-            colors: ['#191919', '#303030', '#595959', '#898989', '#b7b7b7'],
-            chart: {
-                plotBackgroundColor: null,
-                plotBorderWidth: null,
-                plotShadow: false,
-                type: 'pie',
-                marginBottom: 35,
-                marginTop: -80,
-     
-            },
-            title: {
-                text: null
-            },
-            tooltip: {
-                pointFormat: '{point.detail}'
-            },
-            plotOptions: {
-                pie: {
-                    size: 255,
-                    allowPointSelect: true,
-                    cursor: 'pointer',
-                    dataLabels: {
-                        enabled: true,
-                        useHTML: true,
-                        format: '{point.name} <br> {point.percentage} %',
-                        distance: -40,
-                        style: {fontFamily: '\'Questrial\', sans-serif', fontSize: '12px', textAlign: 'center'} 
-                    },
-                }
-            },
-            series: [{
-                colorByPoint: true,
-                data: [{
-                            name: 'Coin Sale',
-                            detail: '(4 Years Lockup, 5% Release Each Year)',
-                            y: 40,
-                        }, {
-                            name: 'Ecosystem',
-                            detail: '(4 Years Lockup, 5% Release Each Year)',
-                            y: 20
-                        }, {
-                            name: 'Marketing',
-                            detail: '(2 Years Lockup, 4.5% Release Every 6 Months)',
-                            y: 18
-                        }, {
-                            name: 'Team',
-                            detail: '(2 Years Lockup, 5% Release Each Year)',
-                            y: 10
-                        }, {
-                            name: 'Foundation',
-                            detail: '(Release After 3 Years)',
-                            y: 12
-                    }]
+    const highchartOption = {   
+        credits: {
+            enabled: false
+        },
+        colors: ['#191919', '#303030', '#595959', '#898989', '#b7b7b7'],
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie',
+            marginBottom: 35,
+            marginTop: -80,
+    
+        },
+        title: {
+            text: null
+        },
+        tooltip: {
+            pointFormat: '{point.detail}'
+        },
+        plotOptions: {
+            pie: {
+                states: {
+                    inactive: {
+                        opacity: .3
+                    }
+                },
+                size: 255,
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    useHTML: true,
+                    format: '{point.name} <br> {point.percentage} %',
+                    distance: -40,
+                    style: {fontFamily: '\'Questrial\', sans-serif', fontSize: '12px', textAlign: 'center'} 
+                },
+            }
+        },
+        series: [{
+            name: 'Brand',
+            colorByPoint: true,
+            data: [{
+                        name: 'Coin Sale',
+                        detail: '(4 Years Lockup, 5% Release Each Year)',
+                        y: 40,
+                    }, {
+                        name: 'Ecosystem',
+                        detail: '(4 Years Lockup, 5% Release Each Year)',
+                        y: 20
+                    }, {
+                        name: 'Marketing',
+                        detail: '(2 Years Lockup, 4.5% Release Every 6 Months)',
+                        y: 18
+                    }, {
+                        name: 'Team',
+                        detail: '(2 Years Lockup, 5% Release Each Year)',
+                        y: 10
+                    }, {
+                        name: 'Foundation',
+                        detail: '(Release After 3 Years)',
+                        y: 12
                 }]
+            }]
     };
-    return config
-    }
+
+
 
     return (
         <>
@@ -358,10 +362,10 @@ const OnePage = (props) => {
                                             <h3>
                                                 <FormattedMessage id='coin-allocation' />
                                             </h3>
-                                                {/* <div className="aipx-desc-graph-img"> */}
-                                                    {/* <img src={require("../../images/allocation.png")} /> */}
-                                                    <ReactHighcharts config={highcharts()} style={{margin: '0', padding: '0'}}></ReactHighcharts>
-                                                {/* </div> */}
+                                                <HighchartsReactOfficial 
+                                                    highcharts={Highcharts}
+                                                    options={highchartOption}
+                                                />
                                         </div>
                                     </div>
                                 </section>
