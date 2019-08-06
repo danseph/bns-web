@@ -37,12 +37,9 @@ const OnePage = (props) => {
         }
     }
 
-    var formatter = '{point.percentage} %<br> {point.name}';
-
     const highcharts = () => {
         
-        const config = {
-            
+        const config = {   
             credits: {
                 enabled: false
             },
@@ -69,8 +66,10 @@ const OnePage = (props) => {
                     cursor: 'pointer',
                     dataLabels: {
                         enabled: true,
-                        distance: -45,
-                        style: {fontFamily: '\'Questrial\', sans-serif', fontSize: '12px'} 
+                        useHTML: true,
+                        format: '{point.name} <br> {point.percentage} %',
+                        distance: -40,
+                        style: {fontFamily: '\'Questrial\', sans-serif', fontSize: '12px', textAlign: 'center'} 
                     },
                 }
             },
