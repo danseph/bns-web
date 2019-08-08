@@ -94,6 +94,24 @@ body {
     }
   }
 }
+.flex {
+    display: flex;
+    display: -ms- flex;
+    display: -moz- flex;
+    display: -webkit- flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    display: -ms- flex;
+    display: -moz- flex;
+    display: -webkit- flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
 
 //------------------------------------------------------------------------------
 //
@@ -1187,20 +1205,24 @@ body {
   &-wrap {
     width: 100%;
     position: relative;
+    margin-top: 80px;
   }
 
   position: absolute;
   padding-top: 80px;
+  padding-bottom: 70px;
   left: 50%;
   top: 0;
   width: 380px;
   margin-left: -190px;
   background-color: #FFF;
+  border-radius: 4px;
 
   @include mq("mobile") {
     padding-top: 40px;
-    width: 160px;
+    width: 200px;
     margin-left: -80px;
+    padding-bottom: 40px;
   }
 
   @include titleStyle();
@@ -1209,10 +1231,10 @@ body {
     transform: none;
   }
   &-link {
-    margin-top: 130px;
+    margin-top: 60px;
 
     @include mq("mobile") {
-      margin-top: 60px;
+      margin-top: 40px;
     }
 
     a {
@@ -1220,7 +1242,7 @@ body {
       width: 100%;
       padding: 20px 0;
       text-align: center;
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       color: $black3;
       @include trs3s;
       @include mq("mobile") {
@@ -1233,9 +1255,9 @@ body {
       }
     }
 
-    a + a {
-      border-top: 1px solid $black2;
-    }
+    // a + a {
+    //   border-top: 1px solid $black2;
+    // }
   }
 
 }
@@ -1264,6 +1286,12 @@ body {
       @include trsOp6s;
       opacity: 1;
     }
+    &.web {
+        display: block;
+      }
+    &.mobile {
+      display: none;
+    }
     img {
       width: 100%;
     }
@@ -1276,7 +1304,13 @@ body {
       width: 100%;
       margin-top: 30px;
       background-size: 290px;
-
+          
+      &.mobile {
+        display: block;
+      }
+      &.web {
+        display: none;
+      }
       img {
         width: 290px;
       }
@@ -1812,6 +1846,7 @@ body {
 // FOOTER
 //
 //------------------------------------------------------------------------------
+
 .footer {
   @include layout();
   padding-top: 150px;
@@ -1902,18 +1937,69 @@ body {
   }
 
   &-copy {
-    width: 100%;
-    p {
+    width: 100%; 
+
+    .test {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      @include mq("tablet") {
+        flex-direction: row;
+      }
+      @include mq("mobile") {
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+    }
+
+    .address ul li {
       color: #FFF;
       font-size: 1.6rem;
 
       @include mq("tablet") {
         font-size: 1.2rem;
-        padding-left: 4%;
+        // padding-left: 4%;
       }
       @include mq("mobile") {
         font-size: 1.2rem;
-        padding-left: 4%;
+      }
+
+    .mapIcon {
+      width:1.4rem; 
+      margin-right: 1.2rem;
+      @include mq("tablet") {
+        font-size: 1.2rem;
+        // padding-left: 4%;
+      }
+      @include mq("mobile") {
+        font-size: 1.2rem;
+        // padding-left: 4%;
+      }
+    } 
+    }
+    .copyRight {
+      color: #FFF;
+      font-size: 1.6rem;
+
+      @include mq("tablet") {
+        font-size: 1.2rem;
+        // padding-left: 4%;
+      }
+      @include mq("mobile") {
+        font-size: 1.2rem;
+        padding-left: 15%;
+      }
+    }
+    .cosmic {
+      font-size: 1.6rem;
+
+      @include mq("tablet") {
+        font-size: 1.2rem;
+        
+      }
+      @include mq("mobile") {
+        font-size: 1.2rem;
+        padding-bottom: 4.5rem;
       }
     }
   }

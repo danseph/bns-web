@@ -100,13 +100,23 @@ class OnePageAction extends Component {
             className2: 'img-box-wrap',
             className2_1: 'img-box',
             className3: 'txt-box',
+            image: 'clue.png',
+            image2: 'clue_bw.png',
+            text1: 'clue',
+            text2: 'clue-text',
+        },
+        {
+            className1: 'content4',
+            className2: 'img-box-wrap',
+            className2_1: 'img-box',
+            className3: 'txt-box',
             image: 'trade.png',
             image2: 'trade_bw.png',
             text1: 'ai-prediction-aitradingbot',
             text2: 'ai-prediction-aitradingbot-text',
         },
         {
-            className1: 'content4',
+            className1: 'content5',
             className2: 'img-box-wrap',
             className2_1: 'img-box',
             className3: 'txt-box',
@@ -116,7 +126,7 @@ class OnePageAction extends Component {
             text2: 'ai-prediction-aiplatform-text',
         },
         {
-            className1: 'content5',
+            className1: 'content6',
             className2: 'img-box-wrap',
             className2_1: 'img-box',
             className3: 'txt-box',
@@ -755,6 +765,7 @@ class OnePageAction extends Component {
                 platFormContent3={this.platFormContent3}
                 platFormContent4={this.platFormContent4}
                 platFormContent5={this.platFormContent5}
+                platFormContent6={this.platFormContent6}
                 techniqueTitle={this.techniqueTitle}
                 techniqueContent1={this.techniqueContent1}
                 techniqueContent2={this.techniqueContent2}
@@ -765,6 +776,7 @@ class OnePageAction extends Component {
                 paperTitle={this.paperTitle}
                 roadmapTitle={this.roadmapTitle}
                 roadmapContent={this.roadmapContent}
+                roadmapContentM={this.roadmapContentM}
                 teamTitle={this.teamTitle}
                 teamList={this.teamList}
                 partnerTitle1={this.partnerTitle1}
@@ -952,13 +964,15 @@ class OnePageAction extends Component {
     platFormContent3 = React.createRef();
     platFormContent4 = React.createRef();
     platFormContent5 = React.createRef();
+    platFormContent6 = React.createRef();
     _handlePlatFormContentsActive = throttle(() => {
         const elements = [
             this.platFormContent1.current,
             this.platFormContent2.current,
             this.platFormContent3.current,
             this.platFormContent4.current,
-            this.platFormContent5.current
+            this.platFormContent5.current,
+            this.platFormContent6.current
         ];
         for(var i=0; i<elements.length; i++)  {
             if(!this.state.loader) {
@@ -974,11 +988,13 @@ class OnePageAction extends Component {
     effectTitle = React.createRef();
     roadmapTitle = React.createRef();
     roadmapContent = React.createRef();
+    roadmapContentM = React.createRef();
     _handleEffectTitleActive = throttle(() => {
         const elements = [
             this.effectTitle.current,
             this.roadmapTitle.current,
             this.roadmapContent.current,
+            this.roadmapContentM.current,
         ];
         for(var i=0; i<elements.length; i++)  {
             if(!this.state.loader) {

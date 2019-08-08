@@ -11,9 +11,9 @@ export default {
         'header-lan-btn': '한국어',
         'about-title': 'The Future Leader of {kbr} AI Prediction Platform',
         'about-text': 'AI와 블록체인의 콜라보레이션 {kbr} 리워드 플랫폼과 암호화폐 가격변동 알림 서비스를 통해 거래소 Traffic과 거래 유동성 확보를 통합적으로 제공하는 암호화폐 Ecosystem',
-        'ai-prediction-title': 'Services',
+        'ai-prediction-title': 'AI Prediction Services',
         'ai-prediction-3piks': '3PIKS',
-        'ai-prediction-3piks-text': '“AI와 블록체인기술을 접목한 독창적인 리워드 플랫폼”{br} 인공지능(AI)과 인간의 판단(Human Factor)이 결합된 암호화폐 가격 예측 서비스로 AI 프로그램이 {br} 상승, 보합, 하락 3가지 구간을 예측하고 보상으로 AI Token을 제공하는 플랫폼',
+        'ai-prediction-3piks-text': '“AI와 블록체인기술을 접목한 독창적인 리워드 플랫폼” {br} 인공지능(AI)과 인간의 판단(Human Factor)이 결합된 암호화폐 가격 예측 서비스로 AI 프로그램이 {br} 상승, 보합, 하락 3가지 구간을 예측하고 보상으로 AI Token을 제공하는 플랫폼 ',
         'ai-prediction-aibitbip': 'AIBitBip',
         'ai-prediction-aibitbip-text': '“AI 기반 암호화폐 가격변동 예측신호 서비스“ {br} AI Model이 암호화폐 매매에 도움을 줄 수 있도록 상승 또는 하락 징후를 포착하여 유저들에게 {br} 푸쉬 알림을 제공하는 서비스로 편리하고 접근성이 용이하도록 어플리케이션',
         'ai-prediction-aitradingbot': 'AI Auto-Trading Bot',
@@ -22,6 +22,8 @@ export default {
         'ai-prediction-aiplatform-text': '“AI 연구-개발 환경 개선과 검증된 데이터확보를 해결할 수 있는 AI Prediction Platform” {br} AI 연구자들이 Open Source Library 환경에 손쉽게 접근, 이용 할 수 있도록 서비스를 제공하고 {br} Traffic 과 Model 데이터를 확보할 수 있도록 기업에 제공하는 서비스 플랫폼',
         'ai-prediction-exchange': 'Exchange Solution',
         'ai-prediction-exchange-text': '“마진선물, 마진옵션 거래를 지원하는 차세대 거래소 솔루션” {br} 기존의 중앙화 거래소 솔루션의 기능과 마진 거래와 레버리지 거래를 지원하는 암호화폐 마진 거래소 뿐만 아니라 {br} 선물거래와 옵션거래, 마진 선물거래와 마진 옵션거래까지 지원하는 솔루션',
+        'clue': 'Clue',
+        'clue-text': '"암호화폐와 관련된 다양한 혜택을 제공하는 One for All 서비스" {br} 암호화폐의 시세 정보, AI의 단기 예측정보, 시세 예측 게임, Analyze AI가 분석한 고급정보 등 {br} 암호화폐와 관련된 다양한 혜택을 제공하는 One for All 서비스 CLUE',
         'aipe-ecosystem': 'AIPE Ecosystem',
         'ai-technique': 'AI Technique',
         'ai-technique-title': '그래디언트 부스팅 결정 트리 (Gradient Boosting Decision Trees)',
@@ -70,7 +72,7 @@ export default {
         'faq-answer-4': '- 자사의 서비스를 통한 보상과 그 서비스를 이용하는 거래소를 통해 코인을 받을 수 있습니다.  이벤트는 추후 공지될 예정입니다.',
         'faq-question-5': 'ICO는 어떻게 진행이 되나요?',
         'faq-answer-5': '- 추후 공지를 통해 안내해드리도록 하겠습니다.',
-        'footer-copy': 'Vision Exchange, 2 Venture Drive #24-01 Singapore 608526 {br} ©2018 CosmicBC Pte., Ltd. All rights reserved.'
+        'footer-copy': ' 3 Fraser Street, DUO Tower #05-21, Singapore 189352 {br} {br} ©2019 CosmicBC Pte., Ltd. All rights reserved.'
     },
     en: {
         'header-nav-about': 'About',
@@ -95,6 +97,8 @@ export default {
         'ai-prediction-aiplatform-text': '"AI Research - AI Prediction Platform to Improve the Development Environment and Secure Proven Data" {br} It is a service platform that enables AI researchers to easily access and use the Open Source Library environment and provide them with traffic and model data. This platform is provided to companies.',
         'ai-prediction-exchange': 'Exchange Solution',
         'ai-prediction-exchange-text': '"Next-Generation Exchange Solution to Support Margin Futures and Margin Option Trading" {br} This margin exchange provides the function of the existing centralized exchange`s solutions, margin and leverage trading. {br} It also provides futures, option trading, margin futures and margin option trading',
+        'clue': 'Exchange Solution',
+        'clue-text': 'blah blah',
         'aipe-ecosystem': 'AIPE Ecosystem',
         'ai-technique': 'AI Technique',
         'ai-technique-title': 'Gradient Boosting Decision Trees',
@@ -143,7 +147,7 @@ export default {
         'faq-answer-4': '- AIPE coin will be used as the major means  for in the blockchain ecosystem operated by the AIPE Foundation',
         'faq-question-5': 'How does ICO work?',
         'faq-answer-5': '- It will be announced later.',
-        'footer-copy': 'Vision Exchange, 2 Venture Drive #24-01 Singapore 608526 {br} ©2018 CosmicBC Pte., Ltd. All rights reserved.'
+        'footer-copy': ' 3 Fraser Street, DUO Tower #05-21, Singapore 189352 {br} {br} ©2019 CosmicBC Pte., Ltd. All rights reserved.'
     },
     zh: {
         'header-nav-about': 'About',
@@ -168,6 +172,8 @@ export default {
         'ai-prediction-aiplatform-text': '对于AI研发环境的改善与解决对于对于确保了已验证完毕数据的预测平台。 {br} 该服务是可以提供对AI研究人员可在开源图书管理系统环境下轻松便捷地使用此平台，同时也可以把已确认的使用人数以及模型数据提供到企业。',
         'ai-prediction-exchange': '交易所解决方案',
         'ai-prediction-exchange-text': '可提供期货保证金，期权保证金等交易的一项新一代交易所解决方案。 {br} 可提供对以往的中心化交易所解决方案，可以支持保证金交易与杠杆交易加密货币保证金交易所，取货交易与期权交易，以及保证金期货交易，保证金期权交易等。',
+        'clue': 'Exchange Solution',
+        'clue-text': 'blah blah',
         'aipe-ecosystem': 'AIPE Ecosystem',
         'ai-technique': 'AI Technique',
         'ai-technique-title': '梯度提升决策树（Gradient Boosting Decision Trees）',
@@ -216,7 +222,7 @@ export default {
         'faq-answer-4': '- 用户可通过我公司所提供的奖励与相关交易所获得相应的加密货币。有关对活动的具体内容，我们将在近期公布。',
         'faq-question-5': '如何进行ICO？',
         'faq-answer-5': '- 我们将近期公布相关消息及参与方法。',
-        'footer-copy': 'Vision Exchange, 2 Venture Drive #24-01 Singapore 608526 {br} ©2018 CosmicBC Pte., Ltd. All rights reserved.'
+        'footer-copy': ' 3 Fraser Street, DUO Tower #05-21, Singapore 189352 {br} {br} ©2019 CosmicBC Pte., Ltd. All rights reserved.'
     },
     ja: {
         'header-nav-about': 'About',
@@ -241,6 +247,8 @@ export default {
         'ai-prediction-aiplatform-text': '”AI研究-開発環境の改善や検証されたData確保が可能なAI Prediction Platform” {br} AI研究員がOpen Source Library環境に容易にアクセスおよび利用できるようサービスを提供し、TrafficやModelデーターを確保できるように企業へ提供するプラットフォーム',
         'ai-prediction-exchange': 'Exchange Solution',
         'ai-prediction-exchange-text': '”マージン先物、マージンオプション取引を対応する次世代取引所ソルーション” {br} 既存の中央化取引所に対するソルーションやマージン取引、レバレッジ取引を対応する仮想通貨マージン取引所だけではなく、先物取引、マージン先物取引、マージンオプション取引まで対応するソルーションを提供',
+        'clue': 'Exchange Solution',
+        'clue-text': 'blah blah',
         'aipe-ecosystem': 'AIPE Ecosystem',
         'ai-technique': 'AI Technique',
         'ai-technique-title': '勾配ブースティング決定木(Gradient Boosting Decision Trees)',
@@ -289,7 +297,7 @@ export default {
         'faq-answer-4': '- 当社のサービスを通した報酬やそのサービスを利用する取引所にてコインをもらえます。イベントについては、今後、お知らせ致します。',
         'faq-question-5': 'ICOは、どのように行われますか？',
         'faq-answer-5': '- 今後、通知を通じてご案内致します。',
-        'footer-copy': 'Vision Exchange, 2 Venture Drive #24-01 Singapore 608526 {br} ©2018 CosmicBC Pte., Ltd. All rights reserved.'
+        'footer-copy': ' 3 Fraser Street, DUO Tower #05-21, Singapore 189352 {br} {br} ©2019 CosmicBC Pte., Ltd. All rights reserved.'
     },
 }
 

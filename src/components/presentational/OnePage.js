@@ -55,7 +55,8 @@ const OnePage = (props) => {
             text: null
         },
         tooltip: {
-            pointFormat: '{point.detail}'
+            pointFormat: '{point.detail}',
+            useHTML: true
         },
         plotOptions: {
             pie: {
@@ -71,8 +72,8 @@ const OnePage = (props) => {
                     enabled: true,
                     useHTML: true,
                     format: '{point.name} <br> {point.percentage} %',
-                    distance: -40,
-                    style: {fontFamily: '\'Questrial\', sans-serif', fontSize: '12px', textAlign: 'center'} 
+                    distance: -45,
+                    style: {fontFamily: '\'Questrial\', sans-serif', fontSize: '12px', textAlign: 'center', color:'#FFF'} 
                 },
             }
         },
@@ -211,7 +212,8 @@ const OnePage = (props) => {
                                                             (item.className1 === "content2" && props.platFormContent2) ||
                                                             (item.className1 === "content3" && props.platFormContent3) ||
                                                             (item.className1 === "content4" && props.platFormContent4) ||
-                                                            (item.className1 === "content5" && props.platFormContent5)
+                                                            (item.className1 === "content5" && props.platFormContent5) ||
+                                                            (item.className1 === "content6" && props.platFormContent6)
                                                         }>
                                                         <div className={item.className2}>
                                                             <div className={item.className2_1}>
@@ -397,8 +399,11 @@ const OnePage = (props) => {
                                     <div className={`roadmap-title`} id="section4" ref={props.roadmapTitle}>
                                         <h2><FormattedMessage id="roadmap" /></h2>
                                     </div>
-                                    <div className={`roadmap-img`} ref={props.roadmapContent}>
+                                    <div className={`roadmap-img web`} ref={props.roadmapContent}>
                                         <img src={require("../../images/roadmap2.png")}/>
+                                    </div>
+                                    <div className={`roadmap-img mobile`} ref={props.roadmapContentM}>
+                                        <img src={require("../../images/mb_roadmap.png")}/>
                                     </div>
                                 </section>
                             </div>
@@ -546,12 +551,35 @@ const OnePage = (props) => {
                                     <a href="https://twitter.com/AIPE_official" target="_blank" className="ico-twitter" />
                                     <a href="https://www.youtube.com/channel/UC6w2g-waOQ0UzSvL4WEVFQw" target="_blank" className="ico-youtube" />
                                     <a href="https://open.kakao.com/o/gxoWNPkb" target="_blank" className="ico-kakaco" />
-                                </div>
+                                </div>  
+
                                 <div className="footer-copy">
-                                    <p>
-                                        <FormattedMessage id="footer-copy" values={{br: <br />}} />
-                                    </p>
+                                    <div className = "test"> 
+
+                                            <div className="flex-column">  
+                                                <div className="address">
+                                                    <ul className="flex"> 
+                                                        <li>
+                                                            <img className="mapIcon" src={require(`../../images/ic-map.svg`)}/>
+                                                        </li>
+                                                        <li>
+                                                            3 Fraser Street, DUO Tower #05-21, Singapore 189352  
+                                                        </li> 
+                                                    </ul>
+                                                    <br />
+                                                    <div className="copyRight">
+                                                        ©2019 CosmicBC Pte., Ltd. All rights reserved.     
+                                                    </div> 
+                                                </div>                      
+                                            </div>
+                                        
+                                            <div className="cosmic">
+                                                <img  src={require(`../../images/footer_logo.png`)}/>
+                                            </div>
+
+                                    </div>
                                 </div>
+
                             </footer>
                         </div>
                         {/* FOOTER */}
