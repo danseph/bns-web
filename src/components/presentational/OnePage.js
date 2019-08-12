@@ -47,9 +47,15 @@ const OnePage = (props) => {
             plotBorderWidth: null,
             plotShadow: false,
             type: 'pie',
-            marginBottom: 35,
-            marginTop: -80,
-    
+            margin: [0, 0, 0, 0],
+            spacingTop: 0,
+            spacingBottom: 0,
+            spacingLeft: 0,
+            spacingRight: 0,
+            // marginBottom: 35,
+            // marginTop: -80,
+            // backgroundColor: '#FCFFC5',
+            // polar: true,
         },
         title: {
             text: null
@@ -65,7 +71,7 @@ const OnePage = (props) => {
                         opacity: .3
                     }
                 },
-                size: 255,
+                size: '100%',
                 allowPointSelect: true,
                 cursor: 'pointer',
                 dataLabels: {
@@ -343,6 +349,11 @@ const OnePage = (props) => {
                                             <h3>
                                                 <FormattedMessage id='coin-structure' />
                                             </h3>
+                                            <br />
+                                            <br />
+                                            <br />
+                                            <br />
+                                            <br />
                                             <div className="aipx-desc-structure-list">
                                                 <ul>
                                                     {props.coinStructure.map((item, i) => {
@@ -552,10 +563,8 @@ const OnePage = (props) => {
                                     <a href="https://www.youtube.com/channel/UC6w2g-waOQ0UzSvL4WEVFQw" target="_blank" className="ico-youtube" />
                                     <a href="https://open.kakao.com/o/gxoWNPkb" target="_blank" className="ico-kakaco" />
                                 </div>  
-
                                 <div className="footer-copy">
                                     <div className = "test"> 
-
                                             <div className="flex-column">  
                                                 <div className="address">
                                                     <ul className="flex"> 
@@ -572,14 +581,11 @@ const OnePage = (props) => {
                                                     </div> 
                                                 </div>                      
                                             </div>
-                                        
                                             <div className="cosmic">
                                                 <img  src={require(`../../images/footer_logo.png`)}/>
                                             </div>
-
                                     </div>
                                 </div>
-
                             </footer>
                         </div>
                         {/* FOOTER */}
