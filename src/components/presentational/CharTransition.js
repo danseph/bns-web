@@ -124,6 +124,7 @@ class CharTransition extends Component {
             {text: "c"},
             {text: "과"},
             {text: " "},
+            {text: <div className="desktop-inline"></div>},
             {text: "거"},
             {text: "래"},
             {text: " "},

@@ -9,6 +9,9 @@
       @content;
     }
   }
+  @else {
+    @content;
+  }
 }
 
 @mixin titleStyle($color: #000) {

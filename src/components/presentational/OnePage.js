@@ -231,7 +231,7 @@ const OnePage = (props) => {
                                                         </div>
                                                         <div className={item.className3}>
                                                             <h4><FormattedMessage id={item.text1} /></h4>
-                                                            <p><FormattedMessage id={item.text2} values={{br: <br />}} /></p>
+                                                            <p><FormattedMessage id={item.text2} values={{br: <br />, lineBreak: <div className="desktop-inline"></div>}} /></p>
                                                         </div>
                                                     </li>
                                                 )
@@ -298,10 +298,10 @@ const OnePage = (props) => {
                                                         </div>
                                                         <div className={item.className2}>
                                                             <strong>
-                                                                <FormattedMessage id={item.title} />
+                                                                <FormattedMessage id={item.title} values={{kbr: <br />, br: <br />, lineBreak:<div className='desktop-inline'></div>}}/>
                                                             </strong>
                                                             <p>
-                                                                <FormattedMessage id={item.text} values={{kbr: <br />, br: <br />}}/>
+                                                                <FormattedMessage id={item.text} values={{kbr: <br />, br: <br />, lineBreak:<div className='desktop-inline'></div>}}/>
                                                             </p>
                                                         </div>
                                                     </li>

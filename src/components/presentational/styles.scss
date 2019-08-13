@@ -6,6 +6,18 @@
 body {
   overflow-x: hidden;
 }
+
+  
+.desktop-inline {
+  display: inline;
+}
+
+@include mq("mobile") {
+  .desktop-inline {
+    display: block;
+  }
+}
+
 .loader-wrap {
   position: fixed;
   top: 0;
@@ -664,7 +676,7 @@ body {
 
           h4 {
             width: 100%;
-            padding: 25px 0;
+            padding: 12px 0;
             text-align: center;
             font-size: 2.2rem;
             font-weight: 700;
@@ -1276,14 +1288,15 @@ body {
   @include layout();
   @include titleStyle(#FFF);
 
-  padding-top: 650px;
+  padding: 650px 0 100px;
 
   @include mq("tablet") {
     padding-top: 650px;
   }
+
   @include mq("mobile") {
     padding-top: 350px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
   }
 
   &-img {
