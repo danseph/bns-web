@@ -47,11 +47,11 @@ const OnePage = (props) => {
             plotBorderWidth: null,
             plotShadow: false,
             type: 'pie',
-            margin: [0, 0, 0, 0],
-            spacingTop: 0,
-            spacingBottom: 0,
-            spacingLeft: 0,
-            spacingRight: 0,
+            margin: [0, 0, 80, 0],
+            // spacingTop: 0,
+            // spacingBottom: 0,
+            // spacingLeft: 0,
+            // spacingRight: 0,
             // marginBottom: 35,
             // marginTop: -80,
             // backgroundColor: '#FCFFC5',
@@ -231,7 +231,7 @@ const OnePage = (props) => {
                                                         </div>
                                                         <div className={item.className3}>
                                                             <h4><FormattedMessage id={item.text1} /></h4>
-                                                            <p><FormattedMessage id={item.text2} values={{br: <br />, lineBreak: <div className="desktop-inline"></div>}} /></p>
+                                                            <p><FormattedMessage id={item.text2} values={{br: <br />, lineBreak: <div className="desktop-inline"></div>, lineBreak2: <div className="desktop-block"></div>}} /></p>
                                                         </div>
                                                     </li>
                                                 )
@@ -298,10 +298,10 @@ const OnePage = (props) => {
                                                         </div>
                                                         <div className={item.className2}>
                                                             <strong>
-                                                                <FormattedMessage id={item.title} values={{kbr: <br />, br: <br />, lineBreak:<div className='desktop-inline'></div>}}/>
+                                                                <FormattedMessage id={item.title} values={{kbr: <br />, br: <br />, lineBreak:<div className='desktop-inline'></div>, lineBreak2:<div className='desktop-block'></div>}}/>
                                                             </strong>
                                                             <p>
-                                                                <FormattedMessage id={item.text} values={{kbr: <br />, br: <br />, lineBreak:<div className='desktop-inline'></div>}}/>
+                                                                <FormattedMessage id={item.text} values={{kbr: <br />, br: <br />, lineBreak:<div className='desktop-inline'></div>, lineBreak2:<div className='desktop-block'></div>}}/>
                                                             </p>
                                                         </div>
                                                     </li>
@@ -340,20 +340,15 @@ const OnePage = (props) => {
                                         </div>
                                         <div className={`aipx-content-txt`} ref={props.aipxText}>
                                             <p>
-                                                <FormattedMessage id="aipx-text6" />
+                                                <FormattedMessage id="aipx-text6" values={{lineBreak:<div className='desktop-inline'></div>}}/>
                                             </p>
                                         </div>
                                     </div>
                                     <div className={`aipx-desc`} ref={props.coinAllocation}>
                                         <div className="aipx-desc-structure">
                                             <h3>
-                                                <FormattedMessage id='coin-structure' />
+                                                <FormattedMessage id='coin-structure'/>
                                             </h3>
-                                            <br />
-                                            <br />
-                                            <br />
-                                            <br />
-                                            <br />
                                             <div className="aipx-desc-structure-list">
                                                 <ul>
                                                     {props.coinStructure.map((item, i) => {
