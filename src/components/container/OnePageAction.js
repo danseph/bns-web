@@ -419,13 +419,13 @@ class OnePageAction extends Component {
             className2: 'txt-box',
             image: '26_Scott_AI_Researcher.jpg'
         },
-        {
-            name: 'Jack',
-            position: 'Developer',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '28_Jack_Developer.jpg'
-        },
+        // {
+        //     name: 'Jack',
+        //     position: 'Developer',
+        //     className: 'img-box',
+        //     className2: 'txt-box',
+        //     image: '28_Jack_Developer.jpg'
+        // },
         {
             name: 'Shawn',
             position: 'Developer',
