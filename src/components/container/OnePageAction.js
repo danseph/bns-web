@@ -8,7 +8,7 @@ class OnePageAction extends Component {
         loader: true,
         activeNav: 1,
         activeMainTitle: false,
-        activePlatFormTitle: false,
+        // activePlatFormTitle: false,
         lanShow: false,
         typeFaq: 0,
         defaultLang: window.localStorage['trans'] || "ko",
@@ -17,21 +17,25 @@ class OnePageAction extends Component {
     };
 
     nav = [
-        {
-            num: 1,
-            text: 'header-nav-about'
-        },
+        // {
+        //     num: 1,
+        //     text: 'header-nav-about'
+        // },
         {
             num: 2,
-            text: 'header-nav-prediction'
+            text: 'header-nav-bns'
         },
+        // {
+        //     num: 3,
+        //     text: 'header-nav-coin'
+        // },
         {
             num: 3,
-            text: 'header-nav-coin'
+            text: 'header-nav-roadmap'
         },
         {
             num: 4,
-            text: 'header-nav-roadmap'
+            text: 'header-nav-economy'
         },
         {
             num: 5,
@@ -39,11 +43,7 @@ class OnePageAction extends Component {
         },
         {
             num: 6,
-            text: 'header-nav-media'
-        },
-        {
-            num: 7,
-            text: 'header-nav-faq'
+            text: 'header-nav-partner'
         },
     ];
 
@@ -66,118 +66,112 @@ class OnePageAction extends Component {
             className: 'cn',
             lanSet: 'zh'
         },
-        {
-            num: 4,
-            text: '日本語',
-            className: 'jp',
-            lanSet: 'ja'
-        },
     ];
 
-    platformContent = [
-        {
-            className1: 'content1',
-            className2: 'img-box-wrap',
-            className2_1: 'img-box',
-            className3: 'txt-box',
-            image: '3piks.png',
-            image2: '3piks_bw.png',
-            text1: 'ai-prediction-3piks',
-            text2: 'ai-prediction-3piks-text',
-        },
-        {
-            className1: 'content2',
-            className2: 'img-box-wrap',
-            className2_1: 'img-box',
-            className3: 'txt-box',
-            image: 'bitbip.png',
-            image2: 'bitbip_bw.png',
-            text1: 'ai-prediction-aibitbip',
-            text2: 'ai-prediction-aibitbip-text',
-        },
-        {
-            className1: 'content3',
-            className2: 'img-box-wrap',
-            className2_1: 'img-box',
-            className3: 'txt-box',
-            image: 'aipe_clue.png',
-            image2: 'aipe_clue.png',
-            text1: 'clue',
-            text2: 'clue-text',
-        },
-        {
-            className1: 'content4',
-            className2: 'img-box-wrap',
-            className2_1: 'img-box',
-            className3: 'txt-box',
-            image: 'trade.png',
-            image2: 'trade_bw.png',
-            text1: 'ai-prediction-aitradingbot',
-            text2: 'ai-prediction-aitradingbot-text',
-        },
-        {
-            className1: 'content5',
-            className2: 'img-box-wrap',
-            className2_1: 'img-box',
-            className3: 'txt-box',
-            image: 'platform.png',
-            image2: 'platform_bw.png',
-            text1: 'ai-prediction-aiplatform',
-            text2: 'ai-prediction-aiplatform-text',
-        },
-        {
-            className1: 'content6',
-            className2: 'img-box-wrap',
-            className2_1: 'img-box',
-            className3: 'txt-box',
-            image: 'solution.png',
-            image2: 'solution_bw.png',
-            text1: 'ai-prediction-exchange',
-            text2: 'ai-prediction-exchange-text',
-        },
-    ];
+    // platformContent = [
+    //     {
+    //         className1: 'content1',
+    //         className2: 'img-box-wrap',
+    //         className2_1: 'img-box',
+    //         className3: 'txt-box',
+    //         image: '3piks.png',
+    //         image2: '3piks_bw.png',
+    //         text1: 'ai-prediction-3piks',
+    //         text2: 'ai-prediction-3piks-text',
+    //     },
+    //     {
+    //         className1: 'content2',
+    //         className2: 'img-box-wrap',
+    //         className2_1: 'img-box',
+    //         className3: 'txt-box',
+    //         image: 'bitbip.png',
+    //         image2: 'bitbip_bw.png',
+    //         text1: 'ai-prediction-aibitbip',
+    //         text2: 'ai-prediction-aibitbip-text',
+    //     },
+    //     {
+    //         className1: 'content3',
+    //         className2: 'img-box-wrap',
+    //         className2_1: 'img-box',
+    //         className3: 'txt-box',
+    //         image: 'aipe_clue.png',
+    //         image2: 'aipe_clue.png',
+    //         text1: 'clue',
+    //         text2: 'clue-text',
+    //     },
+    //     {
+    //         className1: 'content4',
+    //         className2: 'img-box-wrap',
+    //         className2_1: 'img-box',
+    //         className3: 'txt-box',
+    //         image: 'trade.png',
+    //         image2: 'trade_bw.png',
+    //         text1: 'ai-prediction-aitradingbot',
+    //         text2: 'ai-prediction-aitradingbot-text',
+    //     },
+    //     {
+    //         className1: 'content5',
+    //         className2: 'img-box-wrap',
+    //         className2_1: 'img-box',
+    //         className3: 'txt-box',
+    //         image: 'platform.png',
+    //         image2: 'platform_bw.png',
+    //         text1: 'ai-prediction-aiplatform',
+    //         text2: 'ai-prediction-aiplatform-text',
+    //     },
+    //     {
+    //         className1: 'content6',
+    //         className2: 'img-box-wrap',
+    //         className2_1: 'img-box',
+    //         className3: 'txt-box',
+    //         image: 'solution.png',
+    //         image2: 'solution_bw.png',
+    //         text1: 'ai-prediction-exchange',
+    //         text2: 'ai-prediction-exchange-text',
+    //     },
+    // ];
 
-    techContent = [
-        {
-            num: 1,
-            className1: 'img-box',
-            className2: 'txt-box',
-            image: 'ai01.png',
-            title: 'ai-technique-title',
-            text: 'ai-technique-text',
-        },
-        {
-            num: 2,
-            className1: 'img-box',
-            className2: 'txt-box',
-            image: 'ai02.png',
-            title: 'ai-technique-title2',
-            text: 'ai-technique-text2',
-        }
-    ];
+    // techContent = [
+    //     {
+    //         num: 1,
+    //         className1: 'img-box',
+    //         className2: 'txt-box',
+    //         image: 'ai01.png',
+    //         title: 'ai-technique-title',
+    //         text: 'ai-technique-text',
+    //     },
+    //     {
+    //         num: 2,
+    //         className1: 'img-box',
+    //         className2: 'txt-box',
+    //         image: 'ai02.png',
+    //         title: 'ai-technique-title2',
+    //         text: 'ai-technique-text2',
+    //     }
+    // ];
 
-    aipx = [
-        {
-            className: 'one',
-            text: 'aipx-text1',
-        },
-        {
-            className: 'two',
-            text: 'aipx-text2',
-        },
-        {
-            className: 'three',
-            text: 'aipx-text3',
-        },
-        {
-            className: 'four',
-            text: 'aipx-text4',
-        },
-        {
-            className: 'five',
-            text: 'aipx-text5',
-        },
-    ];
+    // aipx = [
+    //     {
+    //         className: 'one',
+    //         text: 'aipx-text1',
+    //     },
+    //     {
+    //         className: 'two',
+    //         text: 'aipx-text2',
+    //     },
+    //     {
+    //         className: 'three',
+    //         text: 'aipx-text3',
+    //     },
+    //     {
+    //         className: 'four',
+    //         text: 'aipx-text4',
+    //     },
+    //     {
+    //         className: 'five',
+    //         text: 'aipx-text5',
+    //     },
+    // ];
 
     coinStructure = [
         {
@@ -222,334 +216,101 @@ class OnePageAction extends Component {
             text1: 'coin-structure-text-7',
             text2: 'coin-structure-text-7-1',
         },
+        {
+            className1: 'th',
+            className2: 'td',
+            text1: 'coin-structure-text-8',
+            text2: 'coin-structure-text-8-1',
+        },
     ];
 
     whitePaper = [
         {
-            link: 'AIPE_Whitepaper_Kr_v1.6.pdf',
+            link: 'BNS_Bay_White_Paper_ver1.0.4.pdf',
             text: 'whitepaper-ko',
         },
         {
-            link: 'AIPE_Whitepaper_En_v1.6.pdf',
+            link: '#',
             text: 'whitepaper-en'
         },
         {
-            link: 'AIPE_Whitepaper_Cn_v1.6.pdf',
+            link: '#',
             text: 'whitepaper-zh'
-        },
-        {
-            link: 'AIPE_Whitepaper_Jp_v1.6.pdf',
-            text: 'whitepaper-ja'
         }
     ];
 
     team1 = [
         {
-            name: 'Dan',
-            position: 'CEO',
+            name: '서 정 민',
+            position: '(주)알리패스 대표이사',
             className: 'img-box',
             className2: 'txt-box',
-            image: '01_Dan_CEO.jpg',
+            image: 'team-temp.png',
         },
         {
-            name: 'Leo',
-            position: 'China HQ Business Director',
+            name: '이 진 풍',
+            position: '(주)알리패스 공동대표',
             className: 'img-box',
             className2: 'txt-box',
-            image: '02_Leo_China_HQ_Business_Director.jpg'
+            image: 'team-temp.png'
         },
         {
-            name: 'Charlyne',
-            position: 'HR & Admin',
+            name: '조 용 대',
+            position: '(주)알리패스 본부장',
             className: 'img-box',
             className2: 'txt-box',
-            image: '03_Charlyne_HR_&_Admin.jpg'
-        },
-        {
-            name: 'Priscelia',
-            position: 'Designer',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '04_Prisceilia_Designer.jpg',
-        },
-        {
-            name: 'Daniel',
-            position: 'Sales & Marketing',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '05_Daniel_Sales_&_Marketing.jpg'
-        },
-        {
-            name: 'Ronald',
-            position: 'Sales & Marketing',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '06_Ronald_Sales_&_Marketing.jpg'
-        },
-        {
-            name: 'Davin',
-            position: 'Sales & Marketing',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '07_Davin_Sales_&_Marketing.jpg',
-        },
-        {
-            name: 'Calvin',
-            position: 'Developer',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '08_Calvin_Developer.jpg'
-        },
-        {
-            name: 'Shirley',
-            position: 'Operation',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '09_Shirley_Operation.jpg'
-        },
-        {
-            name: 'Yo',
-            position: 'Management Director',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '10_Yo_Management_Director.jpg'
-        },
-        {
-            name: 'Leo',
-            position: 'Planning Manager',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '12_Leo_Planning_Manager.jpg'
-        },
-        {
-            name: 'Dylan',
-            position: 'Strategy Manager',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '13_Dylan_Strategy_Manager.jpg'
-        },
-        {
-            name: 'Jenny',
-            position: 'HR Manager',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '14_Jenney_HR_Manager.jpg'
-        },
-        {
-            name: 'Daniel',
-            position: 'Project Manager',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '15_Daniel_Project_Manager.jpg'
-        },
-        {
-            name: 'Sam',
-            position: 'Advisor',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '16_Sam_Advisor.jpg'
-        },
-        {
-            name: 'Moon',
-            position: 'Project Manager',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '17_Moon_Project_Manager.jpg'
-        },
-        {
-            name: 'Jay',
-            position: 'Project Leader',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '18_Jay_Project_Leader.jpg'
-        },
-        {
-            name: 'Joe',
-            position: 'Project Leader',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '19_Joe_Project_Leader.jpg'
-        },
-        {
-            name: 'Kate',
-            position: 'Finance',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '20_Kate_Finance.jpg'
-        },
-        {
-            name: 'Nick',
-            position: 'AI Researcher',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '21_Nick_AI_Researcher.jpg'
-        },
-        {
-            name: 'Elaine',
-            position: 'AI Researcher',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '22_Elaine_AI_Researcher.jpg'
-        },
-        {
-            name: 'Luna',
-            position: 'AI Researcher',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '23_Luna_AI_Researcher.jpg'
-        },
-        {
-            name: 'Hue',
-            position: 'AI Researcher',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '24_Hue_AI_Researcher.jpg'
-        },
-        {
-            name: 'Ryan',
-            position: 'AI Researcher',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '25_Ryan_AI_Researcher.jpg'
-        },
-        {
-            name: 'Scott',
-            position: 'AI Researcher',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '26_Scott_AI_Researcher.jpg'
-        },
-        // {
-        //     name: 'Jack',
-        //     position: 'Developer',
-        //     className: 'img-box',
-        //     className2: 'txt-box',
-        //     image: '28_Jack_Developer.jpg'
-        // },
-        {
-            name: 'Shawn',
-            position: 'Developer',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '29_Shawn_Developer.jpg'
-        },
-        {
-            name: 'Tim',
-            position: 'Developer',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '30_Tim_Developer.jpg'
-        },
-        {
-            name: 'Smith',
-            position: 'Developer',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '32_Smith_Developer.jpg'
-        },
-        {
-            name: 'Louis',
-            position: 'Developer',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '33_Louis_Developer.jpg'
-        },
-        {
-            name: 'Bread',
-            position: 'Developer',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '36_Bread_Developer.jpg'
-        },
-        {
-            name: 'Add',
-            position: 'Developer',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '37_Add_Developer.jpg'
-        },
-        {
-            name: 'Suzi',
-            position: 'Lead Designer',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '44_Suzi_Lead_Designer.jpg'
-        },
-        {
-            name: 'Bonniel',
-            position: 'Sound Designer',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '45_Bonniel_Sound_Designer.jpg'
-        },
-        {
-            name: 'Emma',
-            position: 'Graphic Designer',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '46_Emma_Graphic_Designer.jpg'
-        },
-        {
-            name: 'Soo',
-            position: 'Graphic Designer',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '47_Soo_Graphic_Designer.jpg'
-        },
-        {
-            name: 'Jerry',
-            position: 'UI Designer',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '47_Jerry_UI_Designer.jpg'
-        },
-        {
-            name: 'Liseo',
-            position: 'UI UX Designer',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '49_Liseo_UI_UX_Designer.jpg'
-        },
-        {
-            name: 'Mimi',
-            position: 'Marketing',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '52_Mimi_Marketing.jpg'
-        },
-        {
-            name: 'Jane',
-            position: 'Interpreter',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: '54_Jane_Interpreter.jpg'
-        }
-    ];
-
-    partners = [
-        {
-            image: 'kobea.png',
-        },
-        {
-            image: 'cardano.png',
-        },
-        {
-            image: 'emurgo.png',
-        },
-        {
-            image: 'infinito.png',
-        },
-        {
-            image: 'alphapoint.png',
+            image: 'team-temp.png'
         },
     ];
 
-    media1 = [
+    team2 = [
         {
-            title: 'AIPE, 아시아 최초로 코인베네 문베이스에서 IEO 진행',
+            name: '서 정 민',
+            position: '(주)알리패스 대표이사',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'team-temp.png',
+        },
+        {
+            name: '이 진 풍',
+            position: '(주)알리패스 공동대표',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'team-temp.png'
+        },
+        {
+            name: '조 용 대',
+            position: '(주)알리패스 본부장',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'team-temp.png'
+        },
+    ];
+
+    // partners = [
+    //     {
+    //         image: 'kobea.png',
+    //     },
+    //     {
+    //         image: 'cardano.png',
+    //     },
+    //     {
+    //         image: 'emurgo.png',
+    //     },
+    //     {
+    //         image: 'infinito.png',
+    //     },
+    //     {
+    //         image: 'alphapoint.png',
+    //     },
+    // ];
+
+    press1 = [
+        {
+            title: 'Streaming Platform to Crypto Payments Alliance',
             date: '2019.04.24',
-            writer: 'CosmicBC',
-            url: 'http://www.dtoday.co.kr/news/articleView.html?idxno=306705',
+            // writer: 'CosmicBC',
+            url: 'team-temp.png',
             classNameWrap: 'img-box-wrap',
             className: 'img-box',
             className2: 'txt-box',
@@ -559,10 +320,10 @@ class OnePageAction extends Component {
             className2_2_2: 'name',
         },
         {
-            title: 'AIPE, 크립토 포탈 클렛(CLET)에서 세일 진행',
+            title: 'Streaming Platform to Crypto Payments Alliance',
             date: '2019.04.23',
-            writer: 'CosmicBC',
-            url: 'http://www.newstap.co.kr/news/articleView.html?idxno=87621',
+            // writer: 'CosmicBC',
+            url: 'team-temp.png',
             classNameWrap: 'img-box-wrap',
             className: 'img-box',
             className2: 'txt-box',
@@ -572,10 +333,10 @@ class OnePageAction extends Component {
             className2_2_2: 'name',
         },
         {
-            title: '손위준 코스믹BC 대표 "AI 암호화폐 예측, 트레이딩 생태계 구축한다" ',
+            title: 'Streaming Platform to Crypto Payments Alliance',
             date: '2019.03.29',
-            writer: 'CosmicBC',
-            url: 'http://naver.me/xNOM5NNN',
+            // writer: 'CosmicBC',
+            url: 'team-temp.png',
             classNameWrap: 'img-box-wrap',
             className: 'img-box',
             className2: 'txt-box',
@@ -585,10 +346,10 @@ class OnePageAction extends Component {
             className2_2_2: 'name',
         },
         {
-            title: 'How to use UZMEX',
+            title: 'Streaming Platform to Crypto Payments Alliance',
             date: '2019.03.27',
-            writer: 'CosmicBC',
-            url: 'https://youtu.be/Y0NS99Dzczc',
+            // writer: 'CosmicBC',
+            url: 'team-temp.png',
             classNameWrap: 'img-box-wrap',
             className: 'img-box',
             className2: 'txt-box',
@@ -598,10 +359,10 @@ class OnePageAction extends Component {
             className2_2_2: 'name',
         },
         {
-            title: '3PIKS Service Introduction video',
+            title: 'Streaming Platform to Crypto Payments Alliance',
             date: '2019.03.25',
-            writer: 'CosmicBC',
-            url: 'https://youtu.be/DfeAUlF7UIg',
+            // writer: 'CosmicBC',
+            url: 'team-temp.png',
             classNameWrap: 'img-box-wrap',
             className: 'img-box',
             className2: 'txt-box',
@@ -611,36 +372,10 @@ class OnePageAction extends Component {
             className2_2_2: 'name',
         },
         {
-            title: '코스믹BC 비트코인 가격 예측 서비스 선봬…예측 맞추면 코인 보상',
+            title: 'Streaming Platform to Crypto Payments Alliance',
             date: '2019.01.24',
-            writer: '글로벌이코노믹',
-            url: 'http://www.g-enews.com/view.php?ud=20190124153943598efadd7fc46_1',
-            classNameWrap: 'img-box-wrap',
-            className: 'img-box',
-            className2: 'txt-box',
-            className2_1: 'left',
-            className2_2: 'right',
-            className2_2_1: 'date',
-            className2_2_2: 'name',
-        },
-        {
-            title: 'Launch of the Final Round | Prediction Herobots',
-            date: '2019.01.24',
-            writer: 'CosmicBC',
-            url: 'https://www.facebook.com/watch/?v=345753002702811',
-            classNameWrap: 'img-box-wrap',
-            className: 'img-box',
-            className2: 'txt-box',
-            className2_1: 'left',
-            className2_2: 'right',
-            className2_2_1: 'date',
-            className2_2_2: 'name',
-        },
-        {
-            title: '비트코인 가격 예측하는 AI로봇? 코스믹, 국제공모전 개최',
-            date: '2018.11.29',
-            writer: 'Decenter',
-            url: 'https://decenter.sedaily.com/NewsView/1S7DM5N53E',
+            // writer: '글로벌이코노믹',
+            url: 'team-temp.png',
             classNameWrap: 'img-box-wrap',
             className: 'img-box',
             className2: 'txt-box',
@@ -691,12 +426,12 @@ class OnePageAction extends Component {
                 this.setState({
                     loader: false,
                     activeMainTitle: true,
-                    activePlatFormTitle: true,
+                    // activePlatFormTitle: true,
                 })
             )
         }, 800);
 
-        window.addEventListener('scroll', this._handlePlatFormContentsActive);
+        // window.addEventListener('scroll', this._handlePlatFormContentsActive);
         window.addEventListener('scroll', this._handleEffectTitleActive);
         window.addEventListener('scroll', this._handleEffectContentsActive);
 
@@ -735,9 +470,9 @@ class OnePageAction extends Component {
                 {...this.state}
                 nav={this.nav}
                 lan={this.lan}
-                platformContent={this.platformContent}
+                // platformContent={this.platformContent}
                 techContent={this.techContent}
-                aipx={this.aipx}
+                // aipx={this.aipx}
                 coinStructure={this.coinStructure}
                 whitePaper={this.whitePaper}
                 team1={this.team1}
@@ -753,38 +488,38 @@ class OnePageAction extends Component {
                 team11={this.team11}
                 team12={this.team12}
                 team13={this.team13}
-                partners={this.partners}
-                media1={this.media1}
+                // partners={this.partners}
+                press1={this.press1}
                 faq={this.faq}
                 title={this.title}
-                effectTitle={this.effectTitle}
-                effectContent={this.effectContent}
-                effectContentM={this.effectContentM}
-                platFormContent1={this.platFormContent1}
-                platFormContent2={this.platFormContent2}
-                platFormContent3={this.platFormContent3}
-                platFormContent4={this.platFormContent4}
-                platFormContent5={this.platFormContent5}
-                platFormContent6={this.platFormContent6}
-                techniqueTitle={this.techniqueTitle}
-                techniqueContent1={this.techniqueContent1}
-                techniqueContent2={this.techniqueContent2}
-                aipxTitle={this.aipxTitle}
-                aipxContent={this.aipxContent}
-                aipxText={this.aipxText}
+                // effectTitle={this.effectTitle}
+                // effectContent={this.effectContent}
+                // effectContentM={this.effectContentM}
+                // platFormContent1={this.platFormContent1}
+                // platFormContent2={this.platFormContent2}
+                // platFormContent3={this.platFormContent3}
+                // platFormContent4={this.platFormContent4}
+                // platFormContent5={this.platFormContent5}
+                // platFormContent6={this.platFormContent6}
+                // techniqueTitle={this.techniqueTitle}
+                // techniqueContent1={this.techniqueContent1}
+                // techniqueContent2={this.techniqueContent2}
+                // aipxTitle={this.aipxTitle}
+                // aipxContent={this.aipxContent}
+                // aipxText={this.aipxText}
                 coinAllocation={this.coinAllocation}
                 paperTitle={this.paperTitle}
-                roadmapTitle={this.roadmapTitle}
-                roadmapContent={this.roadmapContent}
-                roadmapContentM={this.roadmapContentM}
-                teamTitle={this.teamTitle}
-                teamList={this.teamList}
-                partnerTitle1={this.partnerTitle1}
-                partnerContent1={this.partnerContent1}
+                // roadmapTitle={this.roadmapTitle}
+                // roadmapContent={this.roadmapContent}
+                // roadmapContentM={this.roadmapContentM}
+                // teamTitle={this.teamTitle}
+                // teamList={this.teamList}
+                // partnerTitle1={this.partnerTitle1}
+                // partnerContent1={this.partnerContent1}
                 // partnerTitle2={this.partnerContent2}
                 //partnerContent2={this.partnerContent2}
-                mediaTitle={this.mediaTitle}
-                mediaList={this.mediaList}
+                pressTitle={this.pressTitle}
+                pressList={this.pressList}
                 handleRefresh={this._handleRefresh}
                 handleSectionMove={this._handleSectionMove}
                 handleLanBtn={this._handleLanBtn}
@@ -846,7 +581,7 @@ class OnePageAction extends Component {
                     loader: false,
                     activeNav: 1,
                     activeMainTitle: true,
-                    activePlatFormTitle: true,
+                    // activePlatFormTitle: true,
                     lanShow: false,
                     typeFaq: 0,
                 })
@@ -857,11 +592,11 @@ class OnePageAction extends Component {
                 activeMainTitle: false,
             })
         }
-        if(this.state.activePlatFormTitle) {
-            this.setState({
-                activePlatFormTitle: false,
-            })
-        }
+        // if(this.state.activePlatFormTitle) {
+        //     this.setState({
+        //         activePlatFormTitle: false,
+        //     })
+        // }
     };
 
     _handleLanShow = () => {
@@ -886,7 +621,6 @@ class OnePageAction extends Component {
         const language = {
             '한국어': 'ko',
             'ENGLISH': 'en',
-            '日本語': 'ja',
             '中文': 'zh',
         };
         this.setState({
@@ -904,7 +638,7 @@ class OnePageAction extends Component {
                     loader: false,
                     activeNav: 1,
                     activeMainTitle: true,
-                    activePlatFormTitle: true,
+                    // activePlatFormTitle: true,
                     lanShow: false,
                     typeFaq: 0,
                 })
@@ -916,11 +650,11 @@ class OnePageAction extends Component {
                 activeMainTitle: false,
             })
         }
-        if(this.state.activePlatFormTitle) {
-            this.setState({
-                activePlatFormTitle: false,
-            })
-        }
+        // if(this.state.activePlatFormTitle) {
+        //     this.setState({
+        //         activePlatFormTitle: false,
+        //     })
+        // }
     };
 
     _handleSectionMove = (num) => {
@@ -930,23 +664,25 @@ class OnePageAction extends Component {
         });
         let offset = $("#section" + num);
         let offsetTop = offset.offset();
-        if(offset[0].id === "section4") {
-            if(window.innerWidth <= 1200) {
-                $('html, body').scrollTop(offsetTop.top - 130)
-            } else {
-                $('html, body').scrollTop(offsetTop.top - 240)
-            }
-        } else if(offset[0].id === "section2" || offset[0].id === "section5" || offset[0].id === "section6" || offset[0].id === "section7" && window.innerWidth <= 1200) {
+        // if(offset[0].id === "section4") {
+        //     if(window.innerWidth <= 1200) {
+        //         $('html, body').scrollTop(offsetTop.top - 130)
+        //     } else {
+        //         $('html, body').scrollTop(offsetTop.top - 240)
+        //     }
+        // } 
+        if(offset[0].id === "section2" || offset[0].id === "section3" || offset[0].id === "section4" || offset[0].id === "section5" || offset[0].id === "section6" || offset[0].id === "section7" && window.innerWidth <= 1200) {
             $('html, body').scrollTop(offsetTop.top)
-        } else if(offset[0].id === "section3") {
-            if(window.innerWidth <= 1200) {
-                $('html, body').scrollTop(offsetTop.top - 100)
-            } else {
-                $('html, body').scrollTop(offsetTop.top - 240)
-            }
-        } else {
-            $('html, body').scrollTop(offsetTop.top - 80)
-        }
+        } 
+        // else if(offset[0].id === "section3") {
+        //     if(window.innerWidth <= 1200) {
+        //         $('html, body').scrollTop(offsetTop.top - 100)
+        //     } else {
+        //         $('html, body').scrollTop(offsetTop.top - 240)
+        //     }
+        // } else {
+        //     $('html, body').scrollTop(offsetTop.top - 80)
+        // }
     };
 
     _handleWhitePaperMove = (num) => {
@@ -959,42 +695,42 @@ class OnePageAction extends Component {
         })
     };
 
-    platFormContent1 = React.createRef();
-    platFormContent2 = React.createRef();
-    platFormContent3 = React.createRef();
-    platFormContent4 = React.createRef();
-    platFormContent5 = React.createRef();
-    platFormContent6 = React.createRef();
-    _handlePlatFormContentsActive = throttle(() => {
-        const elements = [
-            this.platFormContent1.current,
-            this.platFormContent2.current,
-            this.platFormContent3.current,
-            this.platFormContent4.current,
-            this.platFormContent5.current,
-            this.platFormContent6.current
-        ];
-        for(var i=0; i<elements.length; i++)  {
-            if(!this.state.loader) {
-                const rect = elements[i].getBoundingClientRect();
-                const { top, bottom, height } = rect;
-                if (top + 200 < window.innerHeight && bottom >= 0 && top > -1 * height && !elements[i].classList.contains('active')) {
-                    elements[i].classList = `${elements[i].classList} active`;
-                }
-            }
-        }
-    }, 200);
+    // platFormContent1 = React.createRef();
+    // platFormContent2 = React.createRef();
+    // platFormContent3 = React.createRef();
+    // platFormContent4 = React.createRef();
+    // platFormContent5 = React.createRef();
+    // platFormContent6 = React.createRef();
+    // _handlePlatFormContentsActive = throttle(() => {
+    //     const elements = [
+    //         this.platFormContent1.current,
+    //         this.platFormContent2.current,
+    //         this.platFormContent3.current,
+    //         this.platFormContent4.current,
+    //         this.platFormContent5.current,
+    //         this.platFormContent6.current
+    //     ];
+    //     for(var i=0; i<elements.length; i++)  {
+    //         if(!this.state.loader) {
+    //             const rect = elements[i].getBoundingClientRect();
+    //             const { top, bottom, height } = rect;
+    //             if (top + 200 < window.innerHeight && bottom >= 0 && top > -1 * height && !elements[i].classList.contains('active')) {
+    //                 elements[i].classList = `${elements[i].classList} active`;
+    //             }
+    //         }
+    //     }
+    // }, 200);
 
-    effectTitle = React.createRef();
-    roadmapTitle = React.createRef();
-    roadmapContent = React.createRef();
-    roadmapContentM = React.createRef();
+    // effectTitle = React.createRef();
+    // roadmapTitle = React.createRef();
+    // roadmapContent = React.createRef();
+    // roadmapContentM = React.createRef();
     _handleEffectTitleActive = throttle(() => {
         const elements = [
-            this.effectTitle.current,
-            this.roadmapTitle.current,
-            this.roadmapContent.current,
-            this.roadmapContentM.current,
+            // this.effectTitle.current,
+            // this.roadmapTitle.current,
+            // this.roadmapContent.current,
+            // this.roadmapContentM.current,
         ];
         for(var i=0; i<elements.length; i++)  {
             if(!this.state.loader) {
@@ -1007,43 +743,43 @@ class OnePageAction extends Component {
         }
     }, 200);
 
-    effectContent = React.createRef();
-    effectContentM = React.createRef();
-    aipxTitle = React.createRef();
-    aipxContent = React.createRef();
-    aipxText = React.createRef();
+    // effectContent = React.createRef();
+    // effectContentM = React.createRef();
+    // aipxTitle = React.createRef();
+    // aipxContent = React.createRef();
+    // aipxText = React.createRef();
     coinAllocation = React.createRef();
-    techniqueTitle = React.createRef();
-    techniqueContent1 = React.createRef();
-    techniqueContent2 = React.createRef();
-    teamTitle = React.createRef();
-    teamList = React.createRef();
-    partnerTitle1 = React.createRef();
-    partnerContent1 = React.createRef();
+    // techniqueTitle = React.createRef();
+    // techniqueContent1 = React.createRef();
+    // techniqueContent2 = React.createRef();
+    // teamTitle = React.createRef();
+    // teamList = React.createRef();
+    // partnerTitle1 = React.createRef();
+    // partnerContent1 = React.createRef();
     // partnerTitle2 = React.createRef();
     //partnerContent2 = React.createRef();
-    mediaTitle = React.createRef();
-    mediaList = React.createRef();
+    pressTitle = React.createRef();
+    pressList = React.createRef();
 
     _handleEffectContentsActive = throttle(() => {
         const elements = [
-            this.effectContent.current,
-            this.effectContentM.current,
-            this.aipxTitle.current,
-            this.aipxContent.current,
-            this.aipxText.current,
+            // this.effectContent.current,
+            // this.effectContentM.current,
+            // this.aipxTitle.current,
+            // this.aipxContent.current,
+            // this.aipxText.current,
             this.coinAllocation.current,
-            this.techniqueTitle.current,
-            this.techniqueContent1.current,
-            this.techniqueContent2.current,
-            this.teamTitle.current,
-            this.teamList.current,
-            this.partnerTitle1.current,
-            this.partnerContent1.current,
+            // this.techniqueTitle.current,
+            // this.techniqueContent1.current,
+            // this.techniqueContent2.current,
+            // this.teamTitle.current,
+            // this.teamList.current,
+            // this.partnerTitle1.current,
+            // this.partnerContent1.current,
             // this.partnerTitle2.current,
             //this.partnerContent2.current,
-            this.mediaTitle.current,
-            this.mediaList.current,
+            this.pressTitle.current,
+            this.pressList.current,
         ];
         for(var i=0; i<elements.length; i++)  {
             if(!this.state.loader) {

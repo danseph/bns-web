@@ -27,10 +27,18 @@
     }
     // jonny end
     h2 {
-      width: 100%;
-      font-size: 4rem;
-      color: $color;
-      text-align: center;
+      
+        font-family: Raleway;
+        font-size: 32px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        // letter-spacing: -0.72px;
+        letter-spacing: normal;
+        text-align: center;
+        color: #1d2227;
+      
 
       @include mq("tablet") {
         font-size: 3rem;

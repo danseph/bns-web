@@ -47,16 +47,6 @@
         }
       }
     }
-    &.active.ja {
-      .char {
-        @for $i from 1 to 22 {
-          &:nth-child(#{$i}) { animation-delay: 2.2s + ($i * 0.03s) }
-        }
-        @for $i from 22 to 88 {
-          &:nth-child(#{$i}) { animation-delay: 1.9s + ($i * 0.03s) }
-        }
-      }
-    }
     &.active.zh {
       .char {
         @for $i from 1 to 14 {

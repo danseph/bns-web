@@ -41,21 +41,13 @@ const OnePage = (props) => {
         credits: {
             enabled: false
         },
-        colors: ['#191919', '#303030', '#595959', '#898989', '#b7b7b7'],
+        colors: ['#5733fe','#8970fe','#6f35ff', '#bbadfe', '#ddd6fe', '#eeeafe' ],
         chart: {
             plotBackgroundColor: null,
             plotBorderWidth: null,
             plotShadow: false,
             type: 'pie',
-            margin: [0, 0, 80, 0],
-            // spacingTop: 0,
-            // spacingBottom: 0,
-            // spacingLeft: 0,
-            // spacingRight: 0,
-            // marginBottom: 35,
-            // marginTop: -80,
-            // backgroundColor: '#FCFFC5',
-            // polar: true,
+            margin: [0, 0, 20, 0],
         },
         title: {
             text: null
@@ -79,7 +71,7 @@ const OnePage = (props) => {
                     useHTML: true,
                     format: '{point.name} <br> {point.percentage} %',
                     distance: -45,
-                    style: {fontFamily: '\'Questrial\', sans-serif', fontSize: '12px', textAlign: 'center', color:'#FFF'} 
+                    style: {fontFamily: '\'Questrial\', sans-serif', fontSize: '12px', textAlign: 'center'} 
                 },
             }
         },
@@ -87,25 +79,23 @@ const OnePage = (props) => {
             name: 'Brand',
             colorByPoint: true,
             data: [{
-                        name: 'Coin Sale',
-                        detail: '(4 Years Lockup, 5% Release Each Year)',
-                        y: 40,
-                    }, {
-                        name: 'Ecosystem',
-                        detail: '(4 Years Lockup, 5% Release Each Year)',
-                        y: 20
-                    }, {
-                        name: 'Marketing',
-                        detail: '(2 Years Lockup, 4.5% Release Every 6 Months)',
-                        y: 18
+                        name: 'Sale',
+                        y: 35,
                     }, {
                         name: 'Team',
-                        detail: '(2 Years Lockup, 5% Release Each Year)',
-                        y: 10
-                    }, {
-                        name: 'Foundation',
-                        detail: '(Release After 3 Years)',
                         y: 12
+                    }, {
+                        name: 'Marketing',
+                        y: 13
+                    }, {
+                        name: 'Ecosystem',
+                        y: 15
+                    }, {
+                        name: 'Operation',
+                        y: 12
+                    }, {
+                        name: 'Reverse',
+                        y: 13
                 }]
             }]
     };
@@ -131,16 +121,19 @@ const OnePage = (props) => {
                         {props.lanShow &&
                         <div className="lan-list-none-wrap" onClick={props.handleLanShow}/>
                         }
+
+
+                        {/* HEADER */}
                         <h1 className={`header-logo m`}>
                             <a href="javascript:void(0)">
-                                <img src={require("../../images/logo_v2.png")} alt="로고"/>
+                                <img src={require("../../images/bns-logo.png")} alt="로고"/>
                             </a>
                         </h1>
                         <div className="header-wrap">
                             <header className="header">
                                 <h1 className="header-logo" onClick={props.handleRefresh}>
                                     <a href="javascript:void(0)">
-                                        <img src={require("../../images/logo_v2.png")} alt="로고"/>
+                                        <img src={require("../../images/bns-logo.png")} alt="로고"/>
                                     </a>
                                 </h1>
                                 {/*메뉴 클릭하면 ((header-nav, menu-btn, header-btn)) 여기에 on 붙여주세요 */}
@@ -164,9 +157,9 @@ const OnePage = (props) => {
                                     })}
                                 </nav>
                                 <div className={`header-btn ${props.activeMnav ? "on": ""}`}>
-                                    <a href="javascript:void(0)" onClick={() => props.handleWhitePaperMove(20)}>
+                                    {/* <a href="javascript:void(0)" onClick={() => props.handleWhitePaperMove(20)}>
                                         <FormattedMessage id="header-whitepaper" />
-                                    </a>
+                                    </a> */}
                                     <a href="javascript:void(0)" className={`lang ${props.lanShow ? "active" : ""}`}
                                        onClick={props.handleLanShow}>
                                         <FormattedMessage id="header-lan-btn" />
@@ -184,172 +177,189 @@ const OnePage = (props) => {
                                 <div className="lan-hide-wrap" onClick={props.handleLanHide}/>
                             </header>
                         </div>
+                        {/* HEADER */}    
 
+                        
                         {/* CONTAINER */}
-                        <div className="container">
-                            {/* MAIN */}
+                        <div className="container">                    
+                        {/* MAIN */}
                             <div className="main-wrap" id="section1">
                                 <section className="main">
-                                    <div className="main-img">
-                                        <img src={require("../../images/main01.png")}/>
-                                    </div>
-                                    <div className="main-txt">
-                                        <CharTransition defaultLang={props.defaultLang} activeMainTitle={props.activeMainTitle} />
+                                        <div className="main-img">
+                                            <img src={require("../../images/polygon1.png")}/>
+                                        </div>
+                                        <div className="main-txt">
+                                        <h2><FormattedMessage id="main-title" values={{ br: <br />}}/></h2>
+                                        <p><FormattedMessage id="main-text" values={{ br: <br />}}/></p>
+                                        <div className="main-img2">
+                                                <img src={require("../../images/polygon2.png")}/>
+                                        </div>
                                     </div>
                                 </section>
                             </div>
                             {/* MAIN */}
 
-                            {/* PLATFORM */}
-                            <div className="platform-wrap">
-                                <section className="platform" id="section2">
-                                    <div className={`platform-title ${props.activePlatFormTitle && "active"}`} ref={props.platFormTitle}>
-                                        <h2><FormattedMessage id="ai-prediction-title" /></h2>
+                            {/* BNS */}
+                            <div className="bns-wrap">
+                                <section className="bns" id="section2">
+                                    <div className="bns-about" >
+                                        <div className="bns-about-title">
+                                            <h2><FormattedMessage id="about-title" /></h2>
+                                        </div>
+                                        <div className="bns-about-img">
+                                            <img src={require("../../images/about.png")}/>
+                                        </div>
+                                        <div className="bns-about-text">
+                                            <p><FormattedMessage id="about-text" values={{ br: <br />}}/></p>
+                                        </div>
                                     </div>
-                                    <div className="platform-content">
-                                        <ul>
-                                            {props.platformContent.map((item, i) => {
+                                    <div className="bns-paper" >
+                                        <div className="bns-paper-title" >
+                                            <h2>White Paper</h2>
+                                        </div>
+                                        <div className="paper-link">
+                                            {props.whitePaper.map((item, i) => {
                                                 return (
-                                                    <li
-                                                        key={i}
-                                                        className={`${item.className1}`}
-                                                        ref={
-                                                            (item.className1 === "content1" && props.platFormContent1) ||
-                                                            (item.className1 === "content2" && props.platFormContent2) ||
-                                                            (item.className1 === "content3" && props.platFormContent3) ||
-                                                            (item.className1 === "content4" && props.platFormContent4) ||
-                                                            (item.className1 === "content5" && props.platFormContent5) ||
-                                                            (item.className1 === "content6" && props.platFormContent6)
-                                                        }>
-                                                        <div className={item.className2}>
-                                                            <div className={item.className2_1}>
-                                                                <img src={require(`../../images/${item.image}`)}/>
-                                                            </div>
-                                                            <div className={item.className2_1}>
-                                                                <img src={require(`../../images/${item.image2}`)}/>
-                                                            </div>
-                                                        </div>
-                                                        <div className={item.className3}>
-                                                            <h4><FormattedMessage id={item.text1} /></h4>
-                                                            <p><FormattedMessage id={item.text2} values={{br: <br />, lineBreak: <div className="desktop-inline"></div>, lineBreak2: <div className="desktop-block"></div>}} /></p>
-                                                        </div>
-                                                    </li>
+                                                    <a href={item.link} target="_blank" key={i}>
+                                                        <FormattedMessage id={item.text} />
+                                                    </a>
                                                 )
                                             })}
-                                        </ul>
-                                    </div>
-                                </section>
-                            </div>
-                            {/* PLATFORM */}
-
-                            {/* PLATFORM, SOLUTION */}
-                            <div className="effect-wrap" id="section3">
-                                <div className="effect">
-                                    <div className={`effect-title`} ref={props.effectTitle}>
-                                        <h2><FormattedMessage id="aipe-ecosystem" /></h2>
-                                    </div>
-                                    <div className={`effect-img-wrap web`} ref={props.effectContent}>
-                                        <div className="effect-img">
-                                            {
-                                                props.defaultLang === "zh" ?
-                                                    <img src={require("../../images/web_bg_contents_cn.png")} />
-                                                    :
-                                                    <img src={require("../../images/web_bg_contents.png")} />
-                                            }
-                                        </div>
-                                        <div className="effect-img bot">
-                                            <img src={require("../../images/web_bg_effect.png")}/>
                                         </div>
                                     </div>
-                                    <div className={`effect-img-wrap mobile`} ref={props.effectContentM}>
-                                        <div className="effect-img">
-                                            {
-                                                props.defaultLang === "zh" ?
-                                                    <img src={require("../../images/mobile_bg_contents_cn.png")} />
-                                                    :
-                                                    <img src={require("../../images/mobile_bg_contents.png")} />
-                                            }
+                                    <div className="bns-util" >
+                                        <div className="bns-util-title">
+                                            <h2><FormattedMessage id="util-title" /></h2>
                                         </div>
-                                        <div className="effect-img bot">
-                                            <img src={require("../../images/mobile_bg_effect.png")}/>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* PLATFORM, SOLUTION */}
-
-                            {/* TECHNIQUE, SOLUTION */}
-                            <div className="tech-wrap">
-                                <section className="tech">
-                                    <div className={`tech-title`} ref={props.techniqueTitle}>
-                                        <h2><FormattedMessage id="ai-technique" /></h2>
-                                    </div>
-                                    <div className="tech-content">
-                                        <ul>
-                                            {props.techContent.map((item, i) => {
-                                                return (
-                                                    <li key={i}
-                                                        ref={
-                                                            (item.num === 1 && props.techniqueContent1) ||
-                                                            (item.num === 2 && props.techniqueContent2)
-                                                        }>
-                                                        <div className={item.className1}>
-                                                            <img src={require(`../../images/${item.image}`)}/>
-                                                        </div>
-                                                        <div className={item.className2}>
-                                                            <strong>
-                                                                <FormattedMessage id={item.title} values={{kbr: <br />, br: <br />, lineBreak:<div className='desktop-inline'></div>, lineBreak2:<div className='desktop-block'></div>}}/>
-                                                            </strong>
-                                                            <p>
-                                                                <FormattedMessage id={item.text} values={{kbr: <br />, br: <br />, lineBreak:<div className='desktop-inline'></div>, lineBreak2:<div className='desktop-block'></div>}}/>
-                                                            </p>
-                                                        </div>
-                                                    </li>
-                                                )
-                                            })}
-                                        </ul>
-                                    </div>
-                                </section>
-                            </div>
-                            {/* TECHNIQUE */}
-
-                            {/* AIPX */}
-                            <div className="aipx-wrap">
-                                <section className="aipx">
-                                    <div className={`aipx-title`} ref={props.aipxTitle}>
-                                        <h2><FormattedMessage id="aipx-title" /></h2>
-                                    </div>
-                                    <div className="aipx-content" ref={props.aipxContent}>
-                                        <div className="aipx-content-img">
-                                            <div className={`center`}>
-                                                <img src={require("../../images/aipe.png")} />
+                                        <div className="bns-util-content">
+                                            <div className="bns-util-img">
+                                                <img src={require("../../images/util-payment.png")}/>
                                             </div>
-                                            <ul className={`side`}>
-                                                {
-                                                    props.aipx.map((item, i) => {
-                                                        return (
-                                                            <li key={i} className={item.className}>
-                                                                <p>
-                                                                    <FormattedMessage id={item.text} values={{kbr: <br />}} />
-                                                                </p>
-                                                            </li>
-                                                        )
-                                                    })
-                                                }
-                                            </ul>
+                                            <div className="bns-util-textbox">
+                                                <h5><FormattedMessage id="util-payment-title" /></h5>
+                                                <p><FormattedMessage id="util-payment-text" /></p>
+                                            </div>
                                         </div>
-                                        <div className={`aipx-content-txt`} ref={props.aipxText}>
-                                            <p>
-                                                <FormattedMessage id="aipx-text6" values={{lineBreak:<div className='desktop-inline'></div>}}/>
-                                            </p>
+                                        <div className="bns-util-content">
+                                            <div className="bns-util-textbox">
+                                                <h5><FormattedMessage id="util-reward-title" /></h5>
+                                                <p><FormattedMessage id="util-reward-text" /></p>
+                                            </div>
+                                            <div className="bns-util-img">
+                                                <img src={require("../../images/util-reward.png")}/>
+                                            </div>
+                                        </div>
+                                        <div className="bns-util-content">
+                                            <div className="bns-util-img">
+                                                <img src={require("../../images/util-fund.png")}/>
+                                            </div>
+                                            <div className="bns-util-textbox">
+                                                <h5><FormattedMessage id="util-fund-title" /></h5>
+                                                <p><FormattedMessage id="util-fund-text" /></p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div className={`aipx-desc`} ref={props.coinAllocation}>
-                                        <div className="aipx-desc-structure">
-                                            <h3>
-                                                <FormattedMessage id='coin-structure'/>
-                                            </h3>
-                                            <div className="aipx-desc-structure-list">
+                                    <div className="bns-vision" >
+                                        <div className="bns-vision-title">
+                                            <h2><FormattedMessage id="vison-title" /></h2>
+                                        </div>
+                                        <div className="bns-vision-group">
+                                        <div className="bns-vision-content">
+                                            <div className="bns-vision-img">
+                                                <img src={require("../../images/vision-1.png")}/>
+                                            </div>
+                                            <div className="bns-vision-textbox">
+                                                <p><FormattedMessage id="vision-text-1" /></p>
+                                            </div>
+                                        </div>
+                                        <div className="bns-vision-content">
+                                            <div className="bns-vision-img">
+                                                <img src={require("../../images/vision-2.png")}/>
+                                            </div>
+                                            <div className="bns-vision-textbox">
+                                                <p><FormattedMessage id="vision-text-2" /></p>
+                                            </div>
+                                        </div>
+                                            <div className="bns-vision-content">
+                                                <div className="bns-vision-img">
+                                                    <img src={require("../../images/vision-3.png")}/>
+                                                </div>
+                                                <div className="bns-vision-textbox">
+                                                    <p><FormattedMessage id="vision-text-3" /></p>
+                                                </div>
+                                            </div>
+                                            <div className="bns-vision-content">
+                                                <div className="bns-vision-img">
+                                                    <img src={require("../../images/vision-4.png")}/>
+                                                </div>
+                                                <div className="bns-vision-textbox">
+                                                    <p><FormattedMessage id="vision-text-4" /></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section className="bns-eco-section" id="section2">
+                                    <div className="bns-ecosystem" >
+                                        <div className= "bns-ecosystem-title" >
+                                            <h2><FormattedMessage id="ecosystem" /></h2>
+                                        </div>
+                                        <div className={`bns-ecosystem-img-wrap web`} >
+                                            <div className="bns-ecosystem-img">
+                                                {
+                                                    props.defaultLang === "ko" ?
+                                                        <img src={require("../../images/ecosystem.png")} />
+                                                        :
+                                                        <img src={require("../../images/ecosystem.png")} />
+                                                }
+                                            </div>
+                                        </div>
+                                        <div className={`bns-ecosystem-img-wrap mobile`} >
+                                            <div className="bns-ecosystem-img">
+                                                {
+                                                    props.defaultLang === "ko" ?
+                                                        <img src={require("../../images/ecosystem.png")} />
+                                                        :
+                                                        <img src={require("../../images/ecosystem.png")} />
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            {/* BNS */}
+
+                            {/* ROADMAP */}
+                            <div className="roadmap-wrap" id="section3">
+                                <section className="roadmap" >
+                                    <div className={`roadmap-title`}  >
+                                        <h2><FormattedMessage id="roadmap" /></h2>
+                                    </div>
+                                    <div className={`roadmap-img web`} >
+                                        <img src={require("../../images/roadmap.png")}/>
+                                    </div>
+                                    <div className={`roadmap-img mobile`} >
+                                        <img src={require("../../images/mb_roadmap.png")}/>
+                                    </div>
+                                </section>
+                            </div>
+                            {/* ROADMAP */}
+
+                            {/* ECONOMY */}
+                            <div className="economy-wrap" id="section4">
+                                <section className="economy" >
+                                    <div className={`economy-title`} >
+                                        <h2><FormattedMessage id="token-title" /></h2>
+                                    </div>
+                                    <div className={`economy-desc`} ref={props.coinAllocation}>
+                                        <div className="economy-desc-graph">
+                                                <HighchartsReactOfficial 
+                                                    highcharts={Highcharts}
+                                                    options={highchartOption}
+                                                />
+                                        </div>
+                                        <div className="economy-desc-structure">
+                                            <div className="economy-desc-structure-list">
                                                 <ul>
                                                     {props.coinStructure.map((item, i) => {
                                                         return (
@@ -366,62 +376,19 @@ const OnePage = (props) => {
                                                 </ul>
                                             </div>
                                         </div>
-                                        <div className="aipx-desc-graph">
-                                            <h3>
-                                                <FormattedMessage id='coin-allocation' />
-                                            </h3>
-                                                <HighchartsReactOfficial 
-                                                    highcharts={Highcharts}
-                                                    options={highchartOption}
-                                                />
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                            {/* AIPX */}
 
-                            {/* WHITEPAPER */}
-                            <div className="paper-wrap" id="section20">
-                                <section className="paper" >
-                                    <div className="paper-title">
-                                        <h2><FormattedMessage id="whitepaper" /></h2>
-                                    </div>
-                                    <div className="paper-link">
-                                        {props.whitePaper.map((item, i) => {
-                                            return (
-                                                <a href={item.link} target="_blank" key={i}>
-                                                    <FormattedMessage id={item.text} />
-                                                </a>
-                                            )
-                                        })}
                                     </div>
                                 </section>
                             </div>
-                            {/* WHITEPAPER */}
-
-                            {/* ROADMAP */}
-                            <div className="roadmap-wrap">
-                                <section className="roadmap">
-                                    <div className={`roadmap-title`} id="section4" ref={props.roadmapTitle}>
-                                        <h2><FormattedMessage id="roadmap" /></h2>
-                                    </div>
-                                    <div className={`roadmap-img web`} ref={props.roadmapContent}>
-                                        <img src={require("../../images/roadmap2.png")}/>
-                                    </div>
-                                    <div className={`roadmap-img mobile`} ref={props.roadmapContentM}>
-                                        <img src={require("../../images/mb_roadmap.png")}/>
-                                    </div>
-                                </section>
-                            </div>
-                            {/* ROADMAP */}
+                            {/* ECONOMY */}
 
                             {/* TEAM */}
                             <div className="team-wrap">
                                 <section className="team" id="section5">
-                                    <div className={`team-title`} ref={props.teamTitle}>
-                                        <h2><FormattedMessage id="team" /></h2>
+                                    <div className={`team-title`} >
+                                        <h2><FormattedMessage id="team-member" /></h2>
                                     </div>
-                                    <div className={`team-desc`} ref={props.teamList}>
+                                    <div className={`team-desc`} >
                                         <div className="team-desc-list">
                                             <ul>
                                                 {props.team1.map((item, i) => {
@@ -444,48 +411,72 @@ const OnePage = (props) => {
                                         </div>
                                     </div>
                                 </section>
-                            </div>
-                            {/* TEAM */}
-
-                            {/* PARTNERS */}
-                            <div className="partners-wrap">
-                                <section className="partners">
-                                    <div className={`partners-title`} ref={props.partnerTitle1}>
-                                        <h2>AIPE Partners</h2>
+                                <section className="team" id="section5">
+                                    <div className={`team-title`} >
+                                        <h2><FormattedMessage id="advisor" /></h2>
                                     </div>
-                                    <div className={`partners-logo`} ref={props.partnerContent1}>
-                                        <ul>
-                                            <li className="nbp">
-                                                <a href="javascript:void(0)">
-                                                    <img src={require(`../../images/nbp.jpg`)}/>
-                                                </a>
-                                            </li>
-                                            <li className="coinbene">
-                                                <a href="javascript:void(0)">
-                                                    <img src={require(`../../images/coinbene.png`)}/>
-                                                </a>
-                                            </li>
-                                            <li className="blockinside">
-                                                <a href="javascript:void(0)">
-                                                    <img src={require(`../../images/blockinside.png`)}/>
-                                                </a>
-                                            </li>
-                                        </ul>
+                                    <div className={`team-desc`} >
+                                        <div className="team-desc-list">
+                                            <ul>
+                                                {props.team2.map((item, i) => {
+                                                    return (
+                                                        <li key={i}>
+                                                            <div className={item.className}>
+                                                                <img src={require(`../../images/teams/${item.image}`)} />
+                                                            </div>
+                                                            <div className={item.className2}>
+                                                                <strong>{item.name}</strong>
+                                                                <em>{item.position}</em>
+                                                            </div>
+                                                        </li>
+                                                    )
+                                                })}
+                                            </ul>
+                                        </div>
+                                        <div className="team-desc-paging">
+                                            {/* 페이징은 여기 */}
+                                        </div>
                                     </div>
                                 </section>
                             </div>
-                            {/* PARTNERS */}
+                            {/* TEAM */}
 
-                            {/* MEDIA */}
-                            <div className="media-wrap">
-                                <section className="media" id="section6">
-                                    <div className={`media-title`} ref={props.mediaTitle}>
-                                        <h2><FormattedMessage id="media" /></h2>
+                            {/* PARTNER */}
+                            <div className="partner-wrap">
+                                <section className="partner"  id="section6">
+                                    <div className={`partner-group`}>
+                                        <div className={`partner-group-title`} >
+                                            <h2><FormattedMessage id="partner" /></h2>
+                                        </div>
+                                        <div className={`partner-group-img`} >
+                                            <img src={require("../../images/partners.png")}/>
+                                        </div>
                                     </div>
-                                    <div className={`media-list`} ref={props.mediaList}>
+                                    <div className={`partner-group`}>
+                                        <div className={`partner-group-title`} >
+                                            <h2><FormattedMessage id="tech-partner" /></h2>
+                                        </div>
+                                        <div className={`partner-group-img`} >
+                                            <img src={require("../../images/tech-partner.png")}/>
+                                        </div>
+                                        <div className="polygon3-img">
+                                            <img src={require("../../images/polygon3.png")}/>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            {/* PARTNER */}
+
+                            {/* PRESS */}
+                            <div className="press-wrap">
+                                <section className="press">
+                                    <div className={`press-title`} ref={props.pressTitle}>
+                                        <h2><FormattedMessage id="press" /></h2>
+                                    </div>
+                                    <div className={`press-list`} ref={props.pressList}>
                                         <div className="contents">
                                             <ul>
-                                                {props.media1.map((item, i) => {
+                                                {props.press1.map((item, i) => {
                                                     return (
                                                     <li key={i}>
                                                             <a href={item.url} target="_blank">
@@ -510,17 +501,17 @@ const OnePage = (props) => {
                                                 })}
                                             </ul>
                                         </div>
-                                        <div className="media-list-paging">
+                                        <div className="press-list-paging">
                                             {/* 페이징은 여기 */}
                                         </div>
                                     </div>
                                 </section>
                             </div>
-                            {/* MEDIA */}
+                            {/* PRESS */}
 
                             {/* FAQ */}
                             <div className="faq-wrap">
-                                <section className="faq" id="section7">
+                                <section className="faq">
                                     <div className="faq-title">
                                         <h2><FormattedMessage id="faq" /></h2>
                                     </div>
@@ -545,41 +536,45 @@ const OnePage = (props) => {
                                 </section>
                             </div>
                             {/* FAQ */}
+                            {/* CONTCT */}
+                            <div className="contact-wrap">
+                                <section className="contact">
+                                    <div className="contact-title">
+                                        <h2><FormattedMessage id="contact" /></h2>
+                                    </div>
+                                    <div className="contact-sns">
+                                        <a href="#" target="_blank" className="ico-tele" > 
+                                            <img  src={require(`../../images/telegram.png`)}/>
+                                        </a>
+                                        <a href="#" target="_blank" className="ico-medium" >
+                                            <img  src={require(`../../images/medium.png`)}/>
+                                        </a>
+                                        <a href="#" target="_blank" className="ico-twitter" >
+                                            <img  src={require(`../../images/twitter.png`)}/>
+                                        </a>
+                                        <a href="#" target="_blank" className="ico-youtube" >
+                                            <img  src={require(`../../images/youtube.png`)}/>
+                                        </a>
+                                        <a href="#" target="_blank" className="ico-kakaco" >
+                                            <img  src={require(`../../images/kakao.png`)}/>
+                                        </a>
+                                    </div>
+                                    {/* <div className="polygon4-img">
+                                            <img src={require("../../images/polygon4.png")}/>
+                                    </div>     */}
+                                </section>
+                            </div>
+                            {/* CONTCTA */}
                         </div>
                         {/* CONTAINER */}
 
                         {/* FOOTER */}
                         <div className="footer-wrap">
                             <footer className="footer">
-                                <div className="footer-sns">
-                                    <a href={lanTelgramLink()} target="_blank" className="ico-tele" />
-                                    <a href="https://medium.com/cosmicbc" target="_blank" className="ico-medium" />
-                                    <a href="https://twitter.com/AIPE_official" target="_blank" className="ico-twitter" />
-                                    <a href="https://www.youtube.com/channel/UC6w2g-waOQ0UzSvL4WEVFQw" target="_blank" className="ico-youtube" />
-                                    <a href="https://open.kakao.com/o/gxoWNPkb" target="_blank" className="ico-kakaco" />
-                                </div>  
                                 <div className="footer-copy">
-                                    <div className = "test"> 
-                                            <div className="flex-column">  
-                                                <div className="address">
-                                                    <ul className="flex"> 
-                                                        <li>
-                                                            <img className="mapIcon" src={require(`../../images/ic-map.svg`)}/>
-                                                        </li>
-                                                        <li>
-                                                            3 Fraser Street, DUO Tower #05-21, Singapore 189352  
-                                                        </li> 
-                                                    </ul>
-                                                    <br />
-                                                    <div className="copyRight">
-                                                        ©2019 CosmicBC Pte., Ltd. All rights reserved.     
-                                                    </div> 
-                                                </div>                      
-                                            </div>
-                                            <div className="cosmic">
-                                                <img  src={require(`../../images/footer_logo.png`)}/>
-                                            </div>
-                                    </div>
+                                    <div className="copyRight">
+                                        ©2019 BNS. All rights reserved.     
+                                    </div>   
                                 </div>
                             </footer>
                         </div>
