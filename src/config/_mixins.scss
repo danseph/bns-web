@@ -5,9 +5,13 @@
     }
   }
   @else if $screen == "tablet" {
-    @media all and (min-width: 768px) and (max-width: 1023px){
+    @media all and (min-width: 768px) and (max-width: 1024px){
       @content;
     }
+  // @else if $screen == "tablet" {
+  //   @media all and (min-width: 768px) and (max-width: 102px){
+  //     @content;
+  //   }
   }
   @else {
     @content;
@@ -27,24 +31,25 @@
     }
     // jonny end
     h2 {
-      
         font-family: Raleway;
         font-size: 32px;
         font-weight: bold;
         font-style: normal;
         font-stretch: normal;
         line-height: normal;
-        // letter-spacing: -0.72px;
-        letter-spacing: normal;
+        letter-spacing: -0.72px;
+        // letter-spacing: normal;
         text-align: center;
         color: #1d2227;
+        margin-bottom: 70px;
       
 
-      @include mq("tablet") {
-        font-size: 3rem;
-      }
+      // @include mq("tablet") {
+      //   font-size: 3rem;
+      // }
       @include mq("mobile") {
-        font-size: 2.0rem;
+        font-size: 4.0rem;
+        margin-bottom: 30px;
       }
     }
   }
@@ -61,7 +66,7 @@
   }
   @include mq("mobile") {
     width: 100%;
-    padding: 30px 6%;
+    padding: 40px 6%;
   }
 }
 

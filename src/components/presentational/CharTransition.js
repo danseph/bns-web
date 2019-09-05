@@ -5,49 +5,49 @@ class CharTransition extends Component {
     constructor(props) {
         super(props);
         this.charTitle = [
-            {text: "T"},
-            {text: "h"},
+            {text: "B"},
             {text: "e"},
-            {text: " "},
-            {text: "F"},
-            {text: "u"},
-            {text: "t"},
-            {text: "u"},
-            {text: "r"},
-            {text: "e"},
-            {text: " "},
-            {text: "L"},
-            {text: "e"},
-            {text: "a"},
-            {text: "d"},
-            {text: "e"},
-            {text: "r"},
-            {text: " "},
-            {text: "o"},
-            {text: "f"},
-            {text: <br/>},
-            {text: "A"},
-            {text: "I"},
-            {text: " "},
-            {text: "P"},
-            {text: "r"},
-            {text: "e"},
-            {text: "d"},
-            {text: "i"},
-            {text: "c"},
-            {text: "t"},
-            {text: "i"},
+            {text: "y"},
             {text: "o"},
             {text: "n"},
-            {text: " "},
-            {text: "P"},
-            {text: "l"},
-            {text: "a"},
-            {text: "t"},
-            {text: "f"},
+            {text: "d"},
+            {text: <br />},
+            {text: "N"},
             {text: "o"},
             {text: "r"},
             {text: "m"},
+            {text: "a"},
+            {text: "l"},
+            {text: " "},
+            {text: "S"},
+            {text: "h"},
+            {text: "o"},
+            {text: "p"},
+            {text: "p"},
+            {text: "i"},
+            {text: "n"},
+            {text: "g"},
+            // {text: "I"},
+            // {text: " "},
+            // {text: "P"},
+            // {text: "r"},
+            // {text: "e"},
+            // {text: "d"},
+            // {text: "i"},
+            // {text: "c"},
+            // {text: "t"},
+            // {text: "i"},
+            // {text: "o"},
+            // {text: "n"},
+            // {text: " "},
+            // {text: "P"},
+            // {text: "l"},
+            // {text: "a"},
+            // {text: "t"},
+            // {text: "f"},
+            // {text: "o"},
+            // {text: "r"},
+            // {text: "m"},
         ];
         this.charZhTitle = [
             {text: "A"},
@@ -554,11 +554,10 @@ class CharTransition extends Component {
                         ${
                             (this.props.defaultLang === "ko" && "ko") ||
                             (this.props.defaultLang === "en" && "en") ||
-                            (this.props.defaultLang === "ja" && "ja") ||
                             (this.props.defaultLang === "zh" && "zh")
                         }
                     `}>
-                    <p>
+                    {/* <p>
                         {this.props.defaultLang === "ko" &&
                             this.charTextKo.map((item, i) => {
                                 return (
@@ -588,7 +587,7 @@ class CharTransition extends Component {
                             )
                         })
                         }
-                    </p>
+                    </p> */}
                 </div>
 
             </>

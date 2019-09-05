@@ -226,7 +226,7 @@ class OnePageAction extends Component {
 
     whitePaper = [
         {
-            link: 'BNS_Bay_White_Paper_ver1.0.4.pdf',
+            link: 'BNS whitepaper_ver.1.0_kr_compressed.pdf',
             text: 'whitepaper-ko',
         },
         {
@@ -245,21 +245,42 @@ class OnePageAction extends Component {
             position: '(주)알리패스 대표이사',
             className: 'img-box',
             className2: 'txt-box',
-            image: 'team-temp.png',
+            image: 'press1.jpg',
         },
         {
             name: '이 진 풍',
             position: '(주)알리패스 공동대표',
             className: 'img-box',
             className2: 'txt-box',
-            image: 'team-temp.png'
+            image: 'press1.jpg'
         },
         {
             name: '조 용 대',
             position: '(주)알리패스 본부장',
             className: 'img-box',
             className2: 'txt-box',
-            image: 'team-temp.png'
+            image: 'press1.jpg'
+        },
+        {
+            name: '마 이 크',
+            position: '(주)알리패스 대표이사',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'press1.jpg',
+        },
+        {
+            name: '헬 렌',
+            position: '(주)알리패스 공동대표',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'press1.jpg'
+        },
+        {
+            name: '저 스 ',
+            position: '(주)알리패스 본부장',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'press1.jpg'
         },
     ];
 
@@ -269,21 +290,21 @@ class OnePageAction extends Component {
             position: '(주)알리패스 대표이사',
             className: 'img-box',
             className2: 'txt-box',
-            image: 'team-temp.png',
+            image: 'press1.jpg',
         },
         {
             name: '이 진 풍',
             position: '(주)알리패스 공동대표',
             className: 'img-box',
             className2: 'txt-box',
-            image: 'team-temp.png'
+            image: 'press1.jpg'
         },
         {
             name: '조 용 대',
             position: '(주)알리패스 본부장',
             className: 'img-box',
             className2: 'txt-box',
-            image: 'team-temp.png'
+            image: 'press1.jpg'
         },
     ];
 
@@ -307,8 +328,8 @@ class OnePageAction extends Component {
 
     press1 = [
         {
-            title: 'Streaming Platform to Crypto Payments Alliance',
-            date: '2019.04.24',
+            title: '유튜버-T커머스-V커머스 손잡았다… 상품-콘텐츠-플랫폼 ‘하나로’',
+            date: '2019.07.26',
             // writer: 'CosmicBC',
             url: 'team-temp.png',
             classNameWrap: 'img-box-wrap',
@@ -320,8 +341,8 @@ class OnePageAction extends Component {
             className2_2_2: 'name',
         },
         {
-            title: 'Streaming Platform to Crypto Payments Alliance',
-            date: '2019.04.23',
+            title: '한국T커머스협회·홈쇼핑고고·한국엠씨엔협회, T&V커머스 확대 업무협약',
+            date: '2019.07.25',
             // writer: 'CosmicBC',
             url: 'team-temp.png',
             classNameWrap: 'img-box-wrap',
@@ -333,7 +354,7 @@ class OnePageAction extends Component {
             className2_2_2: 'name',
         },
         {
-            title: 'Streaming Platform to Crypto Payments Alliance',
+            title: '한국엠씨엔협회, T커머스협회·홈쇼핑고고와 MOU..."新 커머스 시장 활성화"',
             date: '2019.03.29',
             // writer: 'CosmicBC',
             url: 'team-temp.png',
@@ -346,7 +367,7 @@ class OnePageAction extends Component {
             className2_2_2: 'name',
         },
         {
-            title: 'Streaming Platform to Crypto Payments Alliance',
+            title: '서정민 부회장, ‘홈쇼핑고고’ 설립',
             date: '2019.03.27',
             // writer: 'CosmicBC',
             url: 'team-temp.png',
@@ -359,7 +380,7 @@ class OnePageAction extends Component {
             className2_2_2: 'name',
         },
         {
-            title: 'Streaming Platform to Crypto Payments Alliance',
+            title: '글랜스TV, 홈쇼핑고고와 MOU 체결',
             date: '2019.03.25',
             // writer: 'CosmicBC',
             url: 'team-temp.png',
@@ -372,7 +393,7 @@ class OnePageAction extends Component {
             className2_2_2: 'name',
         },
         {
-            title: 'Streaming Platform to Crypto Payments Alliance',
+            title: "글랜스TV, 홈쇼핑고고와 '미디어 커머스 콘텐츠 제작' 맞손",
             date: '2019.01.24',
             // writer: '글로벌이코노믹',
             url: 'team-temp.png',
@@ -492,9 +513,9 @@ class OnePageAction extends Component {
                 press1={this.press1}
                 faq={this.faq}
                 title={this.title}
-                // effectTitle={this.effectTitle}
-                // effectContent={this.effectContent}
-                // effectContentM={this.effectContentM}
+                ecosystemTitle={this.ecosystemTitle}
+                ecosystemContent={this.ecosystemContent}
+                ecosystemContentM={this.ecosystemContentM}
                 // platFormContent1={this.platFormContent1}
                 // platFormContent2={this.platFormContent2}
                 // platFormContent3={this.platFormContent3}
@@ -504,20 +525,32 @@ class OnePageAction extends Component {
                 // techniqueTitle={this.techniqueTitle}
                 // techniqueContent1={this.techniqueContent1}
                 // techniqueContent2={this.techniqueContent2}
-                // aipxTitle={this.aipxTitle}
+                aboutTitle={this.aboutTitle}
+                aboutContent={this.aboutContent} 
+                aboutText={this.aboutText}
+                paperTitle={this.paperTitle}
+                paperContent={this.paperContent}
+                utilTitle={this.utilTitle}
+                utilPayment={this.utilPayment}
+                utilReward={this.utilReward}
+                utilFund={this.utilFund}
+                visionTitle={this.visionTitle}
+                visionContent={this.visionContent}
+                economyTitle={this.economyTitle}
                 // aipxContent={this.aipxContent}
                 // aipxText={this.aipxText}
-                coinAllocation={this.coinAllocation}
-                paperTitle={this.paperTitle}
-                // roadmapTitle={this.roadmapTitle}
-                // roadmapContent={this.roadmapContent}
-                // roadmapContentM={this.roadmapContentM}
-                // teamTitle={this.teamTitle}
-                // teamList={this.teamList}
-                // partnerTitle1={this.partnerTitle1}
-                // partnerContent1={this.partnerContent1}
-                // partnerTitle2={this.partnerContent2}
-                //partnerContent2={this.partnerContent2}
+                economyContent={this.economyContent}
+                roadmapTitle={this.roadmapTitle}
+                roadmapContent={this.roadmapContent}
+                roadmapContentM={this.roadmapContentM}
+                teamTitle={this.teamTitle}
+                teamList={this.teamList}
+                teamList2={this.teamList2}
+                partnerTitle1={this.partnerTitle1}
+                partnerContent1={this.partnerContent1}
+                partnerContent1M={this.partnerContent1M}
+                partnerTitle2={this.partnerTitle2}
+                partnerContent2={this.partnerContent2}
                 pressTitle={this.pressTitle}
                 pressList={this.pressList}
                 handleRefresh={this._handleRefresh}
@@ -721,16 +754,16 @@ class OnePageAction extends Component {
     //     }
     // }, 200);
 
-    // effectTitle = React.createRef();
-    // roadmapTitle = React.createRef();
-    // roadmapContent = React.createRef();
-    // roadmapContentM = React.createRef();
+    ecosystemTitle = React.createRef();
+    roadmapTitle = React.createRef();
+    roadmapContent = React.createRef();
+    roadmapContentM = React.createRef();
     _handleEffectTitleActive = throttle(() => {
         const elements = [
-            // this.effectTitle.current,
-            // this.roadmapTitle.current,
-            // this.roadmapContent.current,
-            // this.roadmapContentM.current,
+            this.ecosystemTitle.current,
+            this.roadmapTitle.current,
+            this.roadmapContent.current,
+            this.roadmapContentM.current,
         ];
         for(var i=0; i<elements.length; i++)  {
             if(!this.state.loader) {
@@ -742,42 +775,67 @@ class OnePageAction extends Component {
             }
         }
     }, 200);
-
-    // effectContent = React.createRef();
-    // effectContentM = React.createRef();
-    // aipxTitle = React.createRef();
+    aboutTitle = React.createRef();
+    aboutContent =  React.createRef();
+    aboutText = React.createRef();
+    paperTitle = React.createRef();
+    paperContent =  React.createRef();
+    utilTitle = React.createRef();
+    utilPayment =  React.createRef();
+    utilReward =  React.createRef();
+    utilFund =  React.createRef();
+    visionTitle = React.createRef();
+    visionContent =  React.createRef();
+    ecosystemContent = React.createRef();
+    ecosystemContentM = React.createRef();
+    economyTitle = React.createRef();
     // aipxContent = React.createRef();
     // aipxText = React.createRef();
-    coinAllocation = React.createRef();
+    economyContent = React.createRef();
     // techniqueTitle = React.createRef();
     // techniqueContent1 = React.createRef();
     // techniqueContent2 = React.createRef();
-    // teamTitle = React.createRef();
-    // teamList = React.createRef();
-    // partnerTitle1 = React.createRef();
-    // partnerContent1 = React.createRef();
-    // partnerTitle2 = React.createRef();
-    //partnerContent2 = React.createRef();
+    teamTitle = React.createRef();
+    teamList = React.createRef();
+    teamList2 = React.createRef();
+    partnerTitle1 = React.createRef();
+    partnerContent1 = React.createRef();
+    partnerContent1M = React.createRef();
+    partnerTitle2 = React.createRef();
+    partnerContent2 = React.createRef();
     pressTitle = React.createRef();
     pressList = React.createRef();
 
     _handleEffectContentsActive = throttle(() => {
         const elements = [
-            // this.effectContent.current,
-            // this.effectContentM.current,
-            // this.aipxTitle.current,
+            this.aboutTitle.current,
+            this.aboutContent.current,
+            this.aboutText.current,
+            this.paperTitle.current,
+            this.paperContent.current,
+            this.utilTitle.current,
+            this.utilPayment.current,
+            this.utilReward.current,
+            this.utilFund.current,
+            this.visionTitle.current,
+            this.visionContent.current,
+            this.ecosystemContent.current,
+            this.ecosystemContentM.current,
+            this.economyTitle.current,
             // this.aipxContent.current,
             // this.aipxText.current,
-            this.coinAllocation.current,
+            this.economyContent.current,
             // this.techniqueTitle.current,
             // this.techniqueContent1.current,
             // this.techniqueContent2.current,
-            // this.teamTitle.current,
-            // this.teamList.current,
-            // this.partnerTitle1.current,
-            // this.partnerContent1.current,
-            // this.partnerTitle2.current,
-            //this.partnerContent2.current,
+            this.teamTitle.current,
+            this.teamList.current,
+            this.teamList2.current,
+            this.partnerTitle1.current,
+            this.partnerContent1.current,
+            this.partnerContent1M.current,
+            this.partnerTitle2.current,
+            this.partnerContent2.current,
             this.pressTitle.current,
             this.pressList.current,
         ];
