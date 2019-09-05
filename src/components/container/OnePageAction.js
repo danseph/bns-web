@@ -234,7 +234,7 @@ class OnePageAction extends Component {
             text: 'whitepaper-en'
         },
         {
-            link: '#',
+            link: 'BNS whitepaper_ver.1.0_ch_compressed.pdf',
             text: 'whitepaper-zh'
         }
     ];
@@ -245,21 +245,21 @@ class OnePageAction extends Component {
             position: '(주)알리패스 대표이사',
             className: 'img-box',
             className2: 'txt-box',
-            image: 'press1.jpg',
-        },
-        {
-            name: '이 진 풍',
-            position: '(주)알리패스 공동대표',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: 'press1.jpg'
+            image: 'team-01-Seo.png',
         },
         {
             name: '조 용 대',
+            position: '(주)알리패스 공동대표',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'team-02-Jo.png'
+        },
+        {
+            name: '전 주 환',
             position: '(주)알리패스 본부장',
             className: 'img-box',
             className2: 'txt-box',
-            image: 'press1.jpg'
+            image: 'team-03-Jeon.png'
         },
         {
             name: '마 이 크',
