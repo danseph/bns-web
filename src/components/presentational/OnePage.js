@@ -44,12 +44,12 @@ const OnePage = (props) => {
           prevEl: '.swiper-prev'
         },
         autoplay: {
-          delay: 500,
+          delay: 5000,
           disableOnInteraction: false,
         },
         renderPrevButton: () => <button className="swiper-prev"></button>,
         renderNextButton: () => <button className="swiper-next"></button>,
-        loop: true,
+        // loop: true,
       }
         
     return (
@@ -349,12 +349,12 @@ const OnePage = (props) => {
                                         <div className={`team-desc`} ref={props.teamList}>
                                             {/* <div className="team-desc-list"> */}
                                                 <Swiper {...params}>
-                                                    <div><img src={require(`../../images/tmp_feature1.jpg`)}/></div>
+                                                    {/* <div><img src={require(`../../images/tmp_feature1.jpg`)}/></div>
                                                     <div><img src={require(`../../images/tmp_feature2.jpg`)}/></div>
                                                     <div><img src={require(`../../images/tmp_feature3.jpg`)}/></div>
-                                                    <div><img src={require(`../../images/tmp_feature4.jpg`)}/></div>
+                                                    <div><img src={require(`../../images/tmp_feature4.jpg`)}/></div> */}
 
-                                                    {/* <div>
+                                                    <div>
                                                         <ul>
                                                             {props.team1.map((item, i) => {
                                                                 return (
@@ -387,7 +387,41 @@ const OnePage = (props) => {
                                                                 )
                                                             })}
                                                         </ul>
-                                                    </div> */}
+                                                    </div>
+                                                    <div>
+                                                        <ul>
+                                                            {props.team3.map((item, i) => {
+                                                                return (
+                                                                    <li key={i}>
+                                                                        <div className={item.className}>
+                                                                            <img src={require(`../../images/teams/${item.image}`)} />
+                                                                        </div>
+                                                                        <div className={item.className2}>
+                                                                            <strong>{item.name}</strong>
+                                                                            <em>{item.position}</em>
+                                                                        </div>
+                                                                    </li>
+                                                                )
+                                                            })}
+                                                        </ul>
+                                                    </div>
+                                                    <div>
+                                                        <ul>
+                                                            {props.team4.map((item, i) => {
+                                                                return (
+                                                                    <li key={i}>
+                                                                        <div className={item.className}>
+                                                                            <img src={require(`../../images/teams/${item.image}`)} />
+                                                                        </div>
+                                                                        <div className={item.className2}>
+                                                                            <strong>{item.name}</strong>
+                                                                            <em>{item.position}</em>
+                                                                        </div>
+                                                                    </li>
+                                                                )
+                                                            })}
+                                                        </ul>
+                                                    </div>
                                                 </Swiper>
                                             </div>
                                             <div className="team-desc-paging">

@@ -148,6 +148,7 @@ body {
     background-color: none;
     z-index: 10;
     transition: all .5s;
+
     @include mq("tablet") {
       width: 100%;
     }
@@ -1284,175 +1285,181 @@ body {
 .team {
   &-wrap {
     width: 100%;
+    background-color: #272727;
   }
   @include layout();
-  @include titleStyle();
+  // @include titleStyle();
 
+  
+  // position: relative;
 
   &-group{
     margin-bottom: 150px;
+    height: 800px;
+    position: relative;
 
     @include mq("mobile") {
       margin-bottom: 80px;
     }
-  }
-  &-title2 h2{
-    font-family: Raleway;
-    font-size: 32px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: -0.72px;
-    text-align: center;
-    color: #1d2227;
-    margin-bottom: 70px;
-  }
-
-  @include mq("tablet") {
-    width: 90%;
-  }
-  @include mq("mobile") {
-    width: 100%;
-  }
-
-  &-desc {
-
-    // width: 100%;
-    opacity: 0;
-    @include trsX0Y100;
-    &.active {
-      @include trsX0Y0;
-      @include trsOp6s;
-      opacity: 1;
+    .team-title h2{
+      font-family: Raleway;
+      font-size: 32px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: -0.72px;
+      text-align: center;
+      color: #FFF;
+      margin-bottom: 70px;
+    }
+  
+    @include mq("tablet") {
+      width: 90%;
     }
     @include mq("mobile") {
-      margin-top: 0;
-    }
-
-
-    position: absolute;
-    top: 200px;
-    right: 40px;
-    width: 53%;
-    height: 400px;
-    overflow: visible;
-
-    // @include mq {
-    //   position: relative;
-    //   top: 0;
-    //   left: 0;
-    //   overflow: visible;
-    //   width: 100%;
-    //   height: auto;
-    // }
-
-    button {
-      display: block;
-      width: 30px;
-      height: 30px;
-      position: absolute;
-      top: 185px;
-      z-index: 2;
-      border: 0;
-      border-radius: 0;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: 100%;
-
-      // @include mq {
-      //   top: calc(50% - 15px);
-      // }
-
-      &.swiper-prev {
-        left: 0;
-        background-image: url("../../images/arrow_left.svg");
-      }
-
-      &.swiper-next {
-        right: 0;
-        background-image: url("../../images/arrow_right.svg");
-      }
-    }
-    
-    img {
       width: 100%;
-      margin-top: -35%;
-      // @include mq {
-      //   margin-top: 0;
-      // }
     }
-
-    ul {
+  
+    .team-desc {
+  
       // width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      @include mq("mobile") {
-        flex-direction: column;
-        align-items: center;
+      opacity: 0;
+      @include trsX0Y100;
+      &.active {
+        @include trsX0Y0;
+        @include trsOp6s;
+        opacity: 1;
       }
-
-      li {
-        margin-left: .5%;
-        width: 215px;
-
+      @include mq("mobile") {
+        margin-top: 0;
+      }
+  
+  
+      position: absolute;
+      top: 250px;
+      right: 40px;
+      width: 93%;
+      height: 600px;
+      overflow: visible;
+  
+      // @include mq {
+      //   position: relative;
+      //   top: 0;
+      //   left: 0;
+      //   overflow: visible;
+      //   width: 100%;
+      //   height: auto;
+      // }
+  
+      button {
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 185px;
+        z-index: 2;
+        border: 0;
+        border-radius: 0;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100%;
+  
+        // @include mq {
+        //   top: calc(50% - 15px);
+        // }
+  
+        &.swiper-prev {
+          left: 0;
+          background-image: url("../../images/arrow_left.svg");
+        }
+  
+        &.swiper-next {
+          right: 0;
+          background-image: url("../../images/arrow_right.svg");
+        }
+      }
+      
+      img {
+        width: 100%;
+        margin-top: -35%;
+        // @include mq {
+        //   margin-top: 0;
+        // }
+      }
+  
+      ul {
+        // width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         @include mq("mobile") {
-          width: 70%;
-          // margin-left: 1%;
-          margin-bottom:20px;
+          flex-direction: column;
+          align-items: center;
         }
-        
-
-        .img-box {
-          width: 100%;
-          overflow: hidden;
-
-          img {
-            width: 100%;
-            display: block;
+  
+        li {
+          margin-left: .5%;
+          width: 215px;
+  
+          @include mq("mobile") {
+            width: 70%;
+            // margin-left: 1%;
+            margin-bottom:20px;
           }
-        }
-
-        .txt-box {
-          margin-top: 10px;
-          width: 100%;
-          text-align: left;
-
-          strong {
-            font-family: SpoqaHanSans;
-            font-size: 18px;
-            font-weight: bold;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 1.28;
-            letter-spacing: 0.5px;
-            color: #5733fe;
-            display: block;
-
-            @include mq("mobile") {
-              font-size: 1.4rem;
+          
+  
+          .img-box {
+            width: 100%;
+            overflow: hidden;
+  
+            img {
+              width: 100%;
+              display: block;
             }
           }
-
-          em {
-            font-family: SpoqaHanSans;
-            font-size: 12px;
-            font-weight: normal;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 1.92;
-            letter-spacing: 0.33px;
-            color: #1d2227;
-
-            @include mq("mobile") {
-              font-size: 1.2rem;
+  
+          .txt-box {
+            margin-top: 10px;
+            width: 100%;
+            text-align: left;
+  
+            strong {
+              font-family: SpoqaHanSans;
+              font-size: 18px;
+              font-weight: bold;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.28;
+              letter-spacing: 0.5px;
+              color: #5733fe;
+              display: block;
+  
+              @include mq("mobile") {
+                font-size: 1.4rem;
+              }
+            }
+  
+            em {
+              font-family: SpoqaHanSans;
+              font-size: 12px;
+              font-weight: normal;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.92;
+              letter-spacing: 0.33px;
+              color: #1d2227;
+  
+              @include mq("mobile") {
+                font-size: 1.2rem;
+              }
             }
           }
         }
       }
     }
   }
+
 }
 
 .partner {

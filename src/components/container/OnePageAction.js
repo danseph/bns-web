@@ -280,7 +280,55 @@ class OnePageAction extends Component {
             image: 'press1.jpg'
         },
         {
-            name: '저 스 ',
+            name: '저 스 틴',
+            position: '(주)알리패스 본부장',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'press1.jpg'
+        },
+    ];
+
+    team3 = [
+        {
+            name: '팀 3',
+            position: '(주)알리패스 대표이사',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'press1.jpg',
+        },
+        {
+            name: '헬 렌',
+            position: '(주)알리패스 공동대표',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'press1.jpg'
+        },
+        {
+            name: '저 스 틴',
+            position: '(주)알리패스 본부장',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'press1.jpg'
+        },
+    ];
+
+    team4 = [
+        {
+            name: '팀 4',
+            position: '(주)알리패스 대표이사',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'press1.jpg',
+        },
+        {
+            name: '헬 렌',
+            position: '(주)알리패스 공동대표',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'press1.jpg'
+        },
+        {
+            name: '저 스 틴',
             position: '(주)알리패스 본부장',
             className: 'img-box',
             className2: 'txt-box',
