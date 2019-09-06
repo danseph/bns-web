@@ -11,6 +11,7 @@ import ko from 'react-intl/locale-data/ko';
 import zh from 'react-intl/locale-data/zh';
 import locale from '../../locale';
 import { FormattedMessage } from 'react-intl';
+import 'react-id-swiper/lib/styles/scss/swiper.scss'
 addLocaleData([...en, ...ko, ...zh]);
 
 
@@ -37,8 +38,9 @@ const OnePage = (props) => {
         }
     }
 
+
     const params = {
-        modules: [Navigation, Autoplay],
+        modules: [Navigation, Autoplay ],
         navigation: {
           nextEl: '.swiper-next',
           prevEl: '.swiper-prev'
@@ -347,13 +349,7 @@ const OnePage = (props) => {
                                             <h2><FormattedMessage id="team-member" /></h2>
                                         </div>
                                         <div className={`team-desc`} ref={props.teamList}>
-                                            {/* <div className="team-desc-list"> */}
                                                 <Swiper {...params}>
-                                                    {/* <div><img src={require(`../../images/tmp_feature1.jpg`)}/></div>
-                                                    <div><img src={require(`../../images/tmp_feature2.jpg`)}/></div>
-                                                    <div><img src={require(`../../images/tmp_feature3.jpg`)}/></div>
-                                                    <div><img src={require(`../../images/tmp_feature4.jpg`)}/></div> */}
-
                                                     <div>
                                                         <ul>
                                                             {props.team1.map((item, i) => {
@@ -364,14 +360,19 @@ const OnePage = (props) => {
                                                                         </div>
                                                                         <div className={item.className2}>
                                                                             <strong>{item.name}</strong>
-                                                                            <em>{item.position}</em>
+                                                                            <div>{item.position1}</div>
+                                                                            <div>{item.position2}</div>
+                                                                            <div>{item.position3}</div>
+                                                                            <div>{item.position4}</div>
+                                                                            <div>{item.position5}</div>
+                                                                            <div>{item.position6}</div>
                                                                         </div>
                                                                     </li>
                                                                 )
                                                             })}
                                                         </ul>
                                                     </div>
-                                                    <div>
+                                                    <div >
                                                         <ul>
                                                             {props.team2.map((item, i) => {
                                                                 return (
@@ -381,7 +382,12 @@ const OnePage = (props) => {
                                                                         </div>
                                                                         <div className={item.className2}>
                                                                             <strong>{item.name}</strong>
-                                                                            <em>{item.position}</em>
+                                                                                <div>{item.position1}</div>
+                                                                                <div>{item.position2}</div>
+                                                                                <div>{item.position3}</div>
+                                                                                <div>{item.position4}</div>
+                                                                                <div>{item.position5}</div>
+                                                                                <div>{item.position6}</div>
                                                                         </div>
                                                                     </li>
                                                                 )
@@ -397,8 +403,13 @@ const OnePage = (props) => {
                                                                             <img src={require(`../../images/teams/${item.image}`)} />
                                                                         </div>
                                                                         <div className={item.className2}>
-                                                                            <strong>{item.name}</strong>
-                                                                            <em>{item.position}</em>
+                                                                        <strong>{item.name}</strong>
+                                                                            <div>{item.position1}</div>
+                                                                            <div>{item.position2}</div>
+                                                                            <div>{item.position3}</div>
+                                                                            <div>{item.position4}</div>
+                                                                            <div>{item.position5}</div>
+                                                                            <div>{item.position6}</div>
                                                                         </div>
                                                                     </li>
                                                                 )
@@ -414,8 +425,13 @@ const OnePage = (props) => {
                                                                             <img src={require(`../../images/teams/${item.image}`)} />
                                                                         </div>
                                                                         <div className={item.className2}>
-                                                                            <strong>{item.name}</strong>
-                                                                            <em>{item.position}</em>
+                                                                        <strong>{item.name}</strong>
+                                                                            <div>{item.position1}</div>
+                                                                            <div>{item.position2}</div>
+                                                                            <div>{item.position3}</div>
+                                                                            <div>{item.position4}</div>
+                                                                            <div>{item.position5}</div>
+                                                                            <div>{item.position6}</div>
                                                                         </div>
                                                                     </li>
                                                                 )
@@ -423,10 +439,8 @@ const OnePage = (props) => {
                                                         </ul>
                                                     </div>
                                                 </Swiper>
-                                            </div>
-                                            <div className="team-desc-paging">
-                                                {/* 페이징은 여기 */}
-                                            </div>
+                                        </div>
+
                                         </div>
                                     {/* </div> */}
 

@@ -1285,17 +1285,16 @@ body {
 .team {
   &-wrap {
     width: 100%;
-    background-color: #272727;
+    // background-color: #272727;
   }
   @include layout();
   // @include titleStyle();
 
-  
   // position: relative;
 
   &-group{
     margin-bottom: 150px;
-    height: 800px;
+    height: 300px;
     position: relative;
 
     @include mq("mobile") {
@@ -1310,7 +1309,7 @@ body {
       line-height: normal;
       letter-spacing: -0.72px;
       text-align: center;
-      color: #FFF;
+      color: #000;
       margin-bottom: 70px;
     }
   
@@ -1337,7 +1336,7 @@ body {
   
   
       position: absolute;
-      top: 250px;
+      top: 100px;
       right: 40px;
       width: 93%;
       height: 600px;
@@ -1370,37 +1369,30 @@ body {
         // }
   
         &.swiper-prev {
-          left: 0;
-          background-image: url("../../images/arrow_left.svg");
+          left: 0px;
+          background-image: url("../../images/left.png");
         }
   
         &.swiper-next {
           right: 0;
-          background-image: url("../../images/arrow_right.svg");
+          background-image: url("../../images/right.png");
         }
-      }
-      
-      img {
-        width: 100%;
-        margin-top: -35%;
-        // @include mq {
-        //   margin-top: 0;
-        // }
       }
   
       ul {
-        // width: 100%;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         @include mq("mobile") {
           flex-direction: column;
           align-items: center;
         }
   
         li {
-          margin-left: .5%;
-          width: 215px;
+          // margin-left: .5%;
+          width: 190px;
+          padding: 15px;
   
           @include mq("mobile") {
             width: 70%;
@@ -1411,7 +1403,7 @@ body {
   
           .img-box {
             width: 100%;
-            overflow: hidden;
+            // overflow: visible;
   
             img {
               width: 100%;
@@ -1434,6 +1426,7 @@ body {
               letter-spacing: 0.5px;
               color: #5733fe;
               display: block;
+              margin-bottom:10px;
   
               @include mq("mobile") {
                 font-size: 1.4rem;

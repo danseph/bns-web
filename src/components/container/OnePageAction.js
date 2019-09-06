@@ -68,111 +68,6 @@ class OnePageAction extends Component {
         },
     ];
 
-    // platformContent = [
-    //     {
-    //         className1: 'content1',
-    //         className2: 'img-box-wrap',
-    //         className2_1: 'img-box',
-    //         className3: 'txt-box',
-    //         image: '3piks.png',
-    //         image2: '3piks_bw.png',
-    //         text1: 'ai-prediction-3piks',
-    //         text2: 'ai-prediction-3piks-text',
-    //     },
-    //     {
-    //         className1: 'content2',
-    //         className2: 'img-box-wrap',
-    //         className2_1: 'img-box',
-    //         className3: 'txt-box',
-    //         image: 'bitbip.png',
-    //         image2: 'bitbip_bw.png',
-    //         text1: 'ai-prediction-aibitbip',
-    //         text2: 'ai-prediction-aibitbip-text',
-    //     },
-    //     {
-    //         className1: 'content3',
-    //         className2: 'img-box-wrap',
-    //         className2_1: 'img-box',
-    //         className3: 'txt-box',
-    //         image: 'aipe_clue.png',
-    //         image2: 'aipe_clue.png',
-    //         text1: 'clue',
-    //         text2: 'clue-text',
-    //     },
-    //     {
-    //         className1: 'content4',
-    //         className2: 'img-box-wrap',
-    //         className2_1: 'img-box',
-    //         className3: 'txt-box',
-    //         image: 'trade.png',
-    //         image2: 'trade_bw.png',
-    //         text1: 'ai-prediction-aitradingbot',
-    //         text2: 'ai-prediction-aitradingbot-text',
-    //     },
-    //     {
-    //         className1: 'content5',
-    //         className2: 'img-box-wrap',
-    //         className2_1: 'img-box',
-    //         className3: 'txt-box',
-    //         image: 'platform.png',
-    //         image2: 'platform_bw.png',
-    //         text1: 'ai-prediction-aiplatform',
-    //         text2: 'ai-prediction-aiplatform-text',
-    //     },
-    //     {
-    //         className1: 'content6',
-    //         className2: 'img-box-wrap',
-    //         className2_1: 'img-box',
-    //         className3: 'txt-box',
-    //         image: 'solution.png',
-    //         image2: 'solution_bw.png',
-    //         text1: 'ai-prediction-exchange',
-    //         text2: 'ai-prediction-exchange-text',
-    //     },
-    // ];
-
-    // techContent = [
-    //     {
-    //         num: 1,
-    //         className1: 'img-box',
-    //         className2: 'txt-box',
-    //         image: 'ai01.png',
-    //         title: 'ai-technique-title',
-    //         text: 'ai-technique-text',
-    //     },
-    //     {
-    //         num: 2,
-    //         className1: 'img-box',
-    //         className2: 'txt-box',
-    //         image: 'ai02.png',
-    //         title: 'ai-technique-title2',
-    //         text: 'ai-technique-text2',
-    //     }
-    // ];
-
-    // aipx = [
-    //     {
-    //         className: 'one',
-    //         text: 'aipx-text1',
-    //     },
-    //     {
-    //         className: 'two',
-    //         text: 'aipx-text2',
-    //     },
-    //     {
-    //         className: 'three',
-    //         text: 'aipx-text3',
-    //     },
-    //     {
-    //         className: 'four',
-    //         text: 'aipx-text4',
-    //     },
-    //     {
-    //         className: 'five',
-    //         text: 'aipx-text5',
-    //     },
-    // ];
-
     coinStructure = [
         {
             className1: 'th',
@@ -230,7 +125,7 @@ class OnePageAction extends Component {
             text: 'whitepaper-ko',
         },
         {
-            link: '#',
+            link: 'BNS whitepaper_ver.1.0_en_compressed.pdf',
             text: 'whitepaper-en'
         },
         {
@@ -239,24 +134,77 @@ class OnePageAction extends Component {
         }
     ];
 
-    team1 = [
+    teamMember = [
         {
             name: '서 정 민',
-            position: '(주)알리패스 대표이사',
+            position1: '- 방송통신 ISC 위원',
+            position2: '- 사단법인 한국홈쇼핑상품공급자협회(KHPSA) 상임이사 / 상근부회장',
+            position3: '- SM Alliance 대표이사 / Co-Founder',
+            position4: '- 스포츠서울 사외이사',
+            position5: '- Now&Next pty ltd. 대표이사 (호주법인)',
+            position6: '- Phile International 대표',
             className: 'img-box',
             className2: 'txt-box',
             image: 'team-01-Seo.png',
         },
         {
             name: '조 용 대',
-            position: '(주)알리패스 공동대표',
+            position1: '- OBS 기술국장',
+            position2: '- SBS 기술연구부 차장',
+            position3: '- KBS 기술본부 송출기술국',
+            position4: '',
+            position5: '',
+            position6: '',
             className: 'img-box',
             className2: 'txt-box',
             image: 'team-02-Jo.png'
         },
         {
             name: '전 주 환',
-            position: '(주)알리패스 본부장',
+            position1: '- 현대그룹 / 현대백화점',
+            position2: '- 현대 홈쇼핑 팀장',
+            position3: '- 사단법인 한국홈쇼핑상품공급자협회(KHPSA) 사업부장',
+            position4: '',
+            position5: '',
+            position6: '',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'team-03-Jeon.png'
+        },
+    ]
+    team1 = [
+        {
+            name: '서 정 민',
+            position1: '- 방송통신 ISC 위원',
+            position2: '- 사단법인 한국홈쇼핑상품공급자협회(KHPSA) 상임이사 / 상근부회장',
+            position3: '- SM Alliance 대표이사 / Co-Founder',
+            position4: '- 스포츠서울 사외이사',
+            position5: '- Now&Next pty ltd. 대표이사 (호주법인)',
+            position6: '- Phile International 대표',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'team-01-Seo.png',
+        },
+        {
+            name: '조 용 대',
+            position1: '- OBS 기술국장',
+            position2: '- SBS 기술연구부 차장',
+            position3: '- KBS 기술본부 송출기술국',
+            position4: '',
+            position5: '',
+            position6: '',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'team-02-Jo.png'
+        },
+        {
+            name: '전 주 환',
+            position1: '- 현대그룹 / 현대백화점',
+            position2: '- 현대 홈쇼핑 팀장',
+            position3: '- 사단법인 한국홈쇼핑상품공급자협회(KHPSA) 사업부장',
+            position4: '',
+            position5: '',
+            position6: '',
             className: 'img-box',
             className2: 'txt-box',
             image: 'team-03-Jeon.png'
@@ -266,73 +214,277 @@ class OnePageAction extends Component {
 
     team2 = [
         {
-            name: '마 이 크',
-            position: '(주)알리패스 대표이사',
+            name: '서 정 민',
+            position1: '- 방송통신 ISC 위원',
+            position2: '- 사단법인 한국홈쇼핑상품공급자협회(KHPSA) 상임이사 / 상근부회장',
+            position3: '- SM Alliance 대표이사 / Co-Founder',
+            position4: '- 스포츠서울 사외이사',
+            position5: '- Now&Next pty ltd. 대표이사 (호주법인)',
+            position6: '- Phile International 대표',
             className: 'img-box',
             className2: 'txt-box',
-            image: 'press1.jpg',
+            image: 'team-01-Seo.png',
         },
         {
-            name: '헬 렌',
-            position: '(주)알리패스 공동대표',
+            name: '조 용 대',
+            position1: '- OBS 기술국장',
+            position2: '- SBS 기술연구부 차장',
+            position3: '- KBS 기술본부 송출기술국',
+            position4: '',
+            position5: '',
+            position6: '',
             className: 'img-box',
             className2: 'txt-box',
-            image: 'press1.jpg'
+            image: 'team-02-Jo.png'
         },
         {
-            name: '저 스 틴',
-            position: '(주)알리패스 본부장',
+            name: '전 주 환',
+            position1: '- 현대그룹 / 현대백화점',
+            position2: '- 현대 홈쇼핑 팀장',
+            position3: '- 사단법인 한국홈쇼핑상품공급자협회(KHPSA) 사업부장',
+            position4: '',
+            position5: '',
+            position6: '',
             className: 'img-box',
             className2: 'txt-box',
-            image: 'press1.jpg'
+            image: 'team-03-Jeon.png'
         },
+
     ];
 
     team3 = [
         {
-            name: '팀 3',
-            position: '(주)알리패스 대표이사',
+            name: '서 정 민',
+            position1: '- 방송통신 ISC 위원',
+            position2: '- 사단법인 한국홈쇼핑상품공급자협회(KHPSA) 상임이사 / 상근부회장',
+            position3: '- SM Alliance 대표이사 / Co-Founder',
+            position4: '- 스포츠서울 사외이사',
+            position5: '- Now&Next pty ltd. 대표이사 (호주법인)',
+            position6: '- Phile International 대표',
             className: 'img-box',
             className2: 'txt-box',
-            image: 'press1.jpg',
+            image: 'team-01-Seo.png',
         },
         {
-            name: '헬 렌',
-            position: '(주)알리패스 공동대표',
+            name: '조 용 대',
+            position1: '- OBS 기술국장',
+            position2: '- SBS 기술연구부 차장',
+            position3: '- KBS 기술본부 송출기술국',
+            position4: '',
+            position5: '',
+            position6: '',
             className: 'img-box',
             className2: 'txt-box',
-            image: 'press1.jpg'
+            image: 'team-02-Jo.png'
         },
         {
-            name: '저 스 틴',
-            position: '(주)알리패스 본부장',
+            name: '전 주 환',
+            position1: '- 현대그룹 / 현대백화점',
+            position2: '- 현대 홈쇼핑 팀장',
+            position3: '- 사단법인 한국홈쇼핑상품공급자협회(KHPSA) 사업부장',
+            position4: '',
+            position5: '',
+            position6: '',
             className: 'img-box',
             className2: 'txt-box',
-            image: 'press1.jpg'
+            image: 'team-03-Jeon.png'
         },
+
     ];
 
     team4 = [
         {
-            name: '팀 4',
-            position: '(주)알리패스 대표이사',
+            name: '서 정 민',
+            position1: '- 방송통신 ISC 위원',
+            position2: '- 사단법인 한국홈쇼핑상품공급자협회(KHPSA) 상임이사 / 상근부회장',
+            position3: '- SM Alliance 대표이사 / Co-Founder',
+            position4: '- 스포츠서울 사외이사',
+            position5: '- Now&Next pty ltd. 대표이사 (호주법인)',
+            position6: '- Phile International 대표',
             className: 'img-box',
             className2: 'txt-box',
-            image: 'press1.jpg',
+            image: 'team-01-Seo.png',
         },
         {
-            name: '헬 렌',
-            position: '(주)알리패스 공동대표',
+            name: '조 용 대',
+            position1: '- OBS 기술국장',
+            position2: '- SBS 기술연구부 차장',
+            position3: '- KBS 기술본부 송출기술국',
+            position4: '',
+            position5: '',
+            position6: '',
             className: 'img-box',
             className2: 'txt-box',
-            image: 'press1.jpg'
+            image: 'team-02-Jo.png'
         },
         {
-            name: '저 스 틴',
-            position: '(주)알리패스 본부장',
+            name: '전 주 환',
+            position1: '- 현대그룹 / 현대백화점',
+            position2: '- 현대 홈쇼핑 팀장',
+            position3: '- 사단법인 한국홈쇼핑상품공급자협회(KHPSA) 사업부장',
+            position4: '',
+            position5: '',
+            position6: '',
             className: 'img-box',
             className2: 'txt-box',
-            image: 'press1.jpg'
+            image: 'team-03-Jeon.png'
+        },
+
+    ];
+
+    advisor1 = [
+        {
+            name: '지 창 우',
+            position1: '- Glosfer (글로스퍼) 암호화폐 신사업부 부장',
+            position2: '- NHN 한국 사이버 결제 BD',
+            position3: '- SK Telecom',
+            position4: '',
+            position5: '',
+            position6: '',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'team-01-Seo.png',
+        },
+        {
+            name: '박 준 용',
+            position1: '- 레젤홈쇼핑코리아 이사',
+            position2: '- 클릭스코리아 영업 마케팅 이사',
+            position3: '- 화이트네트워크 본부장',
+            position4: '- 홍천웰빙 팀장',
+            position5: '- CJ오쇼핑 과장',
+            position6: '',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'advisor-02-Park.png',
+        },
+        {
+            name: '이 성 호',
+            position1: '- OBS 기술국장',
+            position2: '- SBS 기술연구부 차장',
+            position3: '- KBS 기술본부 송출기술국',
+            position4: '',
+            position5: '',
+            position6: '',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'advisor-03-Lee.png',
+        },
+    ];
+
+    advisor2 = [
+        {
+            name: '지 창 우',
+            position1: '- Glosfer (글로스퍼) 암호화폐 신사업부 부장',
+            position2: '- NHN 한국 사이버 결제 BD',
+            position3: '- SK Telecom',
+            position4: '',
+            position5: '',
+            position6: '',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'team-01-Seo.png',
+        },
+        {
+            name: '박 준 용',
+            position1: '- 레젤홈쇼핑코리아 이사',
+            position2: '- 클릭스코리아 영업 마케팅 이사',
+            position3: '- 화이트네트워크 본부장',
+            position4: '- 홍천웰빙 팀장',
+            position5: '- CJ오쇼핑 과장',
+            position6: '',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'advisor-02-Park.png',
+        },
+        {
+            name: '이 성 호',
+            position1: '- OBS 기술국장',
+            position2: '- SBS 기술연구부 차장',
+            position3: '- KBS 기술본부 송출기술국',
+            position4: '',
+            position5: '',
+            position6: '',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'advisor-03-Lee.png',
+        },
+    ];
+
+    advisor3 = [
+        {
+            name: '지 창 우',
+            position1: '- Glosfer (글로스퍼) 암호화폐 신사업부 부장',
+            position2: '- NHN 한국 사이버 결제 BD',
+            position3: '- SK Telecom',
+            position4: '',
+            position5: '',
+            position6: '',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'team-01-Seo.png',
+        },
+        {
+            name: '박 준 용',
+            position1: '- 레젤홈쇼핑코리아 이사',
+            position2: '- 클릭스코리아 영업 마케팅 이사',
+            position3: '- 화이트네트워크 본부장',
+            position4: '- 홍천웰빙 팀장',
+            position5: '- CJ오쇼핑 과장',
+            position6: '',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'advisor-02-Park.png',
+        },
+        {
+            name: '이 성 호',
+            position1: '- OBS 기술국장',
+            position2: '- SBS 기술연구부 차장',
+            position3: '- KBS 기술본부 송출기술국',
+            position4: '',
+            position5: '',
+            position6: '',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'advisor-03-Lee.png',
+        },
+    ];
+
+    advisor4 = [
+        {
+            name: '지 창 우',
+            position1: '- Glosfer (글로스퍼) 암호화폐 신사업부 부장',
+            position2: '- NHN 한국 사이버 결제 BD',
+            position3: '- SK Telecom',
+            position4: '',
+            position5: '',
+            position6: '',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'team-01-Seo.png',
+        },
+        {
+            name: '박 준 용',
+            position1: '- 레젤홈쇼핑코리아 이사',
+            position2: '- 클릭스코리아 영업 마케팅 이사',
+            position3: '- 화이트네트워크 본부장',
+            position4: '- 홍천웰빙 팀장',
+            position5: '- CJ오쇼핑 과장',
+            position6: '',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'advisor-02-Park.png',
+        },
+        {
+            name: '이 성 호',
+            position1: '- OBS 기술국장',
+            position2: '- SBS 기술연구부 차장',
+            position3: '- KBS 기술본부 송출기술국',
+            position4: '',
+            position5: '',
+            position6: '',
+            className: 'img-box',
+            className2: 'txt-box',
+            image: 'advisor-03-Lee.png',
         },
     ];
 
@@ -519,9 +671,7 @@ class OnePageAction extends Component {
                 {...this.state}
                 nav={this.nav}
                 lan={this.lan}
-                // platformContent={this.platformContent}
                 techContent={this.techContent}
-                // aipx={this.aipx}
                 coinStructure={this.coinStructure}
                 whitePaper={this.whitePaper}
                 team1={this.team1}
@@ -537,6 +687,19 @@ class OnePageAction extends Component {
                 team11={this.team11}
                 team12={this.team12}
                 team13={this.team13}
+                advisor1={this.advisor1}
+                advisor2={this.advisor2}
+                advisor3={this.advisor3}
+                advisor4={this.advisor4}
+                advisor5={this.advisor5}
+                advisor6={this.advisor6}
+                advisor7={this.advisor7}
+                advisor8={this.advisor8}
+                advisor9={this.advisor9}
+                advisor10={this.advisor10}
+                advisor11={this.advisor11}
+                advisor12={this.advisor12}
+                advisor13={this.advisor13}
                 // partners={this.partners}
                 press1={this.press1}
                 faq={this.faq}
@@ -544,15 +707,6 @@ class OnePageAction extends Component {
                 ecosystemTitle={this.ecosystemTitle}
                 ecosystemContent={this.ecosystemContent}
                 ecosystemContentM={this.ecosystemContentM}
-                // platFormContent1={this.platFormContent1}
-                // platFormContent2={this.platFormContent2}
-                // platFormContent3={this.platFormContent3}
-                // platFormContent4={this.platFormContent4}
-                // platFormContent5={this.platFormContent5}
-                // platFormContent6={this.platFormContent6}
-                // techniqueTitle={this.techniqueTitle}
-                // techniqueContent1={this.techniqueContent1}
-                // techniqueContent2={this.techniqueContent2}
                 aboutTitle={this.aboutTitle}
                 aboutContent={this.aboutContent} 
                 aboutText={this.aboutText}
@@ -565,14 +719,13 @@ class OnePageAction extends Component {
                 visionTitle={this.visionTitle}
                 visionContent={this.visionContent}
                 economyTitle={this.economyTitle}
-                // aipxContent={this.aipxContent}
-                // aipxText={this.aipxText}
                 economyContent={this.economyContent}
                 roadmapTitle={this.roadmapTitle}
                 roadmapContent={this.roadmapContent}
                 roadmapContentM={this.roadmapContentM}
                 teamTitle={this.teamTitle}
                 teamList={this.teamList}
+                // teamListM={this.teamListM}
                 // teamList2={this.teamList2}
                 partnerTitle1={this.partnerTitle1}
                 partnerContent1={this.partnerContent1}
@@ -817,14 +970,10 @@ class OnePageAction extends Component {
     ecosystemContent = React.createRef();
     ecosystemContentM = React.createRef();
     economyTitle = React.createRef();
-    // aipxContent = React.createRef();
-    // aipxText = React.createRef();
     economyContent = React.createRef();
-    // techniqueTitle = React.createRef();
-    // techniqueContent1 = React.createRef();
-    // techniqueContent2 = React.createRef();
     teamTitle = React.createRef();
     teamList = React.createRef();
+    // teamListM = React.createRef();
     // teamList2 = React.createRef();
     partnerTitle1 = React.createRef();
     partnerContent1 = React.createRef();
@@ -850,14 +999,10 @@ class OnePageAction extends Component {
             this.ecosystemContent.current,
             this.ecosystemContentM.current,
             this.economyTitle.current,
-            // this.aipxContent.current,
-            // this.aipxText.current,
             this.economyContent.current,
-            // this.techniqueTitle.current,
-            // this.techniqueContent1.current,
-            // this.techniqueContent2.current,
             this.teamTitle.current,
             this.teamList.current,
+            // this.teamListM.current,
             // this.teamList2.current,
             this.partnerTitle1.current,
             this.partnerContent1.current,
