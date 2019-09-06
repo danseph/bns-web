@@ -3,14 +3,16 @@ import React from 'react';
 import CharTransition from './CharTransition';
 import Slider from 'react-slick';
 import './styles.scss';
+import Swiper from 'react-id-swiper';
+import { Navigation, Autoplay } from 'swiper/dist/js/swiper.esm'
 import { IntlProvider, addLocaleData } from 'react-intl';
 import en from 'react-intl/locale-data/en';
 import ko from 'react-intl/locale-data/ko';
-import ja from 'react-intl/locale-data/ja';
 import zh from 'react-intl/locale-data/zh';
 import locale from '../../locale';
 import { FormattedMessage } from 'react-intl';
 addLocaleData([...en, ...ko, ...zh]);
+
 
 const OnePage = (props) => {
     let settings = {
@@ -34,6 +36,21 @@ const OnePage = (props) => {
             return link = "https://bit.ly/2WLNyFV";
         }
     }
+
+    const params = {
+        modules: [Navigation, Autoplay],
+        navigation: {
+          nextEl: '.swiper-next',
+          prevEl: '.swiper-prev'
+        },
+        autoplay: {
+          delay: 500,
+          disableOnInteraction: false,
+        },
+        renderPrevButton: () => <button className="swiper-prev"></button>,
+        renderNextButton: () => <button className="swiper-next"></button>,
+        loop: true,
+      }
         
     return (
         <>
@@ -330,33 +347,59 @@ const OnePage = (props) => {
                                             <h2><FormattedMessage id="team-member" /></h2>
                                         </div>
                                         <div className={`team-desc`} ref={props.teamList}>
-                                            <div className="team-desc-list">
-                                                <ul>
-                                                    {props.team1.map((item, i) => {
-                                                        return (
-                                                            <li key={i}>
-                                                                <div className={item.className}>
-                                                                    <img src={require(`../../images/teams/${item.image}`)} />
-                                                                </div>
-                                                                <div className={item.className2}>
-                                                                    <strong>{item.name}</strong>
-                                                                    <em>{item.position}</em>
-                                                                </div>
-                                                            </li>
-                                                        )
-                                                    })}
-                                                </ul>
+                                            {/* <div className="team-desc-list"> */}
+                                                <Swiper {...params}>
+                                                    <div><img src={require(`../../images/tmp_feature1.jpg`)}/></div>
+                                                    <div><img src={require(`../../images/tmp_feature2.jpg`)}/></div>
+                                                    <div><img src={require(`../../images/tmp_feature3.jpg`)}/></div>
+                                                    <div><img src={require(`../../images/tmp_feature4.jpg`)}/></div>
+
+                                                    {/* <div>
+                                                        <ul>
+                                                            {props.team1.map((item, i) => {
+                                                                return (
+                                                                    <li key={i}>
+                                                                        <div className={item.className}>
+                                                                            <img src={require(`../../images/teams/${item.image}`)} />
+                                                                        </div>
+                                                                        <div className={item.className2}>
+                                                                            <strong>{item.name}</strong>
+                                                                            <em>{item.position}</em>
+                                                                        </div>
+                                                                    </li>
+                                                                )
+                                                            })}
+                                                        </ul>
+                                                    </div>
+                                                    <div>
+                                                        <ul>
+                                                            {props.team2.map((item, i) => {
+                                                                return (
+                                                                    <li key={i}>
+                                                                        <div className={item.className}>
+                                                                            <img src={require(`../../images/teams/${item.image}`)} />
+                                                                        </div>
+                                                                        <div className={item.className2}>
+                                                                            <strong>{item.name}</strong>
+                                                                            <em>{item.position}</em>
+                                                                        </div>
+                                                                    </li>
+                                                                )
+                                                            })}
+                                                        </ul>
+                                                    </div> */}
+                                                </Swiper>
                                             </div>
                                             <div className="team-desc-paging">
                                                 {/* 페이징은 여기 */}
                                             </div>
                                         </div>
-                                    </div>
+                                    {/* </div> */}
 
-                                    <div className={`team-title2`} >
+                                    {/* <div className={`team-title2`} >
                                         <h2><FormattedMessage id="advisor" /></h2>
-                                    </div>
-                                    <div className={`team-desc`} ref={props.teamList2}>
+                                    </div> */}
+                                    {/* <div className={`team-desc`} ref={props.teamList2}>
                                         <div className="team-desc-list">
                                             <ul>
                                                 {props.team2.map((item, i) => {
@@ -375,9 +418,9 @@ const OnePage = (props) => {
                                             </ul>
                                         </div>
                                         <div className="team-desc-paging">
-                                            {/* 페이징은 여기 */}
+                                            
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </section>
                             </div>
                             {/* TEAM */}

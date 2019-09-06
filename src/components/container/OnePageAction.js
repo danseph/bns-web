@@ -261,6 +261,10 @@ class OnePageAction extends Component {
             className2: 'txt-box',
             image: 'team-03-Jeon.png'
         },
+
+    ];
+
+    team2 = [
         {
             name: '마 이 크',
             position: '(주)알리패스 대표이사',
@@ -277,30 +281,6 @@ class OnePageAction extends Component {
         },
         {
             name: '저 스 ',
-            position: '(주)알리패스 본부장',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: 'press1.jpg'
-        },
-    ];
-
-    team2 = [
-        {
-            name: '서 정 민',
-            position: '(주)알리패스 대표이사',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: 'press1.jpg',
-        },
-        {
-            name: '이 진 풍',
-            position: '(주)알리패스 공동대표',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: 'press1.jpg'
-        },
-        {
-            name: '조 용 대',
             position: '(주)알리패스 본부장',
             className: 'img-box',
             className2: 'txt-box',
@@ -545,7 +525,7 @@ class OnePageAction extends Component {
                 roadmapContentM={this.roadmapContentM}
                 teamTitle={this.teamTitle}
                 teamList={this.teamList}
-                teamList2={this.teamList2}
+                // teamList2={this.teamList2}
                 partnerTitle1={this.partnerTitle1}
                 partnerContent1={this.partnerContent1}
                 partnerContent1M={this.partnerContent1M}
@@ -797,7 +777,7 @@ class OnePageAction extends Component {
     // techniqueContent2 = React.createRef();
     teamTitle = React.createRef();
     teamList = React.createRef();
-    teamList2 = React.createRef();
+    // teamList2 = React.createRef();
     partnerTitle1 = React.createRef();
     partnerContent1 = React.createRef();
     partnerContent1M = React.createRef();
@@ -830,7 +810,7 @@ class OnePageAction extends Component {
             // this.techniqueContent2.current,
             this.teamTitle.current,
             this.teamList.current,
-            this.teamList2.current,
+            // this.teamList2.current,
             this.partnerTitle1.current,
             this.partnerContent1.current,
             this.partnerContent1M.current,

@@ -298,6 +298,9 @@ body {
           display: flex;
           align-items: center;
           justify-content: center;
+          &.change{
+            background-color: #000;
+          }
           &.on {
             background-color: transparent;
           }
@@ -1284,8 +1287,11 @@ body {
   }
   @include layout();
   @include titleStyle();
+
+
   &-group{
     margin-bottom: 150px;
+
     @include mq("mobile") {
       margin-bottom: 80px;
     }
@@ -1311,7 +1317,8 @@ body {
   }
 
   &-desc {
-    width: 100%;
+
+    // width: 100%;
     opacity: 0;
     @include trsX0Y100;
     &.active {
@@ -1321,6 +1328,59 @@ body {
     }
     @include mq("mobile") {
       margin-top: 0;
+    }
+
+
+    position: absolute;
+    top: 200px;
+    right: 40px;
+    width: 53%;
+    height: 400px;
+    overflow: visible;
+
+    // @include mq {
+    //   position: relative;
+    //   top: 0;
+    //   left: 0;
+    //   overflow: visible;
+    //   width: 100%;
+    //   height: auto;
+    // }
+
+    button {
+      display: block;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 185px;
+      z-index: 2;
+      border: 0;
+      border-radius: 0;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 100%;
+
+      // @include mq {
+      //   top: calc(50% - 15px);
+      // }
+
+      &.swiper-prev {
+        left: 0;
+        background-image: url("../../images/arrow_left.svg");
+      }
+
+      &.swiper-next {
+        right: 0;
+        background-image: url("../../images/arrow_right.svg");
+      }
+    }
+    
+    img {
+      width: 100%;
+      margin-top: -35%;
+      // @include mq {
+      //   margin-top: 0;
+      // }
     }
 
     ul {

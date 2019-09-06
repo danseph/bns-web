@@ -10,9 +10,11 @@
     "node-sass": "^4.11.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "react-id-swiper": "^2.3.2",
     "react-intl": "^2.8.0",
     "react-scripts": "2.1.8",
-    "react-slick": "^0.23.2"
+    "react-slick": "^0.23.2",
+    "swiper": "^4.5.0"
   },
   "scripts": {
     "start": "react-scripts start",
