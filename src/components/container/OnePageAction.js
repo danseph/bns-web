@@ -343,7 +343,7 @@ class OnePageAction extends Component {
             position6: '',
             className: 'img-box',
             className2: 'txt-box',
-            image: 'team-01-Seo.png',
+            image: 'advisor-02-Park.png',
         },
         {
             name: '박 준 용',
@@ -382,7 +382,7 @@ class OnePageAction extends Component {
             position6: '',
             className: 'img-box',
             className2: 'txt-box',
-            image: 'team-01-Seo.png',
+            image: 'advisor-02-Park.png',
         },
         {
             name: '박 준 용',
@@ -421,7 +421,7 @@ class OnePageAction extends Component {
             position6: '',
             className: 'img-box',
             className2: 'txt-box',
-            image: 'team-01-Seo.png',
+            image: 'advisor-02-Park.png',
         },
         {
             name: '박 준 용',
@@ -460,7 +460,7 @@ class OnePageAction extends Component {
             position6: '',
             className: 'img-box',
             className2: 'txt-box',
-            image: 'team-01-Seo.png',
+            image: 'advisor-02-Park.png',
         },
         {
             name: '박 준 용',
@@ -488,23 +488,6 @@ class OnePageAction extends Component {
         },
     ];
 
-    // partners = [
-    //     {
-    //         image: 'kobea.png',
-    //     },
-    //     {
-    //         image: 'cardano.png',
-    //     },
-    //     {
-    //         image: 'emurgo.png',
-    //     },
-    //     {
-    //         image: 'infinito.png',
-    //     },
-    //     {
-    //         image: 'alphapoint.png',
-    //     },
-    // ];
 
     press1 = [
         {
@@ -725,6 +708,8 @@ class OnePageAction extends Component {
                 roadmapContentM={this.roadmapContentM}
                 teamTitle={this.teamTitle}
                 teamList={this.teamList}
+                advisorTitle={this.advisorTitle}
+                advisorList={this.advisorList}
                 // teamListM={this.teamListM}
                 // teamList2={this.teamList2}
                 partnerTitle1={this.partnerTitle1}
@@ -973,6 +958,8 @@ class OnePageAction extends Component {
     economyContent = React.createRef();
     teamTitle = React.createRef();
     teamList = React.createRef();
+    advisorTitle = React.createRef();
+    advisorList = React.createRef();
     // teamListM = React.createRef();
     // teamList2 = React.createRef();
     partnerTitle1 = React.createRef();
@@ -1002,6 +989,8 @@ class OnePageAction extends Component {
             this.economyContent.current,
             this.teamTitle.current,
             this.teamList.current,
+            this.advisorTitle.current,
+            this.advisorList.current,
             // this.teamListM.current,
             // this.teamList2.current,
             this.partnerTitle1.current,

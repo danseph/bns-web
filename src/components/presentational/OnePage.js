@@ -348,11 +348,130 @@ const OnePage = (props) => {
                                         <div className={`team-title`} ref={props.teamTitle}>
                                             <h2><FormattedMessage id="team-member" /></h2>
                                         </div>
-                                        <div className={`team-desc`} ref={props.teamList}>
+                                        <div className={`team-desc web`} ref={props.teamList}>
+                                            <Swiper {...params}>
+                                                <div>
+                                                    <ul>
+                                                        {props.team1.map((item, i) => {
+                                                            return (
+                                                                <li key={i}>
+                                                                    <div className={item.className}>
+                                                                        <img src={require(`../../images/teams/${item.image}`)} />
+                                                                    </div>
+                                                                    <div className={item.className2}>
+                                                                        <strong>{item.name}</strong>
+                                                                        <div>{item.position1}</div>
+                                                                        <div>{item.position2}</div>
+                                                                        <div>{item.position3}</div>
+                                                                        <div>{item.position4}</div>
+                                                                        <div>{item.position5}</div>
+                                                                        <div>{item.position6}</div>
+                                                                    </div>
+                                                                </li>
+                                                            )
+                                                        })}
+                                                    </ul>
+                                                </div>
+                                                <div >
+                                                    <ul>
+                                                        {props.team2.map((item, i) => {
+                                                            return (
+                                                                <li key={i}>
+                                                                    <div className={item.className}>
+                                                                        <img src={require(`../../images/teams/${item.image}`)} />
+                                                                    </div>
+                                                                    <div className={item.className2}>
+                                                                        <strong>{item.name}</strong>
+                                                                            <div>{item.position1}</div>
+                                                                            <div>{item.position2}</div>
+                                                                            <div>{item.position3}</div>
+                                                                            <div>{item.position4}</div>
+                                                                            <div>{item.position5}</div>
+                                                                            <div>{item.position6}</div>
+                                                                    </div>
+                                                                </li>
+                                                            )
+                                                        })}
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <ul>
+                                                        {props.team3.map((item, i) => {
+                                                            return (
+                                                                <li key={i}>
+                                                                    <div className={item.className}>
+                                                                        <img src={require(`../../images/teams/${item.image}`)} />
+                                                                    </div>
+                                                                    <div className={item.className2}>
+                                                                    <strong>{item.name}</strong>
+                                                                        <div>{item.position1}</div>
+                                                                        <div>{item.position2}</div>
+                                                                        <div>{item.position3}</div>
+                                                                        <div>{item.position4}</div>
+                                                                        <div>{item.position5}</div>
+                                                                        <div>{item.position6}</div>
+                                                                    </div>
+                                                                </li>
+                                                            )
+                                                        })}
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <ul>
+                                                        {props.team4.map((item, i) => {
+                                                            return (
+                                                                <li key={i}>
+                                                                    <div className={item.className}>
+                                                                        <img src={require(`../../images/teams/${item.image}`)} />
+                                                                    </div>
+                                                                    <div className={item.className2}>
+                                                                    <strong>{item.name}</strong>
+                                                                        <div>{item.position1}</div>
+                                                                        <div>{item.position2}</div>
+                                                                        <div>{item.position3}</div>
+                                                                        <div>{item.position4}</div>
+                                                                        <div>{item.position5}</div>
+                                                                        <div>{item.position6}</div>
+                                                                    </div>
+                                                                </li>
+                                                            )
+                                                        })}
+                                                    </ul>
+                                                </div>
+                                            </Swiper>
+                                        </div>
+                                        <div className={`team-desc mobile`} >
+                                            <Swiper {...params}>
+                                                {props.team1.map((item, i) => {
+                                                    return (
+                                                        <div  key={i}>
+                                                            <div  className={item.className}>
+                                                                <img src={require(`../../images/teams/${item.image}`)} />
+                                                            </div>
+                                                            <div className={item.className2}>
+                                                                <strong>{item.name}</strong>
+                                                                <div>{item.position1}</div>
+                                                                <div>{item.position2}</div>
+                                                                <div>{item.position3}</div>
+                                                                <div>{item.position4}</div>
+                                                                <div>{item.position5}</div>
+                                                                <div>{item.position6}</div>
+                                                            </div>
+                                                        </div>
+                                                    )
+                                                })}
+                                            </Swiper>
+                                        </div>
+                                    </div>
+                                    <div className="advisor-group">
+                                        <div className={`advisor-title`} ref={props.advisorTitle}>
+                                            <h2><FormattedMessage id="advisor" /></h2>
+                                        </div>
+                                        <div className={`advisor-desc web`} ref={props.advisorList}>
                                                 <Swiper {...params}>
                                                     <div>
                                                         <ul>
-                                                            {props.team1.map((item, i) => {
+                                                            {props.advisor1.map((item, i) => {
                                                                 return (
                                                                     <li key={i}>
                                                                         <div className={item.className}>
@@ -374,7 +493,7 @@ const OnePage = (props) => {
                                                     </div>
                                                     <div >
                                                         <ul>
-                                                            {props.team2.map((item, i) => {
+                                                            {props.advisor2.map((item, i) => {
                                                                 return (
                                                                     <li key={i}>
                                                                         <div className={item.className}>
@@ -396,7 +515,7 @@ const OnePage = (props) => {
                                                     </div>
                                                     <div>
                                                         <ul>
-                                                            {props.team3.map((item, i) => {
+                                                            {props.advisor3.map((item, i) => {
                                                                 return (
                                                                     <li key={i}>
                                                                         <div className={item.className}>
@@ -418,7 +537,7 @@ const OnePage = (props) => {
                                                     </div>
                                                     <div>
                                                         <ul>
-                                                            {props.team4.map((item, i) => {
+                                                            {props.advisor4.map((item, i) => {
                                                                 return (
                                                                     <li key={i}>
                                                                         <div className={item.className}>
@@ -440,8 +559,29 @@ const OnePage = (props) => {
                                                     </div>
                                                 </Swiper>
                                         </div>
-
+                                        <div className={`advisor-desc mobile`} >
+                                            <Swiper {...params}>
+                                                {props.advisor1.map((item, i) => {
+                                                    return (
+                                                        <div  key={i}>
+                                                            <div  className={item.className}>
+                                                                <img src={require(`../../images/teams/${item.image}`)} />
+                                                            </div>
+                                                            <div className={item.className2}>
+                                                                <strong>{item.name}</strong>
+                                                                <div>{item.position1}</div>
+                                                                <div>{item.position2}</div>
+                                                                <div>{item.position3}</div>
+                                                                <div>{item.position4}</div>
+                                                                <div>{item.position5}</div>
+                                                                <div>{item.position6}</div>
+                                                            </div>
+                                                        </div>
+                                                    )
+                                                })}
+                                            </Swiper>
                                         </div>
+                                    </div>
                                     {/* </div> */}
 
                                     {/* <div className={`team-title2`} >
