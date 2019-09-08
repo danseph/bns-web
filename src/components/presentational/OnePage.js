@@ -15,6 +15,7 @@ import 'react-id-swiper/lib/styles/scss/swiper.scss'
 addLocaleData([...en, ...ko, ...zh]);
 
 
+
 const OnePage = (props) => {
     let settings = {
         dots: true,

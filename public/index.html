@@ -31,15 +31,12 @@
 		<script>
 		$(window).scroll(function() {    
       var scroll = $(window).scrollTop();
-      //console.log(scroll);
-      if (scroll >= 50) {
-          //console.log('a');
+      if (scroll >= 20) {
           $(".menu-btn").addClass("change");
-          // $(".header-wrap").addClass("change-header");
+          $(".header-wrap").addClass("header-change");
       } else {
-          //console.log('a');
           $(".menu-btn").removeClass("change");
-          // $(".header-wrap").removeClass("change-header");
+          $(".header-wrap").removeClass("header-change");
       }
     });
 		</script>

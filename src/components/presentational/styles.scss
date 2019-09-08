@@ -148,6 +148,9 @@ body {
     background-color: none;
     z-index: 10;
     transition: all .5s;
+    &.header-change {
+      background-color:#FFF;
+    }
 
     @include mq("tablet") {
       width: 100%;
