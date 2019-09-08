@@ -300,7 +300,7 @@ body {
           align-items: center;
           justify-content: center;
           &.change{
-            background-color: #000;
+            background-color: #595858;
           }
           &.on {
             background-color: transparent;
@@ -1321,10 +1321,13 @@ body {
     }
   
     .team-desc {
-      &.mobile{
+      &.mobile {
         display: none;
+        @include mq("mobile") {
+          display: block;
+        }
       }
-  
+
       &.web{
         opacity: 0;
         @include trsX0Y100;
@@ -1593,10 +1596,13 @@ body {
     }
   
     .advisor-desc {
-  
-      &.mobile{
+      &.mobile {
         display: none;
+        @include mq("mobile") {
+          display: block;
+        }
       }
+
       &.web{
         opacity: 0;
         @include trsX0Y100;
@@ -1608,6 +1614,7 @@ body {
         @include mq("mobile") {
           margin-top: 0;
         }
+
     
     
         position: absolute;
@@ -1730,7 +1737,7 @@ body {
           top: 100px;
           right: 8px;
           width: 90%;
-          height: 600px;
+          height: 300px;
           overflow: hidden;
           text-align: center;
       
@@ -2303,6 +2310,8 @@ body {
 //------------------------------------------------------------------------------
 
 .footer {
+  &-wrapper{
+  }
   @include layout();
   padding-top: 50px;
   position: relative;

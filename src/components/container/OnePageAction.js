@@ -134,53 +134,16 @@ class OnePageAction extends Component {
         }
     ];
 
-    teamMember = [
-        {
-            name: '서 정 민',
-            position1: '- 방송통신 ISC 위원',
-            position2: '- 사단법인 한국홈쇼핑상품공급자협회(KHPSA) 상임이사 / 상근부회장',
-            position3: '- SM Alliance 대표이사 / Co-Founder',
-            position4: '- 스포츠서울 사외이사',
-            position5: '- Now&Next pty ltd. 대표이사 (호주법인)',
-            position6: '- Phile International 대표',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: 'team-01-Seo.png',
-        },
-        {
-            name: '조 용 대',
-            position1: '- OBS 기술국장',
-            position2: '- SBS 기술연구부 차장',
-            position3: '- KBS 기술본부 송출기술국',
-            position4: '',
-            position5: '',
-            position6: '',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: 'team-02-Jo.png'
-        },
-        {
-            name: '전 주 환',
-            position1: '- 현대그룹 / 현대백화점',
-            position2: '- 현대 홈쇼핑 팀장',
-            position3: '- 사단법인 한국홈쇼핑상품공급자협회(KHPSA) 사업부장',
-            position4: '',
-            position5: '',
-            position6: '',
-            className: 'img-box',
-            className2: 'txt-box',
-            image: 'team-03-Jeon.png'
-        },
-    ]
     team1 = [
         {
             name: '서 정 민',
             position1: '- 방송통신 ISC 위원',
-            position2: '- 사단법인 한국홈쇼핑상품공급자협회(KHPSA) 상임이사 / 상근부회장',
-            position3: '- SM Alliance 대표이사 / Co-Founder',
-            position4: '- 스포츠서울 사외이사',
-            position5: '- Now&Next pty ltd. 대표이사 (호주법인)',
-            position6: '- Phile International 대표',
+            position2: '- 사단법인 한국홈쇼핑상품공급자협회(KHPSA)',
+            position3: '상임이사 / 상근부회장',
+            position4: '- SM Alliance 대표이사 / Co-Founder',
+            position5: '- 스포츠서울 사외이사',
+            position6: '- Now&Next pty ltd. 대표이사 (호주법인)',
+            position7: '- Phile International 대표',
             className: 'img-box',
             className2: 'txt-box',
             image: 'team-01-Seo.png',
@@ -624,28 +587,28 @@ class OnePageAction extends Component {
     }
 
     // // mobile touch 가로 움직임 방지
-    // componentWillUnmount(){
-    //     window.removeEventListener('touchstart', this.touchStart);
-    //     window.removeEventListener('touchmove', this.preventTouch, {passive: false});
-    // }
-    //
-    // touchStart(e){
-    //     this.firstClientX = e.touches[0].clientX;
-    //     this.firstClientY = e.touches[0].clientY;
-    // }
-    //
-    // preventTouch(e){
-    //     const minValue = 5;
-    //
-    //     this.clientX = e.touches[0].clientX - this.firstClientX;
-    //     this.clientY = e.touches[0].clientY - this.firstClientY;
-    //
-    //     if(Math.abs(this.clientX) > minValue){
-    //         e.preventDefault();
-    //         e.returnValue = false;
-    //         return false;
-    //     }
-    // }
+    componentWillUnmount(){
+        window.removeEventListener('touchstart', this.touchStart);
+        window.removeEventListener('touchmove', this.preventTouch, {passive: false});
+    }
+    
+    touchStart(e){
+        this.firstClientX = e.touches[0].clientX;
+        this.firstClientY = e.touches[0].clientY;
+    }
+    
+    preventTouch(e){
+        const minValue = 5;
+    
+        this.clientX = e.touches[0].clientX - this.firstClientX;
+        this.clientY = e.touches[0].clientY - this.firstClientY;
+    
+        if(Math.abs(this.clientX) > minValue){
+            e.preventDefault();
+            e.returnValue = false;
+            return false;
+        }
+    }
     // // mobile touch 가로 움직임 방지 end
 
     render() {
