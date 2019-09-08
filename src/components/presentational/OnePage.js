@@ -343,11 +343,11 @@ const OnePage = (props) => {
 
                             {/* TEAM */}
                             <div className="team-wrap">
-                                <section className="team" id="section5">
+                                <section className="team" id="section5">                                   
+                                    <div className={`team-title`} ref={props.teamTitle}>
+                                        <h2><FormattedMessage id="team-member" /></h2>
+                                    </div>
                                     <div className="team-group">
-                                        <div className={`team-title`} ref={props.teamTitle}>
-                                            <h2><FormattedMessage id="team-member" /></h2>
-                                        </div>
                                         <div className={`team-desc web`} ref={props.teamList}>
                                             <Swiper {...params}>
                                                 <div>
@@ -463,10 +463,10 @@ const OnePage = (props) => {
                                             </Swiper>
                                         </div>
                                     </div>
+                                    <div className={`team-title`} ref={props.advisorTitle}>
+                                        <h2><FormattedMessage id="advisor" /></h2>
+                                    </div>
                                     <div className="advisor-group">
-                                        <div className={`advisor-title`} ref={props.advisorTitle}>
-                                            <h2><FormattedMessage id="advisor" /></h2>
-                                        </div>
                                         <div className={`advisor-desc web`} ref={props.advisorList}>
                                                 <Swiper {...params}>
                                                     <div>

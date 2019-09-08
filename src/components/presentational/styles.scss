@@ -363,7 +363,7 @@ body {
     justify-content: space-between;
     z-index: 1;
     @include mq("tablet") {
-      width: 135px;
+      width: 80px;
     }
     @include mq("mobile") {
       background-color: #FFF;
@@ -1289,35 +1289,33 @@ body {
   }
   @include layout();
   // @include titleStyle();
+  width:1100px;
 
-  // position: relative;
+  .team-title h2{
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.72px;
+    text-align: center;
+    color: #000;
+    // margin-bottom: 70px;
+  }
 
   &-group{
-    margin-bottom: 150px;
-    height: 500px;
+    margin-bottom: 200px;
+    height: 400px;
     position: relative;
-
-    @include mq("mobile") {
-      margin-bottom: 80px;
-    }
-    .team-title h2{
-      font-family: Raleway;
-      font-size: 32px;
-      font-weight: bold;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: normal;
-      letter-spacing: -0.72px;
-      text-align: center;
-      color: #000;
-      margin-bottom: 70px;
-    }
   
     @include mq("tablet") {
       width: 90%;
+      margin-bottom:120px;;
     }
     @include mq("mobile") {
       width: 100%;
+      margin-bottom: 80px;
     }
   
     .team-desc {
@@ -1343,19 +1341,14 @@ body {
     
         position: absolute;
         top: 100px;
-        right: 10px;
-        width: 90%;
-        height: 600px;
-        overflow: visible;
+        right: 0px;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
     
-        // @include mq {
-        //   position: relative;
-        //   top: 0;
-        //   left: 0;
-        //   overflow: visible;
-        //   width: 100%;
-        //   height: auto;
-        // }
+        @include mq ('tablet'){
+          right: -45px;
+        }
     
         button {
           display: block;
@@ -1388,7 +1381,7 @@ body {
         ul {
           width: 100%;
           display: flex;
-          flex-wrap: wrap;
+          // flex-wrap: wrap;
           justify-content: space-around;
           @include mq("mobile") {
             flex-direction: column;
@@ -1398,7 +1391,11 @@ body {
           li {
             // margin-left: .5%;
             width: 190px;
-            padding: 15px;
+            padding: 10px;
+
+            @include mq("tablet") {
+              width: 130px;
+            }
     
             
     
@@ -1567,32 +1564,20 @@ body {
     }
   }
 
-  .advisor-group{
-    margin-bottom: 150px;
-    height: 500px;
-    position: relative;
+  
 
-    @include mq("mobile") {
-      margin-bottom: 80px;
-    }
-    .advisor-title h2{
-      font-family: Raleway;
-      font-size: 32px;
-      font-weight: bold;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: normal;
-      letter-spacing: -0.72px;
-      text-align: center;
-      color: #000;
-      margin-bottom: 70px;
-    }
+  .advisor-group{
+    // margin-bottom: 150px;
+    height: 400px;
+    position: relative;
   
     @include mq("tablet") {
       width: 90%;
+      margin-bottom:0px;;
     }
     @include mq("mobile") {
       width: 100%;
+      margin-bottom: 80px;
     }
   
     .advisor-desc {
@@ -1614,24 +1599,18 @@ body {
         @include mq("mobile") {
           margin-top: 0;
         }
-
     
     
         position: absolute;
         top: 100px;
-        right: 10px;
-        width: 90%;
-        height: 600px;
-        overflow: visible;
+        right: 0px;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
     
-        // @include mq {
-        //   position: relative;
-        //   top: 0;
-        //   left: 0;
-        //   overflow: visible;
-        //   width: 100%;
-        //   height: auto;
-        // }
+        @include mq ('tablet'){
+          right: -45px;
+        }
     
         button {
           display: block;
@@ -1664,7 +1643,7 @@ body {
         ul {
           width: 100%;
           display: flex;
-          flex-wrap: wrap;
+          // flex-wrap: wrap;
           justify-content: space-around;
           @include mq("mobile") {
             flex-direction: column;
@@ -1674,7 +1653,12 @@ body {
           li {
             // margin-left: .5%;
             width: 190px;
-            padding: 15px;
+            padding: 10px;
+
+            @include mq("tablet") {
+              width: 130px;
+            }
+    
             
     
             .img-box {
@@ -1732,24 +1716,16 @@ body {
         &.web{
           display: none;
         }
+
         &.mobile{
           position: absolute;
           top: 100px;
           right: 8px;
           width: 90%;
-          height: 300px;
+          height: 600px;
           overflow: hidden;
           text-align: center;
-      
-          // @include mq {
-          //   position: relative;
-          //   top: 0;
-          //   left: 0;
-          //   overflow: visible;
-          //   width: 100%;
-          //   height: auto;
-          // }
-      
+    
           button {
             display: block;
             width: 30px;
@@ -1899,7 +1875,7 @@ body {
       }
       img {
         width:100%;
-        margin-bottom:150px;
+        margin-bottom:200px;
         @include mq("mobile"){
           margin-bottom: 0;
         }
@@ -1973,7 +1949,7 @@ body {
     ul {
       width: 100%;
       display: flex !important;
-      justify-content: space-between;
+      justify-content: space-around;
       flex-wrap: wrap;
 
       // @include mq("tablet") {
