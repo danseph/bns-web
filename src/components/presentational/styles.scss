@@ -1248,9 +1248,9 @@ body {
             width: 30%;
             font-size: 12px;
             border: 1px solid rgba(0, 0, 0 ,.2);
-            @include mq("mobile") {
-              font-size: .5rem;
-            }
+            // @include mq("mobile") {
+            //   font-size: 10px;
+            // }
           }
 
           .td {
@@ -1260,9 +1260,9 @@ body {
             font-size: 12px;;
             border: 1px solid rgba(0, 0, 0 ,.2);
             text-align: left;
-            @include mq("mobile") {
-              font-size: .5rem;
-            }
+            // @include mq("mobile") {
+            //   font-size: .5rem;
+            // }
           }
         }
       }

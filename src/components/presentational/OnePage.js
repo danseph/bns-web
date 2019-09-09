@@ -151,9 +151,9 @@ const OnePage = (props) => {
                                         <div className="main-txt">
                                             <h2><CharTransition defaultLang={props.defaultLang} activeMainTitle={props.activeMainTitle} /></h2>
                                             <div className="mainP">
-                                                <p><FormattedMessage id="main-text-1" values={{ br: <br />}}/></p>
-                                                <p className="onePass"><FormattedMessage id="main-text-onepass" values={{ br: <br />}}/></p>
-                                                <p><FormattedMessage id="main-text-2" values={{ br: <br />}}/></p>
+                                                <p><FormattedMessage id="main-text-1" values={{ br: <br /> , lineBreak:<div className='desktop-inline'></div>, lineBreak2:<div className='desktop-block'></div>}}/></p>
+                                                <p className="onePass"><FormattedMessage id="main-text-onepass" values={{ br: <br /> , lineBreak:<div className='desktop-inline'></div>, lineBreak2:<div className='desktop-block'></div>}}/></p>
+                                                <p><FormattedMessage id="main-text-2" values={{ br: <br /> , lineBreak:<div className='desktop-inline'></div>, lineBreak2:<div className='desktop-block'></div>}}/></p>
                                             </div>
                                         </div>
                                         <div className="polygon2-img">
