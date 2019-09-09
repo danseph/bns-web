@@ -491,21 +491,21 @@ body {
       }
 
       &.active {
-        // border: 1px solid #000;
+        border: 1px solid #000;
         opacity: 9;
         max-height: 129px;
         height: 149px;
         overflow: visible;
         @include mq("mobile") {
           // height: 149px;
-          // border: none;
+          border: none;
         }
       }
 
       a {
         display: block;
         width: 100%;
-        // padding: 12px 0;
+        padding: 12px 0;
         font-family: SpoqaHanSans;
         font-size: 14px;
         font-style: normal;
