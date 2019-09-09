@@ -113,6 +113,7 @@ const OnePage = (props) => {
                                     {/* <a href="javascript:void(0)" onClick={() => props.handleWhitePaperMove(20)}>
                                         <FormattedMessage id="header-whitepaper" />
                                     </a> */}
+                                    
                                     <a href="javascript:void(0)" className={`lang ${props.lanShow ? "active" : ""}`}
                                        onClick={props.handleLanShow}>
                                         <FormattedMessage id="header-lan-btn" />
@@ -126,8 +127,11 @@ const OnePage = (props) => {
                                             )
                                         })}
                                     </ul>
+                                    
+                                    
                                 </div>
                                 <div className="lan-hide-wrap" onClick={props.handleLanHide}/>
+                                
                             </header>
                         </div>
                         {/* HEADER */}    
@@ -225,7 +229,7 @@ const OnePage = (props) => {
                                         </div>
                                         <div className="bns-vision-group" ref={props.visionContent}>
                                         <div className="bns-vision-content"  >
-                                            <div className="bns-vision-img">
+                                            <div className="bns-vision-img" >
                                                 <img src={require("../../images/vision-1.png")}/>
                                             </div>
                                             <div className="bns-vision-textbox">
@@ -583,33 +587,6 @@ const OnePage = (props) => {
                                             </Swiper>
                                         </div>
                                     </div>
-                                    {/* </div> */}
-
-                                    {/* <div className={`team-title2`} >
-                                        <h2><FormattedMessage id="advisor" /></h2>
-                                    </div> */}
-                                    {/* <div className={`team-desc`} ref={props.teamList2}>
-                                        <div className="team-desc-list">
-                                            <ul>
-                                                {props.team2.map((item, i) => {
-                                                    return (
-                                                        <li key={i}>
-                                                            <div className={item.className}>
-                                                                <img src={require(`../../images/teams/${item.image}`)} />
-                                                            </div>
-                                                            <div className={item.className2}>
-                                                                <strong>{item.name}</strong>
-                                                                <em>{item.position}</em>
-                                                            </div>
-                                                        </li>
-                                                    )
-                                                })}
-                                            </ul>
-                                        </div>
-                                        <div className="team-desc-paging">
-                                            
-                                        </div>
-                                    </div> */}
                                 </section>
                             </div>
                             {/* TEAM */}
