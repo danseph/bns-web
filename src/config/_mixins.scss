@@ -8,10 +8,6 @@
     @media all and (min-width: 768px) and (max-width: 1024px){
       @content;
     }
-  // @else if $screen == "tablet" {
-  //   @media all and (min-width: 768px) and (max-width: 102px){
-  //     @content;
-  //   }
   }
   @else {
     @content;
@@ -31,7 +27,7 @@
     }
     // jonny end
     h2 {
-        font-family: Raleway;
+        font-family: 'GothamBold', sans-serif;
         font-size: 32px;
         font-weight: bold;
         font-style: normal;
@@ -41,24 +37,26 @@
         // letter-spacing: normal;
         text-align: center;
         color: #1d2227;
-        margin-bottom: 70px;
+        // margin-top: 30px;
+        margin-bottom: 80px;
       
 
       // @include mq("tablet") {
       //   font-size: 3rem;
       // }
       @include mq("mobile") {
-        font-size: 4.0rem;
-        margin-bottom: 30px;
+        font-size: 24px;
+        // margin-top: 30px;
+        margin-bottom: 50px;
       }
     }
   }
 }
 
 @mixin layout {
-  width: 750px;
+  width: 1000px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 95px 0;
 
   @include mq("tablet") {
     width: 100%;
@@ -66,7 +64,7 @@
   }
   @include mq("mobile") {
     width: 100%;
-    padding: 40px 6%;
+    padding: 60px 6%;
   }
 }
 

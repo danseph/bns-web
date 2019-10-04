@@ -3,17 +3,17 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: "Questrial", "Noto Sans", "arial", "sans-serif";
+  font-family: "Gotham";
   font-size: 7.5px;
   width: 100%;
   height: 100%;
-  background-color: #595858;
+  background-color: #fff;
 }
 
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, header, footer, section, article {font-family: "Questrial", "Noto Sans", "arial", "sans-serif"; font-size: 10px; margin: 0; padding: 0; color: #000; font-weight: normal; line-height: 1.2;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, header, footer, section, article {font-family: 'GothamRegular', sans-serif; font-size: 10px; margin: 0; padding: 0; color: #1d2227; line-height: 1.2;}
 table {border-collapse: collapse; border-spacing: 0;}
 fieldset,img {border:0;}
-address,caption,cite,code,dfn,em,strong,th,var {font-style: normal;font-weight: normal;}
+address,caption,cite,code,dfn,em,strong,th,var {font-style: normal;}
 ol,ul {list-style: none;}
 caption,th {text-align: left;}
 h1,h2,h3,h4,h5,h6 {font-size: 100%;font-weight: normal;}

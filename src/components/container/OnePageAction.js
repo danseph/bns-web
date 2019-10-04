@@ -25,10 +25,6 @@ class OnePageAction extends Component {
             num: 2,
             text: 'header-nav-bns'
         },
-        // {
-        //     num: 3,
-        //     text: 'header-nav-coin'
-        // },
         {
             num: 3,
             text: 'header-nav-roadmap'
@@ -136,7 +132,7 @@ class OnePageAction extends Component {
 
     team1 = [
         {
-            name: '서 정 민',
+            name: 'ceo',
             position1: '- 방송통신 ISC 위원',
             position2: '- 사단법인 한국홈쇼핑상품공급자협회(KHPSA) 상임이사 / 상근부회장',
             position3: '- SM Alliance 대표이사 / Co-Founder',
@@ -453,10 +449,62 @@ class OnePageAction extends Component {
 
     press1 = [
         {
-            title: '유튜버-T커머스-V커머스 손잡았다… 상품-콘텐츠-플랫폼 ‘하나로’',
+            title: "유튜버-T커머스-V커머스 손잡았다…상품-콘텐츠-플랫폼 ‘하나로’",
             date: '2019.07.26',
             // writer: 'CosmicBC',
-            url: 'team-temp.png',
+            url: 'https://www.ajunews.com/view/20190726100232809',
+            classNameWrap: 'img-box-wrap',
+            className: 'img-box',
+            className2: 'txt-box',
+            className2_1: 'left',
+            className2_2: 'right',
+            className2_2_1: 'date',
+            className2_2_2: 'name',
+        },
+        {
+            title: '한국엠씨엔협회, T커머스협회·홈쇼핑고고와 MOU..."新 커머스 시장 활성화"',
+            date: '2019.07.25',
+            // writer: 'CosmicBC',
+            url: 'http://www.etnews.com/20190725000338',
+            classNameWrap: 'img-box-wrap',
+            className: 'img-box',
+            className2: 'txt-box',
+            className2_1: 'left',
+            className2_2: 'right',
+            className2_2_1: 'date',
+            className2_2_2: 'name',
+        },
+        {
+            title: '서정민 부회장, ‘홈쇼핑고고’ 설립',
+            date: '2019.06.21',
+            // writer: 'CosmicBC',
+            url: 'http://www.apparelnews.co.kr/news/news_view/?idx=177073',
+            classNameWrap: 'img-box-wrap',
+            className: 'img-box',
+            className2: 'txt-box',
+            className2_1: 'left',
+            className2_2: 'right',
+            className2_2_1: 'date',
+            className2_2_2: 'name',
+        },
+        {
+            title: "글랜스TV, 홈쇼핑고고와 '미디어 커머스 콘텐츠 제작' 맞손",
+            date: '2019.05.31',
+            // writer: '글로벌이코노믹',
+            url: 'http://www.zdnet.co.kr/view/?no=20190531093612',
+            classNameWrap: 'img-box-wrap',
+            className: 'img-box',
+            className2: 'txt-box',
+            className2_1: 'left',
+            className2_2: 'right',
+            className2_2_1: 'date',
+            className2_2_2: 'name',
+        },
+        {
+            title: '글랜스TV, 홈쇼핑고고와 MOU 체결',
+            date: '2019.05.31',
+            // writer: 'CosmicBC',
+            url: 'http://ccnews.lawissue.co.kr/view.php?ud=201905311126555322204ead0791_12',
             classNameWrap: 'img-box-wrap',
             className: 'img-box',
             className2: 'txt-box',
@@ -469,59 +517,7 @@ class OnePageAction extends Component {
             title: '한국T커머스협회·홈쇼핑고고·한국엠씨엔협회, T&V커머스 확대 업무협약',
             date: '2019.07.25',
             // writer: 'CosmicBC',
-            url: 'team-temp.png',
-            classNameWrap: 'img-box-wrap',
-            className: 'img-box',
-            className2: 'txt-box',
-            className2_1: 'left',
-            className2_2: 'right',
-            className2_2_1: 'date',
-            className2_2_2: 'name',
-        },
-        {
-            title: '한국엠씨엔협회, T커머스협회·홈쇼핑고고와 MOU..."新 커머스 시장 활성화"',
-            date: '2019.03.29',
-            // writer: 'CosmicBC',
-            url: 'team-temp.png',
-            classNameWrap: 'img-box-wrap',
-            className: 'img-box',
-            className2: 'txt-box',
-            className2_1: 'left',
-            className2_2: 'right',
-            className2_2_1: 'date',
-            className2_2_2: 'name',
-        },
-        {
-            title: '서정민 부회장, ‘홈쇼핑고고’ 설립',
-            date: '2019.03.27',
-            // writer: 'CosmicBC',
-            url: 'team-temp.png',
-            classNameWrap: 'img-box-wrap',
-            className: 'img-box',
-            className2: 'txt-box',
-            className2_1: 'left',
-            className2_2: 'right',
-            className2_2_1: 'date',
-            className2_2_2: 'name',
-        },
-        {
-            title: '글랜스TV, 홈쇼핑고고와 MOU 체결',
-            date: '2019.03.25',
-            // writer: 'CosmicBC',
-            url: 'team-temp.png',
-            classNameWrap: 'img-box-wrap',
-            className: 'img-box',
-            className2: 'txt-box',
-            className2_1: 'left',
-            className2_2: 'right',
-            className2_2_1: 'date',
-            className2_2_2: 'name',
-        },
-        {
-            title: "글랜스TV, 홈쇼핑고고와 '미디어 커머스 콘텐츠 제작' 맞손",
-            date: '2019.01.24',
-            // writer: '글로벌이코노믹',
-            url: 'team-temp.png',
+            url: 'http://www.inews24.com/view/1196703',
             classNameWrap: 'img-box-wrap',
             className: 'img-box',
             className2: 'txt-box',
@@ -679,6 +675,7 @@ class OnePageAction extends Component {
                 partnerContent1M={this.partnerContent1M}
                 partnerTitle2={this.partnerTitle2}
                 partnerContent2={this.partnerContent2}
+                partnerContent2M={this.partnerContent2M}
                 pressTitle={this.pressTitle}
                 pressList={this.pressList}
                 handleRefresh={this._handleRefresh}
@@ -929,6 +926,7 @@ class OnePageAction extends Component {
     partnerContent1M = React.createRef();
     partnerTitle2 = React.createRef();
     partnerContent2 = React.createRef();
+    partnerContent2M = React.createRef();
     pressTitle = React.createRef();
     pressList = React.createRef();
 
@@ -960,6 +958,7 @@ class OnePageAction extends Component {
             this.partnerContent1M.current,
             this.partnerTitle2.current,
             this.partnerContent2.current,
+            this.partnerContent2M.current,
             this.pressTitle.current,
             this.pressList.current,
         ];

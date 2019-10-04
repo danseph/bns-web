@@ -44,7 +44,7 @@ const Header = (props) => {
                                             <a href="javascript:void(0)"
                                                className={props.activeNav === item.num ? "active" : ""}
                                                onClick={() => props.handleSectionMove(item.num)}
-                                               key={i}>
+                                               key={i} >
                                                 <FormattedMessage id={item.text} />
                                             </a>
                                         )

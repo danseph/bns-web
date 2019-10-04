@@ -11,7 +11,8 @@ import ko from 'react-intl/locale-data/ko';
 import zh from 'react-intl/locale-data/zh';
 import locale from '../../locale';
 import { FormattedMessage } from 'react-intl';
-import 'react-id-swiper/lib/styles/scss/swiper.scss'
+import 'react-id-swiper/lib/styles/scss/swiper.scss';
+import $ from "jquery";
 addLocaleData([...en, ...ko, ...zh]);
 
 
@@ -39,20 +40,55 @@ const OnePage = (props) => {
         }
     }
 
+    $(document).ready(function(){
+
+        var arrMenuDiv;
+    
+        // header fixed scroll , web-nav scroll
+        $(window).scroll(function(){
+            $(".header").css("left", -$(this).scrollLeft());
+    
+            var y1 = $(document).scrollTop();
+            var y2 = y1 + ($(window).height() / 2);
+    
+            if(!arrMenuDiv) {
+                arrMenuDiv = [];
+                var children = $('.container').children();
+                for(var i=0; i<children.length-1; i++) {    // header, main, footer 제외
+                    arrMenuDiv.push(children[i]);
+                }
+            }
+    
+            for(var i=0; i<arrMenuDiv.length; i++) {
+                var el = arrMenuDiv[i];
+                // if (y1 < el.offsetTop && el.offsetTop < y2) {
+                if (y1 < el.offsetTop && el.offsetTop < y2) {
+                    var id = el.id;
+                    $(".header-nav a").removeClass("active");
+                    $('#menu_'+id).addClass('active');
+                    break;
+                } else if (y1 == 0) {
+                    $(".header-nav a").removeClass("active");
+                }
+            }
+        });
+    })
+
 
     const params = {
-        modules: [Navigation, Autoplay ],
+        // modules: [Navigation, Autoplay ],
+        modules: [Navigation ],
         navigation: {
           nextEl: '.swiper-next',
           prevEl: '.swiper-prev'
         },
         autoplay: {
-          delay: 5000,
+          delay: 2000,
           disableOnInteraction: false,
         },
         renderPrevButton: () => <button className="swiper-prev"></button>,
         renderNextButton: () => <button className="swiper-next"></button>,
-        // loop: true,
+        loop: true,
       }
         
     return (
@@ -68,7 +104,7 @@ const OnePage = (props) => {
                         } */}
                         {props.loader &&
                         <div className="loader-wrap">
-                            <img src={require("../../images/loader.gif")} className="loader"/>
+                            <img src={require("../../images/bns_loading_fast.gif.gif")} className="loader"/>
                         </div>
                         }
                         {props.lanShow &&
@@ -76,11 +112,11 @@ const OnePage = (props) => {
                         }
 
                         {/* HEADER */}
-                        <h1 className={`header-logo m`}>
+                        {/* <h1 className={`header-logo m`}>
                             <a href="javascript:void(0)">
                                 <img src={require("../../images/mb-bns-logo.png")} alt="로고"/>
                             </a>
-                        </h1>
+                        </h1> */}
                         <div className={ (window.scrollY > 0 ? 'header-wrap active' : 'header-wrap') }>
                             <header className="header">
                                 <h1 className="header-logo" onClick={props.handleRefresh}>
@@ -102,7 +138,8 @@ const OnePage = (props) => {
                                             <a href="javascript:void(0)"
                                                className={props.activeNav === item.num ? "active" : ""}
                                                onClick={() => props.handleSectionMove(item.num)}
-                                               key={i}>
+                                               key={i} 
+                                               id= {`menu_section${i+2}`}>
                                                 <FormattedMessage id={item.text} />
                                             </a>
                                         )
@@ -116,8 +153,14 @@ const OnePage = (props) => {
                                     
                                     <a href="javascript:void(0)" className={`lang ${props.lanShow ? "active" : ""}`}
                                        onClick={props.handleLanShow}>
-                                        <FormattedMessage id="header-lan-btn" />
+                                           Language
+                                        {/* <FormattedMessage id="header-lan-btn" /> */}
                                     </a>
+                                    {/* <h1 className="header-logo" onClick={props.handleRefresh}> */}
+                                        <a href="javascript:void(0)" className="small-logo mobile">
+                                            <img src={require("../../images/bns-small-logo.png")} alt="로고"/>
+                                        </a>
+                                    {/* </h1> */}
                                     <ul className={`header-btn-lang ${props.lanShow ? "active" : ""}`}>
                                         {props.lan.map((item, i) => {
                                             return (
@@ -127,8 +170,6 @@ const OnePage = (props) => {
                                             )
                                         })}
                                     </ul>
-                                    
-                                    
                                 </div>
                                 <div className="lan-hide-wrap" onClick={props.handleLanHide}/>
                                 
@@ -164,8 +205,8 @@ const OnePage = (props) => {
                             {/* MAIN */}
 
                             {/* BNS */}
-                            <div className="bns-wrap">
-                                <section className="bns" id="section2">
+                            <div className="bns-wrap" id="section2">
+                                <section className="bns" >
                                     <div className="bns-about" >
                                         <div className="bns-about-title" ref={props.aboutTitle}>
                                             <h2><FormattedMessage id="about-title" /></h2>
@@ -178,6 +219,9 @@ const OnePage = (props) => {
                                         </div>
                                     </div>
                                     <div className="bns-paper" >
+                                        <div className="mb-polygon2-img mobile">
+                                            <img src={require("../../images/mb-polygon2.png")}/>
+                                        </div>
                                         <div className="bns-paper-title" ref={props.paperTitle}>
                                             <h2>White Paper</h2>
                                         </div>
@@ -190,6 +234,9 @@ const OnePage = (props) => {
                                                 )
                                             })}
                                         </div>
+                                        <div className="mb-polygon3-img mobile">
+                                            <img src={require("../../images/mb-polygon3.png")}/>
+                                        </div>
                                     </div>
                                     <div className="bns-util" >
                                         <div className="bns-util-title" ref={props.utilTitle}>
@@ -201,13 +248,15 @@ const OnePage = (props) => {
                                             </div>
                                             <div className="bns-util-textbox">
                                                 <h5><FormattedMessage id="util-payment-title" /></h5>
-                                                <p><FormattedMessage id="util-payment-text" /></p>
+                                                <p className="web"><FormattedMessage id="util-payment-text"  values={{ br: <br /> , lineBreak:<div className='desktop-inline'></div>, lineBreak2:<div className='desktop-block'></div>}}/></p>
+                                                <p className="mobile"><FormattedMessage id="util-payment-textM"  values={{ br: <br /> , lineBreak:<div className='desktop-inline'></div>, lineBreak2:<div className='desktop-block'></div>}}/></p>
                                             </div>
                                         </div>
                                         <div className="bns-util-content-reverse" ref={props.utilReward}>
                                             <div className="bns-util-textbox">
                                                 <h5><FormattedMessage id="util-reward-title" /></h5>
-                                                <p><FormattedMessage id="util-reward-text" /></p>
+                                                <p className="web"><FormattedMessage id="util-reward-text" values={{ br: <br /> , lineBreak:<div className='desktop-inline'></div>, lineBreak2:<div className='desktop-block'></div>}}/></p>
+                                                <p className="mobile"><FormattedMessage id="util-reward-textM" values={{ br: <br /> , lineBreak:<div className='desktop-inline'></div>, lineBreak2:<div className='desktop-block'></div>}}/></p>
                                             </div>
                                             <div className="bns-util-img">
                                                 <img src={require("../../images/util-reward.png")}/>
@@ -219,7 +268,8 @@ const OnePage = (props) => {
                                             </div>
                                             <div className="bns-util-textbox">
                                                 <h5><FormattedMessage id="util-fund-title" /></h5>
-                                                <p><FormattedMessage id="util-fund-text" /></p>
+                                                <p className="web"><FormattedMessage id="util-fund-text" values={{ br: <br /> , lineBreak:<div className='desktop-inline'></div>, lineBreak2:<div className='desktop-block'></div>}}/></p>
+                                                <p className="mobile"><FormattedMessage id="util-fund-textM" values={{ br: <br /> , lineBreak:<div className='desktop-inline'></div>, lineBreak2:<div className='desktop-block'></div>}}/></p>
                                             </div>
                                         </div>
                                     </div>
@@ -233,7 +283,7 @@ const OnePage = (props) => {
                                                 <img src={require("../../images/vision-1.png")}/>
                                             </div>
                                             <div className="bns-vision-textbox">
-                                                <p><FormattedMessage id="vision-text-1" /></p>
+                                                <p><FormattedMessage id="vision-text-1" values={{ br: <br /> , lineBreak:<div className='desktop-inline'></div>, lineBreak2:<div className='desktop-block'></div>}}/></p>
                                             </div>
                                         </div>
                                         <div className="bns-vision-content" >
@@ -241,7 +291,7 @@ const OnePage = (props) => {
                                                 <img src={require("../../images/vision-2.png")}/>
                                             </div>
                                             <div className="bns-vision-textbox">
-                                                <p><FormattedMessage id="vision-text-2" /></p>
+                                                <p><FormattedMessage id="vision-text-2" values={{ br: <br /> , lineBreak:<div className='desktop-inline'></div>, lineBreak2:<div className='desktop-block'></div>}}/></p>
                                             </div>
                                         </div>
                                             <div className="bns-vision-content" >
@@ -249,7 +299,7 @@ const OnePage = (props) => {
                                                     <img src={require("../../images/vision-3.png")}/>
                                                 </div>
                                                 <div className="bns-vision-textbox">
-                                                    <p><FormattedMessage id="vision-text-3" /></p>
+                                                    <p><FormattedMessage id="vision-text-3" values={{ br: <br /> , lineBreak:<div className='desktop-inline'></div>, lineBreak2:<div className='desktop-block'></div>}}/></p>
                                                 </div>
                                             </div>
                                             <div className="bns-vision-content"  >
@@ -257,7 +307,7 @@ const OnePage = (props) => {
                                                     <img src={require("../../images/vision-4.png")}/>
                                                 </div>
                                                 <div className="bns-vision-textbox">
-                                                    <p><FormattedMessage id="vision-text-4" /></p>
+                                                    <p><FormattedMessage id="vision-text-4" values={{ br: <br /> , lineBreak:<div className='desktop-inline'></div>, lineBreak2:<div className='desktop-block'></div>}}/></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -272,7 +322,9 @@ const OnePage = (props) => {
                                                     props.defaultLang === "ko" ?
                                                         <img src={require("../../images/ecosystem.png")} />
                                                         :
-                                                        <img src={require("../../images/ecosystem.png")} />
+                                                        props.defaultLang === "en" ?
+                                                            <img src={require("../../images/ecosystem-en.png")} />
+                                                            :<img src={require("../../images/ecosystem-ch.png")} />
                                                 }
                                             </div>
                                         </div>
@@ -282,7 +334,9 @@ const OnePage = (props) => {
                                                     props.defaultLang === "ko" ?
                                                         <img src={require("../../images/mb-ecosystem.png")} />
                                                         :
-                                                        <img src={require("../../images/mb-ecosystem.png")} />
+                                                        props.defaultLang === "en" ?
+                                                            <img src={require("../../images/mb-ecosystem-en.png")} />
+                                                            :<img src={require("../../images/mb-ecosystem-ch.png")} />
                                                 }
                                             </div>
                                         </div>
@@ -298,10 +352,24 @@ const OnePage = (props) => {
                                         <h2><FormattedMessage id="roadmap" /></h2>
                                     </div>
                                     <div className={`roadmap-img web` } ref={props.roadmapContent} >
-                                        <img src={require("../../images/roadmap.png")}/>
+                                        {
+                                            props.defaultLang === "ko" ?
+                                            <img src={require("../../images/roadmap.png")}/>
+                                                :
+                                                props.defaultLang === "en" ?
+                                                    <img src={require("../../images/roadmap-en.png")} />
+                                                    :<img src={require("../../images/roadmap-ch.png")} />
+                                        }
                                     </div>
                                     <div className={`roadmap-img mobile`} ref={props.roadmapContentM}>
-                                        <img src={require("../../images/mb-roadmap.png")}/>
+                                        {
+                                            props.defaultLang === "ko" ?
+                                            <img src={require("../../images/mb-roadmap.png")}/>
+                                                :
+                                                props.defaultLang === "en" ?
+                                                    <img src={require("../../images/mb-roadmap-en.png")} />
+                                                    :<img src={require("../../images/mb-roadmap-ch.png")} />
+                                        }
                                     </div>
                                     <div className="polygon3-img web">
                                         <img src={require("../../images/polygon3.png")}/>
@@ -318,21 +386,26 @@ const OnePage = (props) => {
                                     </div>
                                     <div className={`economy-desc`} ref={props.economyContent}>
                                         <div className="economy-desc-graph">
-                                            <img src={require("../../images/graph.png")}/>
+                                            <div className="economy-desc-graph-img web">
+                                                <img src={require("../../images/graph.png")}/>
+                                            </div>
+                                            <div className="economy-desc-graph-img mobile">
+                                                <img src={require("../../images/mb-graph.png")}/>
+                                            </div>
                                         </div>
+                                        
                                         <div className="economy-desc-structure">
                                             <div className="economy-desc-structure-list">
                                                 <ul>
                                                     {props.coinStructure.map((item, i) => {
                                                         return (
                                                             <li key={i}>
+                                                                <img src={require("../../images/list-shape.png")} />
                                                                 <strong className={item.className1}>
-                                                                    <FormattedMessage id={item.text1} />
+                                                                    <FormattedMessage id={item.text1} values={{ br: <br /> , lineBreak:<div className='desktop-inline'></div>, lineBreak2:<div className='desktop-block'></div>}}/>
                                                                 </strong>
                                                                 <span className={item.className2}>
-                                                                    <FormattedMessage id={item.text2} values={{ br: <br />}}/>
-
-
+                                                                    <FormattedMessage id={item.text2} values={{ br: <br /> , lineBreak:<div className='desktop-inline'></div>, lineBreak2:<div className='desktop-block'></div>}}/>
                                                                 </span>
                                                             </li>
                                                         )
@@ -340,150 +413,35 @@ const OnePage = (props) => {
                                                 </ul>
                                             </div>
                                         </div>
-
                                     </div>
                                 </section>
                             </div>
                             {/* ECONOMY */}
 
                             {/* TEAM */}
-                            <div className="team-wrap">
-                                <section className="team" id="section5">                                   
-                                    <div className={`team-title`} ref={props.teamTitle}>
-                                        <h2><FormattedMessage id="team-member" /></h2>
-                                    </div>
-                                    <div className="team-group">
-                                        <div className={`team-desc web`} ref={props.teamList}>
-                                            <Swiper {...params}>
-                                                <div>
-                                                    <ul>
-                                                        {props.team1.map((item, i) => {
-                                                            return (
-                                                                <li key={i}>
-                                                                    <div className={item.className}>
-                                                                        <img src={require(`../../images/teams/${item.image}`)} />
-                                                                    </div>
-                                                                    <div className={item.className2}>
-                                                                        <strong>{item.name}</strong>
-                                                                        <div>{item.position1}</div>
-                                                                        <div>{item.position2}</div>
-                                                                        <div>{item.position3}</div>
-                                                                        <div>{item.position4}</div>
-                                                                        <div>{item.position5}</div>
-                                                                        <div>{item.position6}</div>
-                                                                    </div>
-                                                                </li>
-                                                            )
-                                                        })}
-                                                    </ul>
-                                                </div>
-                                                <div >
-                                                    <ul>
-                                                        {props.team2.map((item, i) => {
-                                                            return (
-                                                                <li key={i}>
-                                                                    <div className={item.className}>
-                                                                        <img src={require(`../../images/teams/${item.image}`)} />
-                                                                    </div>
-                                                                    <div className={item.className2}>
-                                                                        <strong>{item.name}</strong>
-                                                                            <div>{item.position1}</div>
-                                                                            <div>{item.position2}</div>
-                                                                            <div>{item.position3}</div>
-                                                                            <div>{item.position4}</div>
-                                                                            <div>{item.position5}</div>
-                                                                            <div>{item.position6}</div>
-                                                                    </div>
-                                                                </li>
-                                                            )
-                                                        })}
-                                                    </ul>
-                                                </div>
-                                                <div>
-                                                    <ul>
-                                                        {props.team3.map((item, i) => {
-                                                            return (
-                                                                <li key={i}>
-                                                                    <div className={item.className}>
-                                                                        <img src={require(`../../images/teams/${item.image}`)} />
-                                                                    </div>
-                                                                    <div className={item.className2}>
-                                                                    <strong>{item.name}</strong>
-                                                                        <div>{item.position1}</div>
-                                                                        <div>{item.position2}</div>
-                                                                        <div>{item.position3}</div>
-                                                                        <div>{item.position4}</div>
-                                                                        <div>{item.position5}</div>
-                                                                        <div>{item.position6}</div>
-                                                                    </div>
-                                                                </li>
-                                                            )
-                                                        })}
-                                                    </ul>
-                                                </div>
-                                                <div>
-                                                    <ul>
-                                                        {props.team4.map((item, i) => {
-                                                            return (
-                                                                <li key={i}>
-                                                                    <div className={item.className}>
-                                                                        <img src={require(`../../images/teams/${item.image}`)} />
-                                                                    </div>
-                                                                    <div className={item.className2}>
-                                                                    <strong>{item.name}</strong>
-                                                                        <div>{item.position1}</div>
-                                                                        <div>{item.position2}</div>
-                                                                        <div>{item.position3}</div>
-                                                                        <div>{item.position4}</div>
-                                                                        <div>{item.position5}</div>
-                                                                        <div>{item.position6}</div>
-                                                                    </div>
-                                                                </li>
-                                                            )
-                                                        })}
-                                                    </ul>
-                                                </div>
-                                            </Swiper>
+                            <div className="team-wrap" id="section5">
+                                <section className="team" >
+                                    <div className={`teamMember`}>
+                                        <div className={`team-title`} ref={props.teamTitle}>
+                                            <h2><FormattedMessage id="team-member" /></h2>
                                         </div>
-                                        <div className={`team-desc mobile`} >
-                                            <Swiper {...params}>
-                                                {props.team1.map((item, i) => {
-                                                    return (
-                                                        <div  key={i}>
-                                                            <div  className={item.className}>
-                                                                <img src={require(`../../images/teams/${item.image}`)} />
-                                                            </div>
-                                                            <div className={item.className2}>
-                                                                <strong>{item.name}</strong>
-                                                                <div>{item.position1}</div>
-                                                                <div>{item.position2}</div>
-                                                                <div>{item.position3}</div>
-                                                                <div>{item.position4}</div>
-                                                                <div>{item.position5}</div>
-                                                                <div>{item.position6}</div>
-                                                            </div>
-                                                        </div>
-                                                    )
-                                                })}
-                                            </Swiper>
+                                        <div className="mb-polygon4-img mobile">
+                                                <img src={require("../../images/mb-polygon4.png")}/>
                                         </div>
-                                    </div>
-                                    <div className={`team-title`} ref={props.advisorTitle}>
-                                        <h2><FormattedMessage id="advisor" /></h2>
-                                    </div>
-                                    <div className="advisor-group">
-                                        <div className={`advisor-desc web`} ref={props.advisorList}>
+                                        <div className="teamMember-group">
+                                            <div className={`team-desc web`} ref={props.teamList}>
                                                 <Swiper {...params}>
                                                     <div>
                                                         <ul>
-                                                            {props.advisor1.map((item, i) => {
+                                                            {props.team1.map((item, i) => {
                                                                 return (
                                                                     <li key={i}>
                                                                         <div className={item.className}>
                                                                             <img src={require(`../../images/teams/${item.image}`)} />
                                                                         </div>
                                                                         <div className={item.className2}>
-                                                                            <strong>{item.name}</strong>
+                                                                            {/* <strong>{item.name}</strong> */}
+                                                                            <strong><FormattedMessage id={item.name}/></strong>
                                                                             <div>{item.position1}</div>
                                                                             <div>{item.position2}</div>
                                                                             <div>{item.position3}</div>
@@ -498,7 +456,7 @@ const OnePage = (props) => {
                                                     </div>
                                                     <div >
                                                         <ul>
-                                                            {props.advisor2.map((item, i) => {
+                                                            {props.team2.map((item, i) => {
                                                                 return (
                                                                     <li key={i}>
                                                                         <div className={item.className}>
@@ -520,7 +478,7 @@ const OnePage = (props) => {
                                                     </div>
                                                     <div>
                                                         <ul>
-                                                            {props.advisor3.map((item, i) => {
+                                                            {props.team3.map((item, i) => {
                                                                 return (
                                                                     <li key={i}>
                                                                         <div className={item.className}>
@@ -542,7 +500,7 @@ const OnePage = (props) => {
                                                     </div>
                                                     <div>
                                                         <ul>
-                                                            {props.advisor4.map((item, i) => {
+                                                            {props.team4.map((item, i) => {
                                                                 return (
                                                                     <li key={i}>
                                                                         <div className={item.className}>
@@ -563,37 +521,169 @@ const OnePage = (props) => {
                                                         </ul>
                                                     </div>
                                                 </Swiper>
+                                            </div>
+                                            <div className={`team-desc mobile`} >
+                                                <Swiper {...params}>
+                                                    {props.team1.concat(props.team2).concat(props.team3).concat(props.team4).map((item, i) => {
+                                                        return (
+                                                            <div className='eachTeamMember' key={i}>
+                                                                <div  className={item.className}>
+                                                                    <img src={require(`../../images/teams/${item.image}`)} />
+                                                                </div>
+                                                                <div className={item.className2}>
+                                                                    <strong><FormattedMessage id={item.name}/></strong>
+                                                                    <div>{item.position1}</div>
+                                                                    <div>{item.position2}</div>
+                                                                    <div>{item.position3}</div>
+                                                                    <div>{item.position4}</div>
+                                                                    <div>{item.position5}</div>
+                                                                    <div>{item.position6}</div>
+                                                                </div>
+                                                            </div>
+                                                        )
+                                                    })}
+                                                </Swiper>
+                                            </div>
                                         </div>
-                                        <div className={`advisor-desc mobile`} >
-                                            <Swiper {...params}>
-                                                {props.advisor1.map((item, i) => {
-                                                    return (
-                                                        <div  key={i}>
-                                                            <div  className={item.className}>
-                                                                <img src={require(`../../images/teams/${item.image}`)} />
-                                                            </div>
-                                                            <div className={item.className2}>
-                                                                <strong>{item.name}</strong>
-                                                                <div>{item.position1}</div>
-                                                                <div>{item.position2}</div>
-                                                                <div>{item.position3}</div>
-                                                                <div>{item.position4}</div>
-                                                                <div>{item.position5}</div>
-                                                                <div>{item.position6}</div>
-                                                            </div>
+                                    </div>                                   
+
+                                
+                                {/* </section> 
+                            </div>
+                            <div className="advisor-wrap">
+                                <section className="advisor" >  */}
+                                    <div className={`advisor`}>
+                                        <div className={`team-title`} ref={props.advisorTitle}>
+                                            <h2><FormattedMessage id="advisor" /></h2>
+                                        </div>
+                                        <div className="advisor-group">
+                                            <div className={`advisor-desc web`} ref={props.advisorList}>
+                                                    <Swiper {...params}>
+                                                        <div>
+                                                            <ul>
+                                                                {props.advisor1.map((item, i) => {
+                                                                    return (
+                                                                        <li key={i}>
+                                                                            <div className={item.className}>
+                                                                                <img src={require(`../../images/teams/${item.image}`)} />
+                                                                            </div>
+                                                                            <div className={item.className2}>
+                                                                                <strong>{item.name}</strong>
+                                                                                <div>{item.position1}</div>
+                                                                                <div>{item.position2}</div>
+                                                                                <div>{item.position3}</div>
+                                                                                <div>{item.position4}</div>
+                                                                                <div>{item.position5}</div>
+                                                                                <div>{item.position6}</div>
+                                                                            </div>
+                                                                        </li>
+                                                                    )
+                                                                })}
+                                                            </ul>
                                                         </div>
-                                                    )
-                                                })}
-                                            </Swiper>
+                                                        <div >
+                                                            <ul>
+                                                                {props.advisor2.map((item, i) => {
+                                                                    return (
+                                                                        <li key={i}>
+                                                                            <div className={item.className}>
+                                                                                <img src={require(`../../images/teams/${item.image}`)} />
+                                                                            </div>
+                                                                            <div className={item.className2}>
+                                                                                <strong>{item.name}</strong>
+                                                                                    <div>{item.position1}</div>
+                                                                                    <div>{item.position2}</div>
+                                                                                    <div>{item.position3}</div>
+                                                                                    <div>{item.position4}</div>
+                                                                                    <div>{item.position5}</div>
+                                                                                    <div>{item.position6}</div>
+                                                                            </div>
+                                                                        </li>
+                                                                    )
+                                                                })}
+                                                            </ul>
+                                                        </div>
+                                                        <div>
+                                                            <ul>
+                                                                {props.advisor3.map((item, i) => {
+                                                                    return (
+                                                                        <li key={i}>
+                                                                            <div className={item.className}>
+                                                                                <img src={require(`../../images/teams/${item.image}`)} />
+                                                                            </div>
+                                                                            <div className={item.className2}>
+                                                                            <strong>{item.name}</strong>
+                                                                                <div>{item.position1}</div>
+                                                                                <div>{item.position2}</div>
+                                                                                <div>{item.position3}</div>
+                                                                                <div>{item.position4}</div>
+                                                                                <div>{item.position5}</div>
+                                                                                <div>{item.position6}</div>
+                                                                            </div>
+                                                                        </li>
+                                                                    )
+                                                                })}
+                                                            </ul>
+                                                        </div>
+                                                        <div>
+                                                            <ul>
+                                                                {props.advisor4.map((item, i) => {
+                                                                    return (
+                                                                        <li key={i}>
+                                                                            <div className={item.className}>
+                                                                                <img src={require(`../../images/teams/${item.image}`)} />
+                                                                            </div>
+                                                                            <div className={item.className2}>
+                                                                            <strong>{item.name}</strong>
+                                                                                <div>{item.position1}</div>
+                                                                                <div>{item.position2}</div>
+                                                                                <div>{item.position3}</div>
+                                                                                <div>{item.position4}</div>
+                                                                                <div>{item.position5}</div>
+                                                                                <div>{item.position6}</div>
+                                                                            </div>
+                                                                        </li>
+                                                                    )
+                                                                })}
+                                                            </ul>
+                                                        </div>
+                                                    </Swiper>
+                                            </div>
+                                            <div className={`advisor-desc mobile`} >
+                                                <Swiper {...params}>
+                                                    {props.advisor1.concat(props.advisor2).concat(props.advisor3).concat(props.advisor4).map((item, i) => {
+                                                        return (
+                                                            <div className='eachTeamMember' key={i}>
+                                                                <div  className={item.className}>
+                                                                    <img src={require(`../../images/teams/${item.image}`)} />
+                                                                </div>
+                                                                <div className={item.className2}>
+                                                                    <strong>{item.name}</strong>
+                                                                    <div>{item.position1}</div>
+                                                                    <div>{item.position2}</div>
+                                                                    <div>{item.position3}</div>
+                                                                    <div>{item.position4}</div>
+                                                                    <div>{item.position5}</div>
+                                                                    <div>{item.position6}</div>
+                                                                </div>
+                                                            </div>
+                                                        )
+                                                    })}
+                                                </Swiper>
+                                            </div>
                                         </div>
+                                    </div>
+
+                                    <div className="polygon4-img web">
+                                        <img src={require("../../images/polygon4.png")}/>
                                     </div>
                                 </section>
                             </div>
                             {/* TEAM */}
 
                             {/* PARTNER */}
-                            <div className="partner-wrap">
-                                <section className="partner"  id="section6">
+                            <div className="partner-wrap" id="section6">
+                                <section className="partner">
                                     <div className={`partner-group`} >
                                         <div className={`partner-group-title`} ref={props.partnerTitle1}>
                                             <h2><FormattedMessage id="partner" /></h2>
@@ -609,11 +699,14 @@ const OnePage = (props) => {
                                         <div className={`partner-group-title`} ref={props.partnerTitle2}>
                                             <h2><FormattedMessage id="tech-partner" /></h2>
                                         </div>
-                                        <div className={`partner-group2-img`} ref={props.partnerContent2}>
+                                        <div className={`partner-group2-img web`} ref={props.partnerContent2}>
                                             <img src={require("../../images/tech-partner.png")}/>
                                         </div>
-                                        <div className="polygon4-img web">
-                                            <img src={require("../../images/polygon4.png")}/>
+                                        <div className={`partner-group2-img mobile`} ref={props.partnerContent2M}>
+                                            <img src={require("../../images/mb-tech-partner.png")}/>
+                                        </div>
+                                        <div className="polygon5-img web">
+                                            <img src={require("../../images/polygon5.png")}/>
                                         </div>
                                     </div>
                                 </section>
@@ -625,6 +718,9 @@ const OnePage = (props) => {
                                 <section className="press">
                                     <div className={`press-title`} ref={props.pressTitle}>
                                         <h2><FormattedMessage id="press" /></h2>
+                                    </div>
+                                    <div className="mb-polygon5-img mobile">
+                                        <img src={require("../../images/mb-polygon5.png")}/>
                                     </div>
                                     <div className={`press-list`} ref={props.pressList}>
                                         <div className="contents">
@@ -638,15 +734,15 @@ const OnePage = (props) => {
                                                                     </div>
                                                                 </div>
                                                                 <div className={item.className2}>
-                                                                    <div className={item.className2_1}>
+                                                                    {/* <div className={item.className2_1}> */}
                                                                         <strong>
                                                                             {item.title}
                                                                         </strong>
-                                                                    </div>
-                                                                    <div className={item.className2_2}>
+                                                                    {/* </div> */}
+                                                                    {/* <div className={item.className2_2}> */}
                                                                         <span className={item.className2_2_1}>{item.date}</span>
                                                                         <span className={item.className2_2_2}>{item.writer}</span>
-                                                                    </div>
+                                                                    {/* </div> */}
                                                                 </div>
                                                             </a>
                                                         </li>
@@ -712,9 +808,12 @@ const OnePage = (props) => {
                                             <img  src={require(`../../images/kakao.png`)}/>
                                         </a>
                                     </div>
-                                    <div className="polygon5-img web">
-                                            <img src={require("../../images/polygon5.png")}/>
+                                    <div className="polygon6-img web">
+                                        <img src={require("../../images/polygon6.png")}/>
                                     </div>
+                                    <div className="polygon6-img mobile">
+                                        <img src={require("../../images/mb-polygon6.png")}/>
+                                    </div>        
                                 </section>
                             </div>
                             {/* CONTCTA */}
@@ -729,14 +828,17 @@ const OnePage = (props) => {
                                         ©2019 BNS BAY. All rights reserved.     
                                     </div>   
                                 </div>
+
                             </footer>
+
+
                         </div>
                         {/* FOOTER */}
                     </>
                 </IntlProvider>
                 :
                 <div className="loader-wrap">
-                    <img src={require("../../images/loader.gif")} className="loader"/>
+                    <img src={require("../../images/bns_loading_fast.gif.gif")} className="loader"/>
                 </div>
             }
         </>
